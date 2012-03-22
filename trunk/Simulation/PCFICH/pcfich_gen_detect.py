@@ -1,7 +1,7 @@
 #@+leo-ver=5-thin
 #@+node:Michael.20120320091224.1507: * @thin ./Simulation/PCFICH/pcfich_gen_detect.py
 #@+others
-#@+node:Michael.20120320091224.1506: ** source
+#@+node:Michael.20120320091224.1506: ** PCFICH source
 from scipy.signal import *
 from numpy import *
 import matplotlib.pyplot as plt

@@ -94,7 +94,8 @@
 </v>
 <v t="michael.20120305092148.1306" a="E"><vh>Simulations</vh>
 <v t="Michael.20120315095133.1438"><vh>CSRS gen &amp; channel estimation</vh>
-<v t="Michael.20120315095133.1439" a="E"><vh>source</vh>
+<v t="Michael.20120315095133.1440"><vh>@thin ./Simulation/CSRS/csrs_gen_channel_estimation.py</vh></v>
+<v t="Michael.20120315095133.1439"><vh>CSRS source</vh>
 <v t="Michael.20120315095133.1442"><vh>01. CSRS baseband IQ time domain signal</vh></v>
 <v t="Michael.20120315095133.1443"><vh>02. CSRS baseband IQ spectrum</vh></v>
 <v t="Michael.20120315095133.1444"><vh>03. CSRS Uu signal</vh></v>
@@ -106,8 +107,6 @@
 <v t="michael.20120305092148.1296"></v>
 <v t="michael.20120305092148.1283"></v>
 </v>
-<v t="Michael.20120315095133.1440"
-expanded="Michael.20120315095133.1439,"><vh>@thin ./Simulation/CSRS/csrs_gen_channel_estimation.py</vh></v>
 </v>
 <v t="michael.20120309091906.1376"><vh>Low pass filter</vh>
 <v t="michael.20120309091906.1377"><vh>souce code</vh></v>
@@ -123,20 +122,20 @@ expanded="Michael.20120315095133.1439,"><vh>@thin ./Simulation/CSRS/csrs_gen_cha
 <v t="michael.20120315195140.1454"><vh>@thin ./Simulation/OFDM_basic/ofdm_basic.py</vh></v>
 </v>
 <v t="Michael.20120321090100.1526"><vh>PBCH gen &amp; detect</vh>
-<v t="Michael.20120321090100.1527"><vh>source</vh>
+<v t="Michael.20120321090100.1528"
+expanded="michael.20120305092148.1295,Michael.20120319125504.1478,michael.20120305092148.1281,michael.20120305092148.1302,michael.20120312091134.1403,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./Simulation/PBCH/pbch_gen_detect.py</vh></v>
+<v t="Michael.20120321090100.1527"><vh>PBCH source</vh>
 <v t="Michael.20120321090100.1529"><vh>01. PBCH symbol array in one OFDM symbol</vh></v>
 <v t="Michael.20120321090100.1538"><vh>02. PBCH Uu signal</vh></v>
 <v t="michael.20120305092148.1277"></v>
 <v t="Michael.20120320091224.1509"></v>
 <v t="Michael.20120319125504.1481"></v>
 </v>
-<v t="Michael.20120321090100.1528"
-expanded="michael.20120305092148.1295,Michael.20120319125504.1478,michael.20120305092148.1281,michael.20120305092148.1302,michael.20120312091134.1403,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./Simulation/PBCH/pbch_gen_detect.py</vh></v>
 </v>
 <v t="Michael.20120320091224.1505"><vh>PCFICH gen &amp; detect</vh>
 <v t="Michael.20120320091224.1507"
 expanded="Michael.20120319125504.1478,Michael.20120319125504.1466,"><vh>@thin ./Simulation/PCFICH/pcfich_gen_detect.py</vh></v>
-<v t="Michael.20120320091224.1506"><vh>source</vh>
+<v t="Michael.20120320091224.1506"><vh>PCFICH source</vh>
 <v t="Michael.20120320091224.1508"><vh>01. PCFICH symbol array in one OFDM symbol</vh></v>
 <v t="Michael.20120321090100.1520"><vh>02. PCFICH Uu signal</vh></v>
 <v t="Michael.20120320091224.1510"></v>
@@ -153,7 +152,7 @@ expanded="Michael.20120319125504.1478,Michael.20120319125504.1466,"><vh>@thin ./
 </v>
 <v t="michael.20120305092148.1317"><vh>PSS gen &amp; detect</vh>
 <v t="michael.20120305092148.1319"><vh>@thin ./Simulation/PSS/PSS_gen_detect.py</vh></v>
-<v t="michael.20120305092148.1318"><vh>source code</vh>
+<v t="michael.20120305092148.1318"><vh>PSS source code</vh>
 <v t="michael.20120305092148.1322"><vh>01. PSS spectrum before OFDM generation</vh></v>
 <v t="michael.20120305092148.1320"><vh>02. PSS correlation in freq domain before OFDM gen</vh></v>
 <v t="michael.20120305092148.1321"><vh>03. PSS baseband IQ signal in time domain</vh></v>
@@ -171,28 +170,14 @@ expanded="Michael.20120319125504.1478,Michael.20120319125504.1466,"><vh>@thin ./
 <v t="michael.20120305092148.1293"></v>
 <v t="michael.20120305092148.1296"></v>
 <v t="michael.20120305092148.1292"></v>
-<v t="michael.20120305092148.1330"><vh>test</vh></v>
-<v t="michael.20120312091134.1398"><vh>Trash Can</vh>
-<v t="michael.20120305092148.1327"><vh>08. PSS received IQ FFT</vh></v>
-<v t="michael.20120312091134.1400"><vh>09. PSS received IQ time-domain correlation</vh></v>
-<v t="michael.20120305092148.1329"><vh>10. PSS Uu signal FFT N/16-point correlation</vh></v>
-<v t="michael.20120305092148.1328"><vh>09. PSS received IQ FFT N-point correlation</vh></v>
-<v t="michael.20120309091906.1380"><vh>12. PSS Uu signal FFT after 10MHz lowpass N-point correlation</vh></v>
-<v t="michael.20120309091906.1384"><vh>15. PSS Uu signal FFT after 540KHz lowpass N-point correlation</vh></v>
-<v t="michael.20120309091906.1382"><vh>14. PSS Uu signal FFT after 540KHz lowpass filter</vh></v>
-<v t="michael.20120309091906.1381"><vh>13. PSS Uu signal FFT after 10MHz lowpass N/16-point correlation</vh></v>
-<v t="michael.20120309091906.1386"><vh>16. PSS Uu signal FFT after 540KHz lowpass N/16-point correlation</vh></v>
-<v t="michael.20120309091906.1379"><vh>11. PSS Uu signal FFT after 10MHz lowpass filter</vh></v>
-<v t="michael.20120305092148.1325"><vh>09. PSS received IQ decimated to 1/16</vh></v>
-<v t="michael.20120305092148.1324"><vh>09. PSS received IQ spectrum correlation</vh></v>
-</v>
 <v t="michael.20120305092148.1331"><vh>z_fft_of_ZC</vh>
 <v t="michael.20120305092148.1316"></v>
 </v>
 </v>
 </v>
-<v t="Michael.20120314113327.1412" a="E"><vh>SSS gen &amp; detect</vh>
-<v t="Michael.20120314113327.1413" a="E"><vh>source</vh>
+<v t="Michael.20120314113327.1412"><vh>SSS gen &amp; detect</vh>
+<v t="Michael.20120314113327.1414"><vh>@thin ./Simulation/SSS/sss_gen_detect.py</vh></v>
+<v t="Michael.20120314113327.1413"><vh>SSS source</vh>
 <v t="Michael.20120314113327.1415"><vh>01. SSS sequence generation</vh></v>
 <v t="Michael.20120314113327.1417"><vh>02. SSS baseband IQ time domain signal</vh></v>
 <v t="Michael.20120314113327.1418"><vh>03. SSS baseband IQ spectrum</vh></v>
@@ -209,14 +194,29 @@ expanded="Michael.20120319125504.1478,Michael.20120319125504.1466,"><vh>@thin ./
 <v t="michael.20120305092148.1293"></v>
 <v t="michael.20120305092148.1296"></v>
 </v>
-<v t="Michael.20120314113327.1414"
-expanded="Michael.20120314113327.1413,"><vh>@thin ./Simulation/SSS/sss_gen_detect.py</vh></v>
 </v>
 <v t="michael.20120305092148.1312"><vh>Zadoff-Chu seq</vh>
 <v t="michael.20120305092148.1313"><vh>source_code</vh>
 <v t="michael.20120305092148.1316"></v>
 </v>
 <v t="michael.20120305092148.1314"><vh>@thin ./test_files/ZC_seq.py</vh></v>
+</v>
+</v>
+<v t="michael.20120322193448.2259" a="E"><vh>Release_relative</vh>
+<v t="michael.20120322193448.2266"><vh>@thin ./build_binary_for_Windows.bat</vh></v>
+<v t="michael.20120322193448.2342"
+expanded="michael.20120305092148.1295,Michael.20120319125504.1478,michael.20120305092148.1281,michael.20120305092148.1302,michael.20120312091134.1403,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./pyLTESimulator.py</vh></v>
+<v t="michael.20120322193448.2263"><vh>@thin ./setup.py</vh></v>
+<v t="michael.20120322193448.2267"><vh>build bat on Windows</vh></v>
+<v t="michael.20120322193448.2264"><vh>cx_freeze config</vh>
+<v t="michael.20120322193448.2338"><vh>project_config</vh></v>
+</v>
+<v t="michael.20120322193448.2343"><vh>source</vh>
+<v t="Michael.20120315095133.1439"></v>
+<v t="Michael.20120321090100.1527"></v>
+<v t="Michael.20120320091224.1506"></v>
+<v t="michael.20120305092148.1318"></v>
+<v t="Michael.20120314113327.1413"></v>
 </v>
 </v>
 </v>
@@ -2502,7 +2502,6 @@ if test_enabling_bits &amp; (1&lt;&lt;10):
 if test_enabling_bits &amp; (1&lt;&lt;11):
     test_channel_estimation_using_PSS()
 
-
 </t>
 <t tx="michael.20120305092148.1320">def PSS_corr_in_freq_domain_before_OFDM_gen(to_draw=True):
     
@@ -2632,76 +2631,6 @@ if test_enabling_bits &amp; (1&lt;&lt;11):
         plt.show()
         #plt.savefig('PSS_signal_Uu_for_N_ID_2=%s.png'%N_ID_2, dpi=300)
 </t>
-<t tx="michael.20120305092148.1324">def PSS_received_IQ_convolve(to_draw=True):
-    
-    pss_iq_sig_list = [0]*3
-    pss_baseband_IQ_list = [0] * 3
-    
-    for N_ID_2 in N_ID_2_tuple:
-        
-        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
-        pss_baseband_IQ_list[N_ID_2] = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-        pss_uu_sig = downlink_modulate(pss_baseband_IQ_list[N_ID_2], t, f_0)
-        pss_iq_sig_list[N_ID_2] = downlink_downconvert(pss_uu_sig, t, f_0)[-1*N:]
-    
-    sig_sample_num = N
-    cs_corr = array([0]*sig_sample_num)
-    cs_list = arange(-1*(sig_sample_num/2), sig_sample_num/2, 1)
-    #print cs_corr.shape, cs_list.shape
-    plt.cla()
-    legend_list = list()
-    y_offsets = dict()
-    y_offsets[(0,0)] = -10
-    y_offsets[(0,1)] = 10
-    y_offsets[(0,2)] = 20
-    y_offsets[(1,1)] = -10
-    y_offsets[(1,2)] = 10
-    y_offsets[(2,2)] = -30
-    for p in N_ID_2_tuple:
-        for q in N_ID_2_tuple:
-            if p&lt;=q:
-                for i in arange(len(cs_list)):
-                    cs_corr[i] = abs(sum(convolve(pss_baseband_IQ_list[p], roll(pss_iq_sig_list[q],cs_list[i]))[0]))
-                plt.plot(cs_list, cs_corr, marker='+', linestyle='-')
-                legend_list.append( 'N_ID_2 %s vs. %s'%(p,q) )
-                # add anotation to the max
-                x, y = find_max(cs_corr)
-                plt.annotate('Max of N_ID_2 %svs%s =%s @ cs=%s'%(p,q,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(40, y_offsets[(p,q)]))
-                
-    plt.title('PSS received IQ correlation')
-    plt.xlabel('Cyclic Shift')
-    plt.ylabel('Correlation value')
-    plt.legend(legend_list)
-    plt.show()
-    #plt.savefig('PSS_Uu_signal_inner_products.png', figsize=(1280,800), dpi=200, pad_inches=2)
-</t>
-<t tx="michael.20120305092148.1325">def PSS_received_IQ_decimated_16():
-    
-    for N_ID_2 in N_ID_2_tuple:
-        
-        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
-        pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-        pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
-        length = len(pss_uu_sig)/16
-        pss_uu_sig_dec = array([0]*length)
-        for i in arange(len(pss_uu_sig_dec)):
-            pss_uu_sig_dec[i] = pss_uu_sig[i*16]
-        t_ = arange(0, length*16*T_s, 16*T_s)
-        #print len(t), len(pss_uu_sig_dec)
-        
-        #plt.plot(t, symbol_array)
-        plt.cla()
-        legend_list = list()
-        plt.plot(t_, pss_uu_sig_dec)
-        legend_list.append( 'N_ID_2=%s'%(N_ID_2) )
-        plt.title('PSS downconverted Uu signal decimated to 1/16 for N_ID_2=%s'%N_ID_2)
-        plt.xlabel('Time (ms)')
-        plt.ylabel('Signal level')
-        plt.legend(legend_list)
-        plt.axis( [-0.01, 0.075, -11, 7] )
-        plt.show()
-        #plt.savefig('PSS_signal_Uu_decimated64_for_N_ID_2=%s.png'%N_ID_2, dpi=300)
-</t>
 <t tx="michael.20120305092148.1326">def PSS_Uu_signal_downconverted_decimated_1_16_correlation(to_draw=True):
     
     pss_Uu_signal_downconverted_list = [0]*3
@@ -2763,146 +2692,6 @@ if test_enabling_bits &amp; (1&lt;&lt;11):
         plt.show()
     
     return corr_dict
-</t>
-<t tx="michael.20120305092148.1327">def PSS_received_IQ_FFT():
-    
-    func_tuple = (abs, real, imag)
-    legend_tuple = ('Absolute', 'Real part', 'Image part')
-    
-    
-    for N_ID_2 in N_ID_2_tuple:
-        
-        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
-        pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-        pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
-        pss_uu_sig_down = downlink_downconvert(pss_uu_sig, t, f_0)
-        pss_uu_sig_down_no_cp = pss_uu_sig_down[-1*N:]
-        pss_uu_fft = fft.fft( pss_uu_sig_down_no_cp, N )
-        
-        for i in (0,1,2):
-            plt.subplot(131+i)
-            if i==1:
-                plt.title('PSS received IQ FFT for N_ID_2=%s'%N_ID_2)
-            legend_list = list()
-            plt.plot(func_tuple[i](pss_uu_fft))
-            legend_list.append( legend_tuple[i] )
-            plt.xlabel('N')
-            #plt.ylabel('Spectrum absolute value')
-            plt.legend(legend_list)
-            #plt.axis( [-0.01, 0.075, -0.1, 14] )
-        plt.show()
-            #plt.savefig('PSS_signal_Uu_for_N_ID_2=%s.png'%N_ID_2, dpi=300)
-</t>
-<t tx="michael.20120305092148.1328">def PSS_received_IQ_FFT_N_correlation():
-    
-    pss_baseband_IQ_fft_list = [0] * 3
-    pss_received_IQ_fft_list = [0]*3
-    pss_received_IQ_list = [0] * 3
-    for N_ID_2 in N_ID_2_tuple:
-        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
-        pss_baseband_IQ = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-        pss_baseband_IQ_fft_list[N_ID_2] = fft.fft(pss_baseband_IQ, N)
-        pss_uu_sig = downlink_modulate(pss_baseband_IQ, t, f_0)
-        pss_received_IQ_list[N_ID_2] = downlink_downconvert(pss_uu_sig, t, f_0)[-1*N:]
-        #pss_received_IQ_fft_list[N_ID_2] = fft.fft( pss_received_IQ, N )
-    
-    
-    legend_list = list()
-    cs_corr = array([0]*N)
-    cs_list = arange(-1*(N/2), N/2, 1)
-    y_offsets = dict()
-    y_offsets[(0,0)] = 0
-    y_offsets[(0,1)] = 10
-    y_offsets[(0,2)] = 20
-    y_offsets[(1,1)] = -40
-    y_offsets[(1,2)] = 20
-    y_offsets[(2,2)] = -50
-    #print cs_corr.shape, cs_list.shape
-    for p in N_ID_2_tuple:
-        for q in N_ID_2_tuple:
-            if p&lt;=q:
-                for i in arange(len(cs_list)):
-                    cs_corr[i] = abs(correlate(pss_baseband_IQ_fft_list[p],fft.fft(roll(pss_received_IQ_list[q],cs_list[i])))[0])
-                plt.plot(cs_list, cs_corr, marker='+', linestyle='-')
-                legend_list.append( 'N_ID_2 %s vs. %s'%(p,q) )
-                # add anotation to the max
-                x, y = find_max(cs_corr)
-                plt.annotate('Max of N_ID_2 %svs%s =%s @ cs=%s'%(p,q,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(60, y_offsets[(p,q)]))
-    
-    plt.title('PSS Uu signal FFT correlation')
-    plt.legend(legend_list)
-    plt.xlabel("Cyclic Shift")
-    plt.ylabel("Correlation")
-    plt.show()
-</t>
-<t tx="michael.20120305092148.1329">def PSS_Uu_signal_FFT_N_16_correlation():
-    
-    N_16 = N/16
-    
-    pss_uu_signal_fft_list = [0]*3
-    t = arange(0, (N_CP_l+N)*T_s, T_s)
-    for N_ID_2 in N_ID_2_tuple:
-        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
-        pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-        pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
-        pss_uu_sig_no_cp = pss_uu_sig[-1*N:]
-        pss_uu_sig_no_cp_dec = array( [0]*N_16 )
-        for i in range(N_16):
-            pss_uu_sig_no_cp_dec[i] = pss_uu_sig_no_cp[i*16]
-        pss_uu_signal_fft_list[N_ID_2] = fft.fft( pss_uu_sig_no_cp_dec, N_16 )
-    
-    
-    legend_list = list()
-    cs_corr = array([0]*N_16)
-    cs_list = arange(-1*(N_16/2), N_16/2, 1)
-    y_offsets = dict()
-    y_offsets[(0,0)] = 0
-    y_offsets[(0,1)] = 10
-    y_offsets[(0,2)] = 20
-    y_offsets[(1,1)] = 0
-    y_offsets[(1,2)] = 20
-    y_offsets[(2,2)] = -10
-    #print cs_corr.shape, cs_list.shape
-    for p in N_ID_2_tuple:
-        for q in N_ID_2_tuple:
-            if p&lt;=q:
-                for i in arange(len(cs_list)):
-                    cs_corr[i] = abs(correlate(pss_uu_signal_fft_list[p],roll(pss_uu_signal_fft_list[q],cs_list[i]))[0])
-                plt.plot(cs_list, cs_corr, marker='+', linestyle='-')
-                legend_list.append( 'N_ID_2 %s vs. %s'%(p,q) )
-                # add anotation to the max
-                x, y = find_max(cs_corr)
-                plt.annotate('Max of N_ID_2 %svs%s =%s @ cs=%s'%(p,q,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(60, y_offsets[(p,q)]))
-    
-    plt.title('PSS Uu signal decimated to 1/16 FFT correlation')
-    plt.legend(legend_list)
-    plt.xlabel("Cyclic Shift")
-    plt.ylabel("Correlation")
-    plt.show()
-</t>
-<t tx="michael.20120305092148.1330">def test(to_draw=True):
-    
-    subplot_pos_tuple = (221,222,223)
-    
-    for N_ID_2 in N_ID_2_tuple:
-        
-        plt.subplot(subplot_pos_tuple[N_ID_2])
-        legend_list = list()
-        all_subcarrier_array = array([0] * (N_DL_RB * N_RB_sc+1))
-        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
-        all_subcarrier_array[:N_DL_RB*N_RB_sc/2]
-        pss_baseband_IQ = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)[-1*N:]
-        pss_baseband_IQ_fft = fft.fft(pss_baseband_IQ, N)
-        plt.title('PSS baseband IQ spectrum for N_ID_2=%s'%N_ID_2)
-        legend_list.append( 'Spectrum magnitude' )
-        plt.plot(abs(pss_baseband_IQ_fft), linestyle='-')
-        #legend_list.append( 'Spectrum phase' )
-        #plt.plot(abs(pss_freq_symbol_array), linestyle='-')
-        plt.xlabel('n (FFT index)')
-        plt.ylabel('Spectrum magnitude')
-        plt.legend(legend_list)
-    plt.show()
-        #plt.savefig('PSS_spectrum_before_OFDM_gen_for_N_ID_2=%s.png'%N_ID_2)
 </t>
 <t tx="michael.20120305092148.1331">from numpy import *
 import matplotlib.pyplot as plt
@@ -3013,274 +2802,6 @@ def fir_low_pass(nyq, cutoff):
 
 fir_low_pass(20*1000*1000, 10*1000*1000)
 </t>
-<t tx="michael.20120309091906.1379">def PSS_Uu_signal_FFT_after_10MHzlowpass_filter():
-    
-    func_tuple = (abs, real, imag)
-    legend_tuple = ('Absolute', 'Real part', 'Image part')
-    
-    cutoff_freq = 10*1000*1000
-    nyq = 20*1000*1000
-    lp_fir = firwin(80, cutoff_freq, window=('kaiser',8), nyq=20*1000*1000)
-    
-    
-    for N_ID_2 in N_ID_2_tuple:
-        
-        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
-        pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-        pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
-        pss_uu_sig_no_cp = pss_uu_sig[-1*N:]
-        # apply an low pass FIR filter
-        pss_uu_sig_no_cp_after_lp = convolve(pss_uu_sig_no_cp, lp_fir)
-        pss_uu_fft = fft.fft( pss_uu_sig_no_cp_after_lp, N )
-        
-        for i in (0,1,2):
-            plt.subplot(131+i)
-            if i==1:
-                plt.title('PSS signal Uu FFT after 10MHZ low-pass filter for N_ID_2=%s'%N_ID_2)
-            legend_list = list()
-            plt.plot(func_tuple[i](pss_uu_fft))
-            legend_list.append( legend_tuple[i] )
-            plt.xlabel('N')
-            #plt.ylabel('Spectrum absolute value')
-            plt.legend(legend_list)
-            #plt.axis( [-0.01, 0.075, -0.1, 14] )
-        plt.show()
-            #plt.savefig('PSS_signal_Uu_for_N_ID_2=%s.png'%N_ID_2, dpi=300)
-</t>
-<t tx="michael.20120309091906.1380">def PSS_Uu_signal_FFT_after_10MHzlowpass_N_correlation():
-    
-    cutoff_freq = 10*1000*1000
-    nyq = 20*1000*1000
-    lp_fir = firwin(80, cutoff_freq, window=('kaiser',8), nyq=20*1000*1000)
-    
-    pss_uu_signal_fft_list = [0]*3
-
-    for N_ID_2 in N_ID_2_tuple:
-        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
-        pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-        pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
-        pss_uu_sig_no_cp = pss_uu_sig[-1*N:]
-        # apply an low pass FIR filter
-        pss_uu_sig_no_cp_after_lp = convolve(pss_uu_sig_no_cp, lp_fir)
-        pss_uu_signal_fft_list[N_ID_2] = fft.fft( pss_uu_sig_no_cp_after_lp, N )
-    
-    
-    legend_list = list()
-    
-    cs_list = arange(-1*(N/2), N/2, 1)
-    y_offsets = dict()
-    y_offsets[(0,0)] = 0
-    y_offsets[(0,1)] = 10
-    y_offsets[(0,2)] = 20
-    y_offsets[(1,1)] = -40
-    y_offsets[(1,2)] = 20
-    y_offsets[(2,2)] = -60
-    #corr_dict = dict()
-    #print cs_corr.shape, cs_list.shape
-    for p in N_ID_2_tuple:
-        for q in N_ID_2_tuple:
-            if p&lt;=q:
-                cs_corr = array([0]*N)
-                for i in arange(len(cs_list)):
-                    cs_corr[i] = abs(correlate(pss_uu_signal_fft_list[p],roll(pss_uu_signal_fft_list[q],cs_list[i]))[0])
-                #corr_dict[(p,q)] = cs_corr
-                plt.plot(cs_list, cs_corr, marker='+', linestyle='-')
-                legend_list.append( 'N_ID_2 %s vs. %s'%(p,q) )
-                # add anotation to the max
-                x, y = find_max(cs_corr)
-                plt.annotate('Max of N_ID_2 %svs%s =%s @ cs=%s'%(p,q,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(60, y_offsets[(p,q)]))
-    
-    plt.title('PSS Uu signal FFT after 10MHz low-pass filter correlation')
-    plt.legend(legend_list)
-    plt.xlabel("Cyclic Shift")
-    plt.ylabel("Correlation")
-    plt.show()
-</t>
-<t tx="michael.20120309091906.1381">def PSS_Uu_signal_FFT_after_10MHzlowpass_N_16_correlation():
-    
-    cutoff_freq = 10*1000*1000
-    nyq = 20*1000*1000
-    lp_fir = firwin(80, cutoff_freq, window=('kaiser',8), nyq=20*1000*1000)
-    
-    N_16 = N/16
-    
-    pss_uu_signal_fft_list = [0]*3
-
-    for N_ID_2 in N_ID_2_tuple:
-        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
-        pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-        pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
-        pss_uu_sig_no_cp = pss_uu_sig[-1*N:]
-        pss_uu_sig_no_cp_lp = convolve(pss_uu_sig_no_cp, lp_fir)
-        pss_uu_sig_no_cp_dec = array( [0]*N_16 )
-        for i in range(N_16):
-            pss_uu_sig_no_cp_dec[i] = pss_uu_sig_no_cp_lp[i*16]
-        pss_uu_signal_fft_list[N_ID_2] = fft.fft( pss_uu_sig_no_cp_dec, N_16 )
-    
-    
-    legend_list = list()
-    cs_corr = array([0]*N_16)
-    cs_list = arange(-1*(N_16/2), N_16/2, 1)
-    y_offsets = dict()
-    y_offsets[(0,0)] = 0
-    y_offsets[(0,1)] = 10
-    y_offsets[(0,2)] = 20
-    y_offsets[(1,1)] = 0
-    y_offsets[(1,2)] = 20
-    y_offsets[(2,2)] = -10
-    #print cs_corr.shape, cs_list.shape
-    for p in N_ID_2_tuple:
-        for q in N_ID_2_tuple:
-            if p&lt;=q:
-                for i in arange(len(cs_list)):
-                    cs_corr[i] = abs(correlate(pss_uu_signal_fft_list[p],roll(pss_uu_signal_fft_list[q],cs_list[i]))[0])
-                plt.plot(cs_list, cs_corr, marker='+', linestyle='-')
-                legend_list.append( 'N_ID_2 %s vs. %s'%(p,q) )
-                # add anotation to the max
-                x, y = find_max(cs_corr)
-                plt.annotate('Max of N_ID_2 %svs%s =%s @ cs=%s'%(p,q,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(60, y_offsets[(p,q)]))
-    
-    plt.title('PSS Uu signal after 10MHz low-pass filter then decimated to 1/16 FFT correlation')
-    plt.legend(legend_list)
-    plt.xlabel("Cyclic Shift")
-    plt.ylabel("Correlation")
-    plt.show()
-</t>
-<t tx="michael.20120309091906.1382">def PSS_Uu_signal_FFT_after_540KHzlowpass_filter():
-    
-    func_tuple = (abs, real, imag)
-    legend_tuple = ('Absolute', 'Real part', 'Image part')
-    
-    cutoff_freq = 540*1000
-    nyq = 20*1000*1000
-    lp_fir = firwin(80, cutoff_freq, window=('kaiser',8), nyq=nyq)
-    
-    
-    for N_ID_2 in N_ID_2_tuple:
-        
-        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
-        pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-        pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
-        pss_uu_sig_no_cp = pss_uu_sig[-1*N:]
-        
-        # apply an low pass FIR filter
-        pss_uu_sig_no_cp_after_lp = convolve(pss_uu_sig_no_cp, lp_fir)
-        pss_uu_fft = fft.fft( pss_uu_sig_no_cp_after_lp, N )
-        
-        for i in (0,1,2):
-            plt.subplot(131+i)
-            if i==1:
-                plt.title('PSS signal Uu FFT after 540KHZ low-pass filter for N_ID_2=%s'%N_ID_2)
-            legend_list = list()
-            plt.plot(func_tuple[i](pss_uu_fft))
-            legend_list.append( legend_tuple[i] )
-            plt.xlabel('N')
-            #plt.ylabel('Spectrum absolute value')
-            plt.legend(legend_list)
-            #plt.axis( [-0.01, 0.075, -0.1, 14] )
-        plt.show()
-            #plt.savefig('PSS_signal_Uu_for_N_ID_2=%s.png'%N_ID_2, dpi=300)
-</t>
-<t tx="michael.20120309091906.1384">def PSS_Uu_signal_FFT_after_540KHzlowpass_N_correlation():
-    
-    cutoff_freq = 540*1000
-    nyq = 20*1000*1000
-    lp_fir = firwin(80, cutoff_freq, window=('kaiser',8), nyq=nyq)
-    
-    
-    pss_uu_signal_fft_list = [0]*3
-
-    for N_ID_2 in N_ID_2_tuple:
-        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
-        pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-        pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
-        pss_uu_sig_no_cp = pss_uu_sig[-1*N:]
-        # apply an low pass FIR filter
-        pss_uu_sig_no_cp_after_lp = convolve(pss_uu_sig_no_cp, lp_fir)
-        pss_uu_signal_fft_list[N_ID_2] = fft.fft( pss_uu_sig_no_cp_after_lp, N )
-    
-    
-    legend_list = list()
-    
-    cs_list = arange(-1*(N/2), N/2, 1)
-    y_offsets = dict()
-    y_offsets[(0,0)] = 0
-    y_offsets[(0,1)] = -10
-    y_offsets[(0,2)] = -20
-    y_offsets[(1,1)] = -40
-    y_offsets[(1,2)] = 20
-    y_offsets[(2,2)] = -60
-    #corr_dict = dict()
-    #print cs_corr.shape, cs_list.shape
-    for p in N_ID_2_tuple:
-        for q in N_ID_2_tuple:
-            if p&lt;=q:
-                cs_corr = array([0]*N)
-                for i in arange(len(cs_list)):
-                    cs_corr[i] = abs(correlate(pss_uu_signal_fft_list[p],roll(pss_uu_signal_fft_list[q],cs_list[i]))[0])
-                #corr_dict[(p,q)] = cs_corr
-                plt.plot(cs_list, cs_corr, marker='+', linestyle='-')
-                legend_list.append( 'N_ID_2 %s vs. %s'%(p,q) )
-                # add anotation to the max
-                x, y = find_max(cs_corr)
-                plt.annotate('Max of N_ID_2 %svs%s =%s @ cs=%s'%(p,q,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(60, y_offsets[(p,q)]))
-    
-    plt.title('PSS Uu signal FFT after 540KHz low-pass filter correlation')
-    plt.legend(legend_list)
-    plt.xlabel("Cyclic Shift")
-    plt.ylabel("Correlation")
-    plt.show()
-</t>
-<t tx="michael.20120309091906.1386">def PSS_Uu_signal_FFT_after_540KHzlowpass_N_16_correlation():
-    
-    cutoff_freq = 540*1000
-    nyq = 20*1000*1000
-    lp_fir = firwin(80, cutoff_freq, window=('kaiser',8), nyq=20*1000*1000)
-    
-    N_16 = N/16
-    
-    pss_uu_signal_fft_list = [0]*3
-
-    for N_ID_2 in N_ID_2_tuple:
-        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
-        pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-        pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
-        pss_uu_sig_no_cp = pss_uu_sig[-1*N:]
-        pss_uu_sig_no_cp_lp = convolve(pss_uu_sig_no_cp, lp_fir)
-        pss_uu_sig_no_cp_dec = array( [0]*N_16 )
-        for i in range(N_16):
-            pss_uu_sig_no_cp_dec[i] = pss_uu_sig_no_cp_lp[i*16]
-        pss_uu_signal_fft_list[N_ID_2] = fft.fft( pss_uu_sig_no_cp_dec, N_16 )
-    
-    
-    legend_list = list()
-    cs_corr = array([0]*N_16)
-    cs_list = arange(-1*(N_16/2), N_16/2, 1)
-    y_offsets = dict()
-    y_offsets[(0,0)] = 0
-    y_offsets[(0,1)] = 10
-    y_offsets[(0,2)] = 20
-    y_offsets[(1,1)] = 0
-    y_offsets[(1,2)] = 20
-    y_offsets[(2,2)] = -10
-    #print cs_corr.shape, cs_list.shape
-    for p in N_ID_2_tuple:
-        for q in N_ID_2_tuple:
-            if p&lt;=q:
-                for i in arange(len(cs_list)):
-                    cs_corr[i] = abs(correlate(pss_uu_signal_fft_list[p],roll(pss_uu_signal_fft_list[q],cs_list[i]))[0])
-                plt.plot(cs_list, cs_corr, marker='+', linestyle='-')
-                legend_list.append( 'N_ID_2 %s vs. %s'%(p,q) )
-                # add anotation to the max
-                x, y = find_max(cs_corr)
-                plt.annotate('Max of N_ID_2 %svs%s =%s @ cs=%s'%(p,q,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(60, y_offsets[(p,q)]))
-    
-    plt.title('PSS Uu signal after 540KHz low-pass filter then decimated to 1/16 FFT correlation')
-    plt.legend(legend_list)
-    plt.xlabel("Cyclic Shift")
-    plt.ylabel("Correlation")
-    plt.show()
-</t>
 <t tx="michael.20120309091906.1387">def PSS_signal_Uu_downconversion():
     
     
@@ -3357,7 +2878,6 @@ fir_low_pass(20*1000*1000, 10*1000*1000)
     plt.show()
         #plt.savefig('PSS_spectrum_before_OFDM_gen_for_N_ID_2=%s.png'%N_ID_2)
 </t>
-<t tx="michael.20120312091134.1398"></t>
 <t tx="michael.20120312091134.1399">def PSS_baseband_IQ_spectrum_correlation(to_draw=True):
     
     pss_iq_sig_list = [0]*3
@@ -3418,48 +2938,6 @@ fir_low_pass(20*1000*1000, 10*1000*1000)
     return corr_dict
     #plt.savefig('PSS_Uu_signal_inner_products.png', figsize=(1280,800), dpi=200, pad_inches=2)
 
-</t>
-<t tx="michael.20120312091134.1400">def PSS_received_IQ_time_domain_correlation(to_draw=True):
-    
-    pss_received_IQ_list = [0]*3
-    pss_baseband_IQ_list = [0] * 3
-    
-    for N_ID_2 in N_ID_2_tuple:
-        
-        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
-        pss_baseband_IQ = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-        pss_baseband_IQ_list[N_ID_2] = pss_baseband_IQ[-1*N:]
-        pss_uu_sig = downlink_modulate(pss_baseband_IQ, t, f_0)
-        pss_received_IQ_list[N_ID_2] = downlink_downconvert(pss_uu_sig, t, f_0)[-1*N:]
-    
-    cs_corr = array([0]*N)
-    cs_list = arange(-1*(N/2), N/2, 1)
-    #print cs_corr.shape, cs_list.shape
-    legend_list = list()
-    y_offsets = dict()
-    y_offsets[(0,0)] = -10
-    y_offsets[(0,1)] = 10
-    y_offsets[(0,2)] = 20
-    y_offsets[(1,1)] = -10
-    y_offsets[(1,2)] = 10
-    y_offsets[(2,2)] = -30
-    for p in N_ID_2_tuple:
-        for q in N_ID_2_tuple:
-            if p&lt;=q:
-                for i in arange(len(cs_list)):
-                    cs_corr[i] = abs(correlate(pss_baseband_IQ_list[p], roll(pss_received_IQ_list[q],cs_list[i]))[0])
-                plt.plot(cs_list, cs_corr, marker='+', linestyle='-')
-                legend_list.append( 'N_ID_2 %s vs. %s'%(p,q) )
-                # add anotation to the max
-                x, y = find_max(cs_corr)
-                plt.annotate('Max of N_ID_2 %svs%s =%s @ cs=%s'%(p,q,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(40, y_offsets[(p,q)]))
-                
-    plt.title('PSS received IQ correlation')
-    plt.xlabel('Cyclic Shift')
-    plt.ylabel('Correlation value')
-    plt.legend(legend_list)
-    plt.show()
-    #plt.savefig('PSS_Uu_signal_inner_products.png', figsize=(1280,800), dpi=200, pad_inches=2)
 </t>
 <t tx="michael.20120312091134.1401">def PSS_Uu_signal_downconverted_correlation():
     for correlation_type in ('IQ', 'I+Q', 'I', 'Q'):
@@ -4050,5 +3528,54 @@ def test_SSS_detect_in_baseband_IQ():
 project_name = 'pyLTESimulator'
 project_owner = "Author: Ling Duo, Email: duo.ling.cn@gmail.com"
 project_weblink = "http://code.google.com/p/pyltesimulator/"</t>
+<t tx="michael.20120322193448.2259"></t>
+<t tx="michael.20120322193448.2264">from cx_Freeze import setup, Executable
+import sys
+
+@others
+
+EXCUTABLE_FILES = ( #"./Simulation/PCFICH/pcfich_gen_detect.py",
+                                #"./Simulation/CSRS/csrs_gen_channel_estimation.py",
+                                #"./Simulation/PBCH/pbch_gen_detect.py",
+                                #"./Simulation/PSS/PSS_gen_detect.py",
+                                #"./Simulation/SSS/sss_gen_detect.py"
+                                "pyLTESimulator.py",
+    )
+INCLUDES = ['matplotlib', 'matplotlib.backends', 'matplotlib.backends.backend_qt4agg']
+# Dependencies are automatically detected, but it might need fine tuning.
+build_exe_options = {"packages": ["os"], "excludes": ["tkinter"], "include_files": [], "optimize":2, "includes":INCLUDES}
+bdist_msi_options = {}
+# GUI applications require a different base on Windows (the default is for a
+# console application).
+base = None
+if sys.platform == "win32":
+    base = "Win32GUI"
+
+#include-files = ( "config.txt" ,)
+for script_name in EXCUTABLE_FILES:
+    setup(
+        name = "pyLTESimulator",
+        version = project_version,
+        description = "LTE PHY Simulator written in Python",
+        options = {"build_exe": build_exe_options},
+        executables = [Executable(script_name, base=base)]
+        )
+
+# setup(
+	# name = "pyLTEVisualizer",
+	# version = "1.0",
+	# description = "LTE PHY Uu Visualizer written in Python",
+	# options = {"bdist_msi": bdist_msi_options},
+	# executables = [Executable("pyLTEVisualizer.py", base=base)]
+	# )
+</t>
+<t tx="michael.20120322193448.2267">setup.py build
+
+</t>
+<t tx="michael.20120322193448.2338">project_version = '1.0.0'
+project_name = 'pyLTEVisualizer'
+project_owner = "Author: Ling Duo, Email: duo.ling.cn@gmail.com"
+project_weblink = "http://code.google.com/p/pyltevisualizer/"</t>
+<t tx="michael.20120322193448.2343">@others</t>
 </tnodes>
 </leo_file>
