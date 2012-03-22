@@ -1,7 +1,7 @@
 #@+leo-ver=5-thin
 #@+node:Michael.20120315095133.1440: * @thin ./Simulation/CSRS/csrs_gen_channel_estimation.py
 #@+others
-#@+node:Michael.20120315095133.1439: ** source
+#@+node:Michael.20120315095133.1439: ** CSRS source
 
 from scipy.signal import *
 from numpy import *

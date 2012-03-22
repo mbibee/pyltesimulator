@@ -1,7 +1,7 @@
 #@+leo-ver=5-thin
 #@+node:Michael.20120321090100.1528: * @thin ./Simulation/PBCH/pbch_gen_detect.py
 #@+others
-#@+node:Michael.20120321090100.1527: ** source
+#@+node:Michael.20120321090100.1527: ** PBCH source
 from scipy.signal import *
 from numpy import *
 import matplotlib.pyplot as plt

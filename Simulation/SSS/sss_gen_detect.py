@@ -1,7 +1,7 @@
 #@+leo-ver=5-thin
 #@+node:Michael.20120314113327.1414: * @thin ./Simulation/SSS/sss_gen_detect.py
 #@+others
-#@+node:Michael.20120314113327.1413: ** source
+#@+node:Michael.20120314113327.1413: ** SSS source
 
 from scipy.signal import *
 from numpy import *
