@@ -222,13 +222,15 @@ cProfile.runctx('main()', globals(), locals())
 #@+node:michael.20120305092148.1279: *3* 6.10.1.2 Mapping to REs
 def get_CSRS_REs_in_slot(n_s, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb):
     '''
-    get_CSRS_REs_in_slot(n_s, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb): tuple of CSRS REs in the specified symbol of RB.
-    n_s: slot index
-    antenna_port: antenna port for CSRS
-    N_cell_ID: cell ID
-    N_maxDL_RB: 110 for 20MHz configured by higher layer
-    N_DL_RB: PHY number of downlink RB
-    N_DL_symb: maximum 110 for 20MHz
+    input:
+        n_s: slot index
+        antenna_port: antenna port for CSRS
+        N_cell_ID: cell ID
+        N_maxDL_RB: 110 for 20MHz configured by higher layer
+        N_DL_RB: PHY number of downlink RB
+        N_DL_symb: maximum 110 for 20MHz
+    output:
+        a tuple of all CSRS REs for the given antenna port in the given slot
     
     profile:
 def main():

@@ -13,18 +13,21 @@
 <v t="michael.20120223085633.1280" a="E"><vh>lte-phy-channel-on-air</vh>
 <v t="michael.20120322193448.2179"><vh>project_config</vh></v>
 <v t="michael.20120305092148.1276"><vh>3GPP</vh>
-<v t="michael.20120305092148.1277"><vh>36.211</vh>
+<v t="michael.20120305092148.1277" a="E"><vh>36.211</vh>
 <v t="michael.20120305092148.1295" a="E"><vh>6 Downlink</vh>
 <v t="michael.20120305092148.1304"><vh>5.07.2 Preamble seq gen</vh></v>
 <v t="michael.20120305092148.1278"><vh>6.02.4 REGs</vh>
-<v t="Michael.20120320091224.1504"><vh>more helper not explicitly in protocol</vh></v>
+<v t="michael.20120323224953.1793"><vh>get_RE_number_in_REG</vh></v>
+<v t="Michael.20120320091224.1504"><vh>get_REG_from_kl</vh></v>
+<v t="michael.20120323224953.1794"><vh>get_REG_number_in_symbol</vh></v>
+<v t="michael.20120323224953.1795"><vh>get_REG_in_symbol</vh></v>
 </v>
-<v t="Michael.20120319125504.1471"><vh>6.03.3 Layer mapping</vh>
+<v t="Michael.20120319125504.1471" a="E"><vh>6.03.3 Layer mapping</vh>
 <v t="Michael.20120319125504.1472"><vh>6.3.3.1 Layer mapping for transmission on a single antenna port</vh></v>
 <v t="Michael.20120319125504.1473"><vh>6.3.3.2 Layer mapping for spatial multiplexing</vh></v>
 <v t="Michael.20120319125504.1475"><vh>6.3.3.3 Layer mapping for transmit diversity</vh></v>
 </v>
-<v t="Michael.20120319125504.1476"><vh>6.03.4 Precoding</vh>
+<v t="Michael.20120319125504.1476" a="E"><vh>6.03.4 Precoding</vh>
 <v t="Michael.20120319125504.1477"><vh>6.3.4.1 Precoding for transmission on a single antenna port</vh></v>
 <v t="Michael.20120319125504.1478" a="E"><vh>6.3.4.2 Precoding for spatial multiplexing using antenna ports with CSRS</vh>
 <v t="Michael.20120319125504.1479"><vh>6.3.4.2.1 Precoding without CDD</vh></v>
@@ -38,13 +41,17 @@
 <v t="Michael.20120321090100.1524"><vh>6.6.3 Layer mapping and precoding</vh></v>
 <v t="Michael.20120321090100.1525"><vh>6.6.4 Mapping to resource elements</vh></v>
 </v>
-<v t="Michael.20120319125504.1463"><vh>6.07 PCFICH</vh>
+<v t="Michael.20120319125504.1463" a="E"><vh>6.07 PCFICH</vh>
 <v t="Michael.20120319125504.1464"><vh>6.7.1 Scrambing</vh></v>
 <v t="Michael.20120319125504.1465"><vh>6.7.2 Modulation</vh></v>
 <v t="Michael.20120319125504.1474"><vh>6.7.3 Layer mapping and precoding</vh></v>
 <v t="Michael.20120320091224.1503"><vh>6.7.4 Mapping to resource elements</vh></v>
 </v>
-<v t="michael.20120305092148.1290"><vh>6.09 PHICH</vh></v>
+<v t="michael.20120305092148.1290" a="E"><vh>6.09 PHICH</vh>
+<v t="Michael.20120323090727.1968"><vh>6.9.1 Modulation</vh></v>
+<v t="michael.20120323224953.1378"><vh>6.9.2 Resource group alignment, layer mapping and precoding</vh></v>
+<v t="michael.20120323224953.1379"><vh>6.9.3 Mapping to resource elements</vh></v>
+</v>
 <v t="michael.20120305092148.1280"><vh>6.10 RS</vh>
 <v t="michael.20120305092148.1281" a="E"><vh>6.10.1 CSRS</vh>
 <v t="michael.20120305092148.1285"><vh>6.10.1.1 Seq gen</vh></v>
@@ -85,6 +92,7 @@
 <v t="Michael.20120321090100.1536"><vh>5.3.1.3 Rate matching</vh></v>
 </v>
 <v t="Michael.20120320091224.1510"><vh>5.3.4 Control format indicator</vh></v>
+<v t="michael.20120323224953.1796"><vh>5.3.5 HARQ indicator (HI)</vh></v>
 </v>
 </v>
 <v t="michael.20120305092148.1315"><vh>Gegeral math</vh>
@@ -93,6 +101,15 @@
 <v t="Michael.20120319125504.1481"><vh>Error handling</vh></v>
 </v>
 <v t="michael.20120305092148.1306" a="E"><vh>Simulations</vh>
+<v t="michael.20120323224953.1797" a="E"><vh>PHICH gen &amp; detect</vh>
+<v t="michael.20120323224953.1798" a="E"><vh>source</vh>
+<v t="michael.20120323224953.1800"><vh>01. PHICH symbol array in one OFDM symbol</vh></v>
+<v t="michael.20120323224953.1801"><vh>02. PHICH Uu signal</vh></v>
+<v t="michael.20120305092148.1276"></v>
+</v>
+<v t="michael.20120323224953.1799"
+expanded="michael.20120323224953.1798,michael.20120305092148.1277,michael.20120305092148.1295,Michael.20120319125504.1471,Michael.20120319125504.1476,Michael.20120319125504.1478,Michael.20120319125504.1463,michael.20120305092148.1290,michael.20120305092148.1281,michael.20120305092148.1302,michael.20120312091134.1403,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./Simulation/PHICH/phich_gen_detect.py</vh></v>
+</v>
 <v t="Michael.20120315095133.1438"><vh>CSRS gen &amp; channel estimation</vh>
 <v t="Michael.20120315095133.1440"><vh>@thin ./Simulation/CSRS/csrs_gen_channel_estimation.py</vh></v>
 <v t="Michael.20120315095133.1439"><vh>CSRS source</vh>
@@ -121,28 +138,28 @@
 </v>
 <v t="michael.20120315195140.1454"><vh>@thin ./Simulation/OFDM_basic/ofdm_basic.py</vh></v>
 </v>
-<v t="Michael.20120321090100.1526"><vh>PBCH gen &amp; detect</vh>
+<v t="Michael.20120321090100.1526" a="E"><vh>PBCH gen &amp; detect</vh>
 <v t="Michael.20120321090100.1528"
-expanded="michael.20120305092148.1295,Michael.20120319125504.1478,michael.20120305092148.1281,michael.20120305092148.1302,michael.20120312091134.1403,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./Simulation/PBCH/pbch_gen_detect.py</vh></v>
-<v t="Michael.20120321090100.1527"><vh>PBCH source</vh>
+expanded="Michael.20120321090100.1527,michael.20120305092148.1277,michael.20120305092148.1295,Michael.20120319125504.1471,Michael.20120319125504.1476,Michael.20120319125504.1478,Michael.20120319125504.1463,michael.20120305092148.1290,michael.20120305092148.1281,michael.20120305092148.1302,michael.20120312091134.1403,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./Simulation/PBCH/pbch_gen_detect.py</vh></v>
+<v t="Michael.20120321090100.1527" a="E"><vh>PBCH source</vh>
 <v t="Michael.20120321090100.1529"><vh>01. PBCH symbol array in one OFDM symbol</vh></v>
 <v t="Michael.20120321090100.1538"><vh>02. PBCH Uu signal</vh></v>
-<v t="michael.20120305092148.1277"></v>
+<v t="michael.20120305092148.1277" a="E"></v>
 <v t="Michael.20120320091224.1509"></v>
 <v t="Michael.20120319125504.1481"></v>
 </v>
 </v>
 <v t="Michael.20120320091224.1505"><vh>PCFICH gen &amp; detect</vh>
 <v t="Michael.20120320091224.1507"
-expanded="Michael.20120319125504.1478,Michael.20120319125504.1466,"><vh>@thin ./Simulation/PCFICH/pcfich_gen_detect.py</vh></v>
+expanded="Michael.20120319125504.1471,Michael.20120319125504.1476,Michael.20120319125504.1478,Michael.20120319125504.1463,Michael.20120319125504.1466,"><vh>@thin ./Simulation/PCFICH/pcfich_gen_detect.py</vh></v>
 <v t="Michael.20120320091224.1506"><vh>PCFICH source</vh>
 <v t="Michael.20120320091224.1508"><vh>01. PCFICH symbol array in one OFDM symbol</vh></v>
 <v t="Michael.20120321090100.1520"><vh>02. PCFICH Uu signal</vh></v>
 <v t="Michael.20120320091224.1510"></v>
 <v t="michael.20120305092148.1278"></v>
-<v t="Michael.20120319125504.1471"></v>
-<v t="Michael.20120319125504.1476"></v>
-<v t="Michael.20120319125504.1463"></v>
+<v t="Michael.20120319125504.1471" a="E"></v>
+<v t="Michael.20120319125504.1476" a="E"></v>
+<v t="Michael.20120319125504.1463" a="E"></v>
 <v t="michael.20120305092148.1279"></v>
 <v t="michael.20120305092148.1293"></v>
 <v t="michael.20120305092148.1296"></v>
@@ -202,10 +219,10 @@ expanded="Michael.20120319125504.1478,Michael.20120319125504.1466,"><vh>@thin ./
 <v t="michael.20120305092148.1314"><vh>@thin ./test_files/ZC_seq.py</vh></v>
 </v>
 </v>
-<v t="michael.20120322193448.2259" a="E"><vh>Release_relative</vh>
+<v t="michael.20120322193448.2259"><vh>Release_relative</vh>
 <v t="michael.20120322193448.2266"><vh>@thin ./build_binary_for_Windows.bat</vh></v>
 <v t="michael.20120322193448.2342"
-expanded="michael.20120305092148.1295,Michael.20120319125504.1478,michael.20120305092148.1281,michael.20120305092148.1302,michael.20120312091134.1403,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./pyLTESimulator.py</vh></v>
+expanded="Michael.20120321090100.1527,michael.20120305092148.1277,michael.20120305092148.1295,Michael.20120319125504.1471,Michael.20120319125504.1476,Michael.20120319125504.1478,Michael.20120319125504.1463,michael.20120305092148.1290,michael.20120305092148.1281,michael.20120305092148.1302,michael.20120312091134.1403,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./pyLTESimulator.py</vh></v>
 <v t="michael.20120322193448.2263"><vh>@thin ./setup.py</vh></v>
 <v t="michael.20120322193448.2267"><vh>build bat on Windows</vh></v>
 <v t="michael.20120322193448.2264"><vh>cx_freeze config</vh>
@@ -213,7 +230,7 @@ expanded="michael.20120305092148.1295,Michael.20120319125504.1478,michael.201203
 </v>
 <v t="michael.20120322193448.2343"><vh>source</vh>
 <v t="Michael.20120315095133.1439"></v>
-<v t="Michael.20120321090100.1527"></v>
+<v t="Michael.20120321090100.1527" a="E"></v>
 <v t="Michael.20120320091224.1506"></v>
 <v t="michael.20120305092148.1318"></v>
 <v t="Michael.20120314113327.1413"></v>
@@ -830,6 +847,7 @@ def valid_CFI_range(LTE_mode, is_MBSFN, support_PDSCH, AP_num, positioning_RS_en
             CFI_candidates = (1,2,3)
         elif N_DL_RB&lt;=10:
             CFI_candidates = (2,3,4)
+    return CFI_candidates
 
 def get_PCFICH_symbol_array(cfi_b, n_s, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_RE_tuple, CP_DL_type):
     '''
@@ -862,7 +880,8 @@ def get_PCFICH_symbol_array(cfi_b, n_s, N_cell_ID, layer_mapping_scheme, num_of_
             for ap in range(AP_num):
                 symbol_array_for_all_ap[ap][k] = precoded_matrix[ap][quadruplet_index*4+i]
     return symbol_array_for_all_ap
-    
+
+
 
     
     
@@ -1082,7 +1101,8 @@ def PCFICH_precode(layer_mapped_matrix, precoding_scheme, num_of_ap, codebook_in
     '''
     result = None
     num_of_cw = len(codewords)
-    assert( num_of_cw==1 )
+    lte_assert( num_of_cw==1, "num_of_cw=%s is not correct for transmit diversity layer mapping! It must be 1!"%num_of_cw )
+    lte_assert( v in (2,4), "v=%s is out of range! For transmit diversity layer mapping, number of layers has to be either 2 or 4!"%v)
         
     if v==2:
         M_layer_symb = len(codewords[0])/2
@@ -1166,7 +1186,8 @@ def lte_assert(condition, a_string):
         raise LteException(a_string)
 
 def lte_warn(a_string):
-    print a_string</t>
+    print a_string
+</t>
 <t tx="Michael.20120320091224.1502">def precode_transmit_diversity(layer_mapped_matrix, num_of_ap):
     '''
     input:
@@ -1186,10 +1207,10 @@ def lte_warn(a_string):
         x = layer_mapped_matrix
         for i in range(M_layer_symb):
             tmp_x = array([real(x[0][i]), real(x[1][i]), imag(x[0][i]), imag(x[1][i])])
-            y[0][2*i] = 1/sqrt(2) * sum(array([1,0,1j,0])) * tmp_x
-            y[1][2*i] = 1/sqrt(2) * sum(array([0,-1,0,1j])) * tmp_x
-            y[0][2*i+1] = 1/sqrt(2) * sum(array([0,1,0,1j])) * tmp_x
-            y[1][2*i+1] = 1/sqrt(2) * sum(array([1,0,-1j,0])) * tmp_x
+            y[0][2*i] = 1/sqrt(2) * sum(array([1,0,1j,0]) * tmp_x)
+            y[1][2*i] = 1/sqrt(2) * sum(array([0,-1,0,1j]) * tmp_x)
+            y[0][2*i+1] = 1/sqrt(2) * sum(array([0,1,0,1j]) * tmp_x)
+            y[1][2*i+1] = 1/sqrt(2) * sum(array([1,0,-1j,0]) * tmp_x)
     else:
         # num_of_ap==4
         M_layer_symb = len(layer_mapped_matrix[0])
@@ -1201,7 +1222,7 @@ def lte_warn(a_string):
         x = layer_mapped_matrix
         for i in range(M_layer_symb):
             tmp_x = array([real(x[0][i]), real(x[1][i]), real(x[2][i]), real(x[3][i]), imag(x[0][i]), imag(x[1][i]), imag(x[2][i]), imag(x[3][i])])
-            y[0][4*i] = 1/sqrt(2) * sum(array([1,0,0,0,1j,0,0,0])) * tmp_x
+            y[0][4*i] = 1/sqrt(2) * sum(array([1,0,0,0,1j,0,0,0]) * tmp_x)
             y[1][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
             y[2][4*i] = 1/sqrt(2) * sum(array([0,-1,0,0,0,1j,0,0])) * tmp_x
             y[3][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
@@ -1248,7 +1269,41 @@ def lte_warn(a_string):
 
 
         
-</t>
+# helper functions not in standard
+def get_PCFICH_REG_num_in_symbol(l, is_PDCCH_present):
+    '''
+    input:
+        l: symbol index
+        is_PDCCH_present: boolean, whether PDCCH is present in the subframe containing symbol l
+    output:
+        number of REGs that are occupied by PCFICH in the given symbol
+    '''
+    if is_PDCCH_present and l==0:
+        result = 3
+    else:
+        result = 0
+    return result
+
+def get_PCFICH_REs_in_symbol(l, is_PDCCH_present, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_RE_tuple, num_of_ap, CP_DL_type):
+    '''
+    input:
+        l: symbol index
+        is_PDCCH_present: whether PDCCH is present in this slot
+        N_cell_ID: cell ID
+        N_DL_RB: downlink Resource Block number in one slot
+        N_RB_sc: number of subcarriers in one Resource Block
+        CSRS_RE_tuple: a tuple of Cell Specific Reference Signal. Each element is represented as (k,l).
+        num_of_ap: number of antenna ports used for Cell Specific Reference Signal
+        CP_DL_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        a tuple of all REs used by PCFICH in the given symbol
+    '''
+    result = list()
+    if l==0 and is_PDCCH_present:
+        for quadruplet_index in range(4):
+            for re in get_REG_for_PCFICH_quadruplet(quadruplet_index, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_RE_tuple, AP_num, CP_DL_type):
+                result.append(re)
+    return tuple(result)</t>
 <t tx="Michael.20120320091224.1504">def get_REG_from_kl(num_of_ap, CP_DL_type, k, l):
     '''
     input:
@@ -1275,7 +1330,6 @@ def lte_warn(a_string):
             else:
                 result = ( (k/6*6,l), (k/6*6+1,l), (k/6*6+2,l), (k/6*6+3,l), (k/6*6+4,l), (k/6*6+5,l) )
     return result
-
 </t>
 <t tx="Michael.20120320091224.1505"></t>
 <t tx="Michael.20120320091224.1506">from scipy.signal import *
@@ -1344,7 +1398,8 @@ if test_enabling_bits &amp; (1&lt;&lt;0):
 
 # 02. PCFICH Uu signal
 if test_enabling_bits &amp; (1&lt;&lt;1):
-    test_PCFICH_Uu_signal()</t>
+    test_PCFICH_Uu_signal()
+</t>
 <t tx="Michael.20120320091224.1508">def test_PCFICH_symbol_array_in_one_OFDM_symbol():
     
     
@@ -1370,7 +1425,8 @@ if test_enabling_bits &amp; (1&lt;&lt;1):
     
     plt.show()
 </t>
-<t tx="Michael.20120320091224.1509">@others</t>
+<t tx="Michael.20120320091224.1509">@others
+</t>
 <t tx="Michael.20120320091224.1510">def channel_code_CFI(cfi):
     '''
     input:
@@ -1458,7 +1514,8 @@ def get_PBCH_symbol_matrix(b, N_cell_ID, layer_mapping_scheme, num_of_layers, pr
     return symbol_matrix
     
 
-    </t>
+    
+</t>
 <t tx="Michael.20120321090100.1522">def PBCH_scramble(b, N_cell_ID):
     '''
     input:
@@ -1564,7 +1621,8 @@ def get_REs_for_PBCH_in_slot(N_DL_RB, N_RB_sc, CSRS_REs):
     for l in range(4):
         result += get_REs_for_PBCH_in_symbol(l, N_DL_RB, N_RB_sc, CSRS_REs)
     
-    return result</t>
+    return result
+</t>
 <t tx="Michael.20120321090100.1526"></t>
 <t tx="Michael.20120321090100.1527">from scipy.signal import *
 from numpy import *
@@ -1660,8 +1718,10 @@ if test_enabling_bits &amp; (1&lt;&lt;1):
         plt.plot(abs(pbch_symbol_matrix_ap0[l]))
         plt.xlabel("k (subcarrier index)")
         plt.ylabel("Magnitude")
-        plt.show()</t>
-<t tx="Michael.20120321090100.1530">@others</t>
+        plt.show()
+</t>
+<t tx="Michael.20120321090100.1530">@others
+</t>
 <t tx="Michael.20120321090100.1531">@others
 
 def BCH_channel_process(a, AP_num, CP_DL_type):
@@ -1676,7 +1736,8 @@ def BCH_channel_process(a, AP_num, CP_DL_type):
     c = attach_BCH_TB_CRC(a, AP_num)
     d = PBCH_channel_code(c)
     e = PBCH_rate_match(d, CP_DL_type)
-    return e</t>
+    return e
+</t>
 <t tx="Michael.20120321090100.1532">def attach_BCH_TB_CRC(a, AP_num):
     '''
     input:
@@ -1703,7 +1764,8 @@ def BCH_channel_process(a, AP_num, CP_DL_type):
     for i in range(len(crc16)):
         c[-1*i-1] = crc16[-1*i-1]
     
-    return c</t>
+    return c
+</t>
 <t tx="Michael.20120321090100.1533">def calc_CRC16(a):
     '''
     input:
@@ -1712,7 +1774,8 @@ def BCH_channel_process(a, AP_num, CP_DL_type):
         bit sequence of length 16 for the CRC
     '''
     lte_warn("calc_CRC16 is only a dummy function!")
-    return [0] * 16</t>
+    return [0] * 16
+</t>
 <t tx="Michael.20120321090100.1534">def tail_biting_convolutional_code(c):
     '''
     input:
@@ -1727,7 +1790,8 @@ def BCH_channel_process(a, AP_num, CP_DL_type):
         result[i] = c[i]
         result[2*i] = c[i]
         result[3*i] = c[i]
-    return result</t>
+    return result
+</t>
 <t tx="Michael.20120321090100.1535">def PBCH_channel_code(c):
     '''
     input:
@@ -1739,7 +1803,8 @@ def BCH_channel_process(a, AP_num, CP_DL_type):
     L = 16
     K = A + L
     lte_assert(len(c)==K, "PBCH TB size before channel coding shall be %s, but it is %s"%(K, len(c)))
-    return tail_biting_convolutional_code(c)</t>
+    return tail_biting_convolutional_code(c)
+</t>
 <t tx="Michael.20120321090100.1536">def PBCH_rate_match(d, CP_DL_type):
     '''
     input:
@@ -1758,7 +1823,8 @@ def BCH_channel_process(a, AP_num, CP_DL_type):
         E = 1728
     
     result = rate_match_for_conv_coded(d, E)
-    return result</t>
+    return result
+</t>
 <t tx="Michael.20120321090100.1537">def rate_match_for_conv_coded(d, E):
     '''
     input:
@@ -1774,7 +1840,8 @@ def BCH_channel_process(a, AP_num, CP_DL_type):
     for i in range(E):
         e[i] = d[i%D]
     
-    return e</t>
+    return e
+</t>
 <t tx="Michael.20120321090100.1538">def test_PBCH_Uu_signal():
     
     layer_mapping_scheme = 'single_antenna'
@@ -1816,22 +1883,79 @@ def BCH_channel_process(a, AP_num, CP_DL_type):
     plt.ylabel('Signal level')
     #plt.legend(legend_list)
     #plt.axis( [-0.01, 0.075, -0.1, 14] )
-    plt.show()</t>
+    plt.show()
+</t>
+<t tx="Michael.20120323090727.1968">def PHICH_modulate(b, n_s, n_seq_PHICH, N_cell_ID, DL_CP_type):
+    '''
+    input:
+        b: bit sequence
+        n_s: slot index
+        n_seq_PHICH: PHICH number within the PHICH group
+        N_cell_ID: cell ID
+        DL_CP_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        modulated PHICH multipled with a orthogonal sequence
+    '''
+    lte_assert(DL_CP_type in (0,1), "DL CP type DL_CP_type=%s is out of range. It has to be either 0 (normal CP) or 1 (extended CP)"%DL_CP_type)
+    
+    M_bit = len(b)
+    
+    # BPSK modulation
+    M_s = M_bit
+    z = array( [0.0+0.0*1j] * M_s )
+    for i in range(M_bit):
+        z[i] = BPSK(b[i])
+    
+    # multiply with the orthogonal sequence
+    if DL_CP_type == 0:
+        N_PHICH_SF = 4
+    else:
+        # extended CP
+        N_PHICH_SF = 2
+    M_symb = N_PHICH_SF * M_s
+    c_init = (n_s/2+1) * (2*N_cell_ID+1) * (2**9) + N_cell_ID
+    w = get_orthogonal_seq_for_PHICH(n_seq_PHICH, N_PHICH_SF)
+    d = array( [0.0+0.0*1j] * M_symb )
+    for i in range(M_symb):
+        d[i] = w[i%N_PHICH_SF] * (1-2*c(c_init,i)) * z[i/N_PHICH_SF]
+    
+    return d
+
+
+def get_orthogonal_seq_for_PHICH(n_seq_PHICH, N_PHICH_SF):
+    '''
+    input:
+        n_seq_PHICH: sequence index, corresponding to the PHICH number within the PHICH group.
+        N_PHICH_SF: 
+    output:
+        Orthogonal sequence (array)
+    '''
+    lte_assert(N_PHICH_SF in (2,4), "N_PHICH_SF=%s is out of range! It has to be 4 for normal CP, or 2 for extended CP."%N_PHICH_SF)
+    if N_PHICH_SF == 4:
+        lte_assert(n_seq_PHICH&gt;=0 and n_seq_PHICH&lt;8, "n_seq_PHICH=%s is out of range!"%n_seq_PHICH)
+        result = ( (1,1,1,1), (1,-1,1,-1), (1,1,-1,-1), (1,-1,-1,1), (1j,1j,1j,1j), (1j,-1j,1j,-1j), (1j,1j,-1j,-1j), (1j,-1j,-1j,1j) )[n_seq_PHICH]
+    else:
+        lte_assert(n_seq_PHICH&gt;=0 and n_seq_PHICH&lt;4, "n_seq_PHICH=%s is out of range!"%n_seq_PHICH)
+        result = ( (1,1), (1,-1), (1j,1j), (1j,-1j) )[n_seq_PHICH]
+    result = array(result)
+    return result</t>
 <t tx="michael.20120223085633.1280">@language python
 @tabwidth -4
 @encoding utf-8</t>
 <t tx="michael.20120305092148.1276">@others</t>
-<t tx="michael.20120305092148.1277">@others</t>
+<t tx="michael.20120305092148.1277">@others
+</t>
 <t tx="michael.20120305092148.1278">def get_REG_in_RB_symbol(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, optimize=True):
     '''
-    get_REG_in_RB_symbol(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, optimize=True): tuple of REGs
-    Return REGs in the specific PRB of symbol l.
-    n_PRB: PRB index
-    N_RB_sc: number of subcarriers in one RB
-    l: symbol index
-    CSRS_AP_num: number of antenna uesed for Cell Specific Reference Signal
-    DL_CP_type: 0 for normal CP, 1 for extended CP
-    optimize: boolean. whether to use optimized code for speed.
+    input:
+        n_PRB: PRB index
+        N_RB_sc: number of subcarriers in one RB
+        l: symbol index
+        CSRS_AP_num: number of antenna uesed for Cell Specific Reference Signal
+        DL_CP_type: 0 for normal CP, 1 for extended CP
+        optimize: boolean. whether to use optimized code for speed.
+    output:
+        a tuple of all REGs in the given PRB and symbol
     '''
     if optimize:
         result = get_REG_in_RB_symbol_opti(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type)
@@ -1906,13 +2030,15 @@ def get_REG_in_RB_symbol_opti(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type):
 </t>
 <t tx="michael.20120305092148.1279">def get_CSRS_REs_in_slot(n_s, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb):
     '''
-    get_CSRS_REs_in_slot(n_s, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb): tuple of CSRS REs in the specified symbol of RB.
-    n_s: slot index
-    antenna_port: antenna port for CSRS
-    N_cell_ID: cell ID
-    N_maxDL_RB: 110 for 20MHz configured by higher layer
-    N_DL_RB: PHY number of downlink RB
-    N_DL_symb: maximum 110 for 20MHz
+    input:
+        n_s: slot index
+        antenna_port: antenna port for CSRS
+        N_cell_ID: cell ID
+        N_maxDL_RB: 110 for 20MHz configured by higher layer
+        N_DL_RB: PHY number of downlink RB
+        N_DL_symb: maximum 110 for 20MHz
+    output:
+        a tuple of all CSRS REs for the given antenna port in the given slot
     
     profile:
 def main():
@@ -1994,8 +2120,10 @@ def get_CSRS_in_symbol(n_s, l, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_R
             symbol_array[k] = csrs_seq[m_]
     return symbol_array
 </t>
-<t tx="michael.20120305092148.1280">@others</t>
-<t tx="michael.20120305092148.1281">@others</t>
+<t tx="michael.20120305092148.1280">@others
+</t>
+<t tx="michael.20120305092148.1281">@others
+</t>
 <t tx="michael.20120305092148.1283">def x_1(i):
     x1_init = 1
     while i&gt;30:
@@ -2066,7 +2194,7 @@ cProfile.runctx('main()', globals(), locals())
         csrs_symbol_list.append( complex(real_part,image_part) )
     return tuple(csrs_symbol_list)
 </t>
-<t tx="michael.20120305092148.1290">def m_i( UL_DL_config, subframe ):
+<t tx="michael.20120305092148.1290">def get_m_i( UL_DL_config, subframe ):
     m_i_table = (   (2,1,None,None,None,2,1,None,None,None),
                             (0,1,None,None,1,0,1,None,None,1),
                             (0,0,None,1,0,0,0,None,1,0),
@@ -2075,7 +2203,66 @@ cProfile.runctx('main()', globals(), locals())
                             (0,0,None,0,0,0,0,0,1,0),
                             (1,1,None,None,None,1,1,None,None,1)
                     )
-    return m_i_table[UL_DL_config][subframe]</t>
+    return m_i_table[UL_DL_config][subframe]
+    
+    
+def get_PHICH_symbol_array(HI, subframe, n_s, n_seq_PHICH, n_group_PHICH, N_group_PHICH, PHICH_duration, N_cell_ID, DL_CP_type, AP_num, LTE_mode, UL_DL_config, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, is_MBSFN, N_DL_symb):
+    '''
+    input:
+        HI: HARQ Indicator, 0 for NACK, 1 for ACK
+        subframe: subframe index
+        n_s: slot index
+        n_seq_PHICH: PHICH orthogonal sequence number within the PHICH group
+        n_group_PHICH: PHICH group index
+        N_group_PHICH: total PHICH group number, from higher layer
+        PHICH_duration: PHICH duration from higher layer, 0 for normal duration, 1 for extended duration
+        N_cell_ID: cell ID
+        DL_CP_type: downlink CP type, 0 for normal CP, 1 for extended CP
+        AP_num: number of antenna ports used to transmit PHICH
+        LTE_mode: 'FDD' or 'TDD'
+        UL_DL_config: Uplink/Downlink configuration, only valid if LTE_mode is 'TDD'
+        N_maxDL_RB: Maximum DL RB number
+        N_DL_RB: DL RB number
+        N_RB_sc: number of subcarriers in one RB
+        CSRS_AP_num: number of antenna ports used for CSRS
+        is_MBSFN: boolean, whether it is a subframe for MBSFN
+        N_DL_symb: number of symbols in one slot
+    output:
+        output[0] is a RE matrix for antenna port 0
+        output[0][0] is a RE array of all subcarriers in symbol 0 for antenna port 0
+    '''
+    # calc m_i
+    if LTE_mode == 'FDD':
+        m_i = 0
+    else:
+        m_i = get_m_i( UL_DL_config, subframe )
+    # channel coding
+    b = channel_code_HI(HI)
+    # modulation
+    d = PHICH_modulate(b, n_s, n_seq_PHICH, N_cell_ID, DL_CP_type)
+    # resource group alignment, layer mapping, and precoding
+    d_0 = PHICH_align(d, n_group_PHICH, DL_CP_type, AP_num)
+    layer_mapped_matrix = PHICH_layer_map_and_precode(d_0, AP_num, n_group_PHICH, DL_CP_type)
+    
+    mapping_units = get_PHICH_mapping_units(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, m_i, N_group_PHICH, DL_CP_type, is_MBSFN, PHICH_duration, subframe, n_s, N_cell_ID, N_DL_symb)
+    
+    symbol_matrix_for_all_ap = array( [ [[0.0+0.0*1j] * (N_DL_RB*N_RB_sc)]*3 ]*AP_num )
+    # symbol_array_for_all_ap[0] is the RE matrix for ap 0
+    # symbol_array_for_all_ap[0][0] is the RE array in symbol 0 for ap 0
+    
+    m = n_group_PHICH
+    if DL_CP_type == 0:
+        m_ = m
+    else:
+        m_ = m/2
+    reg_list = mapping_units[m_]
+    for reg_index in range(3):  # it has to be 3 REG
+        for re_index in range(4):   # it has to be 4 REs in one REG
+            k, l = reg_list[reg_index][re_index]
+            for ap in range(AP_num):
+                symbol_matrix_for_all_ap[ap][l][k] = layer_mapped_matrix[ap][reg_index*4+re_index]
+
+    return symbol_matrix_for_all_ap</t>
 <t tx="michael.20120305092148.1292">from numpy import *
 import matplotlib.pyplot as plt
 
@@ -2213,7 +2400,8 @@ def ofdm_baseband_IQ_to_RE_IQ_array(baseband_IQ_array, N_DL_RB, N_RB_sc, delta_f
 </t>
 <t tx="michael.20120305092148.1294">@others
 </t>
-<t tx="michael.20120305092148.1295">@others</t>
+<t tx="michael.20120305092148.1295">@others
+</t>
 <t tx="michael.20120305092148.1296">def downlink_modulate(s_p_l, t, f_0):
     modulated_signal = cos(2*pi*f_0*t) * s_p_l.real - sin(2*pi*f_0*t) * imag(s_p_l)
     cutoff_freq = f_0
@@ -2235,8 +2423,10 @@ def downlink_downconvert(signal, t, f_0):
     
     return I + 1j*Q
 </t>
-<t tx="michael.20120305092148.1301">@others</t>
-<t tx="michael.20120305092148.1302">@others</t>
+<t tx="michael.20120305092148.1301">@others
+</t>
+<t tx="michael.20120305092148.1302">@others
+</t>
 <t tx="michael.20120305092148.1303">def pss_d(n, N_ID_2):
     u = (25, 29, 34)[N_ID_2]
     d_n = 0
@@ -2255,7 +2445,8 @@ def x_u(u, n, N_ZC):
 
 # u_th root Z-C sequence with v N_cs cyclic shift
 def x_uv(u, v, n, N_ZC):
-    pass</t>
+    pass
+</t>
 <t tx="michael.20120305092148.1305">def pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc):
     symbol_array = ndarray( shape=(N_DL_RB*N_RB_sc,), dtype=complexfloating )
     for i in arange(len(symbol_array)):
@@ -3115,7 +3306,8 @@ def test_PSS_detect_in_baseband_IQ():
         PSS_baseband_detect(received_baseband_IQ, long_t, to_draw=True)
         #PSS_baseband_detect(pss_received_IQ, t, to_draw=True)
 </t>
-<t tx="michael.20120312091134.1403">@others</t>
+<t tx="michael.20120312091134.1403">@others
+</t>
 <t tx="michael.20120312091134.1404">def sss_x5(mask, n):
     x_init = 0b10000
     while n&gt;4:
@@ -3575,7 +3767,408 @@ for script_name in EXCUTABLE_FILES:
 <t tx="michael.20120322193448.2338">project_version = '1.0.0'
 project_name = 'pyLTEVisualizer'
 project_owner = "Author: Ling Duo, Email: duo.ling.cn@gmail.com"
-project_weblink = "http://code.google.com/p/pyltevisualizer/"</t>
-<t tx="michael.20120322193448.2343">@others</t>
+project_weblink = "http://code.google.com/p/pyltevisualizer/"
+</t>
+<t tx="michael.20120322193448.2343">@others
+</t>
+<t tx="michael.20120323224953.1378">def PHICH_align(d, n_group_PHICH, DL_CP_type, AP_num):
+    '''
+    input:
+        d: modulated and orthogonized symbol sequence
+        n_group_PHICH: PHICH group index
+        DL_CP_type: downlink CP type, 0 for normal CP, 1 for extended CP
+        AP_num: number of antenna ports for CSRS
+    output:
+        resource group aligned symbol sequence
+    '''
+    lte_assert(DL_CP_type in (0,1), "DL CP type DL_CP_type=%s is out of range. It has to be either 0 (normal CP) or 1 (extended CP)"%DL_CP_type)
+    lte_assert(AP_num in (1,2,4), "Antenna port number AP_num=%s is not correct! It has to be 1, 2, or 4."%AP_num)
+    
+    # Resource group alignment
+    M_symb = len(d)
+    if DL_CP_type == 0:
+        c = 1
+        d_0 = d
+    else:
+        # extended CP
+        c = 2
+        d_0 = array( [0.0+0.0*1j] * (c*M_symb) )
+        if n_group_PHICH%2 == 0:
+            for i in range(M_symb/2):
+                d_0[4*i], d_0[4*i+1], d_0[4*i+2], d_0[4*i+3] = d[2*i], d[2*i+1], 0, 0
+        else:
+            # n_group_PHICH%2 == 1
+            for i in range(M_symb/2):
+                d_0[4*i], d_0[4*i+1], d_0[4*i+2], d_0[4*i+3] = 0, 0, d[2*i], d[2*i+1]
+    return d_0
+
+def PHICH_layer_map_and_precode(d_0, AP_num, n_group_PHICH, DL_CP_type):
+    '''
+    input:
+        d_0: aligned PHICH symbol sequence
+        AP_num: number of antenna ports used for CSRS
+        n_group_PHICH: PHICH group number
+        DL_CP_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        layer mapped matrix
+    '''
+    lte_assert(AP_num in (1,2,4), "Number of antenna ports for CSRS AP_num=%s is out of number!"%AP_num)
+    if AP_num == 1:
+        result = layer_map_single_antenna_port(d_0)
+        result = precode_single_antenna(result)
+    elif AP_num == 2:
+        result = layer_map_transmit_diversity( array([d_0]), 2 )
+        result = precode_transmit_diversity( result, AP_num )
+    else:
+        # AP_num == 4
+        M_0_symb = len(d_0)
+        y = array([ [0.0+0.0*1j]*M_0_symb, [0.0+0.0*1j]*M_0_symb, [0.0+0.0*1j]*M_0_symb, [0.0+0.0*1j]*M_0_symb ])
+        tmp_x = array([real(x[0][i]), real(x[1][i]), real(x[2][i]), real(x[3][i]), imag(x[0][i]), imag(x[1][i]), imag(x[2][i]), imag(x[3][i])])
+        for i in range(3):
+            if (DL_CP_type==0 and (i+n_group_PHICH)%2==0) or (DL_CP_type==1 and (i+n_group_PHICH/2)%2==0):
+                y[0][4*i] = 1/sqrt(2) * sum(array([1,0,0,0,1j,0,0,0])) * tmp_x
+                y[1][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[2][4*i] = 1/sqrt(2) * sum(array([0,-1,0,0,0,1j,0,0])) * tmp_x
+                y[3][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[0][4*i+1] = 1/sqrt(2) * sum(array([0,1,0,0,0,1j,0,0])) * tmp_x
+                y[1][4*i+1] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[2][4*i+1] = 1/sqrt(2) * sum(array([1,0,0,0,-1j,0,0,0])) * tmp_x
+                y[3][4*i+1] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[0][4*i+2] = 1/sqrt(2) * sum(array([0,0,1,0,0,0,1j,0])) * tmp_x
+                y[1][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[2][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,-1,0,0,0,1j])) * tmp_x
+                y[3][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[0][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,1,0,0,0,1j])) * tmp_x
+                y[1][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[2][4*i+3] = 1/sqrt(2) * sum(array([0,0,1,0,0,0,-1j,0])) * tmp_x
+                y[3][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+            else:
+                # (i+n_group_PHICH)%2 == 1
+                y[0][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[1][4*i] = 1/sqrt(2) * sum(array([1,0,0,0,1j,0,0,0])) * tmp_x
+                y[2][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[3][4*i] = 1/sqrt(2) * sum(array([0,-1,0,0,0,1j,0,0])) * tmp_x
+                y[0][4*i+1] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[1][4*i+1] = 1/sqrt(2) * sum(array([0,1,0,0,0,1j,0,0])) * tmp_x
+                y[2][4*i+1] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[3][4*i+1] = 1/sqrt(2) * sum(array([1,0,0,0,-1j,0,0,0])) * tmp_x
+                y[0][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[1][4*i+2] = 1/sqrt(2) * sum(array([0,0,1,0,0,0,1j,0])) * tmp_x
+                y[2][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[3][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,-1,0,0,0,1j])) * tmp_x
+                y[0][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[1][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,1,0,0,0,1j])) * tmp_x
+                y[2][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[3][4*i+3] = 1/sqrt(2) * sum(array([0,0,1,0,0,0,-1j,0])) * tmp_x
+        result = y
+    return result</t>
+<t tx="michael.20120323224953.1379">def get_PHICH_mapping_units(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, m_i, N_group_PHICH, DL_CP_type, is_MBSFN, PHICH_duration, subframe, n_s, N_cell_ID, N_DL_symb):
+    '''
+    input:
+        LTE_mode: 'FDD' or 'TDD'
+        N_maxDL_RB
+        N_DL_RB
+        N_RB_sc
+        CSRS_AP_num: number of antenna ports used for CSRS
+        m_i: times of PHICH group numbers in TDD mode
+        N_group_PHICH: number of PHICH groups
+        DL_CP_type: downlink CP type, 0 for normal, 1 for extended
+        is_MBSFN: boolean, whether this subframe is a MBSFN subframe
+        PHICH_duration: 0 for normal duration, 1 for extended duration
+        subframe: subframe index
+        n_s: slot index
+        N_cell_ID: cell ID
+        N_DL_symb: downlink symbol number in one slot.
+    output:
+        a list of resources for all PHICH mapping units, e.g. output[0] is a tuple of 3 REGs, which in turn is a tuple of 4 REs like (k,l), for PHICH mapping unit m_=0. E.g. output[0][0] will be the REG for mapping unit 0.
+    '''
+    # get the total number of PHICH mapping units
+    # M_ is the total number of PHICH mapping units in this slot, i.e. for this PHICH PHY channel
+    if DL_CP_type == 0:
+        if LTE_mode == 'FDD':
+            M_ = N_group_PHICH
+        else:
+            # LTE_mode == 'TDD'
+            M_ = m_i * N_group_PHICH
+    else:
+        # DL_CP_type == 1: extended CP
+        if LTE_mode == 'FDD':
+            M_ = N_group_PHICH/2
+        else:
+            # LTE_mode == 'TDD'
+            M_ = (m_i * N_group_PHICH)/2
+    
+    result = [ [0,0,0] ] * M_
+    
+    # get total possible symbols to use
+    # L_ is the total number of symbols PHICH could use
+    if PHICH_duration == 0:
+        # normal duration
+        L_ = 1
+    else:
+        # PHICH_duration == 1 for extended duration
+        if is_MBSFN:
+            L_ = 2
+        else:
+            # non-MBSFN
+            if LTE_mode=='TDD' and subframe in (1,6):
+                L_ = 2
+            else:
+                L_ = 3
+    
+    # N_L_ is a list of number of REGs not assigned to PCFICH in symbol l_, e.g. N_L_[0] is the number of REGs in symbol 0 that are not assigned to PCFICH
+    N_L_ = [0] * L_
+    for l in range(L_):
+        N_L_[l] = get_REG_number_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type) - get_PCFICH_REG_num_in_symbol(l, True)
+        # Assumption here: when there's PHICH, there always is PDSCH in this subframe too.
+    
+    # a list of all CSRS REs in this slot
+    CSRS_REs = tuple()
+    for antenna_port in range(CSRS_AP_num):
+        CSRS_REs += get_CSRS_REs_in_slot(n_s, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    # REG_list_in_symbol contains only REGs that are not used by PCFICH, e.g. REG_list_in_symbol[0][0] is the first REG not used by PCFICH in symbol 0.
+    REG_list_in_symbol = [0] * L_
+    for l in range(L_):
+        pcfich_REs = get_PCFICH_REs_in_symbol(l, True, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_REs, CSRS_AP_num, CP_DL_type)
+        if len(pcfich_REs) == 0:
+            # there's no PCFICH in this symbol
+            REG_list_in_symbol[l] = get_REG_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, CSRS_REs)
+        else:
+            # there IS PCFICH in this symbol
+            available_reg_list = list()
+            for reg in get_REG_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, CSRS_REs):
+                if reg[0] not in pcfich_REs:
+                    available_reg_list.append(reg)
+            REG_list_in_symbol[l] = tuple(available_reg_list)
+    
+    # start of calculating mapping unit m_
+    m_ = 0
+    for i in range(3):
+        # decide symbol index
+        if PHICH_duration == 0:
+            l_ = 0
+        else:
+            # PHICH_duration == 1, extended duration
+            if is_MBSFN:
+                l_ = (m_/2+i+1)%2
+            elif LTE_mode=='TDD' and subframe in (1,6):
+                l_ = (m_/2+i+1)%2
+            else:
+                l_ = i
+        # decide subcarrier index
+        if (PHICH_duration==1 and is_MBSFN) or (LTE_mode=='TDD' and subframe in (1,6) and PHICH_duration==1):
+            n_ = ( N_cell_ID*N_L_[l_]/N_L_[1]+m_+(i*N_L_[l_]/3) )%N_L_[l_]
+        else:
+            n_ = ( N_cell_ID*N_L_[l_]/N_L_[0]+m_+(i*N_L_[l_]/3) )%N_L_[l_]
+        #print m_, i, l_, n_
+        #print result
+        #print result[m_][i]
+        result[m_][i] = REG_list_in_symbol[l_][n_]
+        
+    return result</t>
+<t tx="michael.20120323224953.1793">def get_RE_number_in_REG(l, CSRS_AP_num, CP_DL_type):
+    '''
+    input:
+        l: symbol index
+        CSRS_AP_num: number of antenna ports used for CSRS.
+        CP_DL_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        number of REs that one REG contains, including those REs used for CSRS.
+    '''
+    result = 0
+    if l == 0:
+        result = 6
+    elif l == 1:
+        if CSRS_AP_num == 4:
+            result = 6
+        else:
+            # CSRS_AP_num in (1,2)
+            result = 4
+    elif l == 2:
+        result = 4
+    elif l == 3:
+        if CP_DL_type == 0:    # for nomal CP
+            result = 4
+        else:
+            result = 6
+    return result
+</t>
+<t tx="michael.20120323224953.1794">def get_REG_number_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type):
+    '''
+    input:
+        N_DL_RB: number of downlinke resource blocks
+        N_RB_sc: number of subcarriers in one RB
+        l: symbol index
+        CSRS_AP_num: number of antenna uesed for Cell Specific Reference Signal
+        CP_DL_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        number of total REG number in the given symbol across all RBs.
+    '''
+    return N_DL_RB * N_RB_sc / get_RE_number_in_REG(l, CSRS_AP_num, CP_DL_type)
+</t>
+<t tx="michael.20120323224953.1795">def get_REG_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, CSRS_REs):
+    '''
+    input:
+        N_DL_RB: downlink RB number
+        N_RB_sc: number of subcarriers in one RB
+        l: symbol index
+        CSRS_AP_num: number of antenna uesed for Cell Specific Reference Signal
+        DL_CP_type: 0 for normal CP, 1 for extended CP
+        optimize: boolean. whether to use optimized code for speed.
+        CSRS_REs: all REs used for CSRS in this symbol.
+    output:
+        a tuple of all REGs in the given symbol, from lowest frequency to the highest.
+    '''
+    result = list()
+    for n_PRB in range(N_DL_RB):
+        for reg in get_REG_in_RB_symbol(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type):
+            if len(reg) == 4:
+                # there's no CSRS REs in here
+                result.append(reg)
+            else:
+                # get rid of those two CSRS REs
+                tmp_reg = list()
+                for re in reg:
+                    if re not in CSRS_REs:
+                        tmp_reg.append(re)
+                result.append( tuple(tmp_reg) )
+    return result
+    </t>
+<t tx="michael.20120323224953.1796">def channel_code_HI(HI):
+    '''
+    input:
+        HI: HARQ indicator, 1 bit, 0 for NACK, 1 for ACK
+    output:
+        b: 3-bit sequence
+    '''
+    lte_assert(HI in (0,1), "HI=%s is out of range, it has to be 0 for NACK or 1 for ACK!"%HI)
+    return ( (0,0,0), (1,1,1) )[HI]
+    </t>
+<t tx="michael.20120323224953.1797"></t>
+<t tx="michael.20120323224953.1798">@others
+
+from scipy.signal import *
+from numpy import *
+import matplotlib.pyplot as plt
+
+# time scale is in 1 s
+T_s = 1.0/30720/1000 # in s
+
+# configuration for SSS
+l = 0
+N_maxDL_RB = 110
+N_DL_RB = 110
+N_RB_sc = 12
+N_DL_CP = 0 # normal DL CP
+AP_num = 2
+CP_DL_type = 0
+N_DL_symb = 7
+delta_f = 15000
+subframe = 0
+N_cell_ID = 0
+f_0 = (2620+0.1*(2620-2750))*1000*1000  # in Hz
+
+if N_DL_CP==0 and delta_f==15000:
+    if l==0:
+        N_CP_l = 160
+    else:
+        N_CP_l = 144
+elif N_DL_CP==1:    # extended CP
+    if delta_f==15000:
+        N_CP_l = 512
+    else:   # delta_f == 7500
+        N_CP_l = 1024
+if delta_f==15000:
+    N = 2048
+else:   # delta_f == 7500
+    N = 4096
+
+t = arange(0, (N_CP_l+N)*T_s, T_s)
+
+def find_max( a_list ):
+    m = max(a_list)
+    for i in arange(len(a_list)):
+        if a_list[i] == m:
+            return (i, m)
+
+def find_min( a_array ):
+    x, y = 0, 0
+    for i in arange(len(a_array)):
+        if a_array[i] &lt; y:
+            x, y = i, a_array[i]
+    return (x,y)
+
+def find_abs_max( a_array ):
+    m = max(abs(a_array))
+    for i in arange(len(a_array)):
+        if abs(a_array[i]) == m:
+            return (i, m)
+            
+@others
+
+HI = 1
+subframe =1
+n_s = 2
+n_seq_PHICH = 0
+n_group_PHICH =0
+N_group_PHICH = 1
+PHICH_duration = 0
+N_cell_ID = 0
+DL_CP_type = 0
+AP_num = 2
+LTE_mode = 'TDD'
+UL_DL_config = 1
+N_maxDL_RB = 110
+N_DL_RB = 110
+N_RB_sc = 12
+CSRS_AP_num = 2
+is_MBSFN = False
+N_DL_symb = 7
+
+test_enabling_bits = 0b11
+
+# 01. PHICH symbol array in one OFDM symbol
+if test_enabling_bits &amp; (1&lt;&lt;0):
+    test_PHICH_symbol_array_in_one_OFDM_symbol()
+
+# 02. PHICH Uu signal
+if test_enabling_bits &amp; (1&lt;&lt;1):
+    test_PHICH_Uu_signal()
+</t>
+<t tx="michael.20120323224953.1800">def test_PHICH_symbol_array_in_one_OFDM_symbol():
+    PHICH_symbol_matrix = get_PHICH_symbol_array(HI, subframe, n_s, n_seq_PHICH, n_group_PHICH, N_group_PHICH, PHICH_duration, N_cell_ID, DL_CP_type, AP_num, LTE_mode, UL_DL_config, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, is_MBSFN, N_DL_symb)
+    
+    plt.title("PHICH symbol array in l=0 for AP=0")
+    plt.plot(abs(PHICH_symbol_matrix[0][0]))
+    plt.xlabel("k (subcarrier index)")
+    plt.ylabel("Magnitude")
+    plt.show()</t>
+<t tx="michael.20120323224953.1801">def test_PHICH_Uu_signal():
+    PHICH_symbol_matrix = get_PHICH_symbol_array(HI, subframe, n_s, n_seq_PHICH, n_group_PHICH, N_group_PHICH, PHICH_duration, N_cell_ID, DL_CP_type, AP_num, LTE_mode, UL_DL_config, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, is_MBSFN, N_DL_symb)
+    PHICH_symbol_matrix_ap0 = PHICH_symbol_matrix[0]
+    phich_Uu_signal = array( [0.0] * (160+144*2+2048*3) )
+    t0 = arange(0, (160+2048)*T_s, T_s)
+    t1 = arange(0, (144+2048)*T_s, T_s)
+
+    for l in range(3):
+        if l==0:
+            phich_re_array = PHICH_symbol_matrix_ap0[l]
+            phich_baseband_IQ = ofdm_baseband_IQ_signal_generate(phich_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            tmp_phich_Uu_signal = downlink_modulate(phich_baseband_IQ, t0, f_0)
+            phich_Uu_signal[:(160+2048)] = tmp_phich_Uu_signal
+        else:
+            phich_re_array = PHICH_symbol_matrix_ap0[l]
+            phich_baseband_IQ = ofdm_baseband_IQ_signal_generate(phich_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            tmp_phich_Uu_signal = downlink_modulate(phich_baseband_IQ, t1, f_0)
+            phich_Uu_signal[(160+2048)+(144+2048)*(l-1):(160+2048)+(144+2048)*l] = tmp_phich_Uu_signal
+    new_t = arange(0, (160+144*2+2048*3)*T_s, T_s)
+    plt.plot(new_t*1000, phich_Uu_signal)
+    plt.title('PHICH (only) Uu signal for ap=0')
+    plt.xlabel('Time (ms)')
+    plt.ylabel('Signal level')
+    #plt.legend(legend_list)
+    #plt.axis( [-0.01, 0.075, -0.1, 14] )
+    plt.show()
+</t>
 </tnodes>
 </leo_file>
