@@ -1,140 +1,51 @@
 #@+leo-ver=5-thin
-#@+node:Michael.20120321090100.1528: * @thin ./Simulation/PBCH/pbch_gen_detect.py
+#@+node:michael.20120323224953.1799: * @thin ./Simulation/PHICH/phich_gen_detect.py
 #@+others
-#@+node:Michael.20120321090100.1527: ** PBCH source
-from scipy.signal import *
-from numpy import *
-import matplotlib.pyplot as plt
-
-# time scale is in 1 s
-T_s = 1.0/30720/1000 # in s
-
-# configuration for SSS
-l = 0
-N_maxDL_RB = 110
-N_DL_RB = 110
-N_RB_sc = 12
-N_DL_CP = 0 # normal DL CP
-AP_num = 2
-CP_DL_type = 0
-N_DL_symb = 7
-delta_f = 15000
-subframe = 0
-N_cell_ID = 0
-f_0 = (2620+0.1*(2620-2750))*1000*1000  # in Hz
-
-if N_DL_CP==0 and delta_f==15000:
-    if l==0:
-        N_CP_l = 160
-    else:
-        N_CP_l = 144
-elif N_DL_CP==1:    # extended CP
-    if delta_f==15000:
-        N_CP_l = 512
-    else:   # delta_f == 7500
-        N_CP_l = 1024
-if delta_f==15000:
-    N = 2048
-else:   # delta_f == 7500
-    N = 4096
-
-t = arange(0, (N_CP_l+N)*T_s, T_s)
-
-def find_max( a_list ):
-    m = max(a_list)
-    for i in arange(len(a_list)):
-        if a_list[i] == m:
-            return (i, m)
-
-def find_min( a_array ):
-    x, y = 0, 0
-    for i in arange(len(a_array)):
-        if a_array[i] < y:
-            x, y = i, a_array[i]
-    return (x,y)
-
-def find_abs_max( a_array ):
-    m = max(abs(a_array))
-    for i in arange(len(a_array)):
-        if abs(a_array[i]) == m:
-            return (i, m)
-            
+#@+node:michael.20120323224953.1798: ** source
 #@+others
-#@+node:Michael.20120321090100.1529: *3* 01. PBCH symbol array in one OFDM symbol
-def test_PBCH_symbol_array_in_one_OFDM_symbol():
+#@+node:michael.20120323224953.1800: *3* 01. PHICH symbol array in one OFDM symbol
+def test_PHICH_symbol_array_in_one_OFDM_symbol():
+    PHICH_symbol_matrix = get_PHICH_symbol_array(HI, subframe, n_s, n_seq_PHICH, n_group_PHICH, N_group_PHICH, PHICH_duration, N_cell_ID, DL_CP_type, AP_num, LTE_mode, UL_DL_config, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, is_MBSFN, N_DL_symb)
     
-    layer_mapping_scheme = 'single_antenna'
-    num_of_layers = 1
-    precoding_scheme = 'single_antenna'
-    AP_num = 1
-    codebook_index = 0
-    
-    
-    a = array( [1]*24 )
-    e = BCH_channel_process(a, AP_num, CP_DL_type)
-    n_s = 1
-    CSRS_RE_tuple = get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
-    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
-    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 2, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
-    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 3, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
-    
-    pbch_symbol_matrix = get_PBCH_symbol_matrix(e, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_RE_tuple)
-    pbch_symbol_matrix_ap0 = pbch_symbol_matrix[0]
-    for l in range(4):
-        #legend_list = list()
-        plt.title("PBCH symbol array in l=%s for AP=0"%l)
-        plt.plot(abs(pbch_symbol_matrix_ap0[l]))
-        plt.xlabel("k (subcarrier index)")
-        plt.ylabel("Magnitude")
-        plt.show()
-#@+node:Michael.20120321090100.1538: *3* 02. PBCH Uu signal
-def test_PBCH_Uu_signal():
-    
-    layer_mapping_scheme = 'single_antenna'
-    num_of_layers = 1
-    precoding_scheme = 'single_antenna'
-    AP_num = 1
-    codebook_index = 0
-    
-    
-    a = array( [1]*24 )
-    e = BCH_channel_process(a, AP_num, CP_DL_type)
-    n_s = 1
-    CSRS_RE_tuple = get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
-    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
-    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 2, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
-    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 3, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
-    
-    pbch_symbol_matrix = get_PBCH_symbol_matrix(e, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_RE_tuple)
-    pbch_symbol_matrix_ap0 = pbch_symbol_matrix[0]
-    
-    pbch_Uu_signal = array( [0.0] * (160+144*3+2048*4) )
+    plt.title("PHICH symbol array in l=0 for AP=0")
+    plt.plot(abs(PHICH_symbol_matrix[0][0]))
+    plt.xlabel("k (subcarrier index)")
+    plt.ylabel("Magnitude")
+    plt.show()
+#@+node:michael.20120323224953.1801: *3* 02. PHICH Uu signal
+def test_PHICH_Uu_signal():
+    PHICH_symbol_matrix = get_PHICH_symbol_array(HI, subframe, n_s, n_seq_PHICH, n_group_PHICH, N_group_PHICH, PHICH_duration, N_cell_ID, DL_CP_type, AP_num, LTE_mode, UL_DL_config, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, is_MBSFN, N_DL_symb)
+    PHICH_symbol_matrix_ap0 = PHICH_symbol_matrix[0]
+    phich_Uu_signal = array( [0.0] * (160+144*2+2048*3) )
     t0 = arange(0, (160+2048)*T_s, T_s)
     t1 = arange(0, (144+2048)*T_s, T_s)
-    for l in range(4):
+
+    for l in range(3):
         if l==0:
-            pbch_re_array = pbch_symbol_matrix_ap0[l]
-            pbch_baseband_IQ = ofdm_baseband_IQ_signal_generate(pbch_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-            tmp_pbch_Uu_signal = downlink_modulate(pbch_baseband_IQ, t0, f_0)
-            pbch_Uu_signal[:(160+2048)] = tmp_pbch_Uu_signal
+            phich_re_array = PHICH_symbol_matrix_ap0[l]
+            phich_baseband_IQ = ofdm_baseband_IQ_signal_generate(phich_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            tmp_phich_Uu_signal = downlink_modulate(phich_baseband_IQ, t0, f_0)
+            phich_Uu_signal[:(160+2048)] = tmp_phich_Uu_signal
         else:
-            pbch_re_array = pbch_symbol_matrix_ap0[l]
-            pbch_baseband_IQ = ofdm_baseband_IQ_signal_generate(pbch_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
-            tmp_pbch_Uu_signal = downlink_modulate(pbch_baseband_IQ, t1, f_0)
-            pbch_Uu_signal[(160+2048)+(144+2048)*(l-1):(160+2048)+(144+2048)*l] = tmp_pbch_Uu_signal
-    new_t = arange(0, (160+144*3+2048*4)*T_s, T_s)
-    plt.plot(new_t*1000, pbch_Uu_signal)
-    plt.title('PBCH (only) Uu signal for ap=0')
+            phich_re_array = PHICH_symbol_matrix_ap0[l]
+            phich_baseband_IQ = ofdm_baseband_IQ_signal_generate(phich_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            tmp_phich_Uu_signal = downlink_modulate(phich_baseband_IQ, t1, f_0)
+            phich_Uu_signal[(160+2048)+(144+2048)*(l-1):(160+2048)+(144+2048)*l] = tmp_phich_Uu_signal
+    new_t = arange(0, (160+144*2+2048*3)*T_s, T_s)
+    plt.plot(new_t*1000, phich_Uu_signal)
+    plt.title('PHICH (only) Uu signal for ap=0')
     plt.xlabel('Time (ms)')
     plt.ylabel('Signal level')
     #plt.legend(legend_list)
     #plt.axis( [-0.01, 0.075, -0.1, 14] )
     plt.show()
-#@+node:michael.20120305092148.1277: *3* 36.211
+#@+node:michael.20120305092148.1276: *3* 3GPP
 #@+others
-#@+node:michael.20120305092148.1295: *4* 6 Downlink
+#@+node:michael.20120305092148.1277: *4* 36.211
 #@+others
-#@+node:michael.20120305092148.1304: *5* 5.07.2 Preamble seq gen
+#@+node:michael.20120305092148.1295: *5* 6 Downlink
+#@+others
+#@+node:michael.20120305092148.1304: *6* 5.07.2 Preamble seq gen
 # u_th root Zadoff-Chu sequence
 def x_u(u, n, N_ZC):
     if n>=0 and n<=N_ZC:
@@ -145,7 +56,7 @@ def x_u(u, n, N_ZC):
 # u_th root Z-C sequence with v N_cs cyclic shift
 def x_uv(u, v, n, N_ZC):
     pass
-#@+node:michael.20120305092148.1278: *5* 6.02.4 REGs
+#@+node:michael.20120305092148.1278: *6* 6.02.4 REGs
 def get_REG_in_RB_symbol(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, optimize=True):
     '''
     input:
@@ -228,7 +139,7 @@ def get_REG_in_RB_symbol_opti(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type):
     return REGs
 
 #@+others
-#@+node:michael.20120323224953.1793: *6* get_RE_number_in_REG
+#@+node:michael.20120323224953.1793: *7* get_RE_number_in_REG
 def get_RE_number_in_REG(l, CSRS_AP_num, CP_DL_type):
     '''
     input:
@@ -255,7 +166,7 @@ def get_RE_number_in_REG(l, CSRS_AP_num, CP_DL_type):
         else:
             result = 6
     return result
-#@+node:Michael.20120320091224.1504: *6* get_REG_from_kl
+#@+node:Michael.20120320091224.1504: *7* get_REG_from_kl
 def get_REG_from_kl(num_of_ap, CP_DL_type, k, l):
     '''
     input:
@@ -282,7 +193,7 @@ def get_REG_from_kl(num_of_ap, CP_DL_type, k, l):
             else:
                 result = ( (k/6*6,l), (k/6*6+1,l), (k/6*6+2,l), (k/6*6+3,l), (k/6*6+4,l), (k/6*6+5,l) )
     return result
-#@+node:michael.20120323224953.1794: *6* get_REG_number_in_symbol
+#@+node:michael.20120323224953.1794: *7* get_REG_number_in_symbol
 def get_REG_number_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type):
     '''
     input:
@@ -295,7 +206,7 @@ def get_REG_number_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type):
         number of total REG number in the given symbol across all RBs.
     '''
     return N_DL_RB * N_RB_sc / get_RE_number_in_REG(l, CSRS_AP_num, CP_DL_type)
-#@+node:michael.20120323224953.1795: *6* get_REG_in_symbol
+#@+node:michael.20120323224953.1795: *7* get_REG_in_symbol
 def get_REG_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, CSRS_REs):
     '''
     input:
@@ -325,9 +236,9 @@ def get_REG_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, CSRS_REs):
     return result
     
 #@-others
-#@+node:Michael.20120319125504.1471: *5* 6.03.3 Layer mapping
+#@+node:Michael.20120319125504.1471: *6* 6.03.3 Layer mapping
 #@+others
-#@+node:Michael.20120319125504.1472: *6* 6.3.3.1 Layer mapping for transmission on a single antenna port
+#@+node:Michael.20120319125504.1472: *7* 6.3.3.1 Layer mapping for transmission on a single antenna port
 def layer_map_single_antenna_port(x):
     '''
     input:
@@ -338,7 +249,7 @@ def layer_map_single_antenna_port(x):
     v = 1
     M_layer_symb = len(x)
     return array( [x] )
-#@+node:Michael.20120319125504.1473: *6* 6.3.3.2 Layer mapping for spatial multiplexing
+#@+node:Michael.20120319125504.1473: *7* 6.3.3.2 Layer mapping for spatial multiplexing
 def layer_map_spatial_multiplex(codewords, v):
     '''
     input:
@@ -394,7 +305,7 @@ def layer_map_spatial_multiplex(codewords, v):
         result = array( [x0, x1, x2, x3] )
     
     return result
-#@+node:Michael.20120319125504.1475: *6* 6.3.3.3 Layer mapping for transmit diversity
+#@+node:Michael.20120319125504.1475: *7* 6.3.3.3 Layer mapping for transmit diversity
 def layer_map_transmit_diversity(codewords, v):
     '''
     input:
@@ -438,9 +349,9 @@ def layer_map_transmit_diversity(codewords, v):
     
     return result
 #@-others
-#@+node:Michael.20120319125504.1476: *5* 6.03.4 Precoding
+#@+node:Michael.20120319125504.1476: *6* 6.03.4 Precoding
 #@+others
-#@+node:Michael.20120319125504.1477: *6* 6.3.4.1 Precoding for transmission on a single antenna port
+#@+node:Michael.20120319125504.1477: *7* 6.3.4.1 Precoding for transmission on a single antenna port
 def precode_single_antenna(layer_mapped_matrix):
     '''
     input:
@@ -451,10 +362,10 @@ def precode_single_antenna(layer_mapped_matrix):
     #M_layer_symb = len(layer_mapped_matrix[0])
     #M_ap_symb = M_layer_symb
     return layer_mapped_matrix
-#@+node:Michael.20120319125504.1478: *6* 6.3.4.2 Precoding for spatial multiplexing using antenna ports with CSRS
+#@+node:Michael.20120319125504.1478: *7* 6.3.4.2 Precoding for spatial multiplexing using antenna ports with CSRS
 #@+others
-#@+node:Michael.20120319125504.1479: *7* 6.3.4.2.1 Precoding without CDD
-#@+node:Michael.20120319125504.1480: *7* 6.3.4.2.3 Codebook for precoding
+#@+node:Michael.20120319125504.1479: *8* 6.3.4.2.1 Precoding without CDD
+#@+node:Michael.20120319125504.1480: *8* 6.3.4.2.3 Codebook for precoding
 def get_codebook_for_precoding( ap_num, codebook_index, v ):
     '''
     input:
@@ -478,7 +389,7 @@ def get_codebook_for_precoding( ap_num, codebook_index, v ):
     else:   # ap_num==4
         raise LteException("36.211 6.3.4.2.3 codebook selection for 4 transmission antenna. Need to be added.")
 #@-others
-#@+node:Michael.20120320091224.1502: *6* 6.3.4.3 Precoding for transmit diversity
+#@+node:Michael.20120320091224.1502: *7* 6.3.4.3 Precoding for transmit diversity
 def precode_transmit_diversity(layer_mapped_matrix, num_of_ap):
     '''
     input:
@@ -531,9 +442,9 @@ def precode_transmit_diversity(layer_mapped_matrix, num_of_ap):
             y[3][4*i+3] = 1/sqrt(2) * sum(array([0,0,1,0,0,0,-1j,0])) * tmp_x
     return y
 #@-others
-#@+node:Michael.20120321090100.1521: *5* 6.06 PBCH
+#@+node:Michael.20120321090100.1521: *6* 6.06 PBCH
 #@+others
-#@+node:Michael.20120321090100.1522: *6* 6.6.1 Scrambling
+#@+node:Michael.20120321090100.1522: *7* 6.6.1 Scrambling
 def PBCH_scramble(b, N_cell_ID):
     '''
     input:
@@ -547,7 +458,7 @@ def PBCH_scramble(b, N_cell_ID):
     for i in range(len(b)):
         b_[i] = (b[i] + c(c_init,i))%2
     return tuple(b_)
-#@+node:Michael.20120321090100.1523: *6* 6.6.2 Modulation
+#@+node:Michael.20120321090100.1523: *7* 6.6.2 Modulation
 def PBCH_modulate(b_):
     '''
     input:
@@ -559,7 +470,7 @@ def PBCH_modulate(b_):
     for i in range(len(d)):
         d[i] = QPSK( (b_[2*i], b_[2*i+1]) )
     return d
-#@+node:Michael.20120321090100.1524: *6* 6.6.3 Layer mapping and precoding
+#@+node:Michael.20120321090100.1524: *7* 6.6.3 Layer mapping and precoding
 def PBCH_layer_map(d, layer_mapping_scheme, num_of_layers):
     '''
     input:
@@ -600,7 +511,7 @@ def PBCH_precode(layer_mapped_matrix, precoding_scheme, num_of_ap, codebook_inde
         lte_assert(num_of_ap==num_of_layers, "For transmit diversity precoding, number of transmitting antenna must be equal to number of layers, but currently num_of_ap=%s and num_of_layers=%s"%(num_of_ap, num_of_layers))
         result = precode_transmit_diversity(layer_mapped_matrix, num_of_ap)
     return result
-#@+node:Michael.20120321090100.1525: *6* 6.6.4 Mapping to resource elements
+#@+node:Michael.20120321090100.1525: *7* 6.6.4 Mapping to resource elements
 def get_REs_for_PBCH_in_symbol(l, N_DL_RB, N_RB_sc, CSRS_REs):
     '''
     input:
@@ -682,9 +593,9 @@ def get_PBCH_symbol_matrix(b, N_cell_ID, layer_mapping_scheme, num_of_layers, pr
     
 
     
-#@+node:Michael.20120319125504.1463: *5* 6.07 PCFICH
+#@+node:Michael.20120319125504.1463: *6* 6.07 PCFICH
 #@+others
-#@+node:Michael.20120319125504.1464: *6* 6.7.1 Scrambing
+#@+node:Michael.20120319125504.1464: *7* 6.7.1 Scrambing
 def PCFICH_scramble(b, n_s, N_cell_ID):
     '''
     input:
@@ -698,7 +609,7 @@ def PCFICH_scramble(b, n_s, N_cell_ID):
     for i in range(32):
         b_[i] = (b[i] + c(c_init,i))%2
     return tuple(b_)
-#@+node:Michael.20120319125504.1465: *6* 6.7.2 Modulation
+#@+node:Michael.20120319125504.1465: *7* 6.7.2 Modulation
 def PCFICH_modulate(b_):
     '''
     input:
@@ -710,7 +621,7 @@ def PCFICH_modulate(b_):
     for i in range(16):
         d[i] = QPSK( (b_[2*i], b_[2*i+1]) )
     return d
-#@+node:Michael.20120319125504.1474: *6* 6.7.3 Layer mapping and precoding
+#@+node:Michael.20120319125504.1474: *7* 6.7.3 Layer mapping and precoding
 def PCFICH_layer_map(d, layer_mapping_scheme, num_of_layers):
     '''
     input:
@@ -751,7 +662,7 @@ def PCFICH_precode(layer_mapped_matrix, precoding_scheme, num_of_ap, codebook_in
         lte_assert(num_of_ap==num_of_layers, "For transmit diversity precoding, number of transmitting antenna must be equal to number of layers, but currently num_of_ap=%s and num_of_layers=%s"%(num_of_ap, num_of_layers))
         result = precode_transmit_diversity(layer_mapped_matrix, num_of_ap)
     return result
-#@+node:Michael.20120320091224.1503: *6* 6.7.4 Mapping to resource elements
+#@+node:Michael.20120320091224.1503: *7* 6.7.4 Mapping to resource elements
 def get_REG_for_PCFICH_quadruplet(quadruplet_index, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_RE_tuple, num_of_ap, CP_DL_type):
     '''
     input:
@@ -899,7 +810,7 @@ def get_PCFICH_symbol_array(cfi_b, n_s, N_cell_ID, layer_mapping_scheme, num_of_
 
     
     
-#@+node:michael.20120305092148.1290: *5* 6.09 PHICH
+#@+node:michael.20120305092148.1290: *6* 6.09 PHICH
 def get_m_i( UL_DL_config, subframe ):
     m_i_table = (   (2,1,None,None,None,2,1,None,None,None),
                             (0,1,None,None,1,0,1,None,None,1),
@@ -969,7 +880,7 @@ def get_PHICH_symbol_array(HI, subframe, n_s, n_seq_PHICH, n_group_PHICH, N_grou
                 symbol_matrix_for_all_ap[ap][l][k] = layer_mapped_matrix[ap][reg_index*4+re_index]
 
     return symbol_matrix_for_all_ap
-#@+node:Michael.20120323090727.1968: *6* 6.9.1 Modulation
+#@+node:Michael.20120323090727.1968: *7* 6.9.1 Modulation
 def PHICH_modulate(b, n_s, n_seq_PHICH, N_cell_ID, DL_CP_type):
     '''
     input:
@@ -1024,7 +935,7 @@ def get_orthogonal_seq_for_PHICH(n_seq_PHICH, N_PHICH_SF):
         result = ( (1,1), (1,-1), (1j,1j), (1j,-1j) )[n_seq_PHICH]
     result = array(result)
     return result
-#@+node:michael.20120323224953.1378: *6* 6.9.2 Resource group alignment, layer mapping and precoding
+#@+node:michael.20120323224953.1378: *7* 6.9.2 Resource group alignment, layer mapping and precoding
 def PHICH_align(d, n_group_PHICH, DL_CP_type, AP_num):
     '''
     input:
@@ -1116,7 +1027,7 @@ def PHICH_layer_map_and_precode(d_0, AP_num, n_group_PHICH, DL_CP_type):
                 y[3][4*i+3] = 1/sqrt(2) * sum(array([0,0,1,0,0,0,-1j,0])) * tmp_x
         result = y
     return result
-#@+node:michael.20120323224953.1379: *6* 6.9.3 Mapping to resource elements
+#@+node:michael.20120323224953.1379: *7* 6.9.3 Mapping to resource elements
 def get_PHICH_mapping_units(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, m_i, N_group_PHICH, DL_CP_type, is_MBSFN, PHICH_duration, subframe, n_s, N_cell_ID, N_DL_symb):
     '''
     input:
@@ -1221,11 +1132,11 @@ def get_PHICH_mapping_units(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num,
         result[m_][i] = REG_list_in_symbol[l_][n_]
         
     return result
-#@+node:michael.20120305092148.1280: *5* 6.10 RS
+#@+node:michael.20120305092148.1280: *6* 6.10 RS
 #@+others
-#@+node:michael.20120305092148.1281: *6* 6.10.1 CSRS
+#@+node:michael.20120305092148.1281: *7* 6.10.1 CSRS
 #@+others
-#@+node:michael.20120305092148.1285: *7* 6.10.1.1 Seq gen
+#@+node:michael.20120305092148.1285: *8* 6.10.1.1 Seq gen
 def r_l_ns(n_s, l, N_cell_ID, N_maxDL_RB, DL_CP_type):
     '''
     r_l_ns(l, n_s, N_cell_ID, N_maxDL_RB, DL_CP_type): list of complex symbols for CSRS signal in symbol index l of given slot.
@@ -1262,7 +1173,7 @@ cProfile.runctx('main()', globals(), locals())
         image_part = 1/sqrt(2) * (1-2*c(c_init,2*m+1))
         csrs_symbol_list.append( complex(real_part,image_part) )
     return tuple(csrs_symbol_list)
-#@+node:michael.20120305092148.1279: *7* 6.10.1.2 Mapping to REs
+#@+node:michael.20120305092148.1279: *8* 6.10.1.2 Mapping to REs
 def get_CSRS_REs_in_slot(n_s, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb):
     '''
     input:
@@ -1356,11 +1267,11 @@ def get_CSRS_in_symbol(n_s, l, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_R
     return symbol_array
 #@-others
 #@-others
-#@+node:michael.20120305092148.1301: *5* 6.11 Sync signals
+#@+node:michael.20120305092148.1301: *6* 6.11 Sync signals
 #@+others
-#@+node:michael.20120305092148.1302: *6* 6.11.1 PSS
+#@+node:michael.20120305092148.1302: *7* 6.11.1 PSS
 #@+others
-#@+node:michael.20120305092148.1303: *7* 6.11.1.1 seq gen
+#@+node:michael.20120305092148.1303: *8* 6.11.1.1 seq gen
 def pss_d(n, N_ID_2):
     u = (25, 29, 34)[N_ID_2]
     d_n = 0
@@ -1369,7 +1280,7 @@ def pss_d(n, N_ID_2):
     elif n>=31 and n<=61:
         d_n = exp(-1j*pi*u*(n+1)*(n+2)/63)
     return d_n
-#@+node:michael.20120305092148.1305: *7* 6.11.1.2 mapping to REs
+#@+node:michael.20120305092148.1305: *8* 6.11.1.2 mapping to REs
 def pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc):
     symbol_array = ndarray( shape=(N_DL_RB*N_RB_sc,), dtype=complexfloating )
     for i in arange(len(symbol_array)):
@@ -1398,9 +1309,9 @@ def get_pss_seq_from_RE_symbol_array(re_symbol_array, N_RB_sc):
         tmp_index += 1
     return pss_seq_received
 #@-others
-#@+node:michael.20120312091134.1403: *6* 6.11.2 SSS
+#@+node:michael.20120312091134.1403: *7* 6.11.2 SSS
 #@+others
-#@+node:michael.20120312091134.1404: *7* 6.11.2.1 Sequence generation
+#@+node:michael.20120312091134.1404: *8* 6.11.2.1 Sequence generation
 def sss_x5(mask, n):
     x_init = 0b10000
     while n>4:
@@ -1465,7 +1376,7 @@ def sss_seq(subframe, N_ID_cell):
         sss[i] = sss_d(i, subframe, N_ID_cell)
     return sss
 
-#@+node:Michael.20120314113327.1416: *7* 6.11.2.2 Mapping to REs
+#@+node:Michael.20120314113327.1416: *8* 6.11.2.2 Mapping to REs
 def sss_symbol_array(subframe, N_ID_cell, N_DL_RB, N_RB_sc):
     symbol_array = ndarray( shape=(N_DL_RB*N_RB_sc,), dtype=complex128 )
     for i in arange(len(symbol_array)):
@@ -1517,7 +1428,7 @@ def get_sss_seq_from_RE_symbol_array(re_symbol_array, N_RB_sc, do_adjust=True, a
     return sss_seq_received
 #@-others
 #@-others
-#@+node:michael.20120305092148.1293: *5* 6.12 OFDM baseband signal gen
+#@+node:michael.20120305092148.1293: *6* 6.12 OFDM baseband signal gen
 def ofdm_baseband_IQ_signal_generate(symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f=15000, gen_method='IFFT'):
     '''
     Note: len(symbol_array)==N_DL_RB*N_RB_sc must be True.
@@ -1622,7 +1533,7 @@ def ofdm_baseband_IQ_to_RE_IQ_array(baseband_IQ_array, N_DL_RB, N_RB_sc, delta_f
     re_IQ_array = 1.0/N * map_fft_result_to_RE_IQ_array(fft.fft(baseband_IQ_array, N))
         
     return re_IQ_array
-#@+node:michael.20120305092148.1296: *5* 6.13 Modulation&upconversion
+#@+node:michael.20120305092148.1296: *6* 6.13 Modulation&upconversion
 def downlink_modulate(s_p_l, t, f_0):
     modulated_signal = cos(2*pi*f_0*t) * s_p_l.real - sin(2*pi*f_0*t) * imag(s_p_l)
     cutoff_freq = f_0
@@ -1644,11 +1555,11 @@ def downlink_downconvert(signal, t, f_0):
     
     return I + 1j*Q
 #@-others
-#@+node:michael.20120305092148.1294: *4* 7 Generic functions
+#@+node:michael.20120305092148.1294: *5* 7 Generic functions
 #@+others
-#@+node:Michael.20120319125504.1466: *5* 7.1 Modulation mapper
+#@+node:Michael.20120319125504.1466: *6* 7.1 Modulation mapper
 #@+others
-#@+node:Michael.20120319125504.1467: *6* 7.1.1 BPSK
+#@+node:Michael.20120319125504.1467: *7* 7.1.1 BPSK
 def BPSK(b):
     '''
     input:
@@ -1658,7 +1569,7 @@ def BPSK(b):
     '''
     # one bit modulation
     return (1/sqrt(2) + 1j*1/sqrt(2), -1/sqrt(2) + 1j*(-1)/sqrt(2))[b]
-#@+node:Michael.20120319125504.1468: *6* 7.1.2 QPSK
+#@+node:Michael.20120319125504.1468: *7* 7.1.2 QPSK
 def QPSK((b0,b1)):
     '''
     input:
@@ -1670,7 +1581,7 @@ def QPSK((b0,b1)):
                         complex(-1/sqrt(2),1/sqrt(2)), complex(-1/sqrt(2),-1/sqrt(2)))[2*b0+b1]
 
 
-#@+node:Michael.20120319125504.1469: *6* 7.1.3 16QAM
+#@+node:Michael.20120319125504.1469: *7* 7.1.3 16QAM
 def sixteenQAM((b0,b1,b2,b3)):
     '''
     input:
@@ -1696,7 +1607,7 @@ def sixteenQAM((b0,b1,b2,b3)):
                             complex(-3*I, -3*Q),
     )[b3+2*b2+4*b1+8*b0]
 
-#@+node:Michael.20120319125504.1470: *6* 7.1.4 64QAM
+#@+node:Michael.20120319125504.1470: *7* 7.1.4 64QAM
 def sixtyFourQAM((b0,b1,b2,b3,b4,b5)):
     '''
     input:
@@ -1716,7 +1627,7 @@ def sixtyFourQAM((b0,b1,b2,b3,b4,b5)):
                         (-5,-3), (-5,-1), (-7,-3), (-7,-1), (-5,-5), (-5,-7), (-7,-5), (-7,-7) )[b5+b4*2+b3*4+b2*8+b1*16+b0*32]
     return x*I+1j*y*Q
 #@-others
-#@+node:michael.20120305092148.1283: *5* 7.2 Pseudo-random seq gen
+#@+node:michael.20120305092148.1283: *6* 7.2 Pseudo-random seq gen
 def x_1(i):
     x1_init = 1
     while i>30:
@@ -1751,9 +1662,9 @@ cProfile.runctx('main()', globals(), locals())
     return (x_1(i+N_C) + x_2(c_init,i+N_C)) %2
 #@-others
 #@-others
-#@+node:Michael.20120320091224.1509: *3* 36.212
+#@+node:Michael.20120320091224.1509: *4* 36.212
 #@+others
-#@+node:Michael.20120321090100.1533: *4* 5.1.1 CRC calculation
+#@+node:Michael.20120321090100.1533: *5* 5.1.1 CRC calculation
 def calc_CRC16(a):
     '''
     input:
@@ -1763,7 +1674,7 @@ def calc_CRC16(a):
     '''
     lte_warn("calc_CRC16 is only a dummy function!")
     return [0] * 16
-#@+node:Michael.20120321090100.1534: *4* 5.1.3.1 Tail biting convolutional coding
+#@+node:Michael.20120321090100.1534: *5* 5.1.3.1 Tail biting convolutional coding
 def tail_biting_convolutional_code(c):
     '''
     input:
@@ -1779,7 +1690,7 @@ def tail_biting_convolutional_code(c):
         result[2*i] = c[i]
         result[3*i] = c[i]
     return result
-#@+node:Michael.20120321090100.1537: *4* 5.1.4.2 Rate matching for convolutionally coded TrCh and control information
+#@+node:Michael.20120321090100.1537: *5* 5.1.4.2 Rate matching for convolutionally coded TrCh and control information
 def rate_match_for_conv_coded(d, E):
     '''
     input:
@@ -1796,11 +1707,11 @@ def rate_match_for_conv_coded(d, E):
         e[i] = d[i%D]
     
     return e
-#@+node:Michael.20120321090100.1530: *4* 5.3 DL transport channels and control information
+#@+node:Michael.20120321090100.1530: *5* 5.3 DL transport channels and control information
 #@+others
-#@+node:Michael.20120321090100.1531: *5* 5.3.1 Broadcast channel
+#@+node:Michael.20120321090100.1531: *6* 5.3.1 Broadcast channel
 #@+others
-#@+node:Michael.20120321090100.1532: *6* 5.3.1.1 TB CRC attachment
+#@+node:Michael.20120321090100.1532: *7* 5.3.1.1 TB CRC attachment
 def attach_BCH_TB_CRC(a, AP_num):
     '''
     input:
@@ -1828,7 +1739,7 @@ def attach_BCH_TB_CRC(a, AP_num):
         c[-1*i-1] = crc16[-1*i-1]
     
     return c
-#@+node:Michael.20120321090100.1535: *6* 5.3.1.2 Channel coding
+#@+node:Michael.20120321090100.1535: *7* 5.3.1.2 Channel coding
 def PBCH_channel_code(c):
     '''
     input:
@@ -1841,7 +1752,7 @@ def PBCH_channel_code(c):
     K = A + L
     lte_assert(len(c)==K, "PBCH TB size before channel coding shall be %s, but it is %s"%(K, len(c)))
     return tail_biting_convolutional_code(c)
-#@+node:Michael.20120321090100.1536: *6* 5.3.1.3 Rate matching
+#@+node:Michael.20120321090100.1536: *7* 5.3.1.3 Rate matching
 def PBCH_rate_match(d, CP_DL_type):
     '''
     input:
@@ -1876,7 +1787,7 @@ def BCH_channel_process(a, AP_num, CP_DL_type):
     d = PBCH_channel_code(c)
     e = PBCH_rate_match(d, CP_DL_type)
     return e
-#@+node:Michael.20120320091224.1510: *5* 5.3.4 Control format indicator
+#@+node:Michael.20120320091224.1510: *6* 5.3.4 Control format indicator
 def channel_code_CFI(cfi):
     '''
     input:
@@ -1891,7 +1802,7 @@ def channel_code_CFI(cfi):
                             (1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1)
                     )[cfi]
     return encoded_cfi
-#@+node:michael.20120323224953.1796: *5* 5.3.5 HARQ indicator (HI)
+#@+node:michael.20120323224953.1796: *6* 5.3.5 HARQ indicator (HI)
 def channel_code_HI(HI):
     '''
     input:
@@ -1904,7 +1815,16 @@ def channel_code_HI(HI):
     
 #@-others
 #@-others
-#@+node:Michael.20120319125504.1481: *3* Error handling
+#@+node:michael.20120305092148.1315: *4* Gegeral math
+#@+others
+#@+node:michael.20120305092148.1316: *5* Zadoff-Chu seq
+def ZC( n, N_ZC, q ):
+    '''
+    give the n-th element of 0 cyclic shift Z-C sequence with root index q and length N_ZC.
+    '''
+    return exp(-1j*2*pi*q*n*(n+1)/2/N_ZC)
+#@-others
+#@+node:Michael.20120319125504.1481: *4* Error handling
 class LteException(Exception):
     
     def __init__(self, value):
@@ -1920,15 +1840,95 @@ def lte_assert(condition, a_string):
 def lte_warn(a_string):
     print a_string
 #@-others
+#@-others
+
+from scipy.signal import *
+from numpy import *
+import matplotlib.pyplot as plt
+
+# time scale is in 1 s
+T_s = 1.0/30720/1000 # in s
+
+# configuration for SSS
+l = 0
+N_maxDL_RB = 110
+N_DL_RB = 110
+N_RB_sc = 12
+N_DL_CP = 0 # normal DL CP
+AP_num = 2
+CP_DL_type = 0
+N_DL_symb = 7
+delta_f = 15000
+subframe = 0
+N_cell_ID = 0
+f_0 = (2620+0.1*(2620-2750))*1000*1000  # in Hz
+
+if N_DL_CP==0 and delta_f==15000:
+    if l==0:
+        N_CP_l = 160
+    else:
+        N_CP_l = 144
+elif N_DL_CP==1:    # extended CP
+    if delta_f==15000:
+        N_CP_l = 512
+    else:   # delta_f == 7500
+        N_CP_l = 1024
+if delta_f==15000:
+    N = 2048
+else:   # delta_f == 7500
+    N = 4096
+
+t = arange(0, (N_CP_l+N)*T_s, T_s)
+
+def find_max( a_list ):
+    m = max(a_list)
+    for i in arange(len(a_list)):
+        if a_list[i] == m:
+            return (i, m)
+
+def find_min( a_array ):
+    x, y = 0, 0
+    for i in arange(len(a_array)):
+        if a_array[i] < y:
+            x, y = i, a_array[i]
+    return (x,y)
+
+def find_abs_max( a_array ):
+    m = max(abs(a_array))
+    for i in arange(len(a_array)):
+        if abs(a_array[i]) == m:
+            return (i, m)
+            
+#@+others
+#@-others
+
+HI = 1
+subframe =1
+n_s = 2
+n_seq_PHICH = 0
+n_group_PHICH =0
+N_group_PHICH = 1
+PHICH_duration = 0
+N_cell_ID = 0
+DL_CP_type = 0
+AP_num = 2
+LTE_mode = 'TDD'
+UL_DL_config = 1
+N_maxDL_RB = 110
+N_DL_RB = 110
+N_RB_sc = 12
+CSRS_AP_num = 2
+is_MBSFN = False
+N_DL_symb = 7
 
 test_enabling_bits = 0b11
 
-# 01. PBCH symbol array in one OFDM symbol
+# 01. PHICH symbol array in one OFDM symbol
 if test_enabling_bits & (1<<0):
-    test_PBCH_symbol_array_in_one_OFDM_symbol()
+    test_PHICH_symbol_array_in_one_OFDM_symbol()
 
-# 02. PBCH Uu signal
+# 02. PHICH Uu signal
 if test_enabling_bits & (1<<1):
-    test_PBCH_Uu_signal()
+    test_PHICH_Uu_signal()
 #@-others
 #@-leo

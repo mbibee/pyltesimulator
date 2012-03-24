@@ -133,14 +133,15 @@ def channel_code_CFI(cfi):
 #@+node:michael.20120305092148.1278: *3* 6.02.4 REGs
 def get_REG_in_RB_symbol(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, optimize=True):
     '''
-    get_REG_in_RB_symbol(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, optimize=True): tuple of REGs
-    Return REGs in the specific PRB of symbol l.
-    n_PRB: PRB index
-    N_RB_sc: number of subcarriers in one RB
-    l: symbol index
-    CSRS_AP_num: number of antenna uesed for Cell Specific Reference Signal
-    DL_CP_type: 0 for normal CP, 1 for extended CP
-    optimize: boolean. whether to use optimized code for speed.
+    input:
+        n_PRB: PRB index
+        N_RB_sc: number of subcarriers in one RB
+        l: symbol index
+        CSRS_AP_num: number of antenna uesed for Cell Specific Reference Signal
+        DL_CP_type: 0 for normal CP, 1 for extended CP
+        optimize: boolean. whether to use optimized code for speed.
+    output:
+        a tuple of all REGs in the given PRB and symbol
     '''
     if optimize:
         result = get_REG_in_RB_symbol_opti(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type)
@@ -212,7 +213,34 @@ def get_REG_in_RB_symbol_opti(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type):
     return REGs
 
 #@+others
-#@+node:Michael.20120320091224.1504: *4* more helper not explicitly in protocol
+#@+node:michael.20120323224953.1793: *4* get_RE_number_in_REG
+def get_RE_number_in_REG(l, CSRS_AP_num, CP_DL_type):
+    '''
+    input:
+        l: symbol index
+        CSRS_AP_num: number of antenna ports used for CSRS.
+        CP_DL_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        number of REs that one REG contains, including those REs used for CSRS.
+    '''
+    result = 0
+    if l == 0:
+        result = 6
+    elif l == 1:
+        if CSRS_AP_num == 4:
+            result = 6
+        else:
+            # CSRS_AP_num in (1,2)
+            result = 4
+    elif l == 2:
+        result = 4
+    elif l == 3:
+        if CP_DL_type == 0:    # for nomal CP
+            result = 4
+        else:
+            result = 6
+    return result
+#@+node:Michael.20120320091224.1504: *4* get_REG_from_kl
 def get_REG_from_kl(num_of_ap, CP_DL_type, k, l):
     '''
     input:
@@ -239,7 +267,48 @@ def get_REG_from_kl(num_of_ap, CP_DL_type, k, l):
             else:
                 result = ( (k/6*6,l), (k/6*6+1,l), (k/6*6+2,l), (k/6*6+3,l), (k/6*6+4,l), (k/6*6+5,l) )
     return result
-
+#@+node:michael.20120323224953.1794: *4* get_REG_number_in_symbol
+def get_REG_number_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type):
+    '''
+    input:
+        N_DL_RB: number of downlinke resource blocks
+        N_RB_sc: number of subcarriers in one RB
+        l: symbol index
+        CSRS_AP_num: number of antenna uesed for Cell Specific Reference Signal
+        CP_DL_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        number of total REG number in the given symbol across all RBs.
+    '''
+    return N_DL_RB * N_RB_sc / get_RE_number_in_REG(l, CSRS_AP_num, CP_DL_type)
+#@+node:michael.20120323224953.1795: *4* get_REG_in_symbol
+def get_REG_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, CSRS_REs):
+    '''
+    input:
+        N_DL_RB: downlink RB number
+        N_RB_sc: number of subcarriers in one RB
+        l: symbol index
+        CSRS_AP_num: number of antenna uesed for Cell Specific Reference Signal
+        DL_CP_type: 0 for normal CP, 1 for extended CP
+        optimize: boolean. whether to use optimized code for speed.
+        CSRS_REs: all REs used for CSRS in this symbol.
+    output:
+        a tuple of all REGs in the given symbol, from lowest frequency to the highest.
+    '''
+    result = list()
+    for n_PRB in range(N_DL_RB):
+        for reg in get_REG_in_RB_symbol(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type):
+            if len(reg) == 4:
+                # there's no CSRS REs in here
+                result.append(reg)
+            else:
+                # get rid of those two CSRS REs
+                tmp_reg = list()
+                for re in reg:
+                    if re not in CSRS_REs:
+                        tmp_reg.append(re)
+                result.append( tuple(tmp_reg) )
+    return result
+    
 #@-others
 #@+node:Michael.20120319125504.1471: *3* 6.03.3 Layer mapping
 #@+others
@@ -321,7 +390,8 @@ def layer_map_transmit_diversity(codewords, v):
     '''
     result = None
     num_of_cw = len(codewords)
-    assert( num_of_cw==1 )
+    lte_assert( num_of_cw==1, "num_of_cw=%s is not correct for transmit diversity layer mapping! It must be 1!"%num_of_cw )
+    lte_assert( v in (2,4), "v=%s is out of range! For transmit diversity layer mapping, number of layers has to be either 2 or 4!"%v)
         
     if v==2:
         M_layer_symb = len(codewords[0])/2
@@ -413,10 +483,10 @@ def precode_transmit_diversity(layer_mapped_matrix, num_of_ap):
         x = layer_mapped_matrix
         for i in range(M_layer_symb):
             tmp_x = array([real(x[0][i]), real(x[1][i]), imag(x[0][i]), imag(x[1][i])])
-            y[0][2*i] = 1/sqrt(2) * sum(array([1,0,1j,0])) * tmp_x
-            y[1][2*i] = 1/sqrt(2) * sum(array([0,-1,0,1j])) * tmp_x
-            y[0][2*i+1] = 1/sqrt(2) * sum(array([0,1,0,1j])) * tmp_x
-            y[1][2*i+1] = 1/sqrt(2) * sum(array([1,0,-1j,0])) * tmp_x
+            y[0][2*i] = 1/sqrt(2) * sum(array([1,0,1j,0]) * tmp_x)
+            y[1][2*i] = 1/sqrt(2) * sum(array([0,-1,0,1j]) * tmp_x)
+            y[0][2*i+1] = 1/sqrt(2) * sum(array([0,1,0,1j]) * tmp_x)
+            y[1][2*i+1] = 1/sqrt(2) * sum(array([1,0,-1j,0]) * tmp_x)
     else:
         # num_of_ap==4
         M_layer_symb = len(layer_mapped_matrix[0])
@@ -428,7 +498,7 @@ def precode_transmit_diversity(layer_mapped_matrix, num_of_ap):
         x = layer_mapped_matrix
         for i in range(M_layer_symb):
             tmp_x = array([real(x[0][i]), real(x[1][i]), real(x[2][i]), real(x[3][i]), imag(x[0][i]), imag(x[1][i]), imag(x[2][i]), imag(x[3][i])])
-            y[0][4*i] = 1/sqrt(2) * sum(array([1,0,0,0,1j,0,0,0])) * tmp_x
+            y[0][4*i] = 1/sqrt(2) * sum(array([1,0,0,0,1j,0,0,0]) * tmp_x)
             y[1][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
             y[2][4*i] = 1/sqrt(2) * sum(array([0,-1,0,0,0,1j,0,0])) * tmp_x
             y[3][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
@@ -545,6 +615,41 @@ def get_REG_for_PCFICH_quadruplet(quadruplet_index, N_cell_ID, N_DL_RB, N_RB_sc,
 
 
         
+# helper functions not in standard
+def get_PCFICH_REG_num_in_symbol(l, is_PDCCH_present):
+    '''
+    input:
+        l: symbol index
+        is_PDCCH_present: boolean, whether PDCCH is present in the subframe containing symbol l
+    output:
+        number of REGs that are occupied by PCFICH in the given symbol
+    '''
+    if is_PDCCH_present and l==0:
+        result = 3
+    else:
+        result = 0
+    return result
+
+def get_PCFICH_REs_in_symbol(l, is_PDCCH_present, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_RE_tuple, num_of_ap, CP_DL_type):
+    '''
+    input:
+        l: symbol index
+        is_PDCCH_present: whether PDCCH is present in this slot
+        N_cell_ID: cell ID
+        N_DL_RB: downlink Resource Block number in one slot
+        N_RB_sc: number of subcarriers in one Resource Block
+        CSRS_RE_tuple: a tuple of Cell Specific Reference Signal. Each element is represented as (k,l).
+        num_of_ap: number of antenna ports used for Cell Specific Reference Signal
+        CP_DL_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        a tuple of all REs used by PCFICH in the given symbol
+    '''
+    result = list()
+    if l==0 and is_PDCCH_present:
+        for quadruplet_index in range(4):
+            for re in get_REG_for_PCFICH_quadruplet(quadruplet_index, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_RE_tuple, AP_num, CP_DL_type):
+                result.append(re)
+    return tuple(result)
 #@-others
 
 def valid_CFI_range(LTE_mode, is_MBSFN, support_PDSCH, AP_num, positioning_RS_enabled, N_DL_RB, subframe):
@@ -590,6 +695,7 @@ def valid_CFI_range(LTE_mode, is_MBSFN, support_PDSCH, AP_num, positioning_RS_en
             CFI_candidates = (1,2,3)
         elif N_DL_RB<=10:
             CFI_candidates = (2,3,4)
+    return CFI_candidates
 
 def get_PCFICH_symbol_array(cfi_b, n_s, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_RE_tuple, CP_DL_type):
     '''
@@ -622,20 +728,23 @@ def get_PCFICH_symbol_array(cfi_b, n_s, N_cell_ID, layer_mapping_scheme, num_of_
             for ap in range(AP_num):
                 symbol_array_for_all_ap[ap][k] = precoded_matrix[ap][quadruplet_index*4+i]
     return symbol_array_for_all_ap
-    
+
+
 
     
     
 #@+node:michael.20120305092148.1279: *3* 6.10.1.2 Mapping to REs
 def get_CSRS_REs_in_slot(n_s, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb):
     '''
-    get_CSRS_REs_in_slot(n_s, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb): tuple of CSRS REs in the specified symbol of RB.
-    n_s: slot index
-    antenna_port: antenna port for CSRS
-    N_cell_ID: cell ID
-    N_maxDL_RB: 110 for 20MHz configured by higher layer
-    N_DL_RB: PHY number of downlink RB
-    N_DL_symb: maximum 110 for 20MHz
+    input:
+        n_s: slot index
+        antenna_port: antenna port for CSRS
+        N_cell_ID: cell ID
+        N_maxDL_RB: 110 for 20MHz configured by higher layer
+        N_DL_RB: PHY number of downlink RB
+        N_DL_symb: maximum 110 for 20MHz
+    output:
+        a tuple of all CSRS REs for the given antenna port in the given slot
     
     profile:
 def main():
