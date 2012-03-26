@@ -730,7 +730,6 @@ def get_PCFICH_symbol_array(cfi_b, n_s, N_cell_ID, layer_mapping_scheme, num_of_
     return symbol_array_for_all_ap
 
 
-
     
     
 #@+node:michael.20120305092148.1279: *3* 6.10.1.2 Mapping to REs
@@ -783,7 +782,7 @@ cProfile.runctx('main()', globals(), locals())
             v = 3 * (n_s%2)
         elif antenna_port==3:
             v = 3 + 3 * (n_s%2)
-        for m in range(2*N_DL_RB-1):
+        for m in range(2*N_DL_RB):
             m_ = m + N_maxDL_RB - N_DL_RB   # m'
             k = 6*m + (v+v_shift)%6
             REs.append( (k,l) )
@@ -1066,12 +1065,12 @@ class LteException(Exception):
     def __str__(self):
         return repr(self.value)
     
-def lte_assert(condition, a_string):
+def lte_assert(condition, error_string):
     if not condition:
-        raise LteException(a_string)
+        raise LteException(error_string)
 
-def lte_warn(a_string):
-    print a_string
+def lte_warn(warn_string):
+    print warn_string
 #@-others
 
 test_enabling_bits = 0b11

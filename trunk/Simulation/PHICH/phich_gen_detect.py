@@ -807,9 +807,255 @@ def get_PCFICH_symbol_array(cfi_b, n_s, N_cell_ID, layer_mapping_scheme, num_of_
     return symbol_array_for_all_ap
 
 
+    
+    
+#@+node:Michael.20120326140330.1400: *6* 6.08 PDCCH
+'''
+table 6.8.1-1: supported PDCCH formats.
 
+PDCCH format    Num. of CCEs    Num. of REGs    Num. of PDCCH bits
+0                       1                       9                   72
+1                       2                       18                  144
+2                       4                       36                  288
+3                       8                       72                  576
+'''
+
+class PDCCH:
+    '''
+    Represents one PDCCH channel by giving information of its: bit sequence to be transmitted, format shall be used, start_CCE_index of this PDCCH channel
+    '''
+    def __init__(self, bit_sequence, PDCCH_format, start_CCE_index):
+        '''
+        input:
+            bit_sequence: a list of bits that's to be transmitted
+            PDCCH_format: format of PDCCH (0..3)
+            start_CCE_index: the starting CCE index of this PDCCH
+        '''
+        lte_assert(PDCCH_format in (0,1,2,3), "PDCCH format=%s is invalid! It must be 0, 1, 2, or 3, according to table 6.8.1-1 in 36.211."%PDCCH_format)
+        if PDCCH_format == 0:
+            lte_assert(len(bit_sequence)<=72, "PDCCH format 0 can only be used to transmit <=72 bits, but len(bit_sequence)=%s"%len(bit_sequence))
+        elif PDCCH_format == 1:
+            lte_assert(len(bit_sequence)<=144, "PDCCH format 1 can only be used to transmit <=144 bits, but len(bit_sequence)=%s"%len(bit_sequence))
+            lte_assert(start_CCE_index%2==0, "PDCCH format 1 uses 2 CCEs, thus start_CCE_index%2 must be 0, but start_CCE_index=%s"%start_CCE_index)
+        elif PDCCH_format == 2:
+            lte_assert(len(bit_sequence)<=288, "PDCCH format 1 can only be used to transmit <=288 bits, but len(bit_sequence)=%s"%len(bit_sequence))
+            lte_assert(start_CCE_index%4==0, "PDCCH format 1 uses 4 CCEs, thus start_CCE_index%4 must be 0, but start_CCE_index=%s"%start_CCE_index)
+        else:
+            # PDCCH_format == 3
+            lte_assert(len(bit_sequence)<=576, "PDCCH format 1 can only be used to transmit <=576 bits, but len(bit_sequence)=%s"%len(bit_sequence))
+            lte_assert(start_CCE_index%8==0, "PDCCH format 1 uses 8 CCEs, thus start_CCE_index%8 must be 0, but start_CCE_index=%s"%start_CCE_index)
+        
+        self.bit_sequence = bit_sequence
+        self.format = PDCCH_format
+        self.start_CCE_index = start_CCE_index
+
+#@+others
+#@+node:Michael.20120326140330.1401: *7* 6.8.2 PDCCH multiplexing and scrambing
+def PDCCH_multiplex_and_scramble(pdcch_list, N_REG, n_s, N_cell_ID):
+    '''
+    input:
+        pdcch_list: a list of instances of class PDCCH, which are to be transmitted on PDCCH in the given subframe. pdcch_list[0] shall be a instance of class PDCCH, thus pdcch_list[0].bit_sequence is a list of bits (e.g. (0,1,1,0,0,1,...)) that to be transmitted on PDCCH 0; pdcch_list[0].format is the format of this PDCCH, which shall be 0, 1, 2, or 3; pdcch_list[0].start_CCE_index is the starting CCE index of this PDCCH that must satisfies start_CCE_index%(2**format)==0.
+        N_REG: total number of available REGs for PDCCH in the given subframe.
+        n_s: slot index
+        N_cell_ID: cell ID
+    output:
+        bit sequence of PDCCH in this subframe, its length is 8 * N_REG
+    '''
+    # the number of PDCCHs transmitted in the given subframe
+    n_PDCCH = len(pdcch_list)
     
+    # M_bit[i] is the lengt of how many bits will be transmitted on PDCCH i
+    M_bit = [0] * n_PDCCH
+    for i in range(n_PDCCH):
+        M_bit[i] = len(pdcch_list[i].bit_sequence)
     
+    # padding
+    M_tot = 8 * N_REG
+    lte_assert(M_tot>=sum(M_bit), "The total number of bits to be transmitted on PDCCH is larger than its capacity! N_REG=%s, PDCCH_capacity=8*N_REG=%s, total_bit_to_be_transmitted=%s"%(N_REG, 8*N_REG, sum(M_bit)))
+    NIL = 0
+    bit_sequence = [NIL] * M_tot
+    for i in range(n_PDCCH):
+        CCE_index = pdcch_list[i].start_CCE_index
+        for j in range(len(pdcch_list[i].bit_sequence)):
+            bit_sequence[72*CCE_index+j] = pdcch_list[i].bit_sequence[j]
+    
+    # scrambling
+    c_init = n_s/2 * (2**9) + N_cell_ID
+    for i in range(M_tot):
+        bit_sequence[i] = (bit_sequence[i] + c(c_init, i)) % 2
+    
+    return bit_sequence
+#@+node:Michael.20120326140330.1402: *7* 6.8.3 Modulation
+def PDCCH_modulate(bit_sequence):
+    '''
+    input:
+        bit_sequence: bit sequence of PDCCH in this subframe
+    output:
+        symbol sequence, e.g. output[0] is the 1st modulated symbol
+    '''
+    modulated_symbol_array = array( [0.0+0.0*1j] * (len(bit_sequence)/2) )
+    for i in range(len(modulated_symbol_array)):
+        modulated_symbol_array[i] = QPSK( (bit_sequence[2*i], bit_sequence[2*i+1]) )
+    return modulated_symbol_array
+#@+node:Michael.20120326140330.1403: *7* 6.8.4 Layer mapping and precoding
+def PDCCH_layer_map(d, layer_mapping_scheme, num_of_layers):
+    '''
+    input:
+        d: array of modulated symbols
+        layer_mapping_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_layers: number of layers.
+    output:
+        layer mapped array of arrays for each layer. output[0] is the array for layer 0, and so on.
+    '''
+    lte_assert(layer_mapping_scheme in ('single_antenna', 'transmit_diversity'), "layer_mapping_scheme=%s is not valid for PDCCH. It must be 'single_antenna' or 'transmit_diversity'."%(layer_mapping_scheme, ))
+    if layer_mapping_scheme == 'single_antenna':
+        lte_assert(num_of_layers==1, "For single antenna scheme of layer mapping, number of layers must be 1.")
+        result = layer_map_single_antenna_port(d)
+    else:
+        lte_assert(num_of_layers in (2,4), "For transmit diversity scheme of layer mapping, number of layers must be either 2 or 4.")
+        result = layer_map_transmit_diversity([d], num_of_layers)
+    return result
+
+def PDCCH_precode(layer_mapped_matrix, precoding_scheme, num_of_ap, codebook_index):
+    '''
+    input:
+        layer_mapped_matrix: matrix after PDCCH layer mapping.
+        precoding_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_ap: number of transmission antenna ports
+        codebook_index: codebook index
+    output:
+        maxtrix for all transmission antenna ports. e.g. output[0] is the symbol array for ap_0.
+    '''
+    lte_assert(precoding_scheme in ('single_antenna', 'transmit_diversity'), "For PDCCH precoding, the scheme must either be 'single_antenna' or 'transmit_diversity', but the current scheme is %s"%precoding_scheme)
+    num_of_layers = len(layer_mapped_matrix)
+    if precoding_scheme == 'single_antenna':
+        lte_assert(num_of_ap==1, "For PDCCH 'single_antenna' precoding scheme, num_of_ap must be 1, but currently it is %s."%num_of_ap)
+        lte_assert(num_of_layers==1, "For PDCCH 'single_antenna' precoding scheme, number of layers must be 1, but currently it is %s."%num_of_layers)
+        result = precode_single_antenna(layer_mapped_matrix)
+    else:
+        # precoding_scheme == 'transmit_diversity'
+        lte_assert(num_of_ap in (2,4), "For PDCCH 'transmit_diversity' precoding scheme, number of transmission antenna must be 2 or 4. Current number of transmitting antenna is %s"%num_of_ap)
+        lte_assert(num_of_ap==num_of_layers, "For transmit diversity precoding, number of transmitting antenna must be equal to number of layers, but currently num_of_ap=%s and num_of_layers=%s"%(num_of_ap, num_of_layers))
+        result = precode_transmit_diversity(layer_mapped_matrix, num_of_ap)
+    return result
+#@+node:Michael.20120326140330.1404: *7* 6.8.5 Mapping to resource elements
+def PDCCH_symbol_quadruplet_permute(precoded_matrix):
+    '''
+    input:
+        precoded_matrix: symbol matrix after precoding, e.g. precoded_matrix[0] is the symbol sequence for antenna port 0.
+    output:
+        symbol quadruplet matrix after the permutation, e.g. output[0] is the symbol-quadruplet sequence for antenna port 0 after symbol quadruplet permutation; output[0][0] is the first symbol quadruplet for antenna port 0.
+    '''
+    lte_warn("PDCCH_symbol_quadruplet_permute is only a dummy function!")
+    symbol_quadruplet_matrix = [0] * len(precoded_matrix)
+    for i in range(len(precoded_matrix)):
+        tmp_quadruplet_list = list()
+        for j in range(len(precoded_matrix[i])/4):
+            tmp_quadruplet_list.append( [ precoded_matrix[i][4*j], precoded_matrix[i][4*j+1], precoded_matrix[i][4*j+2], precoded_matrix[i][4*j+3] ] )
+        symbol_quadruplet_matrix[i] = tmp_quadruplet_list
+    return symbol_quadruplet_matrix
+
+def PDCCH_symbol_quadruplet_cyclic_shift(symbol_quadruplet_matrix, N_cell_ID):
+    '''
+    input:
+        symbol_quadruplet_matrix: symbol quadruplet matrix after symbol quadruplet permutation
+        N_cell_ID: cell ID
+    output:
+        symbol quadruplet matrix after cyclic shift, e.g. output[0] is the symbol quadruplet array for antenna port 0; output[0][0] is the first symbol quadruplet of antenna port 0.
+    '''
+    M_quad = len(symbol_quadruplet_matrix[0])
+    result = [0] * len(symbol_quadruplet_matrix)
+    for i in range(len(symbol_quadruplet_matrix)):
+        tmp_symbol_quadruplet_list = [0.0+0.0*1j] * M_quad
+        for j in range(M_quad):
+            tmp_symbol_quadruplet_list[j] = symbol_quadruplet_matrix[i][(j+N_cell_ID)%M_quad]
+        result[i] = tmp_symbol_quadruplet_list
+    return result
+
+def get_PDCCH_RE_sequence(CFI, N_DL_RB, N_RB_sc, CSRS_REs, PCFICH_REs, PHICH_REs):
+    '''
+    input:
+        CFI: Control  Format Indicator for this subframe.
+        N_DL_RB: downlink RB number
+        N_RB_sc: number of subcarriers in one RB
+        CSRS_REs: a list of REs for Cell Specific Reference Signals in al relative symbols
+        PCFICH_REs: a list of REs for PCFICH in this subframe
+        PHICH_REs: a list of REs for PHICH in this subframe
+    output:
+        a array of PDCCH REs in this subframe, which is in the same sequence as PDCCH symbols shall be mapped.
+    '''
+    lte_assert(CFI in (1,2,3,4), "CFI=%s is out of range!"%CFI)
+    L = CFI
+    occupied_REs = CSRS_REs + PCFICH_REs + PHICH_REs
+    result = list()
+    m, k, l = 0, 0, 0
+    while k < N_DL_RB * N_RB_sc:
+        if ((k,l) not in occupied_REs) and ((k,l) not in result):
+            result.append( (k,l) )
+            re_count = 1    # number of valid REs found in this valid REG
+            i = 1
+            while re_count<4 and i<6:
+                if ((k+i,l) not in occupied_REs) and ((k+i,l) not in result):
+                    result.append( (k+i,l) )
+                    re_count += 1
+                    i += 1
+                else:
+                    i += 1
+        else:
+            if l < L-1:
+                l += 1
+            else:
+                k += 1
+                l = 0
+    #print "PDCCH_REs = ", result
+    return result
+  
+#@-others
+
+def get_PDCCH_symbol_array(pdcch_list, CFI, N_REG, n_s, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_REs, PCFICH_REs, PHICH_REs):
+    '''
+    input:
+        pdcch_list: a list of instances of class PDCCH, which are to be transmitted on PDCCH in the given subframe. pdcch_list[0] shall be a instance of class PDCCH, thus pdcch_list[0].bit_sequence is a list of bits (e.g. (0,1,1,0,0,1,...)) that to be transmitted on PDCCH 0; pdcch_list[0].format is the format of this PDCCH, which shall be 0, 1, 2, or 3; pdcch_list[0].start_CCE_index is the starting CCE index of this PDCCH that must satisfies start_CCE_index%(2**format)==0.
+        CFI: Control  Format Indicator for this subframe.
+        N_REG: total number of available REGs for PDCCH in the given subframe.
+        n_s: slot index
+        N_cell_ID: cell ID
+        layer_mapping_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_layers: number of layers.
+        precoding_scheme: 'single_antenna' or 'transmit_diversity'
+        AP_num: number of transmission antenna ports
+        codebook_index: codebook index
+        N_DL_RB: downlink RB number
+        N_RB_sc: number of subcarriers in one RB
+        CSRS_REs: a list of REs for Cell Specific Reference Signals in al relative symbols
+        PCFICH_REs: a list of REs for PCFICH in this subframe
+        PHICH_REs: a list of REs for PHICH in this subframe
+    output:
+        output[0] is a RE matrix for antenna port 0
+        output[0][0] is a RE array of all subcarriers in symbol 0 for antenna port 0
+    '''
+    pdcch_bit_seq = PDCCH_multiplex_and_scramble(pdcch_list, N_REG, n_s, N_cell_ID)
+    pdcch_symbol_seq = PDCCH_modulate(pdcch_bit_seq)
+    pdcch_layer_mapped_matrix = PDCCH_layer_map(pdcch_symbol_seq, layer_mapping_scheme, num_of_layers)
+    pdcch_precoded_matrix = PDCCH_precode(pdcch_layer_mapped_matrix, precoding_scheme, AP_num, codebook_index)
+    permuted_symbol_quadruplet_matrix = PDCCH_symbol_quadruplet_permute(pdcch_precoded_matrix)
+    cyclic_shifted_symbol_quadruplet_matrix = PDCCH_symbol_quadruplet_cyclic_shift(permuted_symbol_quadruplet_matrix, N_cell_ID)
+    
+    pdcch_RE_list = get_PDCCH_RE_sequence(CFI, N_DL_RB, N_RB_sc, CSRS_REs, PCFICH_REs, PHICH_REs)
+    
+    lte_assert(AP_num==len(cyclic_shifted_symbol_quadruplet_matrix), "AP_num!=len(cyclic_shifted_symbol_quadruplet_matrix), i.e. the number of transmitting antenna is not equal to antenna ports configuration in precoding!.")
+    for i in range(AP_num):
+        lte_assert(len(pdcch_RE_list)==4*len(cyclic_shifted_symbol_quadruplet_matrix[i]), "For antenna port %s, its symbol count (%s) doesn't match with PDCCH RE count (%s)!"%(i, 4*len(cyclic_shifted_symbol_quadruplet_matrix[i]), len(pdcch_RE_list)))
+        
+    symbol_array_for_all_ap = array( [ [ [0.0+0.0*1j] * (N_DL_RB*N_RB_sc) ] * CFI ] *AP_num )
+    for ap in range(AP_num):
+        for symbol_quadruplet_index in range(len(cyclic_shifted_symbol_quadruplet_matrix[ap])):
+            for i in range(4):  # for the 4 symbols in this symbol quadruplet
+                k, l = pdcch_RE_list[4*symbol_quadruplet_index+i]
+                symbol_array_for_all_ap[ap][l][k] = cyclic_shifted_symbol_quadruplet_matrix[ap][symbol_quadruplet_index][i]
+    
+    return symbol_array_for_all_ap
+
 #@+node:michael.20120305092148.1290: *6* 6.09 PHICH
 def get_m_i( UL_DL_config, subframe ):
     m_i_table = (   (2,1,None,None,None,2,1,None,None,None),
@@ -1046,7 +1292,7 @@ def get_PHICH_mapping_units(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num,
         N_cell_ID: cell ID
         N_DL_symb: downlink symbol number in one slot.
     output:
-        a list of resources for all PHICH mapping units, e.g. output[0] is a tuple of 3 REGs, which in turn is a tuple of 4 REs like (k,l), for PHICH mapping unit m_=0. E.g. output[0][0] will be the REG for mapping unit 0.
+        a list of resources for all PHICH mapping units, e.g. output[0] is a tuple of 3 REGs, which in turn is a tuple of 4 REs like (k,l), for PHICH mapping unit m_=0. E.g. output[0][0] will be the 1st REG for mapping unit 0.
     '''
     # get the total number of PHICH mapping units
     # M_ is the total number of PHICH mapping units in this slot, i.e. for this PHICH PHY channel
@@ -1132,6 +1378,34 @@ def get_PHICH_mapping_units(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num,
         result[m_][i] = REG_list_in_symbol[l_][n_]
         
     return result
+
+def get_PHICH_REs(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, m_i, N_group_PHICH, DL_CP_type, is_MBSFN, PHICH_duration, subframe, n_s, N_cell_ID, N_DL_symb):
+    '''
+    input:
+        LTE_mode: 'FDD' or 'TDD'
+        N_maxDL_RB
+        N_DL_RB
+        N_RB_sc
+        CSRS_AP_num: number of antenna ports used for CSRS
+        m_i: times of PHICH group numbers in TDD mode
+        N_group_PHICH: number of PHICH groups
+        DL_CP_type: downlink CP type, 0 for normal, 1 for extended
+        is_MBSFN: boolean, whether this subframe is a MBSFN subframe
+        PHICH_duration: 0 for normal duration, 1 for extended duration
+        subframe: subframe index
+        n_s: slot index
+        N_cell_ID: cell ID
+        N_DL_symb: downlink symbol number in one slot.
+    output:
+        a list of all REs for PHICH in this subframe, e.g. output[0] is the 1st RE.
+    '''
+    PHICH_mapping_units = get_PHICH_mapping_units(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, m_i, N_group_PHICH, DL_CP_type, is_MBSFN, PHICH_duration, subframe, n_s, N_cell_ID, N_DL_symb)
+    result = list()
+    for mapping_unit in PHICH_mapping_units:
+        for reg in mapping_unit:
+            for re in reg:
+                result.append( re )
+    return tuple(result)
 #@+node:michael.20120305092148.1280: *6* 6.10 RS
 #@+others
 #@+node:michael.20120305092148.1281: *7* 6.10.1 CSRS
@@ -1223,7 +1497,7 @@ cProfile.runctx('main()', globals(), locals())
             v = 3 * (n_s%2)
         elif antenna_port==3:
             v = 3 + 3 * (n_s%2)
-        for m in range(2*N_DL_RB-1):
+        for m in range(2*N_DL_RB):
             m_ = m + N_maxDL_RB - N_DL_RB   # m'
             k = 6*m + (v+v_shift)%6
             REs.append( (k,l) )
@@ -1833,12 +2107,12 @@ class LteException(Exception):
     def __str__(self):
         return repr(self.value)
     
-def lte_assert(condition, a_string):
+def lte_assert(condition, error_string):
     if not condition:
-        raise LteException(a_string)
+        raise LteException(error_string)
 
-def lte_warn(a_string):
-    print a_string
+def lte_warn(warn_string):
+    print warn_string
 #@-others
 #@-others
 

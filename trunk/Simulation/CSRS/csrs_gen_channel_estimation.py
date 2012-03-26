@@ -269,7 +269,7 @@ cProfile.runctx('main()', globals(), locals())
             v = 3 * (n_s%2)
         elif antenna_port==3:
             v = 3 + 3 * (n_s%2)
-        for m in range(2*N_DL_RB-1):
+        for m in range(2*N_DL_RB):
             m_ = m + N_maxDL_RB - N_DL_RB   # m'
             k = 6*m + (v+v_shift)%6
             REs.append( (k,l) )

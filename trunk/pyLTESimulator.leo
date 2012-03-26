@@ -13,7 +13,7 @@
 <v t="michael.20120223085633.1280" a="E"><vh>lte-phy-channel-on-air</vh>
 <v t="michael.20120322193448.2179"><vh>project_config</vh></v>
 <v t="michael.20120305092148.1276"><vh>3GPP</vh>
-<v t="michael.20120305092148.1277" a="E"><vh>36.211</vh>
+<v t="michael.20120305092148.1277"><vh>36.211</vh>
 <v t="michael.20120305092148.1295" a="E"><vh>6 Downlink</vh>
 <v t="michael.20120305092148.1304"><vh>5.07.2 Preamble seq gen</vh></v>
 <v t="michael.20120305092148.1278"><vh>6.02.4 REGs</vh>
@@ -22,12 +22,12 @@
 <v t="michael.20120323224953.1794"><vh>get_REG_number_in_symbol</vh></v>
 <v t="michael.20120323224953.1795"><vh>get_REG_in_symbol</vh></v>
 </v>
-<v t="Michael.20120319125504.1471" a="E"><vh>6.03.3 Layer mapping</vh>
+<v t="Michael.20120319125504.1471"><vh>6.03.3 Layer mapping</vh>
 <v t="Michael.20120319125504.1472"><vh>6.3.3.1 Layer mapping for transmission on a single antenna port</vh></v>
 <v t="Michael.20120319125504.1473"><vh>6.3.3.2 Layer mapping for spatial multiplexing</vh></v>
 <v t="Michael.20120319125504.1475"><vh>6.3.3.3 Layer mapping for transmit diversity</vh></v>
 </v>
-<v t="Michael.20120319125504.1476" a="E"><vh>6.03.4 Precoding</vh>
+<v t="Michael.20120319125504.1476"><vh>6.03.4 Precoding</vh>
 <v t="Michael.20120319125504.1477"><vh>6.3.4.1 Precoding for transmission on a single antenna port</vh></v>
 <v t="Michael.20120319125504.1478" a="E"><vh>6.3.4.2 Precoding for spatial multiplexing using antenna ports with CSRS</vh>
 <v t="Michael.20120319125504.1479"><vh>6.3.4.2.1 Precoding without CDD</vh></v>
@@ -41,29 +41,35 @@
 <v t="Michael.20120321090100.1524"><vh>6.6.3 Layer mapping and precoding</vh></v>
 <v t="Michael.20120321090100.1525"><vh>6.6.4 Mapping to resource elements</vh></v>
 </v>
-<v t="Michael.20120319125504.1463" a="E"><vh>6.07 PCFICH</vh>
+<v t="Michael.20120319125504.1463"><vh>6.07 PCFICH</vh>
 <v t="Michael.20120319125504.1464"><vh>6.7.1 Scrambing</vh></v>
 <v t="Michael.20120319125504.1465"><vh>6.7.2 Modulation</vh></v>
 <v t="Michael.20120319125504.1474"><vh>6.7.3 Layer mapping and precoding</vh></v>
 <v t="Michael.20120320091224.1503"><vh>6.7.4 Mapping to resource elements</vh></v>
 </v>
-<v t="michael.20120305092148.1290" a="E"><vh>6.09 PHICH</vh>
+<v t="Michael.20120326140330.1400" a="E"><vh>6.08 PDCCH</vh>
+<v t="Michael.20120326140330.1401"><vh>6.8.2 PDCCH multiplexing and scrambing</vh></v>
+<v t="Michael.20120326140330.1402"><vh>6.8.3 Modulation</vh></v>
+<v t="Michael.20120326140330.1403"><vh>6.8.4 Layer mapping and precoding</vh></v>
+<v t="Michael.20120326140330.1404"><vh>6.8.5 Mapping to resource elements</vh></v>
+</v>
+<v t="michael.20120305092148.1290"><vh>6.09 PHICH</vh>
 <v t="Michael.20120323090727.1968"><vh>6.9.1 Modulation</vh></v>
 <v t="michael.20120323224953.1378"><vh>6.9.2 Resource group alignment, layer mapping and precoding</vh></v>
 <v t="michael.20120323224953.1379"><vh>6.9.3 Mapping to resource elements</vh></v>
 </v>
-<v t="michael.20120305092148.1280"><vh>6.10 RS</vh>
+<v t="michael.20120305092148.1280" a="E"><vh>6.10 RS</vh>
 <v t="michael.20120305092148.1281" a="E"><vh>6.10.1 CSRS</vh>
 <v t="michael.20120305092148.1285"><vh>6.10.1.1 Seq gen</vh></v>
 <v t="michael.20120305092148.1279"><vh>6.10.1.2 Mapping to REs</vh></v>
 </v>
 </v>
 <v t="michael.20120305092148.1301"><vh>6.11 Sync signals</vh>
-<v t="michael.20120305092148.1302" a="E"><vh>6.11.1 PSS</vh>
+<v t="michael.20120305092148.1302"><vh>6.11.1 PSS</vh>
 <v t="michael.20120305092148.1303"><vh>6.11.1.1 seq gen</vh></v>
 <v t="michael.20120305092148.1305"><vh>6.11.1.2 mapping to REs</vh></v>
 </v>
-<v t="michael.20120312091134.1403" a="E"><vh>6.11.2 SSS</vh>
+<v t="michael.20120312091134.1403"><vh>6.11.2 SSS</vh>
 <v t="michael.20120312091134.1404"><vh>6.11.2.1 Sequence generation</vh></v>
 <v t="Michael.20120314113327.1416"><vh>6.11.2.2 Mapping to REs</vh></v>
 </v>
@@ -101,14 +107,14 @@
 <v t="Michael.20120319125504.1481"><vh>Error handling</vh></v>
 </v>
 <v t="michael.20120305092148.1306" a="E"><vh>Simulations</vh>
-<v t="michael.20120323224953.1797" a="E"><vh>PHICH gen &amp; detect</vh>
+<v t="michael.20120323224953.1797"><vh>PHICH gen &amp; detect</vh>
 <v t="michael.20120323224953.1798" a="E"><vh>source</vh>
 <v t="michael.20120323224953.1800"><vh>01. PHICH symbol array in one OFDM symbol</vh></v>
 <v t="michael.20120323224953.1801"><vh>02. PHICH Uu signal</vh></v>
 <v t="michael.20120305092148.1276"></v>
 </v>
 <v t="michael.20120323224953.1799"
-expanded="michael.20120323224953.1798,michael.20120305092148.1277,michael.20120305092148.1295,Michael.20120319125504.1471,Michael.20120319125504.1476,Michael.20120319125504.1478,Michael.20120319125504.1463,michael.20120305092148.1290,michael.20120305092148.1281,michael.20120305092148.1302,michael.20120312091134.1403,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./Simulation/PHICH/phich_gen_detect.py</vh></v>
+expanded="michael.20120323224953.1798,michael.20120305092148.1295,Michael.20120319125504.1478,Michael.20120326140330.1400,michael.20120305092148.1280,michael.20120305092148.1281,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./Simulation/PHICH/phich_gen_detect.py</vh></v>
 </v>
 <v t="Michael.20120315095133.1438"><vh>CSRS gen &amp; channel estimation</vh>
 <v t="Michael.20120315095133.1440"><vh>@thin ./Simulation/CSRS/csrs_gen_channel_estimation.py</vh></v>
@@ -140,26 +146,35 @@ expanded="michael.20120323224953.1798,michael.20120305092148.1277,michael.201203
 </v>
 <v t="Michael.20120321090100.1526" a="E"><vh>PBCH gen &amp; detect</vh>
 <v t="Michael.20120321090100.1528"
-expanded="Michael.20120321090100.1527,michael.20120305092148.1277,michael.20120305092148.1295,Michael.20120319125504.1471,Michael.20120319125504.1476,Michael.20120319125504.1478,Michael.20120319125504.1463,michael.20120305092148.1290,michael.20120305092148.1281,michael.20120305092148.1302,michael.20120312091134.1403,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./Simulation/PBCH/pbch_gen_detect.py</vh></v>
+expanded="Michael.20120321090100.1527,michael.20120305092148.1295,Michael.20120319125504.1478,Michael.20120326140330.1400,michael.20120305092148.1280,michael.20120305092148.1281,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./Simulation/PBCH/pbch_gen_detect.py</vh></v>
 <v t="Michael.20120321090100.1527" a="E"><vh>PBCH source</vh>
 <v t="Michael.20120321090100.1529"><vh>01. PBCH symbol array in one OFDM symbol</vh></v>
 <v t="Michael.20120321090100.1538"><vh>02. PBCH Uu signal</vh></v>
-<v t="michael.20120305092148.1277" a="E"></v>
+<v t="michael.20120305092148.1277"></v>
 <v t="Michael.20120320091224.1509"></v>
 <v t="Michael.20120319125504.1481"></v>
 </v>
 </v>
+<v t="Michael.20120326140330.1405" a="E"><vh>PDCCH gen &amp; detect</vh>
+<v t="Michael.20120326140330.1406" a="E"><vh>source</vh>
+<v t="Michael.20120326140330.1408"><vh>01. PDCCH symbol array in one OFDM symbol</vh></v>
+<v t="Michael.20120326140330.1409"><vh>02. PDCCH Uu signal</vh></v>
+<v t="michael.20120305092148.1276"></v>
+</v>
+<v t="Michael.20120326140330.1407"
+expanded="Michael.20120326140330.1406,michael.20120305092148.1295,Michael.20120319125504.1478,Michael.20120326140330.1400,michael.20120305092148.1280,michael.20120305092148.1281,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./Simulation/PDCCH/pdcch_gen_detect.py</vh></v>
+</v>
 <v t="Michael.20120320091224.1505"><vh>PCFICH gen &amp; detect</vh>
 <v t="Michael.20120320091224.1507"
-expanded="Michael.20120319125504.1471,Michael.20120319125504.1476,Michael.20120319125504.1478,Michael.20120319125504.1463,Michael.20120319125504.1466,"><vh>@thin ./Simulation/PCFICH/pcfich_gen_detect.py</vh></v>
+expanded="Michael.20120319125504.1478,Michael.20120319125504.1466,"><vh>@thin ./Simulation/PCFICH/pcfich_gen_detect.py</vh></v>
 <v t="Michael.20120320091224.1506"><vh>PCFICH source</vh>
 <v t="Michael.20120320091224.1508"><vh>01. PCFICH symbol array in one OFDM symbol</vh></v>
 <v t="Michael.20120321090100.1520"><vh>02. PCFICH Uu signal</vh></v>
 <v t="Michael.20120320091224.1510"></v>
 <v t="michael.20120305092148.1278"></v>
-<v t="Michael.20120319125504.1471" a="E"></v>
-<v t="Michael.20120319125504.1476" a="E"></v>
-<v t="Michael.20120319125504.1463" a="E"></v>
+<v t="Michael.20120319125504.1471"></v>
+<v t="Michael.20120319125504.1476"></v>
+<v t="Michael.20120319125504.1463"></v>
 <v t="michael.20120305092148.1279"></v>
 <v t="michael.20120305092148.1293"></v>
 <v t="michael.20120305092148.1296"></v>
@@ -222,7 +237,7 @@ expanded="Michael.20120319125504.1471,Michael.20120319125504.1476,Michael.201203
 <v t="michael.20120322193448.2259"><vh>Release_relative</vh>
 <v t="michael.20120322193448.2266"><vh>@thin ./build_binary_for_Windows.bat</vh></v>
 <v t="michael.20120322193448.2342"
-expanded="Michael.20120321090100.1527,michael.20120305092148.1277,michael.20120305092148.1295,Michael.20120319125504.1471,Michael.20120319125504.1476,Michael.20120319125504.1478,Michael.20120319125504.1463,michael.20120305092148.1290,michael.20120305092148.1281,michael.20120305092148.1302,michael.20120312091134.1403,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./pyLTESimulator.py</vh></v>
+expanded="Michael.20120321090100.1527,michael.20120305092148.1295,Michael.20120319125504.1478,Michael.20120326140330.1400,michael.20120305092148.1280,michael.20120305092148.1281,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./pyLTESimulator.py</vh></v>
 <v t="michael.20120322193448.2263"><vh>@thin ./setup.py</vh></v>
 <v t="michael.20120322193448.2267"><vh>build bat on Windows</vh></v>
 <v t="michael.20120322193448.2264"><vh>cx_freeze config</vh>
@@ -882,7 +897,6 @@ def get_PCFICH_symbol_array(cfi_b, n_s, N_cell_ID, layer_mapping_scheme, num_of_
     return symbol_array_for_all_ap
 
 
-
     
     
 </t>
@@ -1181,12 +1195,12 @@ def PCFICH_precode(layer_mapped_matrix, precoding_scheme, num_of_ap, codebook_in
     def __str__(self):
         return repr(self.value)
     
-def lte_assert(condition, a_string):
+def lte_assert(condition, error_string):
     if not condition:
-        raise LteException(a_string)
+        raise LteException(error_string)
 
-def lte_warn(a_string):
-    print a_string
+def lte_warn(warn_string):
+    print warn_string
 </t>
 <t tx="Michael.20120320091224.1502">def precode_transmit_diversity(layer_mapped_matrix, num_of_ap):
     '''
@@ -1303,7 +1317,8 @@ def get_PCFICH_REs_in_symbol(l, is_PDCCH_present, N_cell_ID, N_DL_RB, N_RB_sc, C
         for quadruplet_index in range(4):
             for re in get_REG_for_PCFICH_quadruplet(quadruplet_index, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_RE_tuple, AP_num, CP_DL_type):
                 result.append(re)
-    return tuple(result)</t>
+    return tuple(result)
+</t>
 <t tx="Michael.20120320091224.1504">def get_REG_from_kl(num_of_ap, CP_DL_type, k, l):
     '''
     input:
@@ -1938,11 +1953,456 @@ def get_orthogonal_seq_for_PHICH(n_seq_PHICH, N_PHICH_SF):
         lte_assert(n_seq_PHICH&gt;=0 and n_seq_PHICH&lt;4, "n_seq_PHICH=%s is out of range!"%n_seq_PHICH)
         result = ( (1,1), (1,-1), (1j,1j), (1j,-1j) )[n_seq_PHICH]
     result = array(result)
-    return result</t>
+    return result
+</t>
+<t tx="Michael.20120326140330.1400">'''
+table 6.8.1-1: supported PDCCH formats.
+
+PDCCH format    Num. of CCEs    Num. of REGs    Num. of PDCCH bits
+0                       1                       9                   72
+1                       2                       18                  144
+2                       4                       36                  288
+3                       8                       72                  576
+'''
+
+class PDCCH:
+    '''
+    Represents one PDCCH channel by giving information of its: bit sequence to be transmitted, format shall be used, start_CCE_index of this PDCCH channel
+    '''
+    def __init__(self, bit_sequence, PDCCH_format, start_CCE_index):
+        '''
+        input:
+            bit_sequence: a list of bits that's to be transmitted
+            PDCCH_format: format of PDCCH (0..3)
+            start_CCE_index: the starting CCE index of this PDCCH
+        '''
+        lte_assert(PDCCH_format in (0,1,2,3), "PDCCH format=%s is invalid! It must be 0, 1, 2, or 3, according to table 6.8.1-1 in 36.211."%PDCCH_format)
+        if PDCCH_format == 0:
+            lte_assert(len(bit_sequence)&lt;=72, "PDCCH format 0 can only be used to transmit &lt;=72 bits, but len(bit_sequence)=%s"%len(bit_sequence))
+        elif PDCCH_format == 1:
+            lte_assert(len(bit_sequence)&lt;=144, "PDCCH format 1 can only be used to transmit &lt;=144 bits, but len(bit_sequence)=%s"%len(bit_sequence))
+            lte_assert(start_CCE_index%2==0, "PDCCH format 1 uses 2 CCEs, thus start_CCE_index%2 must be 0, but start_CCE_index=%s"%start_CCE_index)
+        elif PDCCH_format == 2:
+            lte_assert(len(bit_sequence)&lt;=288, "PDCCH format 1 can only be used to transmit &lt;=288 bits, but len(bit_sequence)=%s"%len(bit_sequence))
+            lte_assert(start_CCE_index%4==0, "PDCCH format 1 uses 4 CCEs, thus start_CCE_index%4 must be 0, but start_CCE_index=%s"%start_CCE_index)
+        else:
+            # PDCCH_format == 3
+            lte_assert(len(bit_sequence)&lt;=576, "PDCCH format 1 can only be used to transmit &lt;=576 bits, but len(bit_sequence)=%s"%len(bit_sequence))
+            lte_assert(start_CCE_index%8==0, "PDCCH format 1 uses 8 CCEs, thus start_CCE_index%8 must be 0, but start_CCE_index=%s"%start_CCE_index)
+        
+        self.bit_sequence = bit_sequence
+        self.format = PDCCH_format
+        self.start_CCE_index = start_CCE_index
+
+@others
+
+def get_PDCCH_symbol_array(pdcch_list, CFI, N_REG, n_s, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_REs, PCFICH_REs, PHICH_REs):
+    '''
+    input:
+        pdcch_list: a list of instances of class PDCCH, which are to be transmitted on PDCCH in the given subframe. pdcch_list[0] shall be a instance of class PDCCH, thus pdcch_list[0].bit_sequence is a list of bits (e.g. (0,1,1,0,0,1,...)) that to be transmitted on PDCCH 0; pdcch_list[0].format is the format of this PDCCH, which shall be 0, 1, 2, or 3; pdcch_list[0].start_CCE_index is the starting CCE index of this PDCCH that must satisfies start_CCE_index%(2**format)==0.
+        CFI: Control  Format Indicator for this subframe.
+        N_REG: total number of available REGs for PDCCH in the given subframe.
+        n_s: slot index
+        N_cell_ID: cell ID
+        layer_mapping_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_layers: number of layers.
+        precoding_scheme: 'single_antenna' or 'transmit_diversity'
+        AP_num: number of transmission antenna ports
+        codebook_index: codebook index
+        N_DL_RB: downlink RB number
+        N_RB_sc: number of subcarriers in one RB
+        CSRS_REs: a list of REs for Cell Specific Reference Signals in al relative symbols
+        PCFICH_REs: a list of REs for PCFICH in this subframe
+        PHICH_REs: a list of REs for PHICH in this subframe
+    output:
+        output[0] is a RE matrix for antenna port 0
+        output[0][0] is a RE array of all subcarriers in symbol 0 for antenna port 0
+    '''
+    pdcch_bit_seq = PDCCH_multiplex_and_scramble(pdcch_list, N_REG, n_s, N_cell_ID)
+    pdcch_symbol_seq = PDCCH_modulate(pdcch_bit_seq)
+    pdcch_layer_mapped_matrix = PDCCH_layer_map(pdcch_symbol_seq, layer_mapping_scheme, num_of_layers)
+    pdcch_precoded_matrix = PDCCH_precode(pdcch_layer_mapped_matrix, precoding_scheme, AP_num, codebook_index)
+    permuted_symbol_quadruplet_matrix = PDCCH_symbol_quadruplet_permute(pdcch_precoded_matrix)
+    cyclic_shifted_symbol_quadruplet_matrix = PDCCH_symbol_quadruplet_cyclic_shift(permuted_symbol_quadruplet_matrix, N_cell_ID)
+    
+    pdcch_RE_list = get_PDCCH_RE_sequence(CFI, N_DL_RB, N_RB_sc, CSRS_REs, PCFICH_REs, PHICH_REs)
+    
+    lte_assert(AP_num==len(cyclic_shifted_symbol_quadruplet_matrix), "AP_num!=len(cyclic_shifted_symbol_quadruplet_matrix), i.e. the number of transmitting antenna is not equal to antenna ports configuration in precoding!.")
+    for i in range(AP_num):
+        lte_assert(len(pdcch_RE_list)==4*len(cyclic_shifted_symbol_quadruplet_matrix[i]), "For antenna port %s, its symbol count (%s) doesn't match with PDCCH RE count (%s)!"%(i, 4*len(cyclic_shifted_symbol_quadruplet_matrix[i]), len(pdcch_RE_list)))
+        
+    symbol_array_for_all_ap = array( [ [ [0.0+0.0*1j] * (N_DL_RB*N_RB_sc) ] * CFI ] *AP_num )
+    for ap in range(AP_num):
+        for symbol_quadruplet_index in range(len(cyclic_shifted_symbol_quadruplet_matrix[ap])):
+            for i in range(4):  # for the 4 symbols in this symbol quadruplet
+                k, l = pdcch_RE_list[4*symbol_quadruplet_index+i]
+                symbol_array_for_all_ap[ap][l][k] = cyclic_shifted_symbol_quadruplet_matrix[ap][symbol_quadruplet_index][i]
+    
+    return symbol_array_for_all_ap
+
+</t>
+<t tx="Michael.20120326140330.1401">def PDCCH_multiplex_and_scramble(pdcch_list, N_REG, n_s, N_cell_ID):
+    '''
+    input:
+        pdcch_list: a list of instances of class PDCCH, which are to be transmitted on PDCCH in the given subframe. pdcch_list[0] shall be a instance of class PDCCH, thus pdcch_list[0].bit_sequence is a list of bits (e.g. (0,1,1,0,0,1,...)) that to be transmitted on PDCCH 0; pdcch_list[0].format is the format of this PDCCH, which shall be 0, 1, 2, or 3; pdcch_list[0].start_CCE_index is the starting CCE index of this PDCCH that must satisfies start_CCE_index%(2**format)==0.
+        N_REG: total number of available REGs for PDCCH in the given subframe.
+        n_s: slot index
+        N_cell_ID: cell ID
+    output:
+        bit sequence of PDCCH in this subframe, its length is 8 * N_REG
+    '''
+    # the number of PDCCHs transmitted in the given subframe
+    n_PDCCH = len(pdcch_list)
+    
+    # M_bit[i] is the lengt of how many bits will be transmitted on PDCCH i
+    M_bit = [0] * n_PDCCH
+    for i in range(n_PDCCH):
+        M_bit[i] = len(pdcch_list[i].bit_sequence)
+    
+    # padding
+    M_tot = 8 * N_REG
+    lte_assert(M_tot&gt;=sum(M_bit), "The total number of bits to be transmitted on PDCCH is larger than its capacity! N_REG=%s, PDCCH_capacity=8*N_REG=%s, total_bit_to_be_transmitted=%s"%(N_REG, 8*N_REG, sum(M_bit)))
+    NIL = 0
+    bit_sequence = [NIL] * M_tot
+    for i in range(n_PDCCH):
+        CCE_index = pdcch_list[i].start_CCE_index
+        for j in range(len(pdcch_list[i].bit_sequence)):
+            bit_sequence[72*CCE_index+j] = pdcch_list[i].bit_sequence[j]
+    
+    # scrambling
+    c_init = n_s/2 * (2**9) + N_cell_ID
+    for i in range(M_tot):
+        bit_sequence[i] = (bit_sequence[i] + c(c_init, i)) % 2
+    
+    return bit_sequence
+</t>
+<t tx="Michael.20120326140330.1402">def PDCCH_modulate(bit_sequence):
+    '''
+    input:
+        bit_sequence: bit sequence of PDCCH in this subframe
+    output:
+        symbol sequence, e.g. output[0] is the 1st modulated symbol
+    '''
+    modulated_symbol_array = array( [0.0+0.0*1j] * (len(bit_sequence)/2) )
+    for i in range(len(modulated_symbol_array)):
+        modulated_symbol_array[i] = QPSK( (bit_sequence[2*i], bit_sequence[2*i+1]) )
+    return modulated_symbol_array
+</t>
+<t tx="Michael.20120326140330.1403">def PDCCH_layer_map(d, layer_mapping_scheme, num_of_layers):
+    '''
+    input:
+        d: array of modulated symbols
+        layer_mapping_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_layers: number of layers.
+    output:
+        layer mapped array of arrays for each layer. output[0] is the array for layer 0, and so on.
+    '''
+    lte_assert(layer_mapping_scheme in ('single_antenna', 'transmit_diversity'), "layer_mapping_scheme=%s is not valid for PDCCH. It must be 'single_antenna' or 'transmit_diversity'."%(layer_mapping_scheme, ))
+    if layer_mapping_scheme == 'single_antenna':
+        lte_assert(num_of_layers==1, "For single antenna scheme of layer mapping, number of layers must be 1.")
+        result = layer_map_single_antenna_port(d)
+    else:
+        lte_assert(num_of_layers in (2,4), "For transmit diversity scheme of layer mapping, number of layers must be either 2 or 4.")
+        result = layer_map_transmit_diversity([d], num_of_layers)
+    return result
+
+def PDCCH_precode(layer_mapped_matrix, precoding_scheme, num_of_ap, codebook_index):
+    '''
+    input:
+        layer_mapped_matrix: matrix after PDCCH layer mapping.
+        precoding_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_ap: number of transmission antenna ports
+        codebook_index: codebook index
+    output:
+        maxtrix for all transmission antenna ports. e.g. output[0] is the symbol array for ap_0.
+    '''
+    lte_assert(precoding_scheme in ('single_antenna', 'transmit_diversity'), "For PDCCH precoding, the scheme must either be 'single_antenna' or 'transmit_diversity', but the current scheme is %s"%precoding_scheme)
+    num_of_layers = len(layer_mapped_matrix)
+    if precoding_scheme == 'single_antenna':
+        lte_assert(num_of_ap==1, "For PDCCH 'single_antenna' precoding scheme, num_of_ap must be 1, but currently it is %s."%num_of_ap)
+        lte_assert(num_of_layers==1, "For PDCCH 'single_antenna' precoding scheme, number of layers must be 1, but currently it is %s."%num_of_layers)
+        result = precode_single_antenna(layer_mapped_matrix)
+    else:
+        # precoding_scheme == 'transmit_diversity'
+        lte_assert(num_of_ap in (2,4), "For PDCCH 'transmit_diversity' precoding scheme, number of transmission antenna must be 2 or 4. Current number of transmitting antenna is %s"%num_of_ap)
+        lte_assert(num_of_ap==num_of_layers, "For transmit diversity precoding, number of transmitting antenna must be equal to number of layers, but currently num_of_ap=%s and num_of_layers=%s"%(num_of_ap, num_of_layers))
+        result = precode_transmit_diversity(layer_mapped_matrix, num_of_ap)
+    return result
+</t>
+<t tx="Michael.20120326140330.1404">def PDCCH_symbol_quadruplet_permute(precoded_matrix):
+    '''
+    input:
+        precoded_matrix: symbol matrix after precoding, e.g. precoded_matrix[0] is the symbol sequence for antenna port 0.
+    output:
+        symbol quadruplet matrix after the permutation, e.g. output[0] is the symbol-quadruplet sequence for antenna port 0 after symbol quadruplet permutation; output[0][0] is the first symbol quadruplet for antenna port 0.
+    '''
+    lte_warn("PDCCH_symbol_quadruplet_permute is only a dummy function!")
+    symbol_quadruplet_matrix = [0] * len(precoded_matrix)
+    for i in range(len(precoded_matrix)):
+        tmp_quadruplet_list = list()
+        for j in range(len(precoded_matrix[i])/4):
+            tmp_quadruplet_list.append( [ precoded_matrix[i][4*j], precoded_matrix[i][4*j+1], precoded_matrix[i][4*j+2], precoded_matrix[i][4*j+3] ] )
+        symbol_quadruplet_matrix[i] = tmp_quadruplet_list
+    return symbol_quadruplet_matrix
+
+def PDCCH_symbol_quadruplet_cyclic_shift(symbol_quadruplet_matrix, N_cell_ID):
+    '''
+    input:
+        symbol_quadruplet_matrix: symbol quadruplet matrix after symbol quadruplet permutation
+        N_cell_ID: cell ID
+    output:
+        symbol quadruplet matrix after cyclic shift, e.g. output[0] is the symbol quadruplet array for antenna port 0; output[0][0] is the first symbol quadruplet of antenna port 0.
+    '''
+    M_quad = len(symbol_quadruplet_matrix[0])
+    result = [0] * len(symbol_quadruplet_matrix)
+    for i in range(len(symbol_quadruplet_matrix)):
+        tmp_symbol_quadruplet_list = [0.0+0.0*1j] * M_quad
+        for j in range(M_quad):
+            tmp_symbol_quadruplet_list[j] = symbol_quadruplet_matrix[i][(j+N_cell_ID)%M_quad]
+        result[i] = tmp_symbol_quadruplet_list
+    return result
+
+def get_PDCCH_RE_sequence(CFI, N_DL_RB, N_RB_sc, CSRS_REs, PCFICH_REs, PHICH_REs):
+    '''
+    input:
+        CFI: Control  Format Indicator for this subframe.
+        N_DL_RB: downlink RB number
+        N_RB_sc: number of subcarriers in one RB
+        CSRS_REs: a list of REs for Cell Specific Reference Signals in al relative symbols
+        PCFICH_REs: a list of REs for PCFICH in this subframe
+        PHICH_REs: a list of REs for PHICH in this subframe
+    output:
+        a array of PDCCH REs in this subframe, which is in the same sequence as PDCCH symbols shall be mapped.
+    '''
+    lte_assert(CFI in (1,2,3,4), "CFI=%s is out of range!"%CFI)
+    L = CFI
+    occupied_REs = CSRS_REs + PCFICH_REs + PHICH_REs
+    result = list()
+    m, k, l = 0, 0, 0
+    while k &lt; N_DL_RB * N_RB_sc:
+        if ((k,l) not in occupied_REs) and ((k,l) not in result):
+            result.append( (k,l) )
+            re_count = 1    # number of valid REs found in this valid REG
+            i = 1
+            while re_count&lt;4 and i&lt;6:
+                if ((k+i,l) not in occupied_REs) and ((k+i,l) not in result):
+                    result.append( (k+i,l) )
+                    re_count += 1
+                    i += 1
+                else:
+                    i += 1
+        else:
+            if l &lt; L-1:
+                l += 1
+            else:
+                k += 1
+                l = 0
+    #print "PDCCH_REs = ", result
+    return result
+  
+</t>
+<t tx="Michael.20120326140330.1405"></t>
+<t tx="Michael.20120326140330.1406">@others
+
+from scipy.signal import *
+from numpy import *
+import matplotlib.pyplot as plt
+
+# time scale is in 1 s
+T_s = 1.0/30720/1000 # in s
+
+# configuration for SSS
+l = 0
+N_maxDL_RB = 110
+N_DL_RB = 110
+N_RB_sc = 12
+N_DL_CP = 0 # normal DL CP
+AP_num = 2
+CP_DL_type = 0
+N_DL_symb = 7
+delta_f = 15000
+subframe = 0
+N_cell_ID = 0
+f_0 = (2620+0.1*(2620-2750))*1000*1000  # in Hz
+
+if N_DL_CP==0 and delta_f==15000:
+    if l==0:
+        N_CP_l = 160
+    else:
+        N_CP_l = 144
+elif N_DL_CP==1:    # extended CP
+    if delta_f==15000:
+        N_CP_l = 512
+    else:   # delta_f == 7500
+        N_CP_l = 1024
+if delta_f==15000:
+    N = 2048
+else:   # delta_f == 7500
+    N = 4096
+
+t = arange(0, (N_CP_l+N)*T_s, T_s)
+
+def find_max( a_list ):
+    m = max(a_list)
+    for i in arange(len(a_list)):
+        if a_list[i] == m:
+            return (i, m)
+
+def find_min( a_array ):
+    x, y = 0, 0
+    for i in arange(len(a_array)):
+        if a_array[i] &lt; y:
+            x, y = i, a_array[i]
+    return (x,y)
+
+def find_abs_max( a_array ):
+    m = max(abs(a_array))
+    for i in arange(len(a_array)):
+        if abs(a_array[i]) == m:
+            return (i, m)
+            
+@others
+
+HI = 1
+subframe =1
+n_s = 2
+n_seq_PHICH = 0
+n_group_PHICH =0
+N_group_PHICH = 1
+PHICH_duration = 0
+N_cell_ID = 0
+DL_CP_type = 0
+AP_num = 2
+LTE_mode = 'TDD'
+UL_DL_config = 1
+N_maxDL_RB = 110
+N_DL_RB = 110
+N_RB_sc = 12
+CSRS_AP_num = 2
+is_MBSFN = False
+N_DL_symb = 7
+
+test_enabling_bits = 0b11
+
+# 01. PDCCH symbol array in one OFDM symbol
+if test_enabling_bits &amp; (1&lt;&lt;0):
+    test_PDCCH_symbol_array_in_one_OFDM_symbol()
+
+# 02. PDCCH Uu signal
+if test_enabling_bits &amp; (1&lt;&lt;1):
+    test_PDCCH_Uu_signal()
+</t>
+<t tx="Michael.20120326140330.1408">def test_PDCCH_symbol_array_in_one_OFDM_symbol():
+    
+    pdcch_list = [ PDCCH((0,1,1,0,1,0,0,1,1,0), 0, 0), ]
+    CFI = 2
+    n_s = 0
+    N_cell_ID = 0
+    layer_mapping_scheme = 'transmit_diversity'
+    num_of_layers = 2
+    precoding_scheme = 'transmit_diversity'
+    AP_num = 2
+    codebook_index = 0
+    N_maxDL_RB = 110
+    N_DL_RB = 110
+    N_DL_symb = 7
+    N_RB_sc = 12
+    CP_DL_type = 0
+    LTE_mode = 'TDD'
+    
+    CSRS_REs = get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    CSRS_REs += get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    
+    #print "CSRS_REs_AP0 = ", get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    #print "CSRS_REs_AP1 = ", get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    
+    PCFICH_REs = get_PCFICH_REs_in_symbol(0, True, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_REs, AP_num, CP_DL_type)
+    #print "PCFICH_REs = ", PCFICH_REs
+    
+    PHICH_REs = tuple() # no PHICH for subframe 0 in UL/DL configuration 1
+    #print "PHICH_REs = ", PHICH_REs
+    
+    N_REG = 0
+    for l in range(CFI):
+        N_REG += get_REG_number_in_symbol(N_DL_RB, N_RB_sc, l, AP_num, DL_CP_type)
+    N_REG -= len(PCFICH_REs)/4
+    #print N_REG, len(PCFICH_REs), len(PCFICH_REs)/4
+    
+    symbol_matrix = get_PDCCH_symbol_array(pdcch_list, CFI, N_REG, n_s, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_REs, PCFICH_REs, PHICH_REs)
+    symbol_matrix_ap0 = symbol_matrix[0]
+    
+    plt.title("PDCCH symbol array in symbol 0 for AP=0")
+    plt.plot(abs(symbol_matrix_ap0[0]))
+    plt.xlabel("k (subcarrier index)")
+    plt.ylabel("Magnitude")
+    plt.show()
+</t>
+<t tx="Michael.20120326140330.1409">def test_PDCCH_Uu_signal():
+    pdcch_list = [ PDCCH((0,1,1,0,1,0,0,1,1,0), 0, 0), ]
+    CFI = 2
+    n_s = 0
+    N_cell_ID = 0
+    layer_mapping_scheme = 'transmit_diversity'
+    num_of_layers = 2
+    precoding_scheme = 'transmit_diversity'
+    AP_num = 2
+    codebook_index = 0
+    N_maxDL_RB = 110
+    N_DL_RB = 110
+    N_DL_symb = 7
+    N_RB_sc = 12
+    CP_DL_type = 0
+    LTE_mode = 'TDD'
+    
+    CSRS_REs = get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    CSRS_REs += get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    
+    #print "CSRS_REs_AP0 = ", get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    #print "CSRS_REs_AP1 = ", get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    
+    PCFICH_REs = get_PCFICH_REs_in_symbol(0, True, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_REs, AP_num, CP_DL_type)
+    #print "PCFICH_REs = ", PCFICH_REs
+    
+    PHICH_REs = tuple() # no PHICH for subframe 0 in UL/DL configuration 1
+    #print "PHICH_REs = ", PHICH_REs
+    
+    N_REG = 0
+    for l in range(CFI):
+        N_REG += get_REG_number_in_symbol(N_DL_RB, N_RB_sc, l, AP_num, DL_CP_type)
+    N_REG -= len(PCFICH_REs)/4
+    #print N_REG, len(PCFICH_REs), len(PCFICH_REs)/4
+    
+    symbol_matrix = get_PDCCH_symbol_array(pdcch_list, CFI, N_REG, n_s, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_REs, PCFICH_REs, PHICH_REs)
+    symbol_matrix_ap0 = symbol_matrix[0]
+    
+    pdcch_Uu_signal = array( [0.0] * (160+144+2048*2) )
+    t0 = arange(0, (160+2048)*T_s, T_s)
+    t1 = arange(0, (144+2048)*T_s, T_s)
+    for l in range(2):
+        if l==0:
+            pdcch_re_array = symbol_matrix_ap0[l]
+            pdcch_baseband_IQ = ofdm_baseband_IQ_signal_generate(pdcch_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            tmp_pdcch_Uu_signal = downlink_modulate(pdcch_baseband_IQ, t0, f_0)
+            pdcch_Uu_signal[:(160+2048)] = tmp_pdcch_Uu_signal
+        else:
+            pdcch_re_array = symbol_matrix_ap0[l]
+            pdcch_baseband_IQ = ofdm_baseband_IQ_signal_generate(pdcch_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            tmp_pdcch_Uu_signal = downlink_modulate(pdcch_baseband_IQ, t1, f_0)
+            pdcch_Uu_signal[(160+2048)+(144+2048)*(l-1):(160+2048)+(144+2048)*l] = tmp_pdcch_Uu_signal
+
+    new_t = arange(0, (160+144+2048*2)*T_s, T_s)
+    plt.plot(new_t*1000, pdcch_Uu_signal)
+    plt.title('PDCCH (only) Uu signal for ap=0')
+    plt.xlabel('Time (ms)')
+    plt.ylabel('Signal level')
+    #plt.legend(legend_list)
+    #plt.axis( [-0.01, 0.075, -0.1, 14] )
+    plt.show()</t>
 <t tx="michael.20120223085633.1280">@language python
 @tabwidth -4
 @encoding utf-8</t>
-<t tx="michael.20120305092148.1276">@others</t>
+<t tx="michael.20120305092148.1276">@others
+</t>
 <t tx="michael.20120305092148.1277">@others
 </t>
 <t tx="michael.20120305092148.1278">def get_REG_in_RB_symbol(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, optimize=True):
@@ -2077,7 +2537,7 @@ cProfile.runctx('main()', globals(), locals())
             v = 3 * (n_s%2)
         elif antenna_port==3:
             v = 3 + 3 * (n_s%2)
-        for m in range(2*N_DL_RB-1):
+        for m in range(2*N_DL_RB):
             m_ = m + N_maxDL_RB - N_DL_RB   # m'
             k = 6*m + (v+v_shift)%6
             REs.append( (k,l) )
@@ -2262,7 +2722,8 @@ def get_PHICH_symbol_array(HI, subframe, n_s, n_seq_PHICH, n_group_PHICH, N_grou
             for ap in range(AP_num):
                 symbol_matrix_for_all_ap[ap][l][k] = layer_mapped_matrix[ap][reg_index*4+re_index]
 
-    return symbol_matrix_for_all_ap</t>
+    return symbol_matrix_for_all_ap
+</t>
 <t tx="michael.20120305092148.1292">from numpy import *
 import matplotlib.pyplot as plt
 
@@ -2579,7 +3040,8 @@ for p in (29,34,25):
             plt.savefig(fn)
 
 </t>
-<t tx="michael.20120305092148.1315">@others</t>
+<t tx="michael.20120305092148.1315">@others
+</t>
 <t tx="michael.20120305092148.1316">def ZC( n, N_ZC, q ):
     '''
     give the n-th element of 0 cyclic shift Z-C sequence with root index q and length N_ZC.
@@ -3861,7 +4323,8 @@ def PHICH_layer_map_and_precode(d_0, AP_num, n_group_PHICH, DL_CP_type):
                 y[2][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
                 y[3][4*i+3] = 1/sqrt(2) * sum(array([0,0,1,0,0,0,-1j,0])) * tmp_x
         result = y
-    return result</t>
+    return result
+</t>
 <t tx="michael.20120323224953.1379">def get_PHICH_mapping_units(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, m_i, N_group_PHICH, DL_CP_type, is_MBSFN, PHICH_duration, subframe, n_s, N_cell_ID, N_DL_symb):
     '''
     input:
@@ -3880,7 +4343,7 @@ def PHICH_layer_map_and_precode(d_0, AP_num, n_group_PHICH, DL_CP_type):
         N_cell_ID: cell ID
         N_DL_symb: downlink symbol number in one slot.
     output:
-        a list of resources for all PHICH mapping units, e.g. output[0] is a tuple of 3 REGs, which in turn is a tuple of 4 REs like (k,l), for PHICH mapping unit m_=0. E.g. output[0][0] will be the REG for mapping unit 0.
+        a list of resources for all PHICH mapping units, e.g. output[0] is a tuple of 3 REGs, which in turn is a tuple of 4 REs like (k,l), for PHICH mapping unit m_=0. E.g. output[0][0] will be the 1st REG for mapping unit 0.
     '''
     # get the total number of PHICH mapping units
     # M_ is the total number of PHICH mapping units in this slot, i.e. for this PHICH PHY channel
@@ -3965,7 +4428,36 @@ def PHICH_layer_map_and_precode(d_0, AP_num, n_group_PHICH, DL_CP_type):
         #print result[m_][i]
         result[m_][i] = REG_list_in_symbol[l_][n_]
         
-    return result</t>
+    return result
+
+def get_PHICH_REs(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, m_i, N_group_PHICH, DL_CP_type, is_MBSFN, PHICH_duration, subframe, n_s, N_cell_ID, N_DL_symb):
+    '''
+    input:
+        LTE_mode: 'FDD' or 'TDD'
+        N_maxDL_RB
+        N_DL_RB
+        N_RB_sc
+        CSRS_AP_num: number of antenna ports used for CSRS
+        m_i: times of PHICH group numbers in TDD mode
+        N_group_PHICH: number of PHICH groups
+        DL_CP_type: downlink CP type, 0 for normal, 1 for extended
+        is_MBSFN: boolean, whether this subframe is a MBSFN subframe
+        PHICH_duration: 0 for normal duration, 1 for extended duration
+        subframe: subframe index
+        n_s: slot index
+        N_cell_ID: cell ID
+        N_DL_symb: downlink symbol number in one slot.
+    output:
+        a list of all REs for PHICH in this subframe, e.g. output[0] is the 1st RE.
+    '''
+    PHICH_mapping_units = get_PHICH_mapping_units(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, m_i, N_group_PHICH, DL_CP_type, is_MBSFN, PHICH_duration, subframe, n_s, N_cell_ID, N_DL_symb)
+    result = list()
+    for mapping_unit in PHICH_mapping_units:
+        for reg in mapping_unit:
+            for re in reg:
+                result.append( re )
+    return tuple(result)
+</t>
 <t tx="michael.20120323224953.1793">def get_RE_number_in_REG(l, CSRS_AP_num, CP_DL_type):
     '''
     input:
@@ -4033,7 +4525,8 @@ def PHICH_layer_map_and_precode(d_0, AP_num, n_group_PHICH, DL_CP_type):
                         tmp_reg.append(re)
                 result.append( tuple(tmp_reg) )
     return result
-    </t>
+    
+</t>
 <t tx="michael.20120323224953.1796">def channel_code_HI(HI):
     '''
     input:
@@ -4043,7 +4536,8 @@ def PHICH_layer_map_and_precode(d_0, AP_num, n_group_PHICH, DL_CP_type):
     '''
     lte_assert(HI in (0,1), "HI=%s is out of range, it has to be 0 for NACK or 1 for ACK!"%HI)
     return ( (0,0,0), (1,1,1) )[HI]
-    </t>
+    
+</t>
 <t tx="michael.20120323224953.1797"></t>
 <t tx="michael.20120323224953.1798">@others
 
@@ -4142,7 +4636,8 @@ if test_enabling_bits &amp; (1&lt;&lt;1):
     plt.plot(abs(PHICH_symbol_matrix[0][0]))
     plt.xlabel("k (subcarrier index)")
     plt.ylabel("Magnitude")
-    plt.show()</t>
+    plt.show()
+</t>
 <t tx="michael.20120323224953.1801">def test_PHICH_Uu_signal():
     PHICH_symbol_matrix = get_PHICH_symbol_array(HI, subframe, n_s, n_seq_PHICH, n_group_PHICH, N_group_PHICH, PHICH_duration, N_cell_ID, DL_CP_type, AP_num, LTE_mode, UL_DL_config, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, is_MBSFN, N_DL_symb)
     PHICH_symbol_matrix_ap0 = PHICH_symbol_matrix[0]
