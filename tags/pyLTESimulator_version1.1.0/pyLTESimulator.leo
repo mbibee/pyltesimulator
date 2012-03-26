@@ -1,0 +1,4669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Leo (http://webpages.charter.net/edreamleo/front.html) -->
+<?xml-stylesheet ekr_test?>
+<leo_file xmlns:leo="http://www.leo-editor.org/2011/leo" >
+<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
+<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
+	<global_window_position top="50" left="50" height="500" width="700"/>
+	<global_log_window_position top="0" left="0" height="0" width="0"/>
+</globals>
+<preferences/>
+<find_panel_settings/>
+<vnodes>
+<v t="michael.20120223085633.1280" a="E"><vh>lte-phy-channel-on-air</vh>
+<v t="michael.20120322193448.2179"><vh>project_config</vh></v>
+<v t="michael.20120305092148.1276"><vh>3GPP</vh>
+<v t="michael.20120305092148.1277"><vh>36.211</vh>
+<v t="michael.20120305092148.1295" a="E"><vh>6 Downlink</vh>
+<v t="michael.20120305092148.1304"><vh>5.07.2 Preamble seq gen</vh></v>
+<v t="michael.20120305092148.1278"><vh>6.02.4 REGs</vh>
+<v t="michael.20120323224953.1793"><vh>get_RE_number_in_REG</vh></v>
+<v t="Michael.20120320091224.1504"><vh>get_REG_from_kl</vh></v>
+<v t="michael.20120323224953.1794"><vh>get_REG_number_in_symbol</vh></v>
+<v t="michael.20120323224953.1795"><vh>get_REG_in_symbol</vh></v>
+</v>
+<v t="Michael.20120319125504.1471"><vh>6.03.3 Layer mapping</vh>
+<v t="Michael.20120319125504.1472"><vh>6.3.3.1 Layer mapping for transmission on a single antenna port</vh></v>
+<v t="Michael.20120319125504.1473"><vh>6.3.3.2 Layer mapping for spatial multiplexing</vh></v>
+<v t="Michael.20120319125504.1475"><vh>6.3.3.3 Layer mapping for transmit diversity</vh></v>
+</v>
+<v t="Michael.20120319125504.1476"><vh>6.03.4 Precoding</vh>
+<v t="Michael.20120319125504.1477"><vh>6.3.4.1 Precoding for transmission on a single antenna port</vh></v>
+<v t="Michael.20120319125504.1478" a="E"><vh>6.3.4.2 Precoding for spatial multiplexing using antenna ports with CSRS</vh>
+<v t="Michael.20120319125504.1479"><vh>6.3.4.2.1 Precoding without CDD</vh></v>
+<v t="Michael.20120319125504.1480"><vh>6.3.4.2.3 Codebook for precoding</vh></v>
+</v>
+<v t="Michael.20120320091224.1502"><vh>6.3.4.3 Precoding for transmit diversity</vh></v>
+</v>
+<v t="Michael.20120321090100.1521"><vh>6.06 PBCH</vh>
+<v t="Michael.20120321090100.1522"><vh>6.6.1 Scrambling</vh></v>
+<v t="Michael.20120321090100.1523"><vh>6.6.2 Modulation</vh></v>
+<v t="Michael.20120321090100.1524"><vh>6.6.3 Layer mapping and precoding</vh></v>
+<v t="Michael.20120321090100.1525"><vh>6.6.4 Mapping to resource elements</vh></v>
+</v>
+<v t="Michael.20120319125504.1463"><vh>6.07 PCFICH</vh>
+<v t="Michael.20120319125504.1464"><vh>6.7.1 Scrambing</vh></v>
+<v t="Michael.20120319125504.1465"><vh>6.7.2 Modulation</vh></v>
+<v t="Michael.20120319125504.1474"><vh>6.7.3 Layer mapping and precoding</vh></v>
+<v t="Michael.20120320091224.1503"><vh>6.7.4 Mapping to resource elements</vh></v>
+</v>
+<v t="Michael.20120326140330.1400" a="E"><vh>6.08 PDCCH</vh>
+<v t="Michael.20120326140330.1401"><vh>6.8.2 PDCCH multiplexing and scrambing</vh></v>
+<v t="Michael.20120326140330.1402"><vh>6.8.3 Modulation</vh></v>
+<v t="Michael.20120326140330.1403"><vh>6.8.4 Layer mapping and precoding</vh></v>
+<v t="Michael.20120326140330.1404"><vh>6.8.5 Mapping to resource elements</vh></v>
+</v>
+<v t="michael.20120305092148.1290"><vh>6.09 PHICH</vh>
+<v t="Michael.20120323090727.1968"><vh>6.9.1 Modulation</vh></v>
+<v t="michael.20120323224953.1378"><vh>6.9.2 Resource group alignment, layer mapping and precoding</vh></v>
+<v t="michael.20120323224953.1379"><vh>6.9.3 Mapping to resource elements</vh></v>
+</v>
+<v t="michael.20120305092148.1280" a="E"><vh>6.10 RS</vh>
+<v t="michael.20120305092148.1281" a="E"><vh>6.10.1 CSRS</vh>
+<v t="michael.20120305092148.1285"><vh>6.10.1.1 Seq gen</vh></v>
+<v t="michael.20120305092148.1279"><vh>6.10.1.2 Mapping to REs</vh></v>
+</v>
+</v>
+<v t="michael.20120305092148.1301"><vh>6.11 Sync signals</vh>
+<v t="michael.20120305092148.1302"><vh>6.11.1 PSS</vh>
+<v t="michael.20120305092148.1303"><vh>6.11.1.1 seq gen</vh></v>
+<v t="michael.20120305092148.1305"><vh>6.11.1.2 mapping to REs</vh></v>
+</v>
+<v t="michael.20120312091134.1403"><vh>6.11.2 SSS</vh>
+<v t="michael.20120312091134.1404"><vh>6.11.2.1 Sequence generation</vh></v>
+<v t="Michael.20120314113327.1416"><vh>6.11.2.2 Mapping to REs</vh></v>
+</v>
+</v>
+<v t="michael.20120305092148.1293"><vh>6.12 OFDM baseband signal gen</vh></v>
+<v t="michael.20120305092148.1296"><vh>6.13 Modulation&amp;upconversion</vh></v>
+</v>
+<v t="michael.20120305092148.1294"><vh>7 Generic functions</vh>
+<v t="Michael.20120319125504.1466" a="E"><vh>7.1 Modulation mapper</vh>
+<v t="Michael.20120319125504.1467"><vh>7.1.1 BPSK</vh></v>
+<v t="Michael.20120319125504.1468"><vh>7.1.2 QPSK</vh></v>
+<v t="Michael.20120319125504.1469"><vh>7.1.3 16QAM</vh></v>
+<v t="Michael.20120319125504.1470"><vh>7.1.4 64QAM</vh></v>
+</v>
+<v t="michael.20120305092148.1283"><vh>7.2 Pseudo-random seq gen</vh></v>
+</v>
+</v>
+<v t="Michael.20120320091224.1509"><vh>36.212</vh>
+<v t="Michael.20120321090100.1533"><vh>5.1.1 CRC calculation</vh></v>
+<v t="Michael.20120321090100.1534"><vh>5.1.3.1 Tail biting convolutional coding</vh></v>
+<v t="Michael.20120321090100.1537"><vh>5.1.4.2 Rate matching for convolutionally coded TrCh and control information</vh></v>
+<v t="Michael.20120321090100.1530" a="E"><vh>5.3 DL transport channels and control information</vh>
+<v t="Michael.20120321090100.1531"><vh>5.3.1 Broadcast channel</vh>
+<v t="Michael.20120321090100.1532"><vh>5.3.1.1 TB CRC attachment</vh></v>
+<v t="Michael.20120321090100.1535"><vh>5.3.1.2 Channel coding</vh></v>
+<v t="Michael.20120321090100.1536"><vh>5.3.1.3 Rate matching</vh></v>
+</v>
+<v t="Michael.20120320091224.1510"><vh>5.3.4 Control format indicator</vh></v>
+<v t="michael.20120323224953.1796"><vh>5.3.5 HARQ indicator (HI)</vh></v>
+</v>
+</v>
+<v t="michael.20120305092148.1315"><vh>Gegeral math</vh>
+<v t="michael.20120305092148.1316"><vh>Zadoff-Chu seq</vh></v>
+</v>
+<v t="Michael.20120319125504.1481"><vh>Error handling</vh></v>
+</v>
+<v t="michael.20120305092148.1306" a="E"><vh>Simulations</vh>
+<v t="michael.20120323224953.1797"><vh>PHICH gen &amp; detect</vh>
+<v t="michael.20120323224953.1798" a="E"><vh>source</vh>
+<v t="michael.20120323224953.1800"><vh>01. PHICH symbol array in one OFDM symbol</vh></v>
+<v t="michael.20120323224953.1801"><vh>02. PHICH Uu signal</vh></v>
+<v t="michael.20120305092148.1276"></v>
+</v>
+<v t="michael.20120323224953.1799"
+expanded="michael.20120323224953.1798,michael.20120305092148.1295,Michael.20120319125504.1478,Michael.20120326140330.1400,michael.20120305092148.1280,michael.20120305092148.1281,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./Simulation/PHICH/phich_gen_detect.py</vh></v>
+</v>
+<v t="Michael.20120315095133.1438"><vh>CSRS gen &amp; channel estimation</vh>
+<v t="Michael.20120315095133.1440"><vh>@thin ./Simulation/CSRS/csrs_gen_channel_estimation.py</vh></v>
+<v t="Michael.20120315095133.1439"><vh>CSRS source</vh>
+<v t="Michael.20120315095133.1442"><vh>01. CSRS baseband IQ time domain signal</vh></v>
+<v t="Michael.20120315095133.1443"><vh>02. CSRS baseband IQ spectrum</vh></v>
+<v t="Michael.20120315095133.1444"><vh>03. CSRS Uu signal</vh></v>
+<v t="Michael.20120315095133.1445"><vh>04. CSRS received IQ</vh></v>
+<v t="Michael.20120315095133.1446"><vh>05. CSRS channel estimation in one symbol</vh></v>
+<v t="michael.20120305092148.1285"></v>
+<v t="michael.20120305092148.1279"></v>
+<v t="michael.20120305092148.1293"></v>
+<v t="michael.20120305092148.1296"></v>
+<v t="michael.20120305092148.1283"></v>
+</v>
+</v>
+<v t="michael.20120309091906.1376"><vh>Low pass filter</vh>
+<v t="michael.20120309091906.1377"><vh>souce code</vh></v>
+<v t="michael.20120309091906.1378"><vh>@thin ./test_files/low_pass_filter.py</vh></v>
+</v>
+<v t="michael.20120305092148.1307"><vh>OFDM basic</vh>
+<v t="michael.20120305092148.1310"><vh>source</vh>
+<v t="michael.20120315195140.1455"><vh>01. OFDM baseband signal generation</vh></v>
+<v t="michael.20120305092148.1293"></v>
+<v t="michael.20120305092148.1296"></v>
+<v t="michael.20120305092148.1292"><vh>plot_symbols</vh></v>
+</v>
+<v t="michael.20120315195140.1454"><vh>@thin ./Simulation/OFDM_basic/ofdm_basic.py</vh></v>
+</v>
+<v t="Michael.20120321090100.1526" a="E"><vh>PBCH gen &amp; detect</vh>
+<v t="Michael.20120321090100.1528"
+expanded="Michael.20120321090100.1527,michael.20120305092148.1295,Michael.20120319125504.1478,Michael.20120326140330.1400,michael.20120305092148.1280,michael.20120305092148.1281,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./Simulation/PBCH/pbch_gen_detect.py</vh></v>
+<v t="Michael.20120321090100.1527" a="E"><vh>PBCH source</vh>
+<v t="Michael.20120321090100.1529"><vh>01. PBCH symbol array in one OFDM symbol</vh></v>
+<v t="Michael.20120321090100.1538"><vh>02. PBCH Uu signal</vh></v>
+<v t="michael.20120305092148.1277"></v>
+<v t="Michael.20120320091224.1509"></v>
+<v t="Michael.20120319125504.1481"></v>
+</v>
+</v>
+<v t="Michael.20120326140330.1405" a="E"><vh>PDCCH gen &amp; detect</vh>
+<v t="Michael.20120326140330.1406" a="E"><vh>source</vh>
+<v t="Michael.20120326140330.1408"><vh>01. PDCCH symbol array in one OFDM symbol</vh></v>
+<v t="Michael.20120326140330.1409"><vh>02. PDCCH Uu signal</vh></v>
+<v t="michael.20120305092148.1276"></v>
+</v>
+<v t="Michael.20120326140330.1407"
+expanded="Michael.20120326140330.1406,michael.20120305092148.1295,Michael.20120319125504.1478,Michael.20120326140330.1400,michael.20120305092148.1280,michael.20120305092148.1281,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./Simulation/PDCCH/pdcch_gen_detect.py</vh></v>
+</v>
+<v t="Michael.20120320091224.1505"><vh>PCFICH gen &amp; detect</vh>
+<v t="Michael.20120320091224.1507"
+expanded="Michael.20120319125504.1478,Michael.20120319125504.1466,"><vh>@thin ./Simulation/PCFICH/pcfich_gen_detect.py</vh></v>
+<v t="Michael.20120320091224.1506"><vh>PCFICH source</vh>
+<v t="Michael.20120320091224.1508"><vh>01. PCFICH symbol array in one OFDM symbol</vh></v>
+<v t="Michael.20120321090100.1520"><vh>02. PCFICH Uu signal</vh></v>
+<v t="Michael.20120320091224.1510"></v>
+<v t="michael.20120305092148.1278"></v>
+<v t="Michael.20120319125504.1471"></v>
+<v t="Michael.20120319125504.1476"></v>
+<v t="Michael.20120319125504.1463"></v>
+<v t="michael.20120305092148.1279"></v>
+<v t="michael.20120305092148.1293"></v>
+<v t="michael.20120305092148.1296"></v>
+<v t="michael.20120305092148.1294"></v>
+<v t="Michael.20120319125504.1481"></v>
+</v>
+</v>
+<v t="michael.20120305092148.1317"><vh>PSS gen &amp; detect</vh>
+<v t="michael.20120305092148.1319"><vh>@thin ./Simulation/PSS/PSS_gen_detect.py</vh></v>
+<v t="michael.20120305092148.1318"><vh>PSS source code</vh>
+<v t="michael.20120305092148.1322"><vh>01. PSS spectrum before OFDM generation</vh></v>
+<v t="michael.20120305092148.1320"><vh>02. PSS correlation in freq domain before OFDM gen</vh></v>
+<v t="michael.20120305092148.1321"><vh>03. PSS baseband IQ signal in time domain</vh></v>
+<v t="michael.20120310203114.1395"><vh>04. PSS baseband IQ spectrum</vh></v>
+<v t="michael.20120312091134.1399"><vh>05. PSS baseband IQ spectrum correlation</vh></v>
+<v t="michael.20120305092148.1323"><vh>06. PSS Uu signal</vh></v>
+<v t="michael.20120309091906.1387"><vh>07. PSS Uu signal downconversion</vh></v>
+<v t="michael.20120312091134.1401"><vh>08. PSS Uu signal downconverted correlation</vh></v>
+<v t="michael.20120310203114.1394"><vh>09. PSS received IQ spectrum</vh></v>
+<v t="michael.20120305092148.1326"><vh>10. PSS Uu signal downconverted decimated to 1/16 correlation</vh></v>
+<v t="michael.20120312091134.1402"><vh>11. PSS detect</vh></v>
+<v t="Michael.20120316092234.1457"><vh>12. Channel estimation using PSS</vh></v>
+<v t="michael.20120305092148.1303"></v>
+<v t="michael.20120305092148.1305"></v>
+<v t="michael.20120305092148.1293"></v>
+<v t="michael.20120305092148.1296"></v>
+<v t="michael.20120305092148.1292"></v>
+<v t="michael.20120305092148.1331"><vh>z_fft_of_ZC</vh>
+<v t="michael.20120305092148.1316"></v>
+</v>
+</v>
+</v>
+<v t="Michael.20120314113327.1412"><vh>SSS gen &amp; detect</vh>
+<v t="Michael.20120314113327.1414"><vh>@thin ./Simulation/SSS/sss_gen_detect.py</vh></v>
+<v t="Michael.20120314113327.1413"><vh>SSS source</vh>
+<v t="Michael.20120314113327.1415"><vh>01. SSS sequence generation</vh></v>
+<v t="Michael.20120314113327.1417"><vh>02. SSS baseband IQ time domain signal</vh></v>
+<v t="Michael.20120314113327.1418"><vh>03. SSS baseband IQ spectrum</vh></v>
+<v t="michael.20120314211632.1426"><vh>04. SSS baseband IQ correlation</vh></v>
+<v t="michael.20120314211632.1427"><vh>05. SSS baseband IQ spectrum correlation</vh></v>
+<v t="michael.20120314211632.1428"><vh>06. SSS Uu signal</vh></v>
+<v t="michael.20120314211632.1429"><vh>07. SSS received IQ</vh></v>
+<v t="michael.20120314211632.1430"><vh>08. SSS received IQ spectrum coherent correlation</vh></v>
+<v t="michael.20120314211632.1431"><vh>09. SSS baseband detect</vh></v>
+<v t="Michael.20120316092234.1458"><vh>10. SSS received sequence</vh></v>
+<v t="Michael.20120316092234.1459"><vh>11. SSS received seq non-coherent correlation</vh></v>
+<v t="michael.20120312091134.1404"></v>
+<v t="Michael.20120314113327.1416"></v>
+<v t="michael.20120305092148.1293"></v>
+<v t="michael.20120305092148.1296"></v>
+</v>
+</v>
+<v t="michael.20120305092148.1312"><vh>Zadoff-Chu seq</vh>
+<v t="michael.20120305092148.1313"><vh>source_code</vh>
+<v t="michael.20120305092148.1316"></v>
+</v>
+<v t="michael.20120305092148.1314"><vh>@thin ./test_files/ZC_seq.py</vh></v>
+</v>
+</v>
+<v t="michael.20120322193448.2259"><vh>Release_relative</vh>
+<v t="michael.20120322193448.2266"><vh>@thin ./build_binary_for_Windows.bat</vh></v>
+<v t="michael.20120322193448.2342"
+expanded="Michael.20120321090100.1527,michael.20120305092148.1295,Michael.20120319125504.1478,Michael.20120326140330.1400,michael.20120305092148.1280,michael.20120305092148.1281,Michael.20120319125504.1466,Michael.20120321090100.1530,"><vh>@thin ./pyLTESimulator.py</vh></v>
+<v t="michael.20120322193448.2263"><vh>@thin ./setup.py</vh></v>
+<v t="michael.20120322193448.2267"><vh>build bat on Windows</vh></v>
+<v t="michael.20120322193448.2264"><vh>cx_freeze config</vh>
+<v t="michael.20120322193448.2338"><vh>project_config</vh></v>
+</v>
+<v t="michael.20120322193448.2343"><vh>source</vh>
+<v t="Michael.20120315095133.1439"></v>
+<v t="Michael.20120321090100.1527" a="E"></v>
+<v t="Michael.20120320091224.1506"></v>
+<v t="michael.20120305092148.1318"></v>
+<v t="Michael.20120314113327.1413"></v>
+</v>
+</v>
+</v>
+</vnodes>
+<tnodes>
+<t tx="Michael.20120314113327.1412"></t>
+<t tx="Michael.20120314113327.1413">
+from scipy.signal import *
+from numpy import *
+import matplotlib.pyplot as plt
+
+# time scale is in 1 s
+T_s = 1.0/30720/1000 # in s
+
+# configuration for SSS
+l = 6
+N_DL_RB = 110
+N_RB_sc = 12
+N_DL_CP = 0 # normal DL CP
+N_ID_2_tuple = (0,1,2)
+delta_f = 15000
+subframe = 0
+N_ID_cell = 0
+f_0 = (2620+0.1*(2620-2750))*1000*1000  # in Hz
+
+if N_DL_CP==0 and delta_f==15000:
+    if l==0:
+        N_CP_l = 160
+    else:
+        N_CP_l = 144
+elif N_DL_CP==1:    # extended CP
+    if delta_f==15000:
+        N_CP_l = 512
+    else:   # delta_f == 7500
+        N_CP_l = 1024
+if delta_f==15000:
+    N = 2048
+else:   # delta_f == 7500
+    N = 4096
+
+t = arange(0, (N_CP_l+N)*T_s, T_s)
+
+def find_max( a_list ):
+    m = max(a_list)
+    for i in arange(len(a_list)):
+        if a_list[i] == m:
+            return (i, m)
+
+def find_min( a_array ):
+    x, y = 0, 0
+    for i in arange(len(a_array)):
+        if a_array[i] &lt; y:
+            x, y = i, a_array[i]
+    return (x,y)
+
+def find_abs_max( a_array ):
+    m = max(abs(a_array))
+    for i in arange(len(a_array)):
+        if abs(a_array[i]) == m:
+            return (i, m)
+
+            
+@others
+
+test_enabling_bits = 0b11111111111
+
+# 01. SSS sequence generation
+if test_enabling_bits &amp; (1&lt;&lt;0):
+    SSS_sequence_generation()
+
+# 02. SSS baseband signal
+if test_enabling_bits &amp; (1&lt;&lt;1):
+    sss_baseband_IQ()
+
+# 03. SSS baseband IQ
+if test_enabling_bits &amp; (1&lt;&lt;2):
+    sss_baseband_IQ_spectrum()
+
+# 04. SSS baseband IQ correlation
+if test_enabling_bits &amp; (1&lt;&lt;3):
+    sss_baseband_IQ_correlation()
+
+# 05. SSS baseband IQ spectrum correlation
+if test_enabling_bits &amp; (1&lt;&lt;4):
+    sss_baseband_IQ_spectrum_correlation()
+
+# 06. SSS Uu signal
+if test_enabling_bits &amp; (1&lt;&lt;5):
+    SSS_signal_Uu()
+
+# 07. SSS received IQ
+if test_enabling_bits &amp; (1&lt;&lt;6):
+    SSS_received_IQ()
+
+# 08. SSS received IQ spectrum coherent correlation
+if test_enabling_bits &amp; (1&lt;&lt;7):
+    SSS_received_IQ_spectrum_correlation()
+
+# 09. SSS baseband detect
+if test_enabling_bits &amp; (1&lt;&lt;8):
+    test_SSS_detect_in_baseband_IQ()
+
+# 10. SSS received sequence
+if test_enabling_bits &amp; (1&lt;&lt;9):
+    SSS_received_sequence()
+
+# 11. SSS received seq non-coherent correlation
+if test_enabling_bits &amp; (1&lt;&lt;10):
+    SSS_received_seq_non_coherent_correlation()
+</t>
+<t tx="Michael.20120314113327.1415">def SSS_sequence_generation(to_draw=True):
+
+    sss_dict = dict()   # key is (N_ID_cell, subframe)
+    N_ID_cell_list = list()
+    for N_ID_1 in range(168):
+        for N_ID_2 in range(3):
+            N_ID_cell = N_ID_1*3 + N_ID_2
+            N_ID_cell_list.append(N_ID_cell)
+            for subframe in (0,5):
+                sss_dict[(N_ID_cell,subframe)] = sss_seq(subframe,N_ID_cell)
+
+    if to_draw:
+        plt.plot(sss_dict[(0,0)])
+        plt.show()
+    return sss_dict
+    
+</t>
+<t tx="Michael.20120314113327.1416">def sss_symbol_array(subframe, N_ID_cell, N_DL_RB, N_RB_sc):
+    symbol_array = ndarray( shape=(N_DL_RB*N_RB_sc,), dtype=complex128 )
+    for i in arange(len(symbol_array)):
+        symbol_array[i] = 0
+    for n in arange(0, 62):
+        k = n-31+N_DL_RB*N_RB_sc/2
+        symbol_array[k] = sss_d(n, subframe, N_ID_cell)
+    return symbol_array
+
+def sss_k_range(N_DL_RB, N_RB_sc):
+    
+    start_index = 0-31+N_DL_RB*N_RB_sc/2
+    end_index = 61-31+N_DL_RB*N_RB_sc/2
+    
+    return (start_index, end_index)
+
+def get_sss_seq_from_RE_symbol_array(re_symbol_array, N_RB_sc, do_adjust=True, adjust_method='round_to_one'):
+    '''
+    Note: len(re_symbol_array)==N_DL_RB*N_RB_sc must be True!
+    '''
+    sss_start_k, sss_end_k = sss_k_range(N_DL_RB, N_RB_sc)
+    tmp_index = sss_start_k
+    if do_adjust:
+        if adjust_method=='+1-1':
+            sss_seq_received = array([0]*(6*N_RB_sc))
+            for i in arange(5, 6*N_RB_sc-5):
+                #if abs(real(re_symbol_array[tmp_index])) &gt; abs(imag(re_symbol_array[tmp_index])):
+                #print 're_symbol_array[%s]=%s'%(tmp_index, re_symbol_array[tmp_index])
+                tmp_angle = angle(re_symbol_array[tmp_index])
+                if tmp_angle&gt;-0.5*pi and tmp_angle&lt;=0.5*pi:
+                    sss_seq_received[i] = 1
+                else:
+                    sss_seq_received[i] = -1
+                tmp_index += 1
+        elif adjust_method=='round_to_one':
+            sss_seq_received = array([0.0 + 0.0*1j]*(6*N_RB_sc))
+            for i in arange(5, 6*N_RB_sc-5):
+                #if abs(real(re_symbol_array[tmp_index])) &gt; abs(imag(re_symbol_array[tmp_index])):
+                #print 're_symbol_array[%s]=%s'%(tmp_index, re_symbol_array[tmp_index])
+                #tmp_angle = angle(re_symbol_array[tmp_index])
+                sss_seq_received[i] = re_symbol_array[tmp_index]/abs(re_symbol_array[tmp_index])
+                tmp_index += 1
+    else:
+        sss_seq_received = array([0.0 + 0.0 * 1j] * (6 * N_RB_sc))
+        for i in arange(5, 6*N_RB_sc):
+            sss_seq_received[i] = re_symbol_array[tmp_index]
+            tmp_index += 1
+    #print sss_seq_received
+    return sss_seq_received
+</t>
+<t tx="Michael.20120314113327.1417">def sss_baseband_IQ():
+    
+    sss_re_array = sss_symbol_array(subframe, N_ID_cell, N_DL_RB, N_RB_sc)
+    sss_baseband_IQ = ofdm_baseband_IQ_signal_generate(sss_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+    
+    subplot_pos_tupe = (131,132,133)
+    title_tuple = ('SSS baseband IQ OFDM signal magnitude','SSS baseband IQ OFDM signal real part','SSS baseband IQ OFDM signal imag part')
+    y_label_tuple = ('IQ Magnitude', 'I part', 'Q part')
+    func_tuple = (abs, real, imag)
+        
+    for i in (0,1,2):
+        plt.subplot(subplot_pos_tupe[i])
+        plt.title(title_tuple[i])
+        plt.plot(t*1000, func_tuple[i](sss_baseband_IQ))
+        plt.xlabel('Time (ms)')
+        plt.ylabel(y_label_tuple[i])
+        #plt.axis([-0.01, 0.075, 0, 15])
+        plt.legend( ('N_ID_cell=%s'%N_ID_cell,) )
+            
+    plt.show()
+    
+</t>
+<t tx="Michael.20120314113327.1418">def sss_baseband_IQ_spectrum():
+    
+    sss_re_array = sss_symbol_array(subframe, N_ID_cell, N_DL_RB, N_RB_sc)
+    sss_baseband_IQ = ofdm_baseband_IQ_signal_generate(sss_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)[-1*N:]
+    sss_baseband_IQ_fft = fft.fft(sss_baseband_IQ, N)
+    
+    legend_list = list()
+    plt.title('SSS baseband IQ spectrum for N_ID_cell=%s'%N_ID_cell)
+    legend_list.append( 'Spectrum magnitude' )
+    plt.plot(abs(sss_baseband_IQ_fft), linestyle='-')
+    plt.xlabel('n (FFT index)')
+    plt.ylabel('Spectrum magnitude')
+    plt.legend(legend_list)
+    plt.show()
+</t>
+<t tx="Michael.20120315095133.1438"></t>
+<t tx="Michael.20120315095133.1439">
+from scipy.signal import *
+from numpy import *
+import matplotlib.pyplot as plt
+
+# time scale is in 1 s
+T_s = 1.0/30720/1000 # in s
+
+# configuration for CSRS
+n_s = 0
+l = 0
+antenna_port = 0
+N_DL_RB = 110
+N_maxDL_RB = N_DL_RB
+N_RB_sc = 12
+N_DL_CP = 0 # normal DL CP
+DL_CP_type = 0
+N_DL_symb = 7
+N_ID_2_tuple = (0,1,2)
+delta_f = 15000
+subframe = 0
+N_cell_ID = 0
+f_0 = (2620+0.1*(2620-2750))*1000*1000  # in Hz
+
+if N_DL_CP==0 and delta_f==15000:
+    if l==0:
+        N_CP_l = 160
+    else:
+        N_CP_l = 144
+elif N_DL_CP==1:    # extended CP
+    if delta_f==15000:
+        N_CP_l = 512
+    else:   # delta_f == 7500
+        N_CP_l = 1024
+if delta_f==15000:
+    N = 2048
+else:   # delta_f == 7500
+    N = 4096
+
+t = arange(0, (N_CP_l+N)*T_s, T_s)
+
+def find_max( a_list ):
+    m = max(a_list)
+    for i in arange(len(a_list)):
+        if a_list[i] == m:
+            return (i, m)
+
+def find_min( a_array ):
+    x, y = 0, 0
+    for i in arange(len(a_array)):
+        if a_array[i] &lt; y:
+            x, y = i, a_array[i]
+    return (x,y)
+
+def find_abs_max( a_array ):
+    m = max(abs(a_array))
+    for i in arange(len(a_array)):
+        if abs(a_array[i]) == m:
+            return (i, m)
+
+            
+@others
+
+test_enabling_bits = 0b11111
+
+# 01. CSRS baseband IQ time domain signal
+if test_enabling_bits &amp; (1&lt;&lt;0):
+    csrs_baseband_IQ_time_domain_signal()
+
+# 02. CSRS baseband IQ spectrum
+if test_enabling_bits &amp; (1&lt;&lt;1):
+    csrs_baseband_IQ_spectrum()
+
+# 03. CSRS Uu signal
+if test_enabling_bits &amp; (1&lt;&lt;2):
+    CSRS_signal_Uu()
+
+# 04. CSRS received IQ
+if test_enabling_bits &amp; (1&lt;&lt;3):
+    CSRS_received_IQ()
+
+# 05. CSRS channel estimation in one symbol
+if test_enabling_bits &amp; (1&lt;&lt;4):
+    test_csrs_channel_estimation_in_one_symbol()
+</t>
+<t tx="Michael.20120315095133.1442">def csrs_baseband_IQ_time_domain_signal():
+    
+    csrs_re_array = get_CSRS_in_symbol(n_s, l, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_RB_sc, N_DL_symb, DL_CP_type)
+    csrs_baseband_IQ = ofdm_baseband_IQ_signal_generate(csrs_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+    
+    subplot_pos_tupe = (131,132,133)
+    title_tuple = ('CSRS baseband IQ OFDM magnitude','CSRS baseband IQ OFDM signal real part','CSRS baseband IQ OFDM signal imag part')
+    y_label_tuple = ('IQ Magnitude', 'I part', 'Q part')
+    func_tuple = (abs, real, imag)
+    legend_list = list()
+    for i in (0,1,2):
+        plt.subplot(subplot_pos_tupe[i])
+        plt.title(title_tuple[i])
+        plt.plot(t*1000, func_tuple[i](csrs_baseband_IQ))
+        legend_list.append( ('antenna_port=%s'%(antenna_port), ))
+        plt.xlabel('Time (ms)')
+        plt.ylabel(y_label_tuple[i])
+        #plt.axis([-0.01, 0.075, 0, 15])
+        #plt.legend( ('N_ID_cell=%s'%N_cell_ID,) )
+            
+    plt.show()
+    
+</t>
+<t tx="Michael.20120315095133.1443">def csrs_baseband_IQ_spectrum(to_draw=True):
+    
+    csrs_re_array = get_CSRS_in_symbol(n_s, l, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_RB_sc, N_DL_symb, DL_CP_type)
+    csrs_baseband_IQ = ofdm_baseband_IQ_signal_generate(csrs_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)[-1*N:]
+    csrs_baseband_IQ_fft = fft.fft(csrs_baseband_IQ, N)
+    
+    if to_draw:
+        legend_list = list()
+        plt.title('CSRS baseband IQ spectrum')
+        legend_list.append( 'Spectrum magnitude' )
+        plt.plot(abs(csrs_baseband_IQ_fft), linestyle='-')
+        plt.xlabel('n (FFT index)')
+        plt.ylabel('Spectrum magnitude')
+        plt.legend(legend_list)
+        plt.show()
+    
+    return csrs_baseband_IQ_fft
+</t>
+<t tx="Michael.20120315095133.1444">def CSRS_signal_Uu_ref(n_s, l, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_RB_sc, N_DL_symb, DL_CP_type):
+    
+    csrs_re_array = get_CSRS_in_symbol(n_s, l, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_RB_sc, N_DL_symb, DL_CP_type)
+    csrs_baseband_IQ = ofdm_baseband_IQ_signal_generate(csrs_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+    csrs_Uu_signal = downlink_modulate(csrs_baseband_IQ, t, f_0)
+    
+    legend_list = list()
+    plt.plot(t*1000, csrs_Uu_signal)
+    legend_list.append('CSRS Uu signal')
+    plt.title('CSRS Uu signal')
+    plt.xlabel('Time (ms)')
+    plt.ylabel('Signal level')
+    plt.legend(legend_list)
+    #plt.axis( [-0.01, 0.075, -0.1, 14] )
+    plt.show()
+    #plt.savefig('PSS_signal_Uu_for_N_ID_2=%s.png'%N_ID_2, dpi=300)
+
+def CSRS_signal_Uu():
+    #CSRS_signal_Uu_ref(n_s, l, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_RB_sc, N_DL_symb, DL_CP_type)
+    CSRS_signal_Uu_ref(0, 0, 0, 0, 110, 110, 12, 7, 0)
+</t>
+<t tx="Michael.20120315095133.1445">def CSRS_received_IQ_ref(n_s, l, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_RB_sc, N_DL_symb, DL_CP_type, to_draw=False):
+    
+    csrs_re_array = get_CSRS_in_symbol(n_s, l, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_RB_sc, N_DL_symb, DL_CP_type)
+    csrs_baseband_IQ = ofdm_baseband_IQ_signal_generate(csrs_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+    csrs_Uu_signal = downlink_modulate(csrs_baseband_IQ, t, f_0)
+    csrs_Uu_signal_downconverted = downlink_downconvert(csrs_Uu_signal, t, f_0)
+    
+    if to_draw:
+        legend_list = list()
+        plt.plot(t*1000, real(csrs_Uu_signal_downconverted))
+        legend_list.append('CSRS received IQ real part')
+        plt.title('CSRS received IQ')
+        plt.xlabel('Time (ms)')
+        plt.ylabel('Signal level')
+        plt.legend(legend_list)
+        #plt.axis( [-0.01, 0.075, -0.1, 14] )
+        plt.show()
+    return csrs_Uu_signal_downconverted
+
+def CSRS_received_IQ():
+    #CSRS_received_IQ_ref(n_s, l, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_RB_sc, N_DL_symb, DL_CP_type)
+    CSRS_received_IQ_ref(0, 0, 0, 0, 110, 110, 12, 7, 0, to_draw=True)
+</t>
+<t tx="Michael.20120315095133.1446">def csrs_channel_estimation_in_one_symbol(received_baseband_IQ, ref_csrs_baseband_IQ, to_draw=False):
+    
+    received_baseband_IQ_fft = fft.fft( received_baseband_IQ[-1*N:], N )
+    ref_csrs_baseband_IQ_fft = fft.fft(ref_csrs_baseband_IQ[-1*N:], N)
+    channel_estimation_in_symbol = received_baseband_IQ_fft / ref_csrs_baseband_IQ_fft
+    
+    
+    subplot_pos_tupe = (121,122)
+    title_tuple = ('channel estimation spectrum magnitude','channel estimation spectrum phase')
+    y_label_tuple = ('spectrum magnitude', 'spectrum phase')
+    func_tuple = (abs, arctan)
+    legend_list = list()
+    for i in (0,1):
+        plt.subplot(subplot_pos_tupe[i])
+        plt.title(title_tuple[i])
+        plt.plot(func_tuple[i](channel_estimation_in_symbol))
+        #legend_list.append( ('antenna_port=%s'%(antenna_port), ))
+        plt.xlabel('n (FFT index)')
+        plt.ylabel(y_label_tuple[i])
+        #plt.axis([-0.01, 0.075, 0, 15])
+        #plt.legend( ('N_ID_cell=%s'%N_cell_ID,) )
+            
+    plt.show()
+
+def test_csrs_channel_estimation_in_one_symbol():
+    n_s, l, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_RB_sc, N_DL_symb, DL_CP_type = 0, 0, 0, 0, 110, 110, 12, 7, 0
+    csrs_re_array = get_CSRS_in_symbol(n_s, l, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_RB_sc, N_DL_symb, DL_CP_type)
+    csrs_baseband_IQ = ofdm_baseband_IQ_signal_generate(csrs_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+    csrs_Uu_signal = downlink_modulate(csrs_baseband_IQ, t, f_0)
+    csrs_Uu_signal_downconverted = downlink_downconvert(csrs_Uu_signal, t, f_0)
+    
+    csrs_channel_estimation_in_one_symbol(csrs_Uu_signal_downconverted, csrs_baseband_IQ, True)
+</t>
+<t tx="Michael.20120316092234.1457">def channel_estimation_using_PSS(baseband_IQ_array, N_ID_2, l, N_DL_RB, N_RB_sc, delta_f, to_draw=False):
+    '''
+    Note: len(baseband_IQ_array)==N must be True.
+    '''
+    pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
+    #pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+    pss_seq_send = get_pss_seq_from_RE_symbol_array(pss_freq_symbol_array, N_RB_sc)
+    
+    pss_seq_received = get_pss_seq_from_RE_symbol_array(baseband_IQ_array, N_RB_sc)
+    pss_channel_estimation = pss_seq_received / pss_seq_send
+    
+    #pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
+    #pss_uu_sig_down = downlink_downconvert(pss_uu_sig, t, f_0)[-1*N:]
+    #pss_received_RE_IQ_array = ofdm_baseband_IQ_to_RE_IQ_array(pss_uu_sig_down, N_DL_RB, N_RB_sc, delta_f=15000)
+    if to_draw:
+        subplot_pos_tuple = (121,122)
+        #plt.subplot(subplot_pos_tuple[N_ID_2])
+        legend_list = list()
+        
+        plt.subplot(121)
+        plt.title('Channel estimation magnitude')
+        plt.xlabel('n (subcarrier index)')
+        plt.ylabel('Channel est. magnitude')
+        plt.plot(abs(pss_channel_estimation))
+        #plt.show()
+        
+        plt.subplot(122)
+        plt.title('Channel estimation phase')
+        plt.xlabel('n (subcarrier index)')
+        plt.ylabel('Channel est. phase')
+        plt.plot(angle(pss_channel_estimation))
+        
+        plt.show()
+    
+    return pss_channel_estimation
+    
+def test_channel_estimation_using_PSS():
+    N_ID_2 = 0
+    pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
+    pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+    #pss_seq_send = get_pss_seq_from_RE_symbol_array(pss_freq_symbol_array, N_RB_sc)
+    
+    #pss_seq_received = get_pss_seq_from_RE_symbol_array(pss_received_RE_IQ_array, N_RB_sc)
+    #pss_channel_estimation = pss_seq_received / pss_seq_send
+    
+    pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
+    pss_received_IQ_array = downlink_downconvert(pss_uu_sig, t, f_0)[-1*N:]
+    #pss_received_RE_IQ_array = ofdm_baseband_IQ_to_RE_IQ_array(pss_uu_sig_down, N_DL_RB, N_RB_sc, delta_f=15000)
+    channel_estimation_using_PSS(pss_received_IQ_array, N_ID_2, l, N_DL_RB, N_RB_sc, delta_f, to_draw=True)
+</t>
+<t tx="Michael.20120316092234.1458">def SSS_received_sequence_ref(ref_subframe, ref_N_ID_cell):
+    
+    sss_re_array = sss_symbol_array(ref_subframe, ref_N_ID_cell, N_DL_RB, N_RB_sc)
+    sss_baseband_IQ = ofdm_baseband_IQ_signal_generate(sss_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+    sss_Uu_signal = downlink_modulate(sss_baseband_IQ, t, f_0)
+    sss_received_IQ = downlink_downconvert(sss_Uu_signal, t, f_0)
+    sss_received_re_array = map_fft_result_to_RE_IQ_array(sss_received_IQ[-1*N:])
+    sss_received_seq = get_sss_seq_from_RE_symbol_array(sss_received_re_array, N_RB_sc, adjust_method='+1-1')
+    sss_sent_seq = get_sss_seq_from_RE_symbol_array(sss_re_array, N_RB_sc)
+    print sss_seq(ref_subframe, ref_N_ID_cell)
+    print sss_received_seq
+    print sss_sent_seq
+    print sss_received_seq - sss_sent_seq
+    legend_list = list()
+    plt.plot((sss_received_seq - sss_sent_seq))
+    #plt.plot(angle(sss_sent_seq))
+    #legend_list.append('SSS sent sequence')
+    #plt.plot(angle(sss_received_seq))
+    #legend_list.append('SSS received sequence')
+    plt.title('SSS received sequence for subframe=%s N_ID_cell=%s'%(ref_subframe, ref_N_ID_cell))
+    plt.xlabel('n (index in SSS sequence)')
+    plt.ylabel('Value')
+    plt.legend(legend_list)
+    #plt.axis( [-0.01, 0.075, -0.1, 14] )
+    plt.show()
+    #plt.savefig('PSS_signal_Uu_for_N_ID_2=%s.png'%N_ID_2, dpi=300)
+
+def SSS_received_sequence():
+    SSS_received_sequence_ref(0, 0)
+</t>
+<t tx="Michael.20120316092234.1459">def SSS_received_seq_non_coherent_correlation_ref(ref_subframe, ref_N_ID_cell, to_draw=True):
+    
+    ref_sss_re_array = sss_symbol_array(ref_subframe, ref_N_ID_cell, N_DL_RB, N_RB_sc)
+    sss_sent_seq = get_sss_seq_from_RE_symbol_array(ref_sss_re_array, N_RB_sc)
+    
+    subframe_list = (0,5)
+    N_ID_cell_list = (0,1)
+    sss_received_IQ_dict = dict()
+    for subframe in subframe_list:
+        for N_ID_cell in N_ID_cell_list:
+            sss_re_array = sss_symbol_array(subframe, N_ID_cell, N_DL_RB, N_RB_sc)
+            sss_baseband_IQ = ofdm_baseband_IQ_signal_generate(sss_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            sss_Uu_signal = downlink_modulate(sss_baseband_IQ, t, f_0)
+            sss_received_IQ = downlink_downconvert(sss_Uu_signal, t, f_0)
+            #sss_received_re_array = map_fft_result_to_RE_IQ_array(sss_received_IQ[-1*N:])
+            #sss_received_seq = get_sss_seq_from_RE_symbol_array(sss_received_re_array, N_RB_sc, adjust_method='round_to_one')
+            sss_received_IQ_dict[(subframe,N_ID_cell)] = sss_received_IQ[-1*N:]
+
+    corr_dict = dict()
+    
+    cs_list = arange(-1*(N/2), N/2, 1)
+    max_dict = dict()
+
+    #print cs_corr.shape, cs_list.shape
+    legend_list = list()
+    y_offsets = dict()
+
+    for subframe in subframe_list:
+        for N_ID_cell in N_ID_cell_list:
+            corr_dict[(subframe,N_ID_cell)] = array( [0] *N )
+            for i in arange(len(cs_list)):
+                tmp_sss_received_re_array = map_fft_result_to_RE_IQ_array(roll(sss_received_IQ_dict[(subframe,N_ID_cell)], i))
+                tmp_sss_received_seq = get_sss_seq_from_RE_symbol_array(tmp_sss_received_re_array, N_RB_sc, do_adjust=False, adjust_method='+1-1')
+                corr_dict[(subframe,N_ID_cell)][i] = abs(correlate(sss_sent_seq, tmp_sss_received_seq)[0])
+            max_dict[(subframe,N_ID_cell)] = find_max(corr_dict[(subframe,N_ID_cell)])
+    # normalize the correlation results
+    overall_max_y = 0
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        if y&gt;overall_max_y:
+            overall_max_y = y
+    overall_max_y = float(overall_max_y)
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        max_dict[k] = (x, y/overall_max_y)
+    for k in corr_dict.keys():
+        corr_dict[k] = corr_dict[k]/overall_max_y
+    
+    if to_draw:
+        for subframe,N_ID_cell in max_dict.keys():
+            y_offsets[(subframe,N_ID_cell)] = 60
+        y_offsets[(ref_subframe,ref_N_ID_cell)] = -80
+        for subframe,N_ID_cell in corr_dict.keys():
+            plt.plot(cs_list, corr_dict[(subframe,N_ID_cell)], marker='+', linestyle='-')
+            legend_list.append( 'subframe=%s, N_ID_cell=%s'%(subframe,N_ID_cell) )
+            x, y = max_dict[(subframe,N_ID_cell)]
+            plt.annotate('Max of subframe=%s, N_ID_cell=%s: %4.4s @ cs=%s'%(subframe,N_ID_cell,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(-90, y_offsets[(subframe,N_ID_cell)]))
+        plt.title('SSS received IQ correlation reference subframe=%s N_ID_cell=%s'%(ref_subframe,ref_N_ID_cell))
+        plt.legend(legend_list)
+        plt.xlabel("Cyclic Shift")
+        plt.ylabel("Correlation (normalized to peak)")
+        plt.show()
+    
+    return corr_dict
+
+def SSS_received_seq_non_coherent_correlation():
+    for ref_subframe in (0,):
+        for ref_N_ID_cell in (0,):
+            SSS_received_seq_non_coherent_correlation_ref(ref_subframe, ref_N_ID_cell, to_draw=True)
+</t>
+<t tx="Michael.20120319125504.1463">@others
+
+def valid_CFI_range(LTE_mode, is_MBSFN, support_PDSCH, AP_num, positioning_RS_enabled, N_DL_RB, subframe):
+    '''
+    valid_CFI_range(LTE_mode, is_MBSFN, support_PDSCH, positioning_RS_enabled, N_DL_RB): a tuple of valid CFI integers
+        LTE_mode: 'TDD' or 'FDD'
+        is_MBSFN: boolean. Is it a carrier supporting MBSFN?
+        support_PDSCH: boolean. Does this carrier support PDSCH?
+        AP_num: integer. The number of antenna ports configured for CSRS
+        positioning_RS_enabled: boolean. Does positioning Reference Signal configured?
+        N_DL_RB: integer. Number of downlink RBs.
+        subframe: subframe index (0..9)
+    This method is written according to table 6.7-1 of 36.211
+    '''
+    CFI_candidates = tuple()
+    if LTE_mode=='TDD' and subframe in (1,6):
+        if N_DL_RB&gt;10:
+            CFI_candidates = (1,2)
+        elif N_DL_RB&lt;=10:
+            CFI_candidates = (2,)
+    elif is_MBSFN and support_PDSCH and AP_num in (1,2):
+        if N_DL_RB&gt;10:
+            CFI_candidates = (1,2)
+        elif N_DL_RB&lt;=10:
+            CFI_candidates = (2,)
+    elif is_MBSFN and support_PDSCH and AP_num==4:
+        CFI_candidates = (2,)
+    elif not support_PDSCH:
+        CFI_candidates = (0,)
+    elif (not is_MBSFN) and positioning_RS_enabled:
+        if LTE_mode=='TDD' and subframe==6:
+            if N_DL_RB&gt;10:
+                CFI_candidates = (1,2,3)
+            elif N_DL_RB&lt;=10:
+                CFI_candidates = (2,3,4)
+        else:
+            if N_DL_RB&gt;10:
+                CFI_candidates = (1,2,3)
+            elif N_DL_RB&lt;=10:
+                CFI_candidates = (2,3)
+    else:
+        if N_DL_RB&gt;10:
+            CFI_candidates = (1,2,3)
+        elif N_DL_RB&lt;=10:
+            CFI_candidates = (2,3,4)
+    return CFI_candidates
+
+def get_PCFICH_symbol_array(cfi_b, n_s, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_RE_tuple, CP_DL_type):
+    '''
+    input:
+        cfi_b: coded CFI value from higher layer. len(cfi_b)==32 must be true.
+        n_s: slot index
+        N_cell_ID: cell ID
+        layer_mapping_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_layers: number of layers.
+        precoding_scheme: 'single_antenna' or 'transmit_diversity'
+        AP_num: integer. The number of antenna ports configured for CSRS
+        codebook_index: codebook index
+        N_DL_RB: integer. Number of downlink RBs.
+        N_RB_sc: number of subcarriers in one Resource Block
+        CSRS_RE_tuple: a tuple of Cell Specific Reference Signal. Each element is represented as (k,l).
+        CP_DL_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        matrix of symbols of all antenna ports for one OFDM symbol. e.g. output[0] is the symbol array for antenna port 0, and output[0][0] is the symbol for subcarrier 0 in this l for antenna port 0.
+    '''
+    scrambled_array = PCFICH_scramble(cfi_b, n_s, N_cell_ID)
+    modulated_array = PCFICH_modulate(scrambled_array)
+    layer_mapped_matrix = PCFICH_layer_map(modulated_array, layer_mapping_scheme, num_of_layers)
+    precoded_matrix = PCFICH_precode(layer_mapped_matrix, precoding_scheme, AP_num, codebook_index)
+    
+    symbol_array_for_all_ap = array( [[0.0+0.0*1j] * (N_DL_RB*N_RB_sc)]*AP_num )
+    for quadruplet_index in range(4):
+        reg = get_REG_for_PCFICH_quadruplet(quadruplet_index, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_RE_tuple, AP_num, CP_DL_type)
+        for i in range(4):
+            k, l = reg[i]
+            for ap in range(AP_num):
+                symbol_array_for_all_ap[ap][k] = precoded_matrix[ap][quadruplet_index*4+i]
+    return symbol_array_for_all_ap
+
+
+    
+    
+</t>
+<t tx="Michael.20120319125504.1464">def PCFICH_scramble(b, n_s, N_cell_ID):
+    '''
+    input:
+        b: tuple of integer, the 32 bits. Note: len(b)==32 must be true
+        n_s: slot index
+        N_cell_ID: cell ID
+    output: tuple of integer, the scrambled 32 bits
+    '''
+    c_init = (n_s/2+1) * (2*N_cell_ID+1) * (2**9) + N_cell_ID
+    b_ = [0] * 32
+    for i in range(32):
+        b_[i] = (b[i] + c(c_init,i))%2
+    return tuple(b_)
+</t>
+<t tx="Michael.20120319125504.1465">def PCFICH_modulate(b_):
+    '''
+    input:
+        b_: scrambled PCFICH sequence, 32 bits
+    output:
+        modulated 16 symbols (complex number)
+    '''
+    d = array([0.0 + 1j*0.0] * 16)
+    for i in range(16):
+        d[i] = QPSK( (b_[2*i], b_[2*i+1]) )
+    return d
+</t>
+<t tx="Michael.20120319125504.1466">@others
+</t>
+<t tx="Michael.20120319125504.1467">def BPSK(b):
+    '''
+    input:
+        b: one bit, integer 0 or 1
+    output:
+        one complex symbol
+    '''
+    # one bit modulation
+    return (1/sqrt(2) + 1j*1/sqrt(2), -1/sqrt(2) + 1j*(-1)/sqrt(2))[b]
+</t>
+<t tx="Michael.20120319125504.1468">def QPSK((b0,b1)):
+    '''
+    input:
+        (b0,b1): two element tuple, each represents one bit, must be either 0 or 1
+    output:
+        one complex modulated symbol
+    '''
+    return (complex(1/sqrt(2),1/sqrt(2)), complex(1/sqrt(2),-1/sqrt(2)),
+                        complex(-1/sqrt(2),1/sqrt(2)), complex(-1/sqrt(2),-1/sqrt(2)))[2*b0+b1]
+
+
+</t>
+<t tx="Michael.20120319125504.1469">def sixteenQAM((b0,b1,b2,b3)):
+    '''
+    input:
+        (b0,b1,b2,b3): four element tuple, each represents one bit, must be 0 or 1
+    output:
+        one complex modulated symbol
+    '''
+    return (  complex(1*I, 1*Q),
+                            complex(1*I, 3*Q),
+                            complex(3*I, 1*Q),
+                            complex(3*I, 3*Q),
+                            complex(1*I, -1*Q),
+                            complex(1*I, -3*Q),
+                            complex(3*I, -1*Q),
+                            complex(3*I, -3*Q),
+                            complex(-1*I, 1*Q),
+                            complex(-1*I,3*Q),
+                            complex(-3*I, 1*Q),
+                            complex(-3*I, 3*Q),
+                            complex(-1*I, -1*Q),
+                            complex(1*I, -3*Q),
+                            complex(-3*I, -1*Q),
+                            complex(-3*I, -3*Q),
+    )[b3+2*b2+4*b1+8*b0]
+
+</t>
+<t tx="Michael.20120319125504.1470">def sixtyFourQAM((b0,b1,b2,b3,b4,b5)):
+    '''
+    input:
+        (b0,b1,b2,b3,b4,b5): six-element tuple, each of them represents one bit, must be 0 or 1
+    output:
+        one complex modulated symbol
+    '''
+    #tmp_64QAM = [0] * 64
+    I = Q = 1/sqrt(42)
+    x, y = (    (3,3), (3,1), (1,3), (1,1), (3,5), (3,7), (1,5), (1,7),
+                        (5,3), (5,1), (7,3), (7,1), (5,5), (5,7), (7,5), (7,7),
+                        (3,-3), (3,-1), (1,-3), (1,-1), (3,-5), (3,-7), (1,-5),(1,-7),
+                        (5,-3), (5,-1), (7,-3), (7,-1), (5,-5), (5,-7), (7,-5), (7,-7),
+                        (-3,3), (-3,1), (-1,3), (-1,1), (-3,5), (-3,7), (-1,5), (-1,7),
+                        (-5,3), (-5,1), (-7,3), (-7,1), (-5,5), (-5,7), (-7,5), (-7,7),
+                        (-3,-3), (-3,-1), (-1,-3),(-1,-1), (-3,-5), (-3,-7), (-1,-5), (-1,-7),
+                        (-5,-3), (-5,-1), (-7,-3), (-7,-1), (-5,-5), (-5,-7), (-7,-5), (-7,-7) )[b5+b4*2+b3*4+b2*8+b1*16+b0*32]
+    return x*I+1j*y*Q
+</t>
+<t tx="Michael.20120319125504.1471">@others
+</t>
+<t tx="Michael.20120319125504.1472">def layer_map_single_antenna_port(x):
+    '''
+    input:
+        array of symbols
+    output:
+        array of arrays of the layer mapped symbols. e.g. output[0] is the array for layer 0
+    '''
+    v = 1
+    M_layer_symb = len(x)
+    return array( [x] )
+</t>
+<t tx="Michael.20120319125504.1473">def layer_map_spatial_multiplex(codewords, v):
+    '''
+    input:
+        codewords: array of codewords. codewords[0] is the first codeword, and codewords[1] is the second.
+        v: number of layers, integer (1..4)
+    output:
+        layer mapped matrix: layer_mapped_matrix[0] is the symbol list for the first layer
+    '''
+    result = None
+    num_of_cw = len(codewords)
+    if v==1 and num_of_cw==1:
+        #M_layer_symb = len(codewords[0])
+        result = array( [codewords[0]] )
+        
+    elif v==2 and num_of_cw==2:
+        #M_layer_symb = len(codewords[0])
+        assert( len(codewords[0]) == len(codewords[1]) )
+        result = array(codewords)
+        
+    elif v==2 and num_of_cw==1:
+        M_layer_symb = len(codewords[0])/2
+        x0 = array( [0.0+0.0*1j] * M_layer_symb )
+        x1 = array( [0.0+0.0*1j] * M_layer_symb )
+        for i in range(M_layer_symb):
+            x0[i] = codewords[0][2*i]
+            x1[i] = codewords[0][2*i+1]
+        result = array( [x0, x1] )
+        
+    elif v==3 and num_of_cw==2:
+        assert( len(codewords[0]) == len(codewords[1])/2 )
+        M_layer_symb = len(codewords[0])
+        x0 = array( [0.0+0.0*1j] * M_layer_symb )
+        x1 = array( [0.0+0.0*1j] * M_layer_symb )
+        x2 = array( [0.0+0.0*1j] * M_layer_symb )
+        for i in range(M_layer_symb):
+            x0[i] =codewords[0][i]
+            x1[i] = codewords[1][2*i]
+            x2[i] = codewords[1][2*i+1]
+        result = array( [x0, x1, x2] )
+    
+    elif v==4 and num_of_cw==2:
+        assert( len(codewords[0]) == len(codewords[1]) )
+        M_layer_symb = len(codewords[0])/2
+        x0 = array( [0.0+0.0*1j] * M_layer_symb )
+        x1 = array( [0.0+0.0*1j] * M_layer_symb )
+        x2 = array( [0.0+0.0*1j] * M_layer_symb )
+        x3 = array( [0.0+0.0*1j] * M_layer_symb )
+        for i in range(M_layer_symb):
+            x0[i] = codewords[0][2*i]
+            x1[i] = codewords[0][2*i+1]
+            x2[i] = codewords[1][2*i]
+            x3[i] = codewords[1][2*i+1]
+        result = array( [x0, x1, x2, x3] )
+    
+    return result
+</t>
+<t tx="Michael.20120319125504.1474">def PCFICH_layer_map(d, layer_mapping_scheme, num_of_layers):
+    '''
+    input:
+        b: array of 16 modulated symbols
+        layer_mapping_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_layers: number of layers.
+    output:
+        layer mapped array of arrays for each layer. output[0] is the array for layer 0, and so on.
+    '''
+    lte_assert(layer_mapping_scheme in ('single_antenna', 'transmit_diversity'), "layer_mapping_scheme=%s is not valid for PCFICH. It must be 'single_antenna' or 'transmit_diversity'."%(layer_mapping_scheme, ))
+    if layer_mapping_scheme == 'single_antenna':
+        lte_assert(num_of_layers==1, "For single antenna scheme of layer mapping, number of layers must be 1.")
+        result = layer_map_single_antenna_port(d)
+    else:
+        lte_assert(num_of_layers in (2,4), "For transmit diversity scheme of layer mapping, number of layers must be either 2 or 4.")
+        result = layer_map_transmit_diversity([d], num_of_layers)
+    return result
+
+def PCFICH_precode(layer_mapped_matrix, precoding_scheme, num_of_ap, codebook_index):
+    '''
+    input:
+        layer_mapped_matrix: matrix after PCFICH layer mapping.
+        precoding_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_ap: number of transmission antenna ports
+        codebook_index: codebook index
+    output:
+        maxtrix for all transmission antenna ports. e.g. output[0] is the symbol array for ap_0.
+    '''
+    lte_assert(precoding_scheme in ('single_antenna', 'transmit_diversity'), "For PCFICH precoding, the scheme must either be 'single_antenna' or 'transmit_diversity', but the current scheme is %s"%precoding_scheme)
+    num_of_layers = len(layer_mapped_matrix)
+    if precoding_scheme == 'single_antenna':
+        lte_assert(num_of_ap==1, "For PCFICH 'single_antenna' precoding scheme, num_of_ap must be 1, but currently it is %s."%num_of_ap)
+        lte_assert(num_of_layers==1, "For PCFICH 'single_antenna' precoding scheme, number of layers must be 1, but currently it is %s."%num_of_layers)
+        result = precode_single_antenna(layer_mapped_matrix)
+    else:
+        # precoding_scheme == 'transmit_diversity'
+        lte_assert(num_of_ap in (2,4), "For PCFICH 'transmit_diversity' precoding scheme, number of transmission antenna must be 2 or 4. Current number of transmitting antenna is %s"%num_of_ap)
+        lte_assert(num_of_ap==num_of_layers, "For transmit diversity precoding, number of transmitting antenna must be equal to number of layers, but currently num_of_ap=%s and num_of_layers=%s"%(num_of_ap, num_of_layers))
+        result = precode_transmit_diversity(layer_mapped_matrix, num_of_ap)
+    return result
+</t>
+<t tx="Michael.20120319125504.1475">def layer_map_transmit_diversity(codewords, v):
+    '''
+    input:
+        codewords: array of codewords. codewords[0] is the first codeword, and codewords[1] is the second.
+        v: number of layers, integer 2 or 4
+    output:
+        layer mapped matrix: layer_mapped_matrix[0] is the symbol list for the first layer
+    '''
+    result = None
+    num_of_cw = len(codewords)
+    lte_assert( num_of_cw==1, "num_of_cw=%s is not correct for transmit diversity layer mapping! It must be 1!"%num_of_cw )
+    lte_assert( v in (2,4), "v=%s is out of range! For transmit diversity layer mapping, number of layers has to be either 2 or 4!"%v)
+        
+    if v==2:
+        M_layer_symb = len(codewords[0])/2
+        x0 = array( [0.0+0.0*1j] * M_layer_symb )
+        x1 = array( [0.0+0.0*1j] * M_layer_symb )
+        for i in range(M_layer_symb):
+            x0[i] = codewords[0][2*i]
+            x1[i] = codewords[0][2*i+1]
+        result = array( [x0, x1] )
+    
+    elif v==4:
+        if len(codewords[0]) % 4 == 0:
+            M_layer_symb = len(codewords[0])/4
+            tmp_cw = codewords[0]
+        else:
+            M_layer_symb = (len(codewords[0])+2)/4
+            tmp_cw = array( [0.0+0.0*1j] * (len(codewords[0]) + 2) )
+            tmp_cw[:len(codewords[0])] = codewords[0]
+        x0 = array( [0.0+0.0*1j] * M_layer_symb )
+        x1 = array( [0.0+0.0*1j] * M_layer_symb )
+        x2 = array( [0.0+0.0*1j] * M_layer_symb )
+        x3 = array( [0.0+0.0*1j] * M_layer_symb )
+        for i in range(M_layer_symb):
+            x0[i] = tmp_cw[4*i]
+            x1[i] = tmp_cw[4*i+1]
+            x2[i] = tmp_cw[4*i+2]
+            x3[i] = tmp_cw[4*i+3]
+        result = array( [x0, x1, x2, x3] )
+    
+    return result
+</t>
+<t tx="Michael.20120319125504.1476">@others
+</t>
+<t tx="Michael.20120319125504.1477">def precode_single_antenna(layer_mapped_matrix):
+    '''
+    input:
+        layer_mapped_matrix: matrix result of layer mapping
+    output:
+        precoded matrix. precoded_matrix[0] is the result for antenna port 0.
+    '''
+    #M_layer_symb = len(layer_mapped_matrix[0])
+    #M_ap_symb = M_layer_symb
+    return layer_mapped_matrix
+</t>
+<t tx="Michael.20120319125504.1478">@others
+</t>
+<t tx="Michael.20120319125504.1479"></t>
+<t tx="Michael.20120319125504.1480">def get_codebook_for_precoding( ap_num, codebook_index, v ):
+    '''
+    input:
+        ap_num: number of transmiting antennas
+        codebook_index: Codebook index
+        v: number of layers
+    output:
+        an array representing selected codebook
+    '''
+    lte_assert(ap_num in (2,4), 'Precoding codebook is only valid for transmission on two or four antenna ports.' )
+    result = None
+    if ap_num==2:
+        lte_assert(codebook_index in (0,1,2,3), 'Codebook index (%s) out of range. Please refer to 36.211 table 6.3.4.2.3-1 in section 6.3.4.2.3.'%codebook_index)
+        if v==1:
+            x, y =( (1,1), (1,-1), (1,1j), (1,-1j) )[codebook_index]
+            result = 1/sqrt(2) * array( [[x], [y]] )
+        elif v==2:
+            lte_assert(codebook_index!=3, "Codebook index (%s) for %s layers isn't defined. Please refer to 36.211 table 6.3.4.2.3-1 in section 6.3.4.2.3."%(codebook_index, v))
+            x1, x2, y1, y2 = ( (1/sqrt(2),0,0,1/sqrt(2)), (0.5,0.5,0.5,-0.5), (0.5,0.5,0.5j,-0.5j) )[codebook_index]
+            result = array( [[x1,x2], [y1,y2]] )
+    else:   # ap_num==4
+        raise LteException("36.211 6.3.4.2.3 codebook selection for 4 transmission antenna. Need to be added.")
+</t>
+<t tx="Michael.20120319125504.1481">class LteException(Exception):
+    
+    def __init__(self, value):
+        self.value = value
+    
+    def __str__(self):
+        return repr(self.value)
+    
+def lte_assert(condition, error_string):
+    if not condition:
+        raise LteException(error_string)
+
+def lte_warn(warn_string):
+    print warn_string
+</t>
+<t tx="Michael.20120320091224.1502">def precode_transmit_diversity(layer_mapped_matrix, num_of_ap):
+    '''
+    input:
+        layer_mapped_matrix: symbol matrix after layer mapping. e.g. layer_mapped_matrix[0] is the symbol array for layer 0.
+        num_of_ap: number of transmitting antenna.
+    output:
+        precoded matrix. e.g. output[0] is the symbol array for ap 0.
+    '''
+    num_of_layers = len(layer_mapped_matrix)
+    lte_assert(num_of_ap==num_of_layers, "For transmit diversity precoding, number of transmitting antenna must be equal to number of layers, but currently num_of_ap=%s and num_of_layers=%s"%(num_of_ap, num_of_layers))
+    lte_assert(num_of_ap in (2,4), "For 'transmit_diversity' precoding scheme, number of transmission antenna must be 2 or 4. Current number of transmitting antenna is %s"%num_of_ap)
+    if num_of_ap==2:
+        M_layer_symb = len(layer_mapped_matrix[0])
+        M_ap_symb = 2*M_layer_symb
+        #codebook = 1/sqrt(2) * array([ [1,0,1j,0], [0,-1,0,1j], [0,1,0,1j], [1,0,-1j,0] ])
+        y = array([ [0.0+0.0*1j]*M_ap_symb, [0.0+0.0*1j]*M_ap_symb ])
+        x = layer_mapped_matrix
+        for i in range(M_layer_symb):
+            tmp_x = array([real(x[0][i]), real(x[1][i]), imag(x[0][i]), imag(x[1][i])])
+            y[0][2*i] = 1/sqrt(2) * sum(array([1,0,1j,0]) * tmp_x)
+            y[1][2*i] = 1/sqrt(2) * sum(array([0,-1,0,1j]) * tmp_x)
+            y[0][2*i+1] = 1/sqrt(2) * sum(array([0,1,0,1j]) * tmp_x)
+            y[1][2*i+1] = 1/sqrt(2) * sum(array([1,0,-1j,0]) * tmp_x)
+    else:
+        # num_of_ap==4
+        M_layer_symb = len(layer_mapped_matrix[0])
+        if M_layer_symb%4==0:
+            M_ap_symb = M_layer_symb * 4
+        else:
+            M_ap_symb = M_layer_symb * 4 -2
+        y = array([ [0.0+0.0*1j]*M_ap_symb, [0.0+0.0*1j]*M_ap_symb, [0.0+0.0*1j]*M_ap_symb, [0.0+0.0*1j]*M_ap_symb ])
+        x = layer_mapped_matrix
+        for i in range(M_layer_symb):
+            tmp_x = array([real(x[0][i]), real(x[1][i]), real(x[2][i]), real(x[3][i]), imag(x[0][i]), imag(x[1][i]), imag(x[2][i]), imag(x[3][i])])
+            y[0][4*i] = 1/sqrt(2) * sum(array([1,0,0,0,1j,0,0,0]) * tmp_x)
+            y[1][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+            y[2][4*i] = 1/sqrt(2) * sum(array([0,-1,0,0,0,1j,0,0])) * tmp_x
+            y[3][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+            y[0][4*i+1] = 1/sqrt(2) * sum(array([0,1,0,0,0,1j,0,0])) * tmp_x
+            y[1][4*i+1] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+            y[2][4*i+1] = 1/sqrt(2) * sum(array([1,0,0,0,-1j,0,0,0])) * tmp_x
+            y[3][4*i+1] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+            y[0][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+            y[1][4*i+2] = 1/sqrt(2) * sum(array([0,0,1,0,0,0,1j,0])) * tmp_x
+            y[2][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+            y[3][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,-1,0,0,0,1j])) * tmp_x
+            y[0][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+            y[1][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,1,0,0,0,1j])) * tmp_x
+            y[2][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+            y[3][4*i+3] = 1/sqrt(2) * sum(array([0,0,1,0,0,0,-1j,0])) * tmp_x
+    return y
+</t>
+<t tx="Michael.20120320091224.1503">def get_REG_for_PCFICH_quadruplet(quadruplet_index, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_RE_tuple, num_of_ap, CP_DL_type):
+    '''
+    input:
+        quadruplet_index: index of quadruplet (0..3)
+        N_cell_ID: cell ID
+        N_DL_RB: downlink Resource Block number in one slot
+        N_RB_sc: number of subcarriers in one Resource Block
+        CSRS_RE_tuple: a tuple of Cell Specific Reference Signal. Each element is represented as (k,l).
+        num_of_ap: number of antenna ports used for Cell Specific Reference Signal
+        CP_DL_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        REG tuple for this PCFICH quadruplet: type(output) is tuple, len(output)==4
+    '''
+    #lte_assert(num_of_ap in (0,1,2,3), "Antenna port for PCFICH quadruplet must be 0, 1, 2, or 3, but it is assigned to %s"%ap)
+    lte_assert(quadruplet_index in (0,1,2,3), "quadruplet_index of PCFICH must be 0, 1, 2, or 3, but it is %s"%quadruplet_index)
+    
+    k_ = (N_RB_sc/2) * (N_cell_ID%(2*N_DL_RB))
+    k = int(k_ + floor(quadruplet_index * N_DL_RB/2.0)*N_RB_sc/2)
+    l = 0   # it's always in the first OFDM symbol
+    reg = get_REG_from_kl(num_of_ap, CP_DL_type, k, l)
+    result = list()
+    for re in reg:
+        if re not in CSRS_RE_tuple:
+            result.append(re)
+    lte_assert(len(result)==4, "One REG must contain 4 available REs! The current REG is: %s"%result)
+    return tuple(result)
+
+
+        
+# helper functions not in standard
+def get_PCFICH_REG_num_in_symbol(l, is_PDCCH_present):
+    '''
+    input:
+        l: symbol index
+        is_PDCCH_present: boolean, whether PDCCH is present in the subframe containing symbol l
+    output:
+        number of REGs that are occupied by PCFICH in the given symbol
+    '''
+    if is_PDCCH_present and l==0:
+        result = 3
+    else:
+        result = 0
+    return result
+
+def get_PCFICH_REs_in_symbol(l, is_PDCCH_present, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_RE_tuple, num_of_ap, CP_DL_type):
+    '''
+    input:
+        l: symbol index
+        is_PDCCH_present: whether PDCCH is present in this slot
+        N_cell_ID: cell ID
+        N_DL_RB: downlink Resource Block number in one slot
+        N_RB_sc: number of subcarriers in one Resource Block
+        CSRS_RE_tuple: a tuple of Cell Specific Reference Signal. Each element is represented as (k,l).
+        num_of_ap: number of antenna ports used for Cell Specific Reference Signal
+        CP_DL_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        a tuple of all REs used by PCFICH in the given symbol
+    '''
+    result = list()
+    if l==0 and is_PDCCH_present:
+        for quadruplet_index in range(4):
+            for re in get_REG_for_PCFICH_quadruplet(quadruplet_index, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_RE_tuple, AP_num, CP_DL_type):
+                result.append(re)
+    return tuple(result)
+</t>
+<t tx="Michael.20120320091224.1504">def get_REG_from_kl(num_of_ap, CP_DL_type, k, l):
+    '''
+    input:
+        num_of_ap: number of antenna ports used for Cell Specific Reference Signal
+        CP_DL_type: downlink CP type, 0 for normal CP, 1 for extended CP
+        k: subcarrier index k
+        l: OFDM symbol index l in one slot
+    output:
+        tuple representation of a REG containing (k,l), including the REs used for CSRS.
+    '''
+    result = None
+    if l == 0:
+        result = ( (k/6*6,l), (k/6*6+1,l), (k/6*6+2,l), (k/6*6+3,l), (k/6*6+4,l), (k/6*6+5,l) )
+    elif l == 1:
+        if num_of_ap == 2:
+            result = ( (k/4*4,l), (k/4*4+1,l), (k/4*4+2,l), (k/4*4+3,l) )
+        elif num_of_ap ==4:
+            result = ( (k/6*6,l), (k/6*6+1,l), (k/6*6+2,l), (k/6*6+3,l), (k/6*6+4,l), (k/6*6+5,l) )
+    elif l == 2:
+        result = ( (k/4*4,l), (k/4*4+1,l), (k/4*4+2,l), (k/4*4+3,l) )
+    elif l == 3:
+            if CP_DL_type == 0:    # for nomal CP
+                result = ( (k/4*4,l), (k/4*4+1,l), (k/4*4+2,l), (k/4*4+3,l) )
+            else:
+                result = ( (k/6*6,l), (k/6*6+1,l), (k/6*6+2,l), (k/6*6+3,l), (k/6*6+4,l), (k/6*6+5,l) )
+    return result
+</t>
+<t tx="Michael.20120320091224.1505"></t>
+<t tx="Michael.20120320091224.1506">from scipy.signal import *
+from numpy import *
+import matplotlib.pyplot as plt
+
+# time scale is in 1 s
+T_s = 1.0/30720/1000 # in s
+
+# configuration for SSS
+l = 0
+N_maxDL_RB = 110
+N_DL_RB = 110
+N_RB_sc = 12
+N_DL_CP = 0 # normal DL CP
+CP_DL_type = 0
+N_DL_symb = 7
+delta_f = 15000
+subframe = 0
+N_cell_ID = 0
+f_0 = (2620+0.1*(2620-2750))*1000*1000  # in Hz
+
+if N_DL_CP==0 and delta_f==15000:
+    if l==0:
+        N_CP_l = 160
+    else:
+        N_CP_l = 144
+elif N_DL_CP==1:    # extended CP
+    if delta_f==15000:
+        N_CP_l = 512
+    else:   # delta_f == 7500
+        N_CP_l = 1024
+if delta_f==15000:
+    N = 2048
+else:   # delta_f == 7500
+    N = 4096
+
+t = arange(0, (N_CP_l+N)*T_s, T_s)
+
+def find_max( a_list ):
+    m = max(a_list)
+    for i in arange(len(a_list)):
+        if a_list[i] == m:
+            return (i, m)
+
+def find_min( a_array ):
+    x, y = 0, 0
+    for i in arange(len(a_array)):
+        if a_array[i] &lt; y:
+            x, y = i, a_array[i]
+    return (x,y)
+
+def find_abs_max( a_array ):
+    m = max(abs(a_array))
+    for i in arange(len(a_array)):
+        if abs(a_array[i]) == m:
+            return (i, m)
+            
+@others
+
+test_enabling_bits = 0b11
+
+# 01. PCFICH symbol array in one OFDM symbol
+if test_enabling_bits &amp; (1&lt;&lt;0):
+    test_PCFICH_symbol_array_in_one_OFDM_symbol()
+
+# 02. PCFICH Uu signal
+if test_enabling_bits &amp; (1&lt;&lt;1):
+    test_PCFICH_Uu_signal()
+</t>
+<t tx="Michael.20120320091224.1508">def test_PCFICH_symbol_array_in_one_OFDM_symbol():
+    
+    
+    n_s = 0
+    layer_mapping_scheme = 'single_antenna'
+    num_of_layers = 1
+    precoding_scheme = 'single_antenna'
+    AP_num = 1
+    codebook_index = 0
+    antenna_port = 0
+    CSRS_RE_tuple = get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    
+    channel_coded_cfi = channel_code_CFI(1)
+    pcfich_symbol_array = get_PCFICH_symbol_array(channel_coded_cfi, n_s, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_RE_tuple, CP_DL_type)
+    
+    legend_list = list()
+    plt.title("PCFICH symbol array in frequency domain for antenna port 0")
+    plt.plot(abs(pcfich_symbol_array[0]))
+    legend_list.append('Magnitude')
+    plt.xlabel('k (subcarrier index)')
+    plt.ylabel('Magnitude')
+    
+    plt.show()
+</t>
+<t tx="Michael.20120320091224.1509">@others
+</t>
+<t tx="Michael.20120320091224.1510">def channel_code_CFI(cfi):
+    '''
+    input:
+        cfi: cfi value from higher layer
+    output:
+        array of encoded cfi value. len(output)==32.
+    '''
+    lte_assert(cfi in (1,2,3), "CFI has to be 1, 2, or 3. Value 4 is reserved, according to table 5.3.4-1 in 36.212. Current CFI is %s"%cfi)
+    encoded_cfi = (
+                            (0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1),
+                            (1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0),
+                            (1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1)
+                    )[cfi]
+    return encoded_cfi
+</t>
+<t tx="Michael.20120321090100.1520">def test_PCFICH_Uu_signal():
+    
+    n_s = 0
+    layer_mapping_scheme = 'single_antenna'
+    num_of_layers = 1
+    precoding_scheme = 'single_antenna'
+    AP_num = 1
+    codebook_index = 0
+    antenna_port = 0
+    CSRS_RE_tuple = get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    
+    channel_coded_cfi = channel_code_CFI(1)
+    pcfich_symbol_array = get_PCFICH_symbol_array(channel_coded_cfi, n_s, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_RE_tuple, CP_DL_type)[0]
+    
+    #sss_re_array = sss_symbol_array(ref_subframe, ref_N_ID_cell, N_DL_RB, N_RB_sc)
+    pcfich_baseband_IQ = ofdm_baseband_IQ_signal_generate(pcfich_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+    pcfich_Uu_signal = downlink_modulate(pcfich_baseband_IQ, t, f_0)
+    
+    
+    legend_list = list()
+    plt.plot(t*1000, pcfich_Uu_signal)
+    legend_list.append('PCFICH (only) Uu signal')
+    plt.title('PCFICH (only) Uu signal for ap=0 N_ID_cell=%s'%(N_cell_ID))
+    plt.xlabel('Time (ms)')
+    plt.ylabel('Signal level')
+    plt.legend(legend_list)
+    #plt.axis( [-0.01, 0.075, -0.1, 14] )
+    plt.show()
+    
+</t>
+<t tx="Michael.20120321090100.1521">@others
+
+
+def get_PBCH_symbol_matrix(b, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_RE_tuple):
+    '''
+    input:
+        b: channel coded PBCH bit sequence from higher layer.
+        N_cell_ID: cell ID
+        layer_mapping_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_layers: number of layers.
+        precoding_scheme: 'single_antenna' or 'transmit_diversity'
+        AP_num: integer. The number of antenna ports configured for CSRS
+        codebook_index: codebook index
+        N_DL_RB: integer. Number of downlink RBs.
+        N_RB_sc: number of subcarriers in one Resource Block
+        CSRS_RE_tuple: a tuple of Cell Specific Reference Signal. Each element is represented as (k,l).
+    output:
+        matrix of symbols of all antenna ports for four OFDM symbols. e.g. output[0] is the symbol matrix for antenna port 0, and output[0][0] is the symbol array for ap=0 and l=0.
+    '''
+    scrambled_array = PBCH_scramble(b, N_cell_ID)
+    modulated_array = PBCH_modulate(scrambled_array)
+    layer_mapped_matrix = PBCH_layer_map(modulated_array, layer_mapping_scheme, num_of_layers)
+    precoded_matrix = PBCH_precode(layer_mapped_matrix, precoding_scheme, AP_num, codebook_index)
+    
+    pbch_RE_tuple = get_REs_for_PBCH_in_slot(N_DL_RB, N_RB_sc, CSRS_RE_tuple)
+    
+    symbol_matrix = [0] * AP_num
+    for ap in range(AP_num):
+        re_array_for_4_symbols = array( [[0.0+0.0*1j] * (N_DL_RB*N_RB_sc)]*4 )
+        precoded_symbol_array = precoded_matrix[ap]
+        lte_assert(len(precoded_symbol_array)==4*len(pbch_RE_tuple), "Number of precoded symbol for AP=%s is %s, number of available PBCH REs is %s, and the former is not four times of the latter!"%(ap, len(precoded_symbol_array), len(pbch_RE_tuple)))
+        count = 0
+        for k,l in pbch_RE_tuple:
+            re_array_for_4_symbols[l][k] = precoded_symbol_array[count]
+            count += 1
+        symbol_matrix[ap] = re_array_for_4_symbols
+
+
+    return symbol_matrix
+    
+
+    
+</t>
+<t tx="Michael.20120321090100.1522">def PBCH_scramble(b, N_cell_ID):
+    '''
+    input:
+        b: array of PBCH bits
+        N_cell_ID: cell ID
+    output: tuple of integer, the scrambled bits
+    '''
+    lte_assert(len(b) in (1920,1728), "PBCH bits has to be 1920 for normal CP or 1728 for extended CP, but current bit array length is %s"%len(b))
+    c_init = N_cell_ID
+    b_ = [0] * len(b)
+    for i in range(len(b)):
+        b_[i] = (b[i] + c(c_init,i))%2
+    return tuple(b_)
+</t>
+<t tx="Michael.20120321090100.1523">def PBCH_modulate(b_):
+    '''
+    input:
+        b_: scrambled PBCH but sequence
+    output:
+        QPSK modulated symbol array (complex number)
+    '''
+    d = array([0.0 + 1j*0.0] * (len(b_)/2))
+    for i in range(len(d)):
+        d[i] = QPSK( (b_[2*i], b_[2*i+1]) )
+    return d
+</t>
+<t tx="Michael.20120321090100.1524">def PBCH_layer_map(d, layer_mapping_scheme, num_of_layers):
+    '''
+    input:
+        b: array of QPSK modulated symbols
+        layer_mapping_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_layers: number of layers.
+    output:
+        layer mapped array of arrays for each layer. output[0] is the array for layer 0, and so on.
+    '''
+    lte_assert(layer_mapping_scheme in ('single_antenna', 'transmit_diversity'), "layer_mapping_scheme=%s is not valid for PBCH. It must be 'single_antenna' or 'transmit_diversity'."%(layer_mapping_scheme, ))
+    if layer_mapping_scheme == 'single_antenna':
+        lte_assert(num_of_layers==1, "For single antenna scheme of layer mapping, number of layers must be 1.")
+        result = layer_map_single_antenna_port(d)
+    else:
+        lte_assert(num_of_layers in (2,4), "For transmit diversity scheme of layer mapping, number of layers must be either 2 or 4.")
+        result = layer_map_transmit_diversity([d], num_of_layers)
+    return result
+
+def PBCH_precode(layer_mapped_matrix, precoding_scheme, num_of_ap, codebook_index):
+    '''
+    input:
+        layer_mapped_matrix: matrix after PBCH layer mapping.
+        precoding_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_ap: number of transmission antenna ports
+        codebook_index: codebook index
+    output:
+        maxtrix for all transmission antenna ports. e.g. output[0] is the symbol array for ap_0.
+    '''
+    lte_assert(precoding_scheme in ('single_antenna', 'transmit_diversity'), "For PBCH precoding, the scheme must either be 'single_antenna' or 'transmit_diversity', but the current scheme is %s"%precoding_scheme)
+    num_of_layers = len(layer_mapped_matrix)
+    if precoding_scheme == 'single_antenna':
+        lte_assert(num_of_ap==1, "For PBCH 'single_antenna' precoding scheme, num_of_ap must be 1, but currently it is %s."%num_of_ap)
+        lte_assert(num_of_layers==1, "For PBCH 'single_antenna' precoding scheme, number of layers must be 1, but currently it is %s."%num_of_layers)
+        result = precode_single_antenna(layer_mapped_matrix)
+    else:
+        # precoding_scheme == 'transmit_diversity'
+        lte_assert(num_of_ap in (2,4), "For PBCH 'transmit_diversity' precoding scheme, number of transmission antenna must be 2 or 4. Current number of transmitting antenna is %s"%num_of_ap)
+        lte_assert(num_of_ap==num_of_layers, "For transmit diversity precoding, number of transmitting antenna must be equal to number of layers, but currently num_of_ap=%s and num_of_layers=%s"%(num_of_ap, num_of_layers))
+        result = precode_transmit_diversity(layer_mapped_matrix, num_of_ap)
+    return result
+</t>
+<t tx="Michael.20120321090100.1525">def get_REs_for_PBCH_in_symbol(l, N_DL_RB, N_RB_sc, CSRS_REs):
+    '''
+    input:
+        l: symbol index in one slot
+        N_DL_RB: downlink Resource Block number in one slot
+        N_RB_sc: number of subcarriers in one Resource Block
+        CSRS_REs: all Cell Specific Reference Signal REs for 4 antenna, at least for the current symbol
+    output:
+        tuple of RE (k,l) that shall be used for PBCH
+    '''
+    lte_assert(l in (0,1,2,3), "For PBCH can only exist in the first 4 OFDM symbols, but the current symbol index is %s"%l)
+    result = list()
+    
+    for k_ in range(72):
+        k = N_DL_RB*N_RB_sc/2 - 36 + k_
+        if (k,l) not in CSRS_REs:
+            result.append( (k,l) )
+    
+    return tuple(result)
+
+
+def get_REs_for_PBCH_in_slot(N_DL_RB, N_RB_sc, CSRS_REs):
+    '''
+    input:
+        N_DL_RB: downlink Resource Block number in one slot
+        N_RB_sc: number of subcarriers in one Resource Block
+        CSRS_REs: all Cell Specific Reference Signal REs for 4 antenna, at least for the current symbol
+    output:
+        tuple of RE (k,l) that shall be used for PBCH
+    Note:
+        It is the caller's responsibility to ensure it is the correct slot.
+        The REs are in the same sequence that they should be used in mapping PBCH symbols.
+    '''
+    result = tuple()
+    
+    for l in range(4):
+        result += get_REs_for_PBCH_in_symbol(l, N_DL_RB, N_RB_sc, CSRS_REs)
+    
+    return result
+</t>
+<t tx="Michael.20120321090100.1526"></t>
+<t tx="Michael.20120321090100.1527">from scipy.signal import *
+from numpy import *
+import matplotlib.pyplot as plt
+
+# time scale is in 1 s
+T_s = 1.0/30720/1000 # in s
+
+# configuration for SSS
+l = 0
+N_maxDL_RB = 110
+N_DL_RB = 110
+N_RB_sc = 12
+N_DL_CP = 0 # normal DL CP
+AP_num = 2
+CP_DL_type = 0
+N_DL_symb = 7
+delta_f = 15000
+subframe = 0
+N_cell_ID = 0
+f_0 = (2620+0.1*(2620-2750))*1000*1000  # in Hz
+
+if N_DL_CP==0 and delta_f==15000:
+    if l==0:
+        N_CP_l = 160
+    else:
+        N_CP_l = 144
+elif N_DL_CP==1:    # extended CP
+    if delta_f==15000:
+        N_CP_l = 512
+    else:   # delta_f == 7500
+        N_CP_l = 1024
+if delta_f==15000:
+    N = 2048
+else:   # delta_f == 7500
+    N = 4096
+
+t = arange(0, (N_CP_l+N)*T_s, T_s)
+
+def find_max( a_list ):
+    m = max(a_list)
+    for i in arange(len(a_list)):
+        if a_list[i] == m:
+            return (i, m)
+
+def find_min( a_array ):
+    x, y = 0, 0
+    for i in arange(len(a_array)):
+        if a_array[i] &lt; y:
+            x, y = i, a_array[i]
+    return (x,y)
+
+def find_abs_max( a_array ):
+    m = max(abs(a_array))
+    for i in arange(len(a_array)):
+        if abs(a_array[i]) == m:
+            return (i, m)
+            
+@others
+
+test_enabling_bits = 0b11
+
+# 01. PBCH symbol array in one OFDM symbol
+if test_enabling_bits &amp; (1&lt;&lt;0):
+    test_PBCH_symbol_array_in_one_OFDM_symbol()
+
+# 02. PBCH Uu signal
+if test_enabling_bits &amp; (1&lt;&lt;1):
+    test_PBCH_Uu_signal()
+</t>
+<t tx="Michael.20120321090100.1529">def test_PBCH_symbol_array_in_one_OFDM_symbol():
+    
+    layer_mapping_scheme = 'single_antenna'
+    num_of_layers = 1
+    precoding_scheme = 'single_antenna'
+    AP_num = 1
+    codebook_index = 0
+    
+    
+    a = array( [1]*24 )
+    e = BCH_channel_process(a, AP_num, CP_DL_type)
+    n_s = 1
+    CSRS_RE_tuple = get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 2, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 3, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    
+    pbch_symbol_matrix = get_PBCH_symbol_matrix(e, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_RE_tuple)
+    pbch_symbol_matrix_ap0 = pbch_symbol_matrix[0]
+    for l in range(4):
+        #legend_list = list()
+        plt.title("PBCH symbol array in l=%s for AP=0"%l)
+        plt.plot(abs(pbch_symbol_matrix_ap0[l]))
+        plt.xlabel("k (subcarrier index)")
+        plt.ylabel("Magnitude")
+        plt.show()
+</t>
+<t tx="Michael.20120321090100.1530">@others
+</t>
+<t tx="Michael.20120321090100.1531">@others
+
+def BCH_channel_process(a, AP_num, CP_DL_type):
+    '''
+    input:
+        a: array of bits for one BCH transport block. len(a) must be 24 bits.
+        AP_num: number of transmitting antenna ports used for PBCH
+        CP_DL_type: downlink CP type. 0 for normal CP
+    output:
+        bit sequence of length 1920 for normal DL CP, 1728 for extended DL CP.
+    '''
+    c = attach_BCH_TB_CRC(a, AP_num)
+    d = PBCH_channel_code(c)
+    e = PBCH_rate_match(d, CP_DL_type)
+    return e
+</t>
+<t tx="Michael.20120321090100.1532">def attach_BCH_TB_CRC(a, AP_num):
+    '''
+    input:
+        a: array of bits for one BCH transport block.
+        AP_num: number of transmitting antenna ports used for PBCH
+    output:
+        bit array with CRC attached.
+    '''
+    A = 24
+    L = 16
+    lte_assert(len(a)==A, "One BCH transport block must be %s bits long, but we've got %s bits instead."%(A, len(a)))
+    
+    c = array( [0]*(A+L) )
+    crc16 = array( calc_CRC16(a) )
+    lte_assert(len(crc16)==16, "16 bit CRC is actually %s bits!"%len(crc16))
+    
+    pbch_CRC_mask = array( (
+                                    (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0),
+                                    (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1),
+                                    (0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1),
+        )[AP_num&gt;&gt;1] )
+    crc16 = crc16 ^ pbch_CRC_mask
+    
+    for i in range(len(crc16)):
+        c[-1*i-1] = crc16[-1*i-1]
+    
+    return c
+</t>
+<t tx="Michael.20120321090100.1533">def calc_CRC16(a):
+    '''
+    input:
+        a: bit sequence
+    output:
+        bit sequence of length 16 for the CRC
+    '''
+    lte_warn("calc_CRC16 is only a dummy function!")
+    return [0] * 16
+</t>
+<t tx="Michael.20120321090100.1534">def tail_biting_convolutional_code(c):
+    '''
+    input:
+        c: bit sequence
+    output:
+        bit sequence of length 3*len(c)
+    '''
+    lte_warn("tail_biting_convolutional_code is only a dummy function!")
+    
+    result = array( [0] * (len(c)*3) )
+    for i in range(len(c)):
+        result[i] = c[i]
+        result[2*i] = c[i]
+        result[3*i] = c[i]
+    return result
+</t>
+<t tx="Michael.20120321090100.1535">def PBCH_channel_code(c):
+    '''
+    input:
+        c: bit sequence after PBCH CRC attachment.
+    output:
+        bit sequence
+    '''
+    A= 24
+    L = 16
+    K = A + L
+    lte_assert(len(c)==K, "PBCH TB size before channel coding shall be %s, but it is %s"%(K, len(c)))
+    return tail_biting_convolutional_code(c)
+</t>
+<t tx="Michael.20120321090100.1536">def PBCH_rate_match(d, CP_DL_type):
+    '''
+    input:
+        d: bit sequence after PBCH channel coding.
+        CP_DL_type: downlink CP type. 0 for normal CP
+    output:
+        bit sequence
+    '''
+    lte_assert(CP_DL_type in (0,1), "CP_DL_type has to be 0 for normal CP or 1 for extended CP, but it is %s."%CP_DL_type)
+    
+    if CP_DL_type == 0:
+        # normal CP in downlink
+        E = 1920
+    else:
+        # extended CP in downlink
+        E = 1728
+    
+    result = rate_match_for_conv_coded(d, E)
+    return result
+</t>
+<t tx="Michael.20120321090100.1537">def rate_match_for_conv_coded(d, E):
+    '''
+    input:
+        d: bit sequence after convolutionary coding, which is serialized sequence for all three bit streams.
+        E: target length after rate matchng.
+    output:
+        bit sequence of length E
+    '''
+    lte_warn("rate_match_for_conv_coded is only a dummy function!")
+    
+    e = array( [0] * E )
+    D = len(d)
+    for i in range(E):
+        e[i] = d[i%D]
+    
+    return e
+</t>
+<t tx="Michael.20120321090100.1538">def test_PBCH_Uu_signal():
+    
+    layer_mapping_scheme = 'single_antenna'
+    num_of_layers = 1
+    precoding_scheme = 'single_antenna'
+    AP_num = 1
+    codebook_index = 0
+    
+    
+    a = array( [1]*24 )
+    e = BCH_channel_process(a, AP_num, CP_DL_type)
+    n_s = 1
+    CSRS_RE_tuple = get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 2, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    CSRS_RE_tuple += get_CSRS_REs_in_slot(n_s, 3, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    
+    pbch_symbol_matrix = get_PBCH_symbol_matrix(e, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_RE_tuple)
+    pbch_symbol_matrix_ap0 = pbch_symbol_matrix[0]
+    
+    pbch_Uu_signal = array( [0.0] * (160+144*3+2048*4) )
+    t0 = arange(0, (160+2048)*T_s, T_s)
+    t1 = arange(0, (144+2048)*T_s, T_s)
+    for l in range(4):
+        if l==0:
+            pbch_re_array = pbch_symbol_matrix_ap0[l]
+            pbch_baseband_IQ = ofdm_baseband_IQ_signal_generate(pbch_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            tmp_pbch_Uu_signal = downlink_modulate(pbch_baseband_IQ, t0, f_0)
+            pbch_Uu_signal[:(160+2048)] = tmp_pbch_Uu_signal
+        else:
+            pbch_re_array = pbch_symbol_matrix_ap0[l]
+            pbch_baseband_IQ = ofdm_baseband_IQ_signal_generate(pbch_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            tmp_pbch_Uu_signal = downlink_modulate(pbch_baseband_IQ, t1, f_0)
+            pbch_Uu_signal[(160+2048)+(144+2048)*(l-1):(160+2048)+(144+2048)*l] = tmp_pbch_Uu_signal
+    new_t = arange(0, (160+144*3+2048*4)*T_s, T_s)
+    plt.plot(new_t*1000, pbch_Uu_signal)
+    plt.title('PBCH (only) Uu signal for ap=0')
+    plt.xlabel('Time (ms)')
+    plt.ylabel('Signal level')
+    #plt.legend(legend_list)
+    #plt.axis( [-0.01, 0.075, -0.1, 14] )
+    plt.show()
+</t>
+<t tx="Michael.20120323090727.1968">def PHICH_modulate(b, n_s, n_seq_PHICH, N_cell_ID, DL_CP_type):
+    '''
+    input:
+        b: bit sequence
+        n_s: slot index
+        n_seq_PHICH: PHICH number within the PHICH group
+        N_cell_ID: cell ID
+        DL_CP_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        modulated PHICH multipled with a orthogonal sequence
+    '''
+    lte_assert(DL_CP_type in (0,1), "DL CP type DL_CP_type=%s is out of range. It has to be either 0 (normal CP) or 1 (extended CP)"%DL_CP_type)
+    
+    M_bit = len(b)
+    
+    # BPSK modulation
+    M_s = M_bit
+    z = array( [0.0+0.0*1j] * M_s )
+    for i in range(M_bit):
+        z[i] = BPSK(b[i])
+    
+    # multiply with the orthogonal sequence
+    if DL_CP_type == 0:
+        N_PHICH_SF = 4
+    else:
+        # extended CP
+        N_PHICH_SF = 2
+    M_symb = N_PHICH_SF * M_s
+    c_init = (n_s/2+1) * (2*N_cell_ID+1) * (2**9) + N_cell_ID
+    w = get_orthogonal_seq_for_PHICH(n_seq_PHICH, N_PHICH_SF)
+    d = array( [0.0+0.0*1j] * M_symb )
+    for i in range(M_symb):
+        d[i] = w[i%N_PHICH_SF] * (1-2*c(c_init,i)) * z[i/N_PHICH_SF]
+    
+    return d
+
+
+def get_orthogonal_seq_for_PHICH(n_seq_PHICH, N_PHICH_SF):
+    '''
+    input:
+        n_seq_PHICH: sequence index, corresponding to the PHICH number within the PHICH group.
+        N_PHICH_SF: 
+    output:
+        Orthogonal sequence (array)
+    '''
+    lte_assert(N_PHICH_SF in (2,4), "N_PHICH_SF=%s is out of range! It has to be 4 for normal CP, or 2 for extended CP."%N_PHICH_SF)
+    if N_PHICH_SF == 4:
+        lte_assert(n_seq_PHICH&gt;=0 and n_seq_PHICH&lt;8, "n_seq_PHICH=%s is out of range!"%n_seq_PHICH)
+        result = ( (1,1,1,1), (1,-1,1,-1), (1,1,-1,-1), (1,-1,-1,1), (1j,1j,1j,1j), (1j,-1j,1j,-1j), (1j,1j,-1j,-1j), (1j,-1j,-1j,1j) )[n_seq_PHICH]
+    else:
+        lte_assert(n_seq_PHICH&gt;=0 and n_seq_PHICH&lt;4, "n_seq_PHICH=%s is out of range!"%n_seq_PHICH)
+        result = ( (1,1), (1,-1), (1j,1j), (1j,-1j) )[n_seq_PHICH]
+    result = array(result)
+    return result
+</t>
+<t tx="Michael.20120326140330.1400">'''
+table 6.8.1-1: supported PDCCH formats.
+
+PDCCH format    Num. of CCEs    Num. of REGs    Num. of PDCCH bits
+0                       1                       9                   72
+1                       2                       18                  144
+2                       4                       36                  288
+3                       8                       72                  576
+'''
+
+class PDCCH:
+    '''
+    Represents one PDCCH channel by giving information of its: bit sequence to be transmitted, format shall be used, start_CCE_index of this PDCCH channel
+    '''
+    def __init__(self, bit_sequence, PDCCH_format, start_CCE_index):
+        '''
+        input:
+            bit_sequence: a list of bits that's to be transmitted
+            PDCCH_format: format of PDCCH (0..3)
+            start_CCE_index: the starting CCE index of this PDCCH
+        '''
+        lte_assert(PDCCH_format in (0,1,2,3), "PDCCH format=%s is invalid! It must be 0, 1, 2, or 3, according to table 6.8.1-1 in 36.211."%PDCCH_format)
+        if PDCCH_format == 0:
+            lte_assert(len(bit_sequence)&lt;=72, "PDCCH format 0 can only be used to transmit &lt;=72 bits, but len(bit_sequence)=%s"%len(bit_sequence))
+        elif PDCCH_format == 1:
+            lte_assert(len(bit_sequence)&lt;=144, "PDCCH format 1 can only be used to transmit &lt;=144 bits, but len(bit_sequence)=%s"%len(bit_sequence))
+            lte_assert(start_CCE_index%2==0, "PDCCH format 1 uses 2 CCEs, thus start_CCE_index%2 must be 0, but start_CCE_index=%s"%start_CCE_index)
+        elif PDCCH_format == 2:
+            lte_assert(len(bit_sequence)&lt;=288, "PDCCH format 1 can only be used to transmit &lt;=288 bits, but len(bit_sequence)=%s"%len(bit_sequence))
+            lte_assert(start_CCE_index%4==0, "PDCCH format 1 uses 4 CCEs, thus start_CCE_index%4 must be 0, but start_CCE_index=%s"%start_CCE_index)
+        else:
+            # PDCCH_format == 3
+            lte_assert(len(bit_sequence)&lt;=576, "PDCCH format 1 can only be used to transmit &lt;=576 bits, but len(bit_sequence)=%s"%len(bit_sequence))
+            lte_assert(start_CCE_index%8==0, "PDCCH format 1 uses 8 CCEs, thus start_CCE_index%8 must be 0, but start_CCE_index=%s"%start_CCE_index)
+        
+        self.bit_sequence = bit_sequence
+        self.format = PDCCH_format
+        self.start_CCE_index = start_CCE_index
+
+@others
+
+def get_PDCCH_symbol_array(pdcch_list, CFI, N_REG, n_s, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_REs, PCFICH_REs, PHICH_REs):
+    '''
+    input:
+        pdcch_list: a list of instances of class PDCCH, which are to be transmitted on PDCCH in the given subframe. pdcch_list[0] shall be a instance of class PDCCH, thus pdcch_list[0].bit_sequence is a list of bits (e.g. (0,1,1,0,0,1,...)) that to be transmitted on PDCCH 0; pdcch_list[0].format is the format of this PDCCH, which shall be 0, 1, 2, or 3; pdcch_list[0].start_CCE_index is the starting CCE index of this PDCCH that must satisfies start_CCE_index%(2**format)==0.
+        CFI: Control  Format Indicator for this subframe.
+        N_REG: total number of available REGs for PDCCH in the given subframe.
+        n_s: slot index
+        N_cell_ID: cell ID
+        layer_mapping_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_layers: number of layers.
+        precoding_scheme: 'single_antenna' or 'transmit_diversity'
+        AP_num: number of transmission antenna ports
+        codebook_index: codebook index
+        N_DL_RB: downlink RB number
+        N_RB_sc: number of subcarriers in one RB
+        CSRS_REs: a list of REs for Cell Specific Reference Signals in al relative symbols
+        PCFICH_REs: a list of REs for PCFICH in this subframe
+        PHICH_REs: a list of REs for PHICH in this subframe
+    output:
+        output[0] is a RE matrix for antenna port 0
+        output[0][0] is a RE array of all subcarriers in symbol 0 for antenna port 0
+    '''
+    pdcch_bit_seq = PDCCH_multiplex_and_scramble(pdcch_list, N_REG, n_s, N_cell_ID)
+    pdcch_symbol_seq = PDCCH_modulate(pdcch_bit_seq)
+    pdcch_layer_mapped_matrix = PDCCH_layer_map(pdcch_symbol_seq, layer_mapping_scheme, num_of_layers)
+    pdcch_precoded_matrix = PDCCH_precode(pdcch_layer_mapped_matrix, precoding_scheme, AP_num, codebook_index)
+    permuted_symbol_quadruplet_matrix = PDCCH_symbol_quadruplet_permute(pdcch_precoded_matrix)
+    cyclic_shifted_symbol_quadruplet_matrix = PDCCH_symbol_quadruplet_cyclic_shift(permuted_symbol_quadruplet_matrix, N_cell_ID)
+    
+    pdcch_RE_list = get_PDCCH_RE_sequence(CFI, N_DL_RB, N_RB_sc, CSRS_REs, PCFICH_REs, PHICH_REs)
+    
+    lte_assert(AP_num==len(cyclic_shifted_symbol_quadruplet_matrix), "AP_num!=len(cyclic_shifted_symbol_quadruplet_matrix), i.e. the number of transmitting antenna is not equal to antenna ports configuration in precoding!.")
+    for i in range(AP_num):
+        lte_assert(len(pdcch_RE_list)==4*len(cyclic_shifted_symbol_quadruplet_matrix[i]), "For antenna port %s, its symbol count (%s) doesn't match with PDCCH RE count (%s)!"%(i, 4*len(cyclic_shifted_symbol_quadruplet_matrix[i]), len(pdcch_RE_list)))
+        
+    symbol_array_for_all_ap = array( [ [ [0.0+0.0*1j] * (N_DL_RB*N_RB_sc) ] * CFI ] *AP_num )
+    for ap in range(AP_num):
+        for symbol_quadruplet_index in range(len(cyclic_shifted_symbol_quadruplet_matrix[ap])):
+            for i in range(4):  # for the 4 symbols in this symbol quadruplet
+                k, l = pdcch_RE_list[4*symbol_quadruplet_index+i]
+                symbol_array_for_all_ap[ap][l][k] = cyclic_shifted_symbol_quadruplet_matrix[ap][symbol_quadruplet_index][i]
+    
+    return symbol_array_for_all_ap
+
+</t>
+<t tx="Michael.20120326140330.1401">def PDCCH_multiplex_and_scramble(pdcch_list, N_REG, n_s, N_cell_ID):
+    '''
+    input:
+        pdcch_list: a list of instances of class PDCCH, which are to be transmitted on PDCCH in the given subframe. pdcch_list[0] shall be a instance of class PDCCH, thus pdcch_list[0].bit_sequence is a list of bits (e.g. (0,1,1,0,0,1,...)) that to be transmitted on PDCCH 0; pdcch_list[0].format is the format of this PDCCH, which shall be 0, 1, 2, or 3; pdcch_list[0].start_CCE_index is the starting CCE index of this PDCCH that must satisfies start_CCE_index%(2**format)==0.
+        N_REG: total number of available REGs for PDCCH in the given subframe.
+        n_s: slot index
+        N_cell_ID: cell ID
+    output:
+        bit sequence of PDCCH in this subframe, its length is 8 * N_REG
+    '''
+    # the number of PDCCHs transmitted in the given subframe
+    n_PDCCH = len(pdcch_list)
+    
+    # M_bit[i] is the lengt of how many bits will be transmitted on PDCCH i
+    M_bit = [0] * n_PDCCH
+    for i in range(n_PDCCH):
+        M_bit[i] = len(pdcch_list[i].bit_sequence)
+    
+    # padding
+    M_tot = 8 * N_REG
+    lte_assert(M_tot&gt;=sum(M_bit), "The total number of bits to be transmitted on PDCCH is larger than its capacity! N_REG=%s, PDCCH_capacity=8*N_REG=%s, total_bit_to_be_transmitted=%s"%(N_REG, 8*N_REG, sum(M_bit)))
+    NIL = 0
+    bit_sequence = [NIL] * M_tot
+    for i in range(n_PDCCH):
+        CCE_index = pdcch_list[i].start_CCE_index
+        for j in range(len(pdcch_list[i].bit_sequence)):
+            bit_sequence[72*CCE_index+j] = pdcch_list[i].bit_sequence[j]
+    
+    # scrambling
+    c_init = n_s/2 * (2**9) + N_cell_ID
+    for i in range(M_tot):
+        bit_sequence[i] = (bit_sequence[i] + c(c_init, i)) % 2
+    
+    return bit_sequence
+</t>
+<t tx="Michael.20120326140330.1402">def PDCCH_modulate(bit_sequence):
+    '''
+    input:
+        bit_sequence: bit sequence of PDCCH in this subframe
+    output:
+        symbol sequence, e.g. output[0] is the 1st modulated symbol
+    '''
+    modulated_symbol_array = array( [0.0+0.0*1j] * (len(bit_sequence)/2) )
+    for i in range(len(modulated_symbol_array)):
+        modulated_symbol_array[i] = QPSK( (bit_sequence[2*i], bit_sequence[2*i+1]) )
+    return modulated_symbol_array
+</t>
+<t tx="Michael.20120326140330.1403">def PDCCH_layer_map(d, layer_mapping_scheme, num_of_layers):
+    '''
+    input:
+        d: array of modulated symbols
+        layer_mapping_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_layers: number of layers.
+    output:
+        layer mapped array of arrays for each layer. output[0] is the array for layer 0, and so on.
+    '''
+    lte_assert(layer_mapping_scheme in ('single_antenna', 'transmit_diversity'), "layer_mapping_scheme=%s is not valid for PDCCH. It must be 'single_antenna' or 'transmit_diversity'."%(layer_mapping_scheme, ))
+    if layer_mapping_scheme == 'single_antenna':
+        lte_assert(num_of_layers==1, "For single antenna scheme of layer mapping, number of layers must be 1.")
+        result = layer_map_single_antenna_port(d)
+    else:
+        lte_assert(num_of_layers in (2,4), "For transmit diversity scheme of layer mapping, number of layers must be either 2 or 4.")
+        result = layer_map_transmit_diversity([d], num_of_layers)
+    return result
+
+def PDCCH_precode(layer_mapped_matrix, precoding_scheme, num_of_ap, codebook_index):
+    '''
+    input:
+        layer_mapped_matrix: matrix after PDCCH layer mapping.
+        precoding_scheme: 'single_antenna' or 'transmit_diversity'
+        num_of_ap: number of transmission antenna ports
+        codebook_index: codebook index
+    output:
+        maxtrix for all transmission antenna ports. e.g. output[0] is the symbol array for ap_0.
+    '''
+    lte_assert(precoding_scheme in ('single_antenna', 'transmit_diversity'), "For PDCCH precoding, the scheme must either be 'single_antenna' or 'transmit_diversity', but the current scheme is %s"%precoding_scheme)
+    num_of_layers = len(layer_mapped_matrix)
+    if precoding_scheme == 'single_antenna':
+        lte_assert(num_of_ap==1, "For PDCCH 'single_antenna' precoding scheme, num_of_ap must be 1, but currently it is %s."%num_of_ap)
+        lte_assert(num_of_layers==1, "For PDCCH 'single_antenna' precoding scheme, number of layers must be 1, but currently it is %s."%num_of_layers)
+        result = precode_single_antenna(layer_mapped_matrix)
+    else:
+        # precoding_scheme == 'transmit_diversity'
+        lte_assert(num_of_ap in (2,4), "For PDCCH 'transmit_diversity' precoding scheme, number of transmission antenna must be 2 or 4. Current number of transmitting antenna is %s"%num_of_ap)
+        lte_assert(num_of_ap==num_of_layers, "For transmit diversity precoding, number of transmitting antenna must be equal to number of layers, but currently num_of_ap=%s and num_of_layers=%s"%(num_of_ap, num_of_layers))
+        result = precode_transmit_diversity(layer_mapped_matrix, num_of_ap)
+    return result
+</t>
+<t tx="Michael.20120326140330.1404">def PDCCH_symbol_quadruplet_permute(precoded_matrix):
+    '''
+    input:
+        precoded_matrix: symbol matrix after precoding, e.g. precoded_matrix[0] is the symbol sequence for antenna port 0.
+    output:
+        symbol quadruplet matrix after the permutation, e.g. output[0] is the symbol-quadruplet sequence for antenna port 0 after symbol quadruplet permutation; output[0][0] is the first symbol quadruplet for antenna port 0.
+    '''
+    lte_warn("PDCCH_symbol_quadruplet_permute is only a dummy function!")
+    symbol_quadruplet_matrix = [0] * len(precoded_matrix)
+    for i in range(len(precoded_matrix)):
+        tmp_quadruplet_list = list()
+        for j in range(len(precoded_matrix[i])/4):
+            tmp_quadruplet_list.append( [ precoded_matrix[i][4*j], precoded_matrix[i][4*j+1], precoded_matrix[i][4*j+2], precoded_matrix[i][4*j+3] ] )
+        symbol_quadruplet_matrix[i] = tmp_quadruplet_list
+    return symbol_quadruplet_matrix
+
+def PDCCH_symbol_quadruplet_cyclic_shift(symbol_quadruplet_matrix, N_cell_ID):
+    '''
+    input:
+        symbol_quadruplet_matrix: symbol quadruplet matrix after symbol quadruplet permutation
+        N_cell_ID: cell ID
+    output:
+        symbol quadruplet matrix after cyclic shift, e.g. output[0] is the symbol quadruplet array for antenna port 0; output[0][0] is the first symbol quadruplet of antenna port 0.
+    '''
+    M_quad = len(symbol_quadruplet_matrix[0])
+    result = [0] * len(symbol_quadruplet_matrix)
+    for i in range(len(symbol_quadruplet_matrix)):
+        tmp_symbol_quadruplet_list = [0.0+0.0*1j] * M_quad
+        for j in range(M_quad):
+            tmp_symbol_quadruplet_list[j] = symbol_quadruplet_matrix[i][(j+N_cell_ID)%M_quad]
+        result[i] = tmp_symbol_quadruplet_list
+    return result
+
+def get_PDCCH_RE_sequence(CFI, N_DL_RB, N_RB_sc, CSRS_REs, PCFICH_REs, PHICH_REs):
+    '''
+    input:
+        CFI: Control  Format Indicator for this subframe.
+        N_DL_RB: downlink RB number
+        N_RB_sc: number of subcarriers in one RB
+        CSRS_REs: a list of REs for Cell Specific Reference Signals in al relative symbols
+        PCFICH_REs: a list of REs for PCFICH in this subframe
+        PHICH_REs: a list of REs for PHICH in this subframe
+    output:
+        a array of PDCCH REs in this subframe, which is in the same sequence as PDCCH symbols shall be mapped.
+    '''
+    lte_assert(CFI in (1,2,3,4), "CFI=%s is out of range!"%CFI)
+    L = CFI
+    occupied_REs = CSRS_REs + PCFICH_REs + PHICH_REs
+    result = list()
+    m, k, l = 0, 0, 0
+    while k &lt; N_DL_RB * N_RB_sc:
+        if ((k,l) not in occupied_REs) and ((k,l) not in result):
+            result.append( (k,l) )
+            re_count = 1    # number of valid REs found in this valid REG
+            i = 1
+            while re_count&lt;4 and i&lt;6:
+                if ((k+i,l) not in occupied_REs) and ((k+i,l) not in result):
+                    result.append( (k+i,l) )
+                    re_count += 1
+                    i += 1
+                else:
+                    i += 1
+        else:
+            if l &lt; L-1:
+                l += 1
+            else:
+                k += 1
+                l = 0
+    #print "PDCCH_REs = ", result
+    return result
+  
+</t>
+<t tx="Michael.20120326140330.1405"></t>
+<t tx="Michael.20120326140330.1406">@others
+
+from scipy.signal import *
+from numpy import *
+import matplotlib.pyplot as plt
+
+# time scale is in 1 s
+T_s = 1.0/30720/1000 # in s
+
+# configuration for SSS
+l = 0
+N_maxDL_RB = 110
+N_DL_RB = 110
+N_RB_sc = 12
+N_DL_CP = 0 # normal DL CP
+AP_num = 2
+CP_DL_type = 0
+N_DL_symb = 7
+delta_f = 15000
+subframe = 0
+N_cell_ID = 0
+f_0 = (2620+0.1*(2620-2750))*1000*1000  # in Hz
+
+if N_DL_CP==0 and delta_f==15000:
+    if l==0:
+        N_CP_l = 160
+    else:
+        N_CP_l = 144
+elif N_DL_CP==1:    # extended CP
+    if delta_f==15000:
+        N_CP_l = 512
+    else:   # delta_f == 7500
+        N_CP_l = 1024
+if delta_f==15000:
+    N = 2048
+else:   # delta_f == 7500
+    N = 4096
+
+t = arange(0, (N_CP_l+N)*T_s, T_s)
+
+def find_max( a_list ):
+    m = max(a_list)
+    for i in arange(len(a_list)):
+        if a_list[i] == m:
+            return (i, m)
+
+def find_min( a_array ):
+    x, y = 0, 0
+    for i in arange(len(a_array)):
+        if a_array[i] &lt; y:
+            x, y = i, a_array[i]
+    return (x,y)
+
+def find_abs_max( a_array ):
+    m = max(abs(a_array))
+    for i in arange(len(a_array)):
+        if abs(a_array[i]) == m:
+            return (i, m)
+            
+@others
+
+HI = 1
+subframe =1
+n_s = 2
+n_seq_PHICH = 0
+n_group_PHICH =0
+N_group_PHICH = 1
+PHICH_duration = 0
+N_cell_ID = 0
+DL_CP_type = 0
+AP_num = 2
+LTE_mode = 'TDD'
+UL_DL_config = 1
+N_maxDL_RB = 110
+N_DL_RB = 110
+N_RB_sc = 12
+CSRS_AP_num = 2
+is_MBSFN = False
+N_DL_symb = 7
+
+test_enabling_bits = 0b11
+
+# 01. PDCCH symbol array in one OFDM symbol
+if test_enabling_bits &amp; (1&lt;&lt;0):
+    test_PDCCH_symbol_array_in_one_OFDM_symbol()
+
+# 02. PDCCH Uu signal
+if test_enabling_bits &amp; (1&lt;&lt;1):
+    test_PDCCH_Uu_signal()
+</t>
+<t tx="Michael.20120326140330.1408">def test_PDCCH_symbol_array_in_one_OFDM_symbol():
+    
+    pdcch_list = [ PDCCH((0,1,1,0,1,0,0,1,1,0), 0, 0), ]
+    CFI = 2
+    n_s = 0
+    N_cell_ID = 0
+    layer_mapping_scheme = 'transmit_diversity'
+    num_of_layers = 2
+    precoding_scheme = 'transmit_diversity'
+    AP_num = 2
+    codebook_index = 0
+    N_maxDL_RB = 110
+    N_DL_RB = 110
+    N_DL_symb = 7
+    N_RB_sc = 12
+    CP_DL_type = 0
+    LTE_mode = 'TDD'
+    
+    CSRS_REs = get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    CSRS_REs += get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    
+    #print "CSRS_REs_AP0 = ", get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    #print "CSRS_REs_AP1 = ", get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    
+    PCFICH_REs = get_PCFICH_REs_in_symbol(0, True, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_REs, AP_num, CP_DL_type)
+    #print "PCFICH_REs = ", PCFICH_REs
+    
+    PHICH_REs = tuple() # no PHICH for subframe 0 in UL/DL configuration 1
+    #print "PHICH_REs = ", PHICH_REs
+    
+    N_REG = 0
+    for l in range(CFI):
+        N_REG += get_REG_number_in_symbol(N_DL_RB, N_RB_sc, l, AP_num, DL_CP_type)
+    N_REG -= len(PCFICH_REs)/4
+    #print N_REG, len(PCFICH_REs), len(PCFICH_REs)/4
+    
+    symbol_matrix = get_PDCCH_symbol_array(pdcch_list, CFI, N_REG, n_s, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_REs, PCFICH_REs, PHICH_REs)
+    symbol_matrix_ap0 = symbol_matrix[0]
+    
+    plt.title("PDCCH symbol array in symbol 0 for AP=0")
+    plt.plot(abs(symbol_matrix_ap0[0]))
+    plt.xlabel("k (subcarrier index)")
+    plt.ylabel("Magnitude")
+    plt.show()
+</t>
+<t tx="Michael.20120326140330.1409">def test_PDCCH_Uu_signal():
+    pdcch_list = [ PDCCH((0,1,1,0,1,0,0,1,1,0), 0, 0), ]
+    CFI = 2
+    n_s = 0
+    N_cell_ID = 0
+    layer_mapping_scheme = 'transmit_diversity'
+    num_of_layers = 2
+    precoding_scheme = 'transmit_diversity'
+    AP_num = 2
+    codebook_index = 0
+    N_maxDL_RB = 110
+    N_DL_RB = 110
+    N_DL_symb = 7
+    N_RB_sc = 12
+    CP_DL_type = 0
+    LTE_mode = 'TDD'
+    
+    CSRS_REs = get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    CSRS_REs += get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    
+    #print "CSRS_REs_AP0 = ", get_CSRS_REs_in_slot(n_s, 0, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    #print "CSRS_REs_AP1 = ", get_CSRS_REs_in_slot(n_s, 1, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    
+    PCFICH_REs = get_PCFICH_REs_in_symbol(0, True, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_REs, AP_num, CP_DL_type)
+    #print "PCFICH_REs = ", PCFICH_REs
+    
+    PHICH_REs = tuple() # no PHICH for subframe 0 in UL/DL configuration 1
+    #print "PHICH_REs = ", PHICH_REs
+    
+    N_REG = 0
+    for l in range(CFI):
+        N_REG += get_REG_number_in_symbol(N_DL_RB, N_RB_sc, l, AP_num, DL_CP_type)
+    N_REG -= len(PCFICH_REs)/4
+    #print N_REG, len(PCFICH_REs), len(PCFICH_REs)/4
+    
+    symbol_matrix = get_PDCCH_symbol_array(pdcch_list, CFI, N_REG, n_s, N_cell_ID, layer_mapping_scheme, num_of_layers, precoding_scheme, AP_num, codebook_index, N_DL_RB, N_RB_sc, CSRS_REs, PCFICH_REs, PHICH_REs)
+    symbol_matrix_ap0 = symbol_matrix[0]
+    
+    pdcch_Uu_signal = array( [0.0] * (160+144+2048*2) )
+    t0 = arange(0, (160+2048)*T_s, T_s)
+    t1 = arange(0, (144+2048)*T_s, T_s)
+    for l in range(2):
+        if l==0:
+            pdcch_re_array = symbol_matrix_ap0[l]
+            pdcch_baseband_IQ = ofdm_baseband_IQ_signal_generate(pdcch_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            tmp_pdcch_Uu_signal = downlink_modulate(pdcch_baseband_IQ, t0, f_0)
+            pdcch_Uu_signal[:(160+2048)] = tmp_pdcch_Uu_signal
+        else:
+            pdcch_re_array = symbol_matrix_ap0[l]
+            pdcch_baseband_IQ = ofdm_baseband_IQ_signal_generate(pdcch_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            tmp_pdcch_Uu_signal = downlink_modulate(pdcch_baseband_IQ, t1, f_0)
+            pdcch_Uu_signal[(160+2048)+(144+2048)*(l-1):(160+2048)+(144+2048)*l] = tmp_pdcch_Uu_signal
+
+    new_t = arange(0, (160+144+2048*2)*T_s, T_s)
+    plt.plot(new_t*1000, pdcch_Uu_signal)
+    plt.title('PDCCH (only) Uu signal for ap=0')
+    plt.xlabel('Time (ms)')
+    plt.ylabel('Signal level')
+    #plt.legend(legend_list)
+    #plt.axis( [-0.01, 0.075, -0.1, 14] )
+    plt.show()</t>
+<t tx="michael.20120223085633.1280">@language python
+@tabwidth -4
+@encoding utf-8</t>
+<t tx="michael.20120305092148.1276">@others
+</t>
+<t tx="michael.20120305092148.1277">@others
+</t>
+<t tx="michael.20120305092148.1278">def get_REG_in_RB_symbol(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, optimize=True):
+    '''
+    input:
+        n_PRB: PRB index
+        N_RB_sc: number of subcarriers in one RB
+        l: symbol index
+        CSRS_AP_num: number of antenna uesed for Cell Specific Reference Signal
+        DL_CP_type: 0 for normal CP, 1 for extended CP
+        optimize: boolean. whether to use optimized code for speed.
+    output:
+        a tuple of all REGs in the given PRB and symbol
+    '''
+    if optimize:
+        result = get_REG_in_RB_symbol_opti(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type)
+    else:
+        result = get_REG_in_RB_symbol_standard(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type)
+    return result
+    
+def get_REG_in_RB_symbol_standard(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type):
+    '''
+    get_REG_in_RB_symbol(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type): tuple of REGs
+    Return REGs in the specific PRB of symbol l.
+    n_PRB: PRB index
+    N_RB_sc: number of subcarriers in one RB
+    l: symbol index
+    CSRS_AP_num: number of antenna uesed for Cell Specific Reference Signal
+    DL_CP_type: 0 for normal CP, 1 for extended CP
+    '''
+    k_0 = n_PRB * N_RB_sc
+    if l == 0:
+        REGs = (    (   (k_0,l), (k_0+1,l), (k_0+2,l), (k_0+3,l), (k_0+4,l), (k_0+5,l) ),
+                        ( (k_0+6,l), (k_0+7,l), (k_0+8,l), (k_0+9,l), (k_0+10,l), (k_0+11,l) )
+                    )
+    elif l ==1:
+        if CSRS_AP_num == 4:
+            REGs = (    (   (k_0,l), (k_0+1,l), (k_0+2,l), (k_0+3,l), (k_0+4,l), (k_0+5,l) ),
+                        ( (k_0+6,l), (k_0+7,l), (k_0+8,l), (k_0+9,l), (k_0+10,l), (k_0+11,l) )
+                    )
+        else:   # it is the same for 1/2 CSRS APs, and also for calculating REG 2 CSRS APs shall be assumed for single AP configuration
+            REGs = (    (   (k_0,l), (k_0+1,l), (k_0+2,l), (k_0+3,l)    ),
+                            (   (k_0+4,l), (k_0+5,l), (k_0+6,l), (k_0+7,l)    ),
+                            (   (k_0+8,l), (k_0+9,l), (k_0+10,l), (k_0+11,l)    )
+                        )
+    elif l ==2:
+        REGs = (    (   (k_0,l), (k_0+1,l), (k_0+2,l), (k_0+3,l)    ),
+                        (   (k_0+4,l), (k_0+5,l), (k_0+6,l), (k_0+7,l)    ),
+                        (   (k_0+8,l), (k_0+9,l), (k_0+10,l), (k_0+11,l)    )
+                    )
+    elif l ==3:
+        if DL_CP_type ==0:
+            REGs = (    (   (k_0,l), (k_0+1,l), (k_0+2,l), (k_0+3,l)    ),
+                            (   (k_0+4,l), (k_0+5,l), (k_0+6,l), (k_0+7,l)    ),
+                            (   (k_0+8,l), (k_0+9,l), (k_0+10,l), (k_0+11,l)    )
+                        )
+        else:   # extended DL CP
+            REGs = (    (   (k_0,l), (k_0+1,l), (k_0+2,l), (k_0+3,l), (k_0+4,l), (k_0+5,l) ),
+                            ( (k_0+6,l), (k_0+7,l), (k_0+8,l), (k_0+9,l), (k_0+10,l), (k_0+11,l) )
+                        )
+    return REGs
+
+def get_REG_in_RB_symbol_opti(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type):
+    '''
+    Return REGs in the specific PRB of symbol l, optimized version.
+    n_PRB: PRB index
+    N_RB_sc: number of subcarriers in one RB
+    l: symbol index
+    CSRS_AP_num: number of antenna uesed for Cell Specific Reference Signal
+    DL_CP_type: 0 for normal CP, 1 for extended CP
+    '''
+    k_0 = n_PRB * N_RB_sc
+    if (l== 0) or (l==1 and CSRS_AP_num==4) or (l==3 and DL_CP_type==1):
+        REGs = (    (   (k_0,l), (k_0+1,l), (k_0+2,l), (k_0+3,l), (k_0+4,l), (k_0+5,l) ),
+                        (   (k_0+6,l), (k_0+7,l), (k_0+8,l), (k_0+9,l), (k_0+10,l), (k_0+11,l) )
+                    )
+    else:
+        REGs = (    (   (k_0,l), (k_0+1,l), (k_0+2,l), (k_0+3,l)    ),
+                        (   (k_0+4,l), (k_0+5,l), (k_0+6,l), (k_0+7,l)    ),
+                        (   (k_0+8,l), (k_0+9,l), (k_0+10,l), (k_0+11,l)    )
+                    )
+    return REGs
+
+@others
+</t>
+<t tx="michael.20120305092148.1279">def get_CSRS_REs_in_slot(n_s, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb):
+    '''
+    input:
+        n_s: slot index
+        antenna_port: antenna port for CSRS
+        N_cell_ID: cell ID
+        N_maxDL_RB: 110 for 20MHz configured by higher layer
+        N_DL_RB: PHY number of downlink RB
+        N_DL_symb: maximum 110 for 20MHz
+    output:
+        a tuple of all CSRS REs for the given antenna port in the given slot
+    
+    profile:
+def main():
+    for i in range(1000):
+        tmp = get_CSRS_in_slot(i%20, i%4, i, 110, 110, (7,3,2,4,5,1)[i%6])
+
+cProfile.runctx('main()', globals(), locals())
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.012    0.012    0.903    0.903 &lt;ipython console&gt;:1(main)
+     1000    0.536    0.001    0.891    0.001 &lt;ipython console&gt;:2(get_CSRS_in_slot)
+    '''
+    
+    REs = list()
+    # symbol indices for CSRS of this AP
+    if antenna_port in (0,1):
+        if N_DL_symb&gt;3:
+            l_list = (0, N_DL_symb-3)
+        else:   # DwPTS that has only 3 DL symbols
+            l_list = (0,)
+    else:   # antenna_port in (2,3)
+        l_list = (1,)
+    # v_shift
+    v_shift = N_cell_ID % 6
+    for l in l_list:
+        # v
+        if antenna_port==0 and l==0:
+            v = 0
+        elif antenna_port==0 and l!=0:
+            v = 3
+        elif antenna_port==1 and l==0:
+            v = 3
+        elif antenna_port==1 and l!=0:
+            v = 0
+        elif antenna_port==2:
+            v = 3 * (n_s%2)
+        elif antenna_port==3:
+            v = 3 + 3 * (n_s%2)
+        for m in range(2*N_DL_RB):
+            m_ = m + N_maxDL_RB - N_DL_RB   # m'
+            k = 6*m + (v+v_shift)%6
+            REs.append( (k,l) )
+    return tuple(REs)
+
+def get_CSRS_in_symbol(n_s, l, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_RB_sc, N_DL_symb, DL_CP_type):
+    '''
+    '''
+    symbol_array = ndarray(shape=(N_maxDL_RB*N_RB_sc,),dtype=complex128)
+    for i in arange(len(symbol_array)):
+        symbol_array[i] = 0
+    csrs_seq = r_l_ns(n_s, l, N_cell_ID, N_maxDL_RB, DL_CP_type)
+    # symbol indices for CSRS of this AP
+    if antenna_port in (0,1):
+        if N_DL_symb&gt;3:
+            l_list = (0, N_DL_symb-3)
+        else:   # DwPTS that has only 3 DL symbols
+            l_list = (0,)
+    else:   # antenna_port in (2,3)
+        l_list = (1,)
+    # v_shift
+    v_shift = N_cell_ID % 6
+    if l in l_list:
+        # v
+        if antenna_port==0 and l==0:
+            v = 0
+        elif antenna_port==0 and l!=0:
+            v = 3
+        elif antenna_port==1 and l==0:
+            v = 3
+        elif antenna_port==1 and l!=0:
+            v = 0
+        elif antenna_port==2:
+            v = 3 * (n_s%2)
+        elif antenna_port==3:
+            v = 3 + 3 * (n_s%2)
+        for m in range(2*N_DL_RB):
+            m_ = m + N_maxDL_RB - N_DL_RB   # m'
+            k = 6*m + (v+v_shift)%6
+            symbol_array[k] = csrs_seq[m_]
+    return symbol_array
+</t>
+<t tx="michael.20120305092148.1280">@others
+</t>
+<t tx="michael.20120305092148.1281">@others
+</t>
+<t tx="michael.20120305092148.1283">def x_1(i):
+    x1_init = 1
+    while i&gt;30:
+        tmp = (x1_init&amp;1 ^ x1_init&amp;8)%2
+        x1_init = x1_init&gt;&gt;1 ^ tmp*(2**30)
+        i -= 1
+    return (x1_init &gt;&gt; i) &amp; 1
+
+def x_2(c_init, i):
+    while i&gt;30:
+        tmp = (c_init&amp;1 ^ c_init&amp;2 ^ c_init&amp;4 ^ c_init&amp;8)%2
+        c_init = c_init&gt;&gt;1 ^ tmp*(2**30)
+        i -= 1
+    return (c_init &gt;&gt; i) &amp; 1
+
+def c(c_init, i):
+    '''
+    profile:
+def main():
+    for i in range(10000):
+        c(i,i)
+
+cProfile.runctx('main()', globals(), locals())
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    10000    0.059    0.000   91.819    0.009 &lt;ipython console&gt;:1(c)
+        1    0.023    0.023   91.843   91.843 &lt;ipython console&gt;:1(main)
+    10000   39.318    0.004   39.318    0.004 &lt;ipython console&gt;:1(x_1)
+    10000   52.441    0.005   52.441    0.005 &lt;ipython console&gt;:1(x_2)
+    '''
+    N_C = 1600
+    return (x_1(i+N_C) + x_2(c_init,i+N_C)) %2
+</t>
+<t tx="michael.20120305092148.1285">def r_l_ns(n_s, l, N_cell_ID, N_maxDL_RB, DL_CP_type):
+    '''
+    r_l_ns(l, n_s, N_cell_ID, N_maxDL_RB, DL_CP_type): list of complex symbols for CSRS signal in symbol index l of given slot.
+    l: symbol index in given slot
+    n_s: slot index
+    N_cell_ID:  cell ID
+    N_maxDL_RB: 110 for 20MHz
+    DL_CP_type: CP type for downlink, 0 for normal CP and 1 for extended CP
+    
+    profile:
+import cProfile
+from math import sqrt
+def main():
+    for i in range(100):
+        tmp = r_l_ns(i%20, i%7, i, 110, i%2)
+
+cProfile.runctx('main()', globals(), locals())
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    44000    0.227    0.000  109.216    0.002 &lt;ipython console&gt;:1(c)
+        1    0.001    0.001  109.585  109.585 &lt;ipython console&gt;:1(main)
+      100    0.255    0.003  109.583    1.096 &lt;ipython console&gt;:1(r_l_ns)
+    44000   46.434    0.001   46.434    0.001 &lt;ipython console&gt;:1(x_1)
+    44000   62.555    0.001   62.555    0.001 &lt;ipython console&gt;:1(x_2)
+    '''
+    if DL_CP_type == 0: # normal DL CP
+        N_CP = 1
+    else:
+        N_CP = 0
+    c_init = 2**10 * (7*(n_s+1)+l+1) * (2*N_cell_ID+1) + 2*N_cell_ID + N_CP
+    csrs_symbol_list = list()
+    for m in range(2*N_maxDL_RB):
+        real_part = 1/sqrt(2) * (1-2*c(c_init,2*m))
+        image_part = 1/sqrt(2) * (1-2*c(c_init,2*m+1))
+        csrs_symbol_list.append( complex(real_part,image_part) )
+    return tuple(csrs_symbol_list)
+</t>
+<t tx="michael.20120305092148.1290">def get_m_i( UL_DL_config, subframe ):
+    m_i_table = (   (2,1,None,None,None,2,1,None,None,None),
+                            (0,1,None,None,1,0,1,None,None,1),
+                            (0,0,None,1,0,0,0,None,1,0),
+                            (1,0,None,None,None,0,0,0,1,1,),
+                            (0,0,None,None,0,0,0,0,1,1),
+                            (0,0,None,0,0,0,0,0,1,0),
+                            (1,1,None,None,None,1,1,None,None,1)
+                    )
+    return m_i_table[UL_DL_config][subframe]
+    
+    
+def get_PHICH_symbol_array(HI, subframe, n_s, n_seq_PHICH, n_group_PHICH, N_group_PHICH, PHICH_duration, N_cell_ID, DL_CP_type, AP_num, LTE_mode, UL_DL_config, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, is_MBSFN, N_DL_symb):
+    '''
+    input:
+        HI: HARQ Indicator, 0 for NACK, 1 for ACK
+        subframe: subframe index
+        n_s: slot index
+        n_seq_PHICH: PHICH orthogonal sequence number within the PHICH group
+        n_group_PHICH: PHICH group index
+        N_group_PHICH: total PHICH group number, from higher layer
+        PHICH_duration: PHICH duration from higher layer, 0 for normal duration, 1 for extended duration
+        N_cell_ID: cell ID
+        DL_CP_type: downlink CP type, 0 for normal CP, 1 for extended CP
+        AP_num: number of antenna ports used to transmit PHICH
+        LTE_mode: 'FDD' or 'TDD'
+        UL_DL_config: Uplink/Downlink configuration, only valid if LTE_mode is 'TDD'
+        N_maxDL_RB: Maximum DL RB number
+        N_DL_RB: DL RB number
+        N_RB_sc: number of subcarriers in one RB
+        CSRS_AP_num: number of antenna ports used for CSRS
+        is_MBSFN: boolean, whether it is a subframe for MBSFN
+        N_DL_symb: number of symbols in one slot
+    output:
+        output[0] is a RE matrix for antenna port 0
+        output[0][0] is a RE array of all subcarriers in symbol 0 for antenna port 0
+    '''
+    # calc m_i
+    if LTE_mode == 'FDD':
+        m_i = 0
+    else:
+        m_i = get_m_i( UL_DL_config, subframe )
+    # channel coding
+    b = channel_code_HI(HI)
+    # modulation
+    d = PHICH_modulate(b, n_s, n_seq_PHICH, N_cell_ID, DL_CP_type)
+    # resource group alignment, layer mapping, and precoding
+    d_0 = PHICH_align(d, n_group_PHICH, DL_CP_type, AP_num)
+    layer_mapped_matrix = PHICH_layer_map_and_precode(d_0, AP_num, n_group_PHICH, DL_CP_type)
+    
+    mapping_units = get_PHICH_mapping_units(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, m_i, N_group_PHICH, DL_CP_type, is_MBSFN, PHICH_duration, subframe, n_s, N_cell_ID, N_DL_symb)
+    
+    symbol_matrix_for_all_ap = array( [ [[0.0+0.0*1j] * (N_DL_RB*N_RB_sc)]*3 ]*AP_num )
+    # symbol_array_for_all_ap[0] is the RE matrix for ap 0
+    # symbol_array_for_all_ap[0][0] is the RE array in symbol 0 for ap 0
+    
+    m = n_group_PHICH
+    if DL_CP_type == 0:
+        m_ = m
+    else:
+        m_ = m/2
+    reg_list = mapping_units[m_]
+    for reg_index in range(3):  # it has to be 3 REG
+        for re_index in range(4):   # it has to be 4 REs in one REG
+            k, l = reg_list[reg_index][re_index]
+            for ap in range(AP_num):
+                symbol_matrix_for_all_ap[ap][l][k] = layer_mapped_matrix[ap][reg_index*4+re_index]
+
+    return symbol_matrix_for_all_ap
+</t>
+<t tx="michael.20120305092148.1292">from numpy import *
+import matplotlib.pyplot as plt
+
+def plot_symbol(symbol_array, l, N_DL_CP, delta_f=15000):
+    T_s = 1./30720  # all time scale is in 1 ms
+    if N_DL_CP==0 and delta_f==15000:
+        if l==0:
+            N_CP_l = 160
+        else:
+            N_CP_l = 144
+    elif N_DL_CP==1:    # extended CP
+        if delta_f==15000:
+            N_CP_l = 512
+        else:   # delta_f == 7500
+            N_CP_l = 1024
+    if delta_f==15000:
+        N = 2048
+    else:   # delta_f == 7500
+        N = 4096
+    t = arange(0, (N_CP_l+N)*T_s, T_s)
+    # use gnuplot
+    plt.plot(t, symbol_array)
+    plt.show()
+
+def myplot(sig, t):
+    plt.cla()
+    plt.plot(t, sig)
+    plt.xlabel('time (ms)')
+    plt.show()
+</t>
+<t tx="michael.20120305092148.1293">def ofdm_baseband_IQ_signal_generate(symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f=15000, gen_method='IFFT'):
+    '''
+    Note: len(symbol_array)==N_DL_RB*N_RB_sc must be True.
+    '''
+    T_s = 1./30720/1000  # all time scale is in 1 s
+    if N_DL_CP==0 and delta_f==15000:
+        if l==0:
+            N_CP_l = 160
+        else:
+            N_CP_l = 144
+    elif N_DL_CP==1:    # extended CP
+        if delta_f==15000:
+            N_CP_l = 512
+        else:   # delta_f == 7500
+            N_CP_l = 1024
+    if delta_f==15000:
+        N = 2048
+    else:   # delta_f == 7500
+        N = 4096
+    t = arange(0, (N_CP_l+N)*T_s, T_s)
+    signal_pl =  array([0.0+0.0*1j] * (N_CP_l + N))
+    
+    down_limit = int(floor(N_DL_RB*N_RB_sc/2))
+    up_limit = int(ceil(N_DL_RB*N_RB_sc/2))
+    
+    if gen_method == 'DIRECT':
+        for k in arange( -1*down_limit, 0, 1 ):
+            signal_pl += symbol_array[k+down_limit]*exp(1j*2*pi*k*delta_f*(t-N_CP_l*T_s))
+        for k in arange(1, up_limit+1, 1):
+            signal_pl += symbol_array[k+down_limit-1]*exp(1j*2*pi*k*delta_f*(t-N_CP_l*T_s))
+    elif gen_method == 'IFFT':
+        mapped_seq = map_baseband_IQ_for_ifft(symbol_array)
+        signal_pl[N_CP_l:] = fft.ifft(mapped_seq, N) * N
+        signal_pl[:N_CP_l] = signal_pl[-1*N_CP_l:]
+        
+    return signal_pl
+
+def map_baseband_IQ_for_ifft(baseband_IQ_array):
+    '''
+    Note: len(symbol_array)==N_DL_RB*N_RB_sc must be True.
+    '''
+    #T_s = 1./30720/1000  # all time scale is in 1 s
+    if delta_f==15000:
+        N = 2048
+    else:   # delta_f == 7500
+        N = 4096
+    #t = arange(0, (N_CP_l+N)*T_s, T_s)
+    #signal_pl =  array([0.0+0.0*1j] * (N_CP_l + N))
+    
+    down_limit = int(floor(len(baseband_IQ_array)/2))
+    up_limit = int(ceil(len(baseband_IQ_array)/2))
+    
+    mapped_seq = array([0.0+0.0*1j] * N)
+    # do the mapping before IFFT
+    tmp_index = N-1
+    for i in arange(down_limit-1, -1, -1):
+        mapped_seq[tmp_index] = baseband_IQ_array[i]
+        tmp_index -= 1
+    tmp_index = 1
+    for i in arange(down_limit, down_limit+up_limit):
+        mapped_seq[tmp_index] = baseband_IQ_array[i]
+        tmp_index += 1
+    return mapped_seq
+
+def map_fft_result_to_RE_IQ_array(fft_result_array):
+    '''
+    map_fft_result_to_baseband_IQ(fft_result_array): baseband_IQ_array
+    Note: len(fft_result_array)==N must be True
+            len(baseband_IQ_array) is N_DL_RB*N_RB_sc
+    '''
+    if delta_f==15000:
+        N = 2048
+    else:   # delta_f == 7500
+        N = 4096
+    
+    mapped_seq = array([0.0+0.0*1j] * (N_DL_RB*N_RB_sc))
+    
+    down_limit = int(floor(len(mapped_seq)/2))
+    up_limit = int(ceil(len(mapped_seq)/2))
+    
+    tmp_index = N-1
+    for i in arange(down_limit-1, -1, -1):
+        mapped_seq[i] = fft_result_array[tmp_index]
+        tmp_index -= 1
+    tmp_index = 1
+    for i in arange(down_limit, down_limit+up_limit):
+        mapped_seq[i] = fft_result_array[tmp_index]
+        tmp_index += 1
+        
+    return mapped_seq
+    
+def ofdm_baseband_IQ_to_RE_IQ_array(baseband_IQ_array, N_DL_RB, N_RB_sc, delta_f=15000):
+    '''
+    Note: len(baseband_IQ_array)==N must be True.
+    '''
+    if delta_f==15000:
+        N = 2048
+    else:   # delta_f == 7500
+        N = 4096
+
+    re_IQ_array =  array([0.0+0.0*1j] * (N_DL_RB * N_RB_sc))
+    re_IQ_array = 1.0/N * map_fft_result_to_RE_IQ_array(fft.fft(baseband_IQ_array, N))
+        
+    return re_IQ_array
+</t>
+<t tx="michael.20120305092148.1294">@others
+</t>
+<t tx="michael.20120305092148.1295">@others
+</t>
+<t tx="michael.20120305092148.1296">def downlink_modulate(s_p_l, t, f_0):
+    modulated_signal = cos(2*pi*f_0*t) * s_p_l.real - sin(2*pi*f_0*t) * imag(s_p_l)
+    cutoff_freq = f_0
+    nyq = 2 * f_0
+    numtaps = 80
+    lp_fir = firwin(numtaps, cutoff_freq, window=('kaiser',8), nyq=nyq)
+    filtered_modulated_signal = convolve( modulated_signal, lp_fir )[numtaps/2:len(modulated_signal)+numtaps/2]
+    return modulated_signal
+
+def downlink_downconvert(signal, t, f_0):
+    
+    cutoff_freq = f_0
+    nyq = 2 * f_0
+    numtaps = 80
+    lp_fir = firwin(numtaps, cutoff_freq, window=('kaiser',8), nyq=nyq)
+    
+    I = -2* convolve( signal * cos(2*pi*f_0*t), lp_fir )[numtaps/2:len(signal)+numtaps/2]
+    Q = -2 * convolve( signal * sin(2*pi*f_0*t), lp_fir )[numtaps/2:len(signal)+numtaps/2]
+    
+    return I + 1j*Q
+</t>
+<t tx="michael.20120305092148.1301">@others
+</t>
+<t tx="michael.20120305092148.1302">@others
+</t>
+<t tx="michael.20120305092148.1303">def pss_d(n, N_ID_2):
+    u = (25, 29, 34)[N_ID_2]
+    d_n = 0
+    if n&gt;=0 and n&lt;=30:
+        d_n = exp(-1j*pi*u*n*(n+1)/63)
+    elif n&gt;=31 and n&lt;=61:
+        d_n = exp(-1j*pi*u*(n+1)*(n+2)/63)
+    return d_n
+</t>
+<t tx="michael.20120305092148.1304"># u_th root Zadoff-Chu sequence
+def x_u(u, n, N_ZC):
+    if n&gt;=0 and n&lt;=N_ZC:
+        return exp(-1j*pi*u*n*(n+1)/N_ZC)
+    else:
+        return 0
+
+# u_th root Z-C sequence with v N_cs cyclic shift
+def x_uv(u, v, n, N_ZC):
+    pass
+</t>
+<t tx="michael.20120305092148.1305">def pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc):
+    symbol_array = ndarray( shape=(N_DL_RB*N_RB_sc,), dtype=complexfloating )
+    for i in arange(len(symbol_array)):
+        symbol_array[i] = 0
+    for n in arange(0, 62):
+        k = n-31+N_DL_RB*N_RB_sc/2
+        symbol_array[k] = pss_d(n, N_ID_2)
+    return symbol_array
+
+def pss_k_range(N_DL_RB, N_RB_sc):
+    
+    start_index = 0-31+N_DL_RB*N_RB_sc/2
+    end_index = 61-31+N_DL_RB*N_RB_sc/2
+    
+    return (start_index, end_index)
+
+def get_pss_seq_from_RE_symbol_array(re_symbol_array, N_RB_sc):
+    '''
+    Note: len(re_symbol_array)==N_DL_RB*N_RB_sc must be True!
+    '''
+    pss_seq_received = array([0.0 + 0.0 * 1j] * (6 * N_RB_sc))
+    pss_start_k, pss_end_k = pss_k_range(N_DL_RB, N_RB_sc)
+    tmp_index = pss_start_k
+    for i in arange(5, 6*N_RB_sc):
+        pss_seq_received[i] = re_symbol_array[tmp_index]
+        tmp_index += 1
+    return pss_seq_received
+</t>
+<t tx="michael.20120305092148.1306"></t>
+<t tx="michael.20120305092148.1307"></t>
+<t tx="michael.20120305092148.1310">from scipy.signal import *
+from numpy import *
+import matplotlib.pyplot as plt
+
+# time scale is in 1 s
+T_s = 1.0/30720/1000 # in s
+
+# configuration for CSRS
+n_s = 0
+l = 0
+antenna_port = 0
+N_DL_RB = 110
+N_maxDL_RB = N_DL_RB
+N_RB_sc = 12
+N_DL_CP = 0 # normal DL CP
+DL_CP_type = 0
+N_DL_symb = 7
+N_ID_2_tuple = (0,1,2)
+delta_f = 15000
+subframe = 0
+N_cell_ID = 0
+f_0 = (2620+0.1*(2620-2750))*1000*1000  # in Hz
+
+if N_DL_CP==0 and delta_f==15000:
+    if l==0:
+        N_CP_l = 160
+    else:
+        N_CP_l = 144
+elif N_DL_CP==1:    # extended CP
+    if delta_f==15000:
+        N_CP_l = 512
+    else:   # delta_f == 7500
+        N_CP_l = 1024
+if delta_f==15000:
+    N = 2048
+else:   # delta_f == 7500
+    N = 4096
+
+t = arange(0, (N_CP_l+N)*T_s, T_s)
+
+def find_max( a_list ):
+    m = max(a_list)
+    for i in arange(len(a_list)):
+        if a_list[i] == m:
+            return (i, m)
+
+def find_min( a_array ):
+    x, y = 0, 0
+    for i in arange(len(a_array)):
+        if a_array[i] &lt; y:
+            x, y = i, a_array[i]
+    return (x,y)
+
+def find_abs_max( a_array ):
+    m = max(abs(a_array))
+    for i in arange(len(a_array)):
+        if abs(a_array[i]) == m:
+            return (i, m)
+
+            
+@others
+
+test_enabling_bits = 0b1
+
+# 01. OFDM baseband signal generation
+if test_enabling_bits &amp; (1&lt;&lt;0):
+    ofdm_baseband_signal_generation()
+</t>
+<t tx="michael.20120305092148.1312"></t>
+<t tx="michael.20120305092148.1313">from numpy import *
+import matplotlib.pyplot as plt
+
+# time scale is in 1 ms
+T_s = 1.0/30720 # in ms
+f_0 = (2620+0.1*(2620-2750))*1000*1000  # in kHz
+
+@others
+
+l = 0
+N_DL_RB = 110
+N_RB_sc = 12
+N_DL_CP = 0 # normal DL CP
+N_ZC = 63
+
+zc_seq_d = dict()
+for root_index in (29,34,25):
+    zc_seq_d[root_index] = array([0]*N_ZC, dtype=complex128)
+    for i in arange(N_ZC):
+        zc_seq_d[root_index][i] = ZC(i, N_ZC, root_index)
+
+cs_corr = array([0]*N_ZC)
+for p in (29,34,25):
+    for q in (29,34,25):
+        for cs in arange(N_ZC):
+            cs_corr[cs] = abs(correlate(zc_seq_d[p],roll(zc_seq_d[q],cs))[0])/N_ZC
+            plt.cla()
+            plt.axis( [-1, N_ZC+1, -0.1, 1.1] )
+            plt.plot(cs_corr, marker='+', linestyle='-')
+            fn = "cyclic_shift_corr_ZC_%s_%s.png"%(p,q)
+            plt.savefig(fn)
+
+</t>
+<t tx="michael.20120305092148.1315">@others
+</t>
+<t tx="michael.20120305092148.1316">def ZC( n, N_ZC, q ):
+    '''
+    give the n-th element of 0 cyclic shift Z-C sequence with root index q and length N_ZC.
+    '''
+    return exp(-1j*2*pi*q*n*(n+1)/2/N_ZC)
+</t>
+<t tx="michael.20120305092148.1317"></t>
+<t tx="michael.20120305092148.1318">from scipy.signal import *
+from numpy import *
+import matplotlib.pyplot as plt
+
+# time scale is in 1 s
+T_s = 1.0/30720/1000 # in s
+
+# configuration for PSS
+l = 2
+N_DL_RB = 110
+N_RB_sc = 12
+N_DL_CP = 0 # normal DL CP
+N_ZC = 63
+N_ID_2_tuple = (0,1,2)
+delta_f = 15000
+f_0 = (2620+0.1*(2620-2750))*1000*1000  # in Hz
+
+if N_DL_CP==0 and delta_f==15000:
+    if l==0:
+        N_CP_l = 160
+    else:
+        N_CP_l = 144
+elif N_DL_CP==1:    # extended CP
+    if delta_f==15000:
+        N_CP_l = 512
+    else:   # delta_f == 7500
+        N_CP_l = 1024
+if delta_f==15000:
+    N = 2048
+else:   # delta_f == 7500
+    N = 4096
+
+t = arange(0, (N_CP_l+N)*T_s, T_s)
+
+def find_max( a_list ):
+    m = max(a_list)
+    for i in arange(len(a_list)):
+        if a_list[i] == m:
+            return (i, m)
+
+def find_min( a_array ):
+    x, y = 0, 0
+    for i in arange(len(a_array)):
+        if a_array[i] &lt; y:
+            x, y = i, a_array[i]
+    return (x,y)
+
+def find_abs_max( a_array ):
+    m = max(abs(a_array))
+    for i in arange(len(a_array)):
+        if abs(a_array[i]) == m:
+            return (i, m)
+
+            
+@others
+
+test_enabling_bits = 0b111111111111
+
+# 01. PSS spectrum before OFDM generation
+if test_enabling_bits &amp; (1&lt;&lt;0):
+    PSS_spectrum_before_OFDM_generation()
+
+# 02. PSS correlation in freq domain before OFDM gen
+if test_enabling_bits &amp; (1&lt;&lt;1):
+    PSS_corr_in_freq_domain_before_OFDM_gen()
+
+# 03. PSS baseband IQ signal in time domain
+if test_enabling_bits &amp; (1&lt;&lt;2):
+    PSS_baseband_IQ_signal_in_time_domain()
+
+# 04. PSS baseband IQ spectrum
+if test_enabling_bits &amp; (1&lt;&lt;3):
+    PSS_baseband_IQ_spectrum()
+
+# 05. PSS baseband IQ spectrum correlation
+if test_enabling_bits &amp; (1&lt;&lt;4):
+    PSS_baseband_IQ_spectrum_correlation()
+
+# 06. PSS Uu signal 
+if test_enabling_bits &amp; (1&lt;&lt;5):
+    PSS_signal_Uu()
+
+# 07. PSS signal Uu downconversion
+if test_enabling_bits &amp; (1&lt;&lt;6):
+    PSS_signal_Uu_downconversion()
+
+# 08. PSS Uu signal downconverted correlation
+if test_enabling_bits &amp; (1&lt;&lt;7):
+    PSS_Uu_signal_downconverted_correlation()
+
+# 09. PSS received IQ spectrum
+if test_enabling_bits &amp; (1&lt;&lt;8):
+    PSS_received_IQ_spectrum()
+
+# 10. PSS Uu signal downconverted decimated to 1/16 correlation
+if test_enabling_bits &amp; (1&lt;&lt;9):
+    PSS_Uu_signal_downconverted_decimated_1_16_correlation()
+
+# 11. PSS detect
+if test_enabling_bits &amp; (1&lt;&lt;10):
+    test_PSS_detect_in_baseband_IQ()
+    
+# 12. Channel estimation using PSS
+if test_enabling_bits &amp; (1&lt;&lt;11):
+    test_channel_estimation_using_PSS()
+
+</t>
+<t tx="michael.20120305092148.1320">def PSS_corr_in_freq_domain_before_OFDM_gen(to_draw=True):
+    
+    zc_seq_d = dict()
+    for N_ID_2 in N_ID_2_tuple:
+        zc_seq_d[N_ID_2] = array([0]*N_ZC, dtype=complex128)
+        for i in arange(N_ZC-1):
+            if i&lt;=30:
+                zc_seq_d[N_ID_2][i] = pss_d(i, N_ID_2)
+            else:
+                zc_seq_d[N_ID_2][i] = pss_d(i, N_ID_2)
+    
+    legend_list = list()
+    corr_dict = dict()
+    max_dict = dict()
+    cs_list = arange(-1*(N_ZC/2), N_ZC/2+1, 1)
+    y_offsets = dict()
+    y_offsets[(0,0)] = -20
+    y_offsets[(0,1)] = 10
+    y_offsets[(0,2)] = 20
+    y_offsets[(1,1)] = -40
+    y_offsets[(1,2)] = 20
+    y_offsets[(2,2)] = -60
+    
+    overall_max_y = 0
+    #print cs_corr.shape, cs_list.shape
+    for p in N_ID_2_tuple:
+        for q in N_ID_2_tuple:
+            if p&lt;=q:
+                corr_dict[(p,q)] = array([0]*N_ZC)
+                for i in arange(len(cs_list)):
+                    corr_dict[(p,q)][i] = abs(correlate(zc_seq_d[p],roll(zc_seq_d[q],cs_list[i]))[0])
+                max_dict[(p,q)] = find_max(corr_dict[(p,q)])
+    # normalize the correlation results
+    overall_max_y = 0
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        if y&gt;overall_max_y:
+            overall_max_y = y
+    overall_max_y = float(overall_max_y)
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        max_dict[k] = (x, y/overall_max_y)
+    for k in corr_dict.keys():
+        corr_dict[k] = corr_dict[k]/overall_max_y
+    if to_draw:
+        for p,q in corr_dict.keys():
+            plt.plot(cs_list, corr_dict[(p,q)], marker='+', linestyle='-')
+            legend_list.append( 'N_ID_2 %s vs. %s'%(p,q) )
+            x, y = max_dict[(p,q)]
+            plt.annotate('Max of N_ID_2 %svs%s =%4.4s @ cs=%s'%(p,q,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(60, y_offsets[(p,q)]))
+        plt.title('PSS correlation in freq domain before OFDM generation')
+        plt.legend(legend_list)
+        plt.xlabel("Cyclic Shift")
+        plt.ylabel("Correlation (normalized to peak)")
+        plt.show()
+    
+    return corr_dict
+
+    #plt.savefig('PSS_corr_in_freq_domain_before_OFDM_gen.png', dpi=300)
+</t>
+<t tx="michael.20120305092148.1321">def PSS_baseband_IQ_signal_in_time_domain():
+    
+    subplot_pos_tupe = (    (331,332,333),
+                                    (334,335,336),
+                                    (337,338,339)
+                                )
+    title_tuple = ('PSS baseband IQ OFDM signal magnitude','PSS baseband IQ OFDM signal real part','PSS baseband IQ OFDM signal imag part')
+    y_label_tuple = ('IQ Magnitude', 'I part', 'Q part')
+    func_tuple = (abs, real, imag)
+    pss_baseband_symbol_list = [0]*3
+    for N_ID_2 in N_ID_2_tuple:
+        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
+        pss_baseband_symbol_list[N_ID_2] = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+        
+    for i in (0,1,2):
+        for N_ID_2 in N_ID_2_tuple:
+            plt.subplot(131+N_ID_2)
+            if N_ID_2 == 1:
+                plt.title(title_tuple[i])
+            plt.plot(t*1000, func_tuple[i](pss_baseband_symbol_list[N_ID_2]))
+            plt.xlabel('Time (ms)')
+            plt.ylabel(y_label_tuple[i])
+            plt.axis([-0.01, 0.075, 0, 15])
+            plt.legend( ('N_ID_2=%s'%N_ID_2,) )
+            
+        plt.show()
+</t>
+<t tx="michael.20120305092148.1322">def PSS_spectrum_before_OFDM_generation(to_draw=True):
+    
+    subplot_pos_tuple = (221,222,223)
+    
+    for N_ID_2 in N_ID_2_tuple:
+        
+        plt.subplot(subplot_pos_tuple[N_ID_2])
+        legend_list = list()
+        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
+        plt.title('PSS spectrum for N_ID_2=%s'%N_ID_2)
+        legend_list.append( 'Spectrum magnitude' )
+        plt.plot(abs(pss_freq_symbol_array), linestyle='-')
+        #legend_list.append( 'Spectrum phase' )
+        #plt.plot(abs(pss_freq_symbol_array), linestyle='-')
+        plt.xlabel('k (subcarrier index)')
+        plt.ylabel('Spectrum magnitude')
+        plt.legend(legend_list)
+    plt.show()
+        #plt.savefig('PSS_spectrum_before_OFDM_gen_for_N_ID_2=%s.png'%N_ID_2)
+</t>
+<t tx="michael.20120305092148.1323">def PSS_signal_Uu():
+    
+    for N_ID_2 in N_ID_2_tuple:
+        
+        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
+        pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+        pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
+        
+        #plt.plot(t, symbol_array)
+        plt.cla()
+        legend_list = list()
+        plt.plot(t*1000, pss_uu_sig)
+        legend_list.append( 'PSS signal @Uu for N_ID_2=%s'%(N_ID_2) )
+        plt.title('PSS signal @Uu for N_ID_2=%s'%N_ID_2)
+        plt.xlabel('Time (ms)')
+        plt.ylabel('Signal level')
+        plt.legend(legend_list)
+        #plt.axis( [-0.01, 0.075, -0.1, 14] )
+        plt.show()
+        #plt.savefig('PSS_signal_Uu_for_N_ID_2=%s.png'%N_ID_2, dpi=300)
+</t>
+<t tx="michael.20120305092148.1326">def PSS_Uu_signal_downconverted_decimated_1_16_correlation(to_draw=True):
+    
+    pss_Uu_signal_downconverted_list = [0]*3
+    
+    for N_ID_2 in N_ID_2_tuple:
+        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
+        pss_baseband_IQ = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+        pss_uu_sig = downlink_modulate(pss_baseband_IQ, t, f_0)
+        pss_Uu_signal_downconverted_list[N_ID_2] = downlink_downconvert(pss_uu_sig, t, f_0)[-1*N:]
+    
+    N_16 = N/16
+    pss_Uu_signal_downconverted_dec_list = [0]*3
+    for N_ID_2 in N_ID_2_tuple:
+        pss_Uu_signal_downconverted_dec_list[N_ID_2] = array([0.0+0.0*1j]*N_16)
+        for i in arange(N_16):
+            pss_Uu_signal_downconverted_dec_list[N_ID_2][i] = pss_Uu_signal_downconverted_list[N_ID_2][16*i]
+    legend_list = list()
+    corr_dict = dict()
+    max_dict = dict()
+    cs_list = arange(-1*(N_16/2), N_16/2, 1)
+    #print cs_corr.shape, cs_list.shape
+    legend_list = list()
+    y_offsets = dict()
+    y_offsets[(0,0)] = -20
+    y_offsets[(0,1)] = 10
+    y_offsets[(0,2)] = 20
+    y_offsets[(1,1)] = -10
+    y_offsets[(1,2)] = 10
+    y_offsets[(2,2)] = -60
+    for p in N_ID_2_tuple:
+        for q in N_ID_2_tuple:
+            if p&lt;=q:
+                corr_dict[(p,q)] = array([0]*N_16)
+                for i in arange(len(cs_list)):
+                    corr_dict[(p,q)][i] = abs(correlate(pss_Uu_signal_downconverted_dec_list[p], roll(pss_Uu_signal_downconverted_dec_list[q],cs_list[i]))[0])
+                max_dict[(p,q)] = find_max(corr_dict[(p,q)])
+                
+    overall_max_y = 0
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        if y&gt;overall_max_y:
+            overall_max_y = y
+    overall_max_y = float(overall_max_y)
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        max_dict[k] = (x, y/overall_max_y)
+    for k in corr_dict.keys():
+        corr_dict[k] = corr_dict[k]/overall_max_y
+    if to_draw:
+        for p,q in corr_dict.keys():
+            plt.plot(cs_list, corr_dict[(p,q)], marker='+', linestyle='-')
+            legend_list.append( 'N_ID_2 %s vs. %s'%(p,q) )
+            x, y = max_dict[(p,q)]
+            plt.annotate('Max of N_ID_2 %svs%s =%4.4s @ cs=%s'%(p,q,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(60, y_offsets[(p,q)]))
+        plt.title('PSS Uu signal downconverted correlation')
+        plt.legend(legend_list)
+        plt.xlabel("Cyclic Shift")
+        plt.ylabel("Correlation (normalized to peak)")
+        plt.show()
+    
+    return corr_dict
+</t>
+<t tx="michael.20120305092148.1331">from numpy import *
+import matplotlib.pyplot as plt
+
+
+
+@others
+
+
+def z_fft_of_ZC():
+    
+    l = 0
+    N_DL_RB = 110
+    N_RB_sc = 12
+    N_DL_CP = 0 # normal DL CP
+    N_ZC = 61
+    
+    zc_seq = array( [0]*(N_ZC), dtype=complex128 )
+    #print len(zc_seq)
+    for i in arange(N_ZC):
+        zc_seq[i] = ZC(i, N_ZC, 7)
+    
+    plt.subplot(141)
+    plt.plot(abs(zc_seq))
+    
+    #plt.subplot(142)
+    #plt.plot(abs(fft.fft(zc_seq)))
+    
+    plt.subplot(142)
+    n_seq = arange(N_ZC)
+    x = 0
+    for k in arange(N_ZC):
+        x += zc_seq[k]*exp(1j*2*pi*k*n_seq/N_ZC)
+    x = x/N_ZC
+    plt.plot(abs(x))
+    
+    #plt.subplot(143)
+    #plt.plot(abs(fft.ifft(fft.fft(zc_seq))))
+    
+    plt.subplot(144)
+    plt.plot(abs(fft.ifft(zc_seq)))
+    
+    plt.show()
+
+</t>
+<t tx="michael.20120309091906.1376"></t>
+<t tx="michael.20120309091906.1377">from numpy import *
+import matplotlib.pyplot as plt
+from scipy.signal import *
+
+
+def low_pass_filter():
+    
+    T_s = 0.01/307200
+    t = arange(0, 2048*T_s, T_s)
+    delta_f = 15*1000
+    
+    f_0_start = 10*1000*1000 + delta_f * 12 * 50
+    f_0_end = f_0_start + delta_f * 12
+    
+    f_1_start = 10*1000*1000 - delta_f * 0
+    f_1_end = f_1_start - delta_f * 1
+    
+    sig_01 = 0
+    for f in arange(f_0_start, f_0_end):
+        sig_01 += cos(2*pi*f*t) - sin(2*pi*f*t)
+    
+    sig_02 = 0
+    for f in arange(f_1_start, f_1_end, -1):
+        sig_02 += cos(2*pi*f*t) - sin(2*pi*f*t)
+    #sig_01 = exp(-1j*2*pi*f_0*t)
+    #sig_02 = exp(-1j*2*pi*f_1*t)
+    #plt.plot(t, sig_01)
+    #plt.plot(t, sig_02)
+    fft_01 = fft.fft(sig_01, 4096)
+    fft_02 = fft.fft(sig_02, 4096)
+    
+    legend_list = list()
+    plt.plot(abs(fft_01))
+    legend_list.append('FFT of sig_01 %6.6sMHz to %6.6sMHz'%(f_0_start/1000./1000, f_0_end/1000./1000))
+    plt.plot(abs(fft_02))
+    legend_list.append('FFT of sig_02 %6.6sMHz to %6.6sMHz'%(f_1_start/1000./1000, f_1_end/1000./1000))
+    plt.legend(legend_list)
+    
+    
+    plt.axis( [-10, 2050, -10, 10 + max(abs(fft_01))] )
+    #plt.axis( [-10, 2050, -10, 10 + max(max(abs(fft_01)), max(abs(fft_02)))] )
+    plt.show()
+
+def fir_low_pass(nyq, cutoff):
+    
+    b = firwin(80, cutoff, window=('kaiser', 8), nyq=nyq)
+    h, w = freqz(b, worN=80)
+    fig = plt.figure()
+    plt.title('Digital filter frequency response')
+    ax1 = fig.add_subplot(111)
+    plt.semilogy(h, np.abs(w), 'b')
+    plt.ylabel('Amplitude (dB)', color='b')
+    plt.xlabel('Frequency (rad/sample)')
+    plt.grid()
+    plt.legend()
+    ax2 = ax1.twinx()
+    angles = unwrap(angle(w))
+    plt.plot(h, angles, 'g')
+    plt.ylabel('Angle (radians)', color='g')
+    plt.show()
+    
+
+fir_low_pass(20*1000*1000, 10*1000*1000)
+</t>
+<t tx="michael.20120309091906.1387">def PSS_signal_Uu_downconversion():
+    
+    
+    for N_ID_2 in N_ID_2_tuple:
+        
+        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
+        pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+        pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
+        pss_uu_sig_down = downlink_downconvert(pss_uu_sig, t, f_0)
+        
+        #plt.plot(t, symbol_array)
+        legend_list = list()
+        plt.plot(t*1000, real(pss_uu_sig_down))
+        legend_list.append( 'PSS Uu signal downconverted for N_ID_2=%s'%(N_ID_2) )
+        plt.plot(t*1000, real(pss_baseband_symbol))
+        legend_list.append( 'PSS baseband IQ for N_ID_2=%s'%(N_ID_2) )
+        plt.title('PSS signal Uu downconverted for N_ID_2=%s'%N_ID_2)
+        plt.xlabel('Time (ms)')
+        plt.ylabel('IQ signal real part')
+        plt.legend(legend_list)
+        #plt.axis( [-0.01, 0.075, -0.1, 14] )
+        plt.show()
+        #plt.savefig('PSS_signal_Uu_for_N_ID_2=%s.png'%N_ID_2, dpi=300)
+</t>
+<t tx="michael.20120310203114.1394">def PSS_received_IQ_spectrum(to_draw=True):
+    
+    subplot_pos_tuple = (221,222,223)
+    
+    for N_ID_2 in N_ID_2_tuple:
+        
+        plt.subplot(subplot_pos_tuple[N_ID_2])
+        legend_list = list()
+        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
+        pss_baseband_symbol = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+        pss_uu_sig = downlink_modulate(pss_baseband_symbol, t, f_0)
+        pss_uu_sig_down = downlink_downconvert(pss_uu_sig, t, f_0)[-1*N:]
+        pss_uu_sig_down_fft = fft.fft(pss_uu_sig_down, N)
+        plt.title('Received PSS IQ spectrum for N_ID_2=%s'%N_ID_2)
+        legend_list.append( 'Spectrum magnitude' )
+        plt.plot(abs(pss_uu_sig_down_fft), linestyle='-')
+        #legend_list.append( 'Spectrum phase' )
+        #plt.plot(abs(pss_freq_symbol_array), linestyle='-')
+        plt.xlabel('n (FFT index)')
+        plt.ylabel('Spectrum magnitude')
+        plt.legend(legend_list)
+    plt.show()
+        #plt.savefig('PSS_spectrum_before_OFDM_gen_for_N_ID_2=%s.png'%N_ID_2)
+</t>
+<t tx="michael.20120310203114.1395">def PSS_baseband_IQ_spectrum(to_draw=True):
+    
+    subplot_pos_tuple = (221,222,223)
+    
+    for N_ID_2 in N_ID_2_tuple:
+        
+        plt.subplot(subplot_pos_tuple[N_ID_2])
+        legend_list = list()
+        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
+        #pss_freq_symbol_array_ext = array([0+0*1j]*N)
+        #pss_freq_symbol_array_ext[N/2-31:N/2] = pss_freq_symbol_array[len(pss_freq_symbol_array)/2-31:len(pss_freq_symbol_array)/2]
+        #pss_freq_symbol_array_ext[N/2:N/2+31] = pss_freq_symbol_array[len(pss_freq_symbol_array)/2:len(pss_freq_symbol_array)/2+31]
+        #print pss_freq_symbol_array_ext[N/2]
+        #pss_ifft = fft.ifft(pss_freq_symbol_array, N)
+        #pss_fft = fft.fft(pss_ifft, N)
+        pss_baseband_IQ = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)[-1*N:]
+        pss_baseband_IQ_fft = fft.fft(pss_baseband_IQ, N)
+        plt.title('PSS baseband IQ spectrum for N_ID_2=%s'%N_ID_2)
+        legend_list.append( 'Spectrum magnitude' )
+        plt.plot(abs(pss_baseband_IQ_fft), linestyle='-')
+        #legend_list.append( 'Spectrum phase' )
+        #plt.plot(abs(pss_freq_symbol_array), linestyle='-')
+        plt.xlabel('n (FFT index)')
+        plt.ylabel('Spectrum magnitude')
+        plt.legend(legend_list)
+    plt.show()
+        #plt.savefig('PSS_spectrum_before_OFDM_gen_for_N_ID_2=%s.png'%N_ID_2)
+</t>
+<t tx="michael.20120312091134.1399">def PSS_baseband_IQ_spectrum_correlation(to_draw=True):
+    
+    pss_iq_sig_list = [0]*3
+    pss_baseband_IQ_FFT_list = [0] * 3
+    corr_dict = dict()
+    cs_list = arange(-1*(N/2), N/2, 1)
+    max_dict = dict()
+    
+    for N_ID_2 in N_ID_2_tuple:
+        
+        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
+        pss_baseband_IQ = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)[-1*N:]
+        pss_baseband_IQ_FFT_list[N_ID_2] = fft.fft(pss_baseband_IQ, N)
+
+    #print cs_corr.shape, cs_list.shape
+    legend_list = list()
+    y_offsets = dict()
+    y_offsets[(0,0)] = -20
+    y_offsets[(0,1)] = 10
+    y_offsets[(0,2)] = 20
+    y_offsets[(1,1)] = -35
+    y_offsets[(1,2)] = 40
+    y_offsets[(2,2)] = -50
+    for p in N_ID_2_tuple:
+        for q in N_ID_2_tuple:
+            if p&lt;=q:
+                corr_dict[(p,q)] = array( [0] *N )
+                for i in arange(len(cs_list)):
+                    corr_dict[(p,q)][i] = abs(correlate(pss_baseband_IQ_FFT_list[p], roll(pss_baseband_IQ_FFT_list[q],cs_list[i]))[0])
+                max_dict[(p,q)] = find_max(corr_dict[(p,q)])
+    # normalize the correlation results
+    overall_max_y = 0
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        if y&gt;overall_max_y:
+            overall_max_y = y
+    
+    overall_max_y = float(overall_max_y)
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        max_dict[k] = (x, y/overall_max_y)
+    
+    for k in corr_dict.keys():
+        corr_dict[k] = corr_dict[k]/overall_max_y
+    
+    if to_draw:
+        for p,q in corr_dict.keys():
+            plt.plot(cs_list, corr_dict[(p,q)], marker='+', linestyle='-')
+            legend_list.append( 'N_ID_2 %s vs. %s'%(p,q) )
+            x, y = max_dict[(p,q)]
+            plt.annotate('Max of N_ID_2 %svs%s =%4.4s @ cs=%s'%(p,q,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(60, y_offsets[(p,q)]))
+        plt.title('PSS baseband IQ spectrum correlation after OFDM generation')
+        plt.legend(legend_list)
+        plt.xlabel("Cyclic Shift")
+        plt.ylabel("Correlation (normalized to peak)")
+        plt.show()
+    
+    return corr_dict
+    #plt.savefig('PSS_Uu_signal_inner_products.png', figsize=(1280,800), dpi=200, pad_inches=2)
+
+</t>
+<t tx="michael.20120312091134.1401">def PSS_Uu_signal_downconverted_correlation():
+    for correlation_type in ('IQ', 'I+Q', 'I', 'Q'):
+        PSS_Uu_signal_downconverted_correlation_IQ(correlation_type)
+
+def PSS_Uu_signal_downconverted_correlation_IQ(correlation_type='I+Q', to_draw=True):
+    
+    pss_Uu_signal_downconverted_IQ_list = [0]*3
+    pss_Uu_signal_downconverted_I_list = [0]*3
+    pss_Uu_signal_downconverted_Q_list = [0]*3
+    pss_baseband_IQ_list = [0]*3
+    pss_baseband_I_list = [0]*3
+    pss_baseband_Q_list = [0]*3
+    
+    for N_ID_2 in N_ID_2_tuple:
+        pss_freq_symbol_array = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
+        pss_baseband_IQ = ofdm_baseband_IQ_signal_generate(pss_freq_symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+        pss_baseband_IQ_list[N_ID_2] = pss_baseband_IQ[-1*N:]
+        pss_baseband_I_list[N_ID_2] = real(pss_baseband_IQ)[-1*N:]
+        pss_baseband_Q_list[N_ID_2] = imag(pss_baseband_IQ)[-1*N:]
+        pss_uu_sig = downlink_modulate(pss_baseband_IQ, t, f_0)
+        pss_received_IQ = downlink_downconvert(pss_uu_sig, t, f_0)[-1*N:]
+        pss_Uu_signal_downconverted_IQ_list[N_ID_2] = pss_received_IQ
+        pss_Uu_signal_downconverted_I_list[N_ID_2] = real(pss_received_IQ)
+        pss_Uu_signal_downconverted_Q_list[N_ID_2] = imag(pss_received_IQ)
+    
+    legend_list = list()
+    corr_dict = dict()
+    max_dict = dict()
+    min_dict = dict()
+    cs_list = arange(-1*(N/2), N/2, 1)
+    #print cs_corr.shape, cs_list.shape
+    legend_list = list()
+    y_offsets = dict()
+    y_offsets[(0,0)] = -20
+    y_offsets[(0,1)] = 10
+    y_offsets[(0,2)] = 20
+    y_offsets[(1,1)] = -40
+    y_offsets[(1,2)] = -80
+    y_offsets[(2,2)] = -60
+    for p in N_ID_2_tuple:
+        for q in N_ID_2_tuple:
+            if p&lt;=q:
+                corr_dict[(p,q)] = array([0]*N)
+                for i in arange(len(cs_list)):
+                    if correlation_type=='I+Q':
+                        corr_dict[(p,q)][i] = abs(correlate(pss_baseband_I_list[p], roll(pss_Uu_signal_downconverted_I_list[q],cs_list[i]))[0]) + abs(correlate(pss_baseband_Q_list[p], roll(pss_Uu_signal_downconverted_Q_list[q],cs_list[i]))[0])
+                    elif correlation_type=='I':
+                        corr_dict[(p,q)][i] = abs(correlate(pss_baseband_I_list[p], roll(pss_Uu_signal_downconverted_I_list[q],cs_list[i]))[0])
+                    elif correlation_type=='Q':
+                        corr_dict[(p,q)][i] = correlate(pss_baseband_Q_list[p], roll(pss_Uu_signal_downconverted_Q_list[q],cs_list[i]))[0]
+                    elif correlation_type=='IQ':
+                        corr_dict[(p,q)][i] = abs(correlate(pss_baseband_IQ_list[p], roll(conjugate(pss_Uu_signal_downconverted_IQ_list[q]),cs_list[i]))[0])
+                max_dict[(p,q)] = find_max(corr_dict[(p,q)])
+                min_dict[(p,q)] = find_min(corr_dict[(p,q)])
+                
+    overall_max_y = 0
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        if y&gt;overall_max_y:
+            overall_max_y = y
+    for k in min_dict.keys():
+        x, y = min_dict[k]
+        if abs(y)&gt;overall_max_y:
+            overall_max_y = abs(y)
+    overall_max_y = float(overall_max_y)
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        max_dict[k] = (x, y/overall_max_y)
+    for k in min_dict.keys():
+        x, y = min_dict[k]
+        min_dict[k] = (x, y/overall_max_y)
+    for k in corr_dict.keys():
+        corr_dict[k] = corr_dict[k]/overall_max_y
+    if to_draw:
+        for p,q in corr_dict.keys():
+            plt.plot(cs_list, corr_dict[(p,q)], marker='+', linestyle='-')
+            legend_list.append( 'N_ID_2 %s vs. %s'%(p,q) )
+            x, y = max_dict[(p,q)]
+            plt.annotate('Max of N_ID_2 %svs%s =%4.4s @ cs=%s'%(p,q,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(60, y_offsets[(p,q)]))
+            if correlation_type=='Q':
+                x, y = min_dict[(p,q)]
+                plt.annotate('Min of N_ID_2 %svs%s =%4.4s @ cs=%s'%(p,q,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(30, -1*y_offsets[(p,q)]))
+                #print x,y
+        plt.title('PSS Uu signal downconverted correlation, type: %s'%correlation_type)
+        plt.legend(legend_list)
+        plt.xlabel("Cyclic Shift")
+        plt.ylabel("Correlation (normalized to peak)")
+        plt.show()
+    
+    return corr_dict
+</t>
+<t tx="michael.20120312091134.1402">def PSS_baseband_detect(baseband_IQ_signal, local_t, to_draw=False):
+    '''
+    PSS_baseband_detect(baseband_IQ_signal, t): index
+    return the index of the start of PSS in given baseband IQ signal sequence
+    Note: for this function, the parameter t must be of the scale of second, and should not be decimated.
+    '''
+    baseband_IQ_signal_conj = conjugate(baseband_IQ_signal)
+    baseband_IQ_signal_I = real(baseband_IQ_signal)
+    baseband_IQ_signal_Q = imag(baseband_IQ_signal)
+    
+    pss_baseband_IQ_list = [0] * 3
+    pss_baseband_I_list = [0]*3
+    pss_baseband_Q_list = [0]*3
+    
+    tmp_t = arange(0, (N_CP_l+N)*T_s, T_s)
+    #N_ID_2_tuple = (0,1)
+    for N_ID_2 in N_ID_2_tuple:
+        
+        pss_seq = pss_symbol_array(N_ID_2, N_DL_RB, N_RB_sc)
+        pss_baseband_IQ = ofdm_baseband_IQ_signal_generate(pss_seq, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+        pss_baseband_IQ_list[N_ID_2] = pss_baseband_IQ[-1*N:]
+        pss_baseband_I_list[N_ID_2] = real(pss_baseband_IQ[-1*N:])
+        pss_baseband_Q_list[N_ID_2] = imag(pss_baseband_IQ[-1*N:])
+    
+    legend_list = list()
+    corr_list = [0]*3
+    offset_list = arange(0, len(local_t)-N+1, 1)
+    max_list = [0]*3
+    for i in N_ID_2_tuple:
+        corr_list[i] = array( [0.0] * len(offset_list) )
+    
+    legend_list = list()
+    y_offsets = (-80, -80, -80)
+    
+    for offset in offset_list:
+        for N_ID in N_ID_2_tuple:
+            #corr_list[N_ID][offset] = correlate(baseband_IQ_signal_Q[offset:offset+N], pss_baseband_Q_list[N_ID])[0]
+            corr_list[N_ID][offset] = abs(correlate(baseband_IQ_signal_conj[offset:offset+N], pss_baseband_IQ_list[N_ID])[0])
+            #corr_list[N_ID][offset] = abs(correlate(baseband_IQ_signal_conj[offset:offset+N], baseband_IQ_signal[144:144+N])[0])
+    n_ID_2, X, Y = -1, 0, 0
+    for N_ID_2 in N_ID_2_tuple:
+        x, y = find_max(corr_list[N_ID_2])
+        if y&gt;abs(Y):
+            n_ID_2, X, Y = N_ID_2, x, y
+        x, y = find_min(corr_list[N_ID_2])
+        if abs(y)&gt;abs(Y):
+            n_ID_2, X, Y = N_ID_2, x, y
+    Y = float(Y)
+    for N_ID_2 in N_ID_2_tuple:
+        corr_list[N_ID_2] = corr_list[N_ID_2]/abs(Y)
+    Y = Y/abs(Y)
+    if n_ID_2==1 and Y&lt;0:
+        n_ID_2 = 2
+    
+    if to_draw:
+        for N_ID_2 in N_ID_2_tuple:
+            plt.plot(1000*local_t[:-1*(N-1)], corr_list[N_ID_2], marker='+', linestyle='-')
+            legend_list.append( 'N_ID_2=%s'%N_ID_2 )
+        plt.annotate('Highest peak with N_ID_2=%s: %4.4s @start_index=%s'%(n_ID_2,Y,X), xy=(1000*t[X], Y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(-20, y_offsets[N_ID_2]))
+        plt.title('PSS baseband detect')
+        plt.legend(legend_list)
+        plt.xlabel("t (ms)")
+        plt.ylabel("Correlation")
+        max_t = 1000*local_t[:-1*(N-1)][-1]
+        min_t = 1000*local_t[0]
+        plt.axis([min_t-max_t*0.01, min(1000*local_t[-1], max_t*1.3), -0.1*Y, 1.1*Y])
+        plt.show()
+    
+    return (n_ID_2,X,Y)
+
+def test_PSS_detect_in_baseband_IQ():
+    
+    for n_ID_2 in N_ID_2_tuple:
+
+        pss_sequence = pss_symbol_array(n_ID_2, N_DL_RB, N_RB_sc)
+        pss_baseband_IQ = ofdm_baseband_IQ_signal_generate(pss_sequence, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+        pss_Uu_sig = downlink_modulate(pss_baseband_IQ, t, f_0)
+        pss_received_IQ = downlink_downconvert(pss_Uu_sig, t, f_0)
+        received_baseband_IQ = array( [0.0+0.0*1j] * (len(pss_received_IQ) * 2) )
+        received_baseband_IQ[:len(pss_received_IQ)] = pss_received_IQ
+        long_t = arange(0, 2*(N_CP_l+N)*T_s, T_s)
+        
+        PSS_baseband_detect(received_baseband_IQ, long_t, to_draw=True)
+        #PSS_baseband_detect(pss_received_IQ, t, to_draw=True)
+</t>
+<t tx="michael.20120312091134.1403">@others
+</t>
+<t tx="michael.20120312091134.1404">def sss_x5(mask, n):
+    x_init = 0b10000
+    while n&gt;4:
+        tmp = 0
+        for i in (0,1,2,3,4):
+            if (mask&gt;&gt;i)&amp;1 == 1: # feedback for this item is enabled
+                tmp += int((x_init&gt;&gt;i)&amp;1)
+            tmp = tmp%2
+        x_init = x_init&gt;&gt;1 ^ tmp*(2**4)
+        n -= 1
+    return int((x_init&gt;&gt;n)&amp;1)
+
+
+def sss_z_(i):
+    if i &gt;=0 and i &lt;=30:
+        return 1 - 2 * sss_x5(0b10111, i)
+
+def sss_z_1(m, n):
+    return sss_z_((n+(m%8))%31)
+
+def sss_c_(i):
+    if i&gt;=0 and i&lt;=30:
+        return 1 - 2 * sss_x5(0b01001, i)
+
+def sss_c_0(n, N_ID_2):
+    return sss_c_((n+N_ID_2)%31)
+
+def sss_c_1(n, N_ID_2):
+    return sss_c_((n+N_ID_2+3)%31)
+
+def sss_s_(i):
+    return 1 - 2 * sss_x5(0b00101, i)
+
+def sss_s(m, n):
+    return sss_s_((n+m)%31)
+
+def sss_d(n, subframe, N_ID_cell):
+    N_ID_1 = N_ID_cell/3
+    N_ID_2 = N_ID_cell%3
+    q_ = N_ID_1/30
+    q = (N_ID_1 + q_*(q_+1)/2)/30
+    m_ = N_ID_1 + q*(q+1)/2
+    m_0 = m_%31
+    m_1 = (m_0 + m_/31 + 1)%31
+    if n%2==0:
+        n_ = n/2
+        if subframe == 0:
+            result = sss_s(m_0, n_) * sss_c_0(n_, N_ID_2)
+        elif subframe == 5:
+            result = sss_s(m_1, n_) * sss_c_0(n_, N_ID_2)
+    else:
+        n_ = (n-1)/2
+        if subframe == 0:
+            result = sss_s(m_1, n_) * sss_c_1(n_, N_ID_2) * sss_z_1(m_0, n_)
+        elif subframe == 5:
+            result = sss_s(m_0, n_) * sss_c_1(n_, N_ID_2) * sss_z_1(m_1, n_)
+    return result
+
+def sss_seq(subframe, N_ID_cell):
+    sss = array([0] * 62)
+    for i in range(62):
+        sss[i] = sss_d(i, subframe, N_ID_cell)
+    return sss
+
+</t>
+<t tx="michael.20120314211632.1426">def sss_baseband_IQ_correlation(to_draw=True):
+    
+    #sss_dict = SSS_sequence_generation()
+    
+    subframe = 0
+    N_ID_cell = 0
+    
+    sss_re_array = sss_symbol_array(subframe, N_ID_cell, N_DL_RB, N_RB_sc)
+    sss_baseband_IQ = ofdm_baseband_IQ_signal_generate(sss_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)[-1*N:]
+    sss_baseband_IQ_conj = conjugate(sss_baseband_IQ)
+
+    corr_dict = dict()
+    cs_list = arange(-1*(N/2), N/2, 1)
+    max_dict = dict()
+
+    #print cs_corr.shape, cs_list.shape
+    legend_list = list()
+    y_offsets = dict()
+
+
+    corr_dict[(subframe,N_ID_cell)] = array( [0] *N )
+    for i in arange(len(cs_list)):
+        corr_dict[(subframe,N_ID_cell)][i] = abs(correlate(sss_baseband_IQ, roll(sss_baseband_IQ_conj,cs_list[i]))[0])
+    max_dict[(subframe,N_ID_cell)] = find_max(corr_dict[(subframe,N_ID_cell)])
+    # normalize the correlation results
+    overall_max_y = 0
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        if y&gt;overall_max_y:
+            overall_max_y = y
+    overall_max_y = float(overall_max_y)
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        max_dict[k] = (x, y/overall_max_y)
+    for k in corr_dict.keys():
+        corr_dict[k] = corr_dict[k]/overall_max_y
+    
+    if to_draw:
+        for subframe,N_ID_cell in max_dict.keys():
+            y_offsets[(subframe,N_ID_cell)] = -30
+        for subframe,N_ID_cell in corr_dict.keys():
+            plt.plot(cs_list, corr_dict[(subframe,N_ID_cell)], marker='+', linestyle='-')
+            legend_list.append( 'subframe=%s, N_ID_cell=%s'%(subframe,N_ID_cell) )
+            x, y = max_dict[(subframe,N_ID_cell)]
+            plt.annotate('Max of subframe=%s, N_ID_cell=%s: %4.4s @ cs=%s'%(subframe,N_ID_cell,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(-60, y_offsets[(subframe,N_ID_cell)]))
+        plt.title('SSS baseband IQ correlation')
+        plt.legend(legend_list)
+        plt.xlabel("Cyclic Shift")
+        plt.ylabel("Correlation (normalized to peak)")
+        plt.show()
+    
+    return corr_dict
+    #plt.savefig('PSS_Uu_signal_inner_products.png', figsize=(1280,800), dpi=200, pad_inches=2)
+</t>
+<t tx="michael.20120314211632.1427">def sss_baseband_IQ_spectrum_correlation_ref(ref_subframe, ref_N_ID_cell, to_draw=True):
+    
+    #sss_dict = SSS_sequence_generation()
+
+    ref_sss_re_array = sss_symbol_array(ref_subframe, ref_N_ID_cell, N_DL_RB, N_RB_sc)
+    ref_sss_baseband_IQ = ofdm_baseband_IQ_signal_generate(ref_sss_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)[-1*N:]
+    ref_sss_baseband_IQ_fft = fft.fft(ref_sss_baseband_IQ, N)
+    ref_sss_baseband_IQ_fft_conj = conjugate(ref_sss_baseband_IQ_fft)
+    
+    subframe_list = (0, 5)
+    N_ID_cell_list = (0, 1, 2, 50, 167)
+    sss_baseband_IQ_dict = dict()
+    for subframe in subframe_list:
+        for N_ID_cell in N_ID_cell_list:
+            sss_re_array = sss_symbol_array(subframe, N_ID_cell, N_DL_RB, N_RB_sc)
+            sss_baseband_IQ_dict[(subframe,N_ID_cell)] = ofdm_baseband_IQ_signal_generate(sss_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)[-1*N:]
+
+    corr_dict = dict()
+    cs_list = arange(-1*(N/2), N/2, 1)
+    max_dict = dict()
+
+    #print cs_corr.shape, cs_list.shape
+    legend_list = list()
+    y_offsets = dict()
+
+    for subframe in subframe_list:
+        for N_ID_cell in N_ID_cell_list:
+            corr_dict[(subframe,N_ID_cell)] = array( [0] *N )
+            for i in arange(len(cs_list)):
+                corr_dict[(subframe,N_ID_cell)][i] = abs(correlate(ref_sss_baseband_IQ_fft_conj, fft.fft(roll(sss_baseband_IQ_dict[(subframe,N_ID_cell)],cs_list[i])))[0])
+            max_dict[(subframe,N_ID_cell)] = find_max(corr_dict[(subframe,N_ID_cell)])
+    # normalize the correlation results
+    overall_max_y = 0
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        if y&gt;overall_max_y:
+            overall_max_y = y
+    overall_max_y = float(overall_max_y)
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        max_dict[k] = (x, y/overall_max_y)
+    for k in corr_dict.keys():
+        corr_dict[k] = corr_dict[k]/overall_max_y
+    
+    if to_draw:
+        for subframe,N_ID_cell in max_dict.keys():
+            y_offsets[(subframe,N_ID_cell)] = 60
+        y_offsets[(ref_subframe,ref_N_ID_cell)] = -80
+        for subframe,N_ID_cell in corr_dict.keys():
+            plt.plot(cs_list, corr_dict[(subframe,N_ID_cell)], marker='+', linestyle='-')
+            legend_list.append( 'subframe=%s, N_ID_cell=%s'%(subframe,N_ID_cell) )
+            x, y = max_dict[(subframe,N_ID_cell)]
+            plt.annotate('Max of subframe=%s, N_ID_cell=%s: %4.4s @ cs=%s'%(subframe,N_ID_cell,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(-90, y_offsets[(subframe,N_ID_cell)]))
+        plt.title('SSS baseband IQ correlation reference subframe=%s N_ID_cell=%s'%(ref_subframe,ref_N_ID_cell))
+        plt.legend(legend_list)
+        plt.xlabel("Cyclic Shift")
+        plt.ylabel("Correlation (normalized to peak)")
+        plt.show()
+    
+    return corr_dict
+
+def sss_baseband_IQ_spectrum_correlation():
+    for ref_subframe in (0, 5):
+        for ref_N_ID_cell in (0,):
+            sss_baseband_IQ_spectrum_correlation_ref(ref_subframe, ref_N_ID_cell, to_draw=True)
+</t>
+<t tx="michael.20120314211632.1428">def SSS_signal_Uu_ref(ref_subframe, ref_N_ID_cell):
+    
+    sss_re_array = sss_symbol_array(ref_subframe, ref_N_ID_cell, N_DL_RB, N_RB_sc)
+    sss_baseband_IQ = ofdm_baseband_IQ_signal_generate(sss_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+    sss_Uu_signal = downlink_modulate(sss_baseband_IQ, t, f_0)
+    
+    legend_list = list()
+    plt.plot(t*1000, sss_Uu_signal)
+    legend_list.append('SSS Uu signal')
+    plt.title('SSS Uu signal for subframe=%s N_ID_cell=%s'%(ref_subframe, ref_N_ID_cell))
+    plt.xlabel('Time (ms)')
+    plt.ylabel('Signal level')
+    plt.legend(legend_list)
+    #plt.axis( [-0.01, 0.075, -0.1, 14] )
+    plt.show()
+    #plt.savefig('PSS_signal_Uu_for_N_ID_2=%s.png'%N_ID_2, dpi=300)
+
+def SSS_signal_Uu():
+    SSS_signal_Uu_ref(0, 0)
+</t>
+<t tx="michael.20120314211632.1429">def SSS_received_IQ_ref(ref_subframe, ref_N_ID_cell):
+    
+    sss_re_array = sss_symbol_array(ref_subframe, ref_N_ID_cell, N_DL_RB, N_RB_sc)
+    sss_baseband_IQ = ofdm_baseband_IQ_signal_generate(sss_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+    sss_Uu_signal = downlink_modulate(sss_baseband_IQ, t, f_0)
+    sss_Uu_signal_downconverted = downlink_downconvert(sss_Uu_signal, t, f_0)
+    
+    legend_list = list()
+    plt.plot(t*1000, sss_Uu_signal_downconverted)
+    legend_list.append('SSS Uu signal downconverted')
+    plt.title('SSS Uu signal downconverted for subframe=%s N_ID_cell=%s'%(ref_subframe, ref_N_ID_cell))
+    plt.xlabel('Time (ms)')
+    plt.ylabel('Signal level')
+    plt.legend(legend_list)
+    #plt.axis( [-0.01, 0.075, -0.1, 14] )
+    plt.show()
+    #plt.savefig('PSS_signal_Uu_for_N_ID_2=%s.png'%N_ID_2, dpi=300)
+
+def SSS_received_IQ():
+    SSS_received_IQ_ref(0, 0)
+</t>
+<t tx="michael.20120314211632.1430">def SSS_received_IQ_spectrum_correlation_ref(ref_subframe, ref_N_ID_cell, to_draw=True):
+
+    ref_sss_re_array = sss_symbol_array(ref_subframe, ref_N_ID_cell, N_DL_RB, N_RB_sc)
+    ref_sss_baseband_IQ = ofdm_baseband_IQ_signal_generate(ref_sss_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+    ref_sss_Uu_signal = downlink_modulate(ref_sss_baseband_IQ, t, f_0)
+    ref_sss_received_IQ = downlink_downconvert(ref_sss_Uu_signal, t, f_0)
+    
+    ref_sss_baseband_IQ_fft = fft.fft(ref_sss_baseband_IQ[-1*N:], N)
+    ref_sss_baseband_IQ_fft_conj = conjugate(ref_sss_baseband_IQ_fft)
+    ref_sss_received_IQ_fft = fft.fft(ref_sss_received_IQ[-1*N:], N)
+    ref_sss_received_IQ_fft_conj = conjugate(ref_sss_received_IQ_fft)
+    
+    # must we do coherent detection??
+    channel_est = ref_sss_received_IQ_fft/ref_sss_baseband_IQ_fft
+    est_ref_sss_received_IQ_fft_conj = conjugate(ref_sss_baseband_IQ_fft * channel_est)
+    
+    subframe_list = (0,5)
+    N_ID_cell_list = (0,1,80,90,167)
+    sss_received_IQ_dict = dict()
+    for subframe in subframe_list:
+        for N_ID_cell in N_ID_cell_list:
+            sss_re_array = sss_symbol_array(subframe, N_ID_cell, N_DL_RB, N_RB_sc)
+            sss_baseband_IQ = ofdm_baseband_IQ_signal_generate(sss_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            sss_Uu_signal = downlink_modulate(sss_baseband_IQ, t, f_0)
+            sss_received_IQ = downlink_downconvert(sss_Uu_signal, t, f_0)
+            sss_received_IQ_dict[(subframe,N_ID_cell)] = sss_received_IQ[-1*N:]
+
+    corr_dict = dict()
+    cs_list = arange(-1*(N/2), N/2, 1)
+    max_dict = dict()
+
+    #print cs_corr.shape, cs_list.shape
+    legend_list = list()
+    y_offsets = dict()
+
+    for subframe in subframe_list:
+        for N_ID_cell in N_ID_cell_list:
+            corr_dict[(subframe,N_ID_cell)] = array( [0] *N )
+            for i in arange(len(cs_list)):
+                corr_dict[(subframe,N_ID_cell)][i] = abs(correlate(est_ref_sss_received_IQ_fft_conj, fft.fft(roll(sss_received_IQ_dict[(subframe,N_ID_cell)],cs_list[i]), N))[0])
+            max_dict[(subframe,N_ID_cell)] = find_max(corr_dict[(subframe,N_ID_cell)])
+    # normalize the correlation results
+    overall_max_y = 0
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        if y&gt;overall_max_y:
+            overall_max_y = y
+    overall_max_y = float(overall_max_y)
+    for k in max_dict.keys():
+        x, y = max_dict[k]
+        max_dict[k] = (x, y/overall_max_y)
+    for k in corr_dict.keys():
+        corr_dict[k] = corr_dict[k]/overall_max_y
+    
+    if to_draw:
+        for subframe,N_ID_cell in max_dict.keys():
+            y_offsets[(subframe,N_ID_cell)] = 60
+        y_offsets[(ref_subframe,ref_N_ID_cell)] = -80
+        for subframe,N_ID_cell in corr_dict.keys():
+            plt.plot(cs_list, corr_dict[(subframe,N_ID_cell)], marker='+', linestyle='-')
+            legend_list.append( 'subframe=%s, N_ID_cell=%s'%(subframe,N_ID_cell) )
+            x, y = max_dict[(subframe,N_ID_cell)]
+            plt.annotate('Max of subframe=%s, N_ID_cell=%s: %4.4s @ cs=%s'%(subframe,N_ID_cell,y,cs_list[x]), xy=(cs_list[x], y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(-90, y_offsets[(subframe,N_ID_cell)]))
+        plt.title('SSS received IQ correlation reference subframe=%s N_ID_cell=%s'%(ref_subframe,ref_N_ID_cell))
+        plt.legend(legend_list)
+        plt.xlabel("Cyclic Shift")
+        plt.ylabel("Correlation (normalized to peak)")
+        plt.show()
+    
+    return corr_dict
+
+def SSS_received_IQ_spectrum_correlation():
+    for ref_subframe in (0,):
+        for ref_N_ID_cell in (0,):
+            SSS_received_IQ_spectrum_correlation_ref(ref_subframe, ref_N_ID_cell, to_draw=True)
+</t>
+<t tx="michael.20120314211632.1431">def SSS_baseband_detect(baseband_IQ_signal, local_t, to_draw=False):
+    '''
+    SSS_baseband_detect(baseband_IQ_signal, t): index
+    return the index of the start of SSS in given baseband IQ signal sequence
+    Note: for this function, the parameter t must be of the scale of second, and should not be decimated.
+    '''
+    #baseband_IQ_signal_conj = conjugate(baseband_IQ_signal)
+    #baseband_IQ_signal_I = real(baseband_IQ_signal)
+    #baseband_IQ_signal_Q = imag(baseband_IQ_signal)
+    
+    ref_subframe_list = (0,5)
+    ref_N_ID_cell_list = (0,1)
+    
+    sss_ref_fft_conj_dict = dict()
+    for ref_subframe in ref_subframe_list:
+        for ref_N_ID_cell in ref_N_ID_cell_list:
+            ref_sss_re_array = sss_symbol_array(ref_subframe, ref_N_ID_cell, N_DL_RB, N_RB_sc)
+            ref_sss_baseband_IQ = ofdm_baseband_IQ_signal_generate(ref_sss_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            ref_sss_Uu_signal = downlink_modulate(ref_sss_baseband_IQ, t, f_0)
+            ref_sss_received_IQ = downlink_downconvert(ref_sss_Uu_signal, t, f_0)
+            ref_sss_baseband_IQ_fft = fft.fft(ref_sss_baseband_IQ[-1*N:], N)
+            ref_sss_baseband_IQ_fft_conj = conjugate(ref_sss_baseband_IQ_fft)
+            ref_sss_received_IQ_fft = fft.fft(ref_sss_received_IQ[-1*N:], N)
+            ref_sss_received_IQ_fft_conj = conjugate(ref_sss_received_IQ_fft)
+            # must we do coherent detection??
+            channel_est = ref_sss_received_IQ_fft/ref_sss_baseband_IQ_fft
+            est_ref_sss_received_IQ_fft_conj = conjugate(ref_sss_baseband_IQ_fft * channel_est)
+            sss_ref_fft_conj_dict[(ref_subframe,ref_N_ID_cell)] = est_ref_sss_received_IQ_fft_conj
+    
+    tmp_t = arange(0, (N_CP_l+N)*T_s, T_s)
+    
+    legend_list = list()
+    corr_dict = dict()
+    offset_list = arange(0, len(local_t)-N+1, 1)
+    max_dict = dict()
+    
+    for subframe in ref_subframe_list:
+        for N_ID_cell in ref_N_ID_cell_list:
+            corr_dict[(subframe,N_ID_cell)] = array( [0.0] * len(offset_list) )
+            for offset in offset_list:
+                corr_dict[(subframe,N_ID_cell)][offset] = abs(correlate(fft.fft(baseband_IQ_signal[offset:offset+N],N), sss_ref_fft_conj_dict[(subframe,N_ID_cell)])[0])
+            max_dict[(subframe,N_ID_cell)] = find_max(corr_dict[(subframe,N_ID_cell)])
+            #corr_list[N_ID][offset] = abs(correlate(baseband_IQ_signal_conj[offset:offset+N], pss_baseband_IQ_list[N_ID])[0])
+            #corr_list[N_ID][offset] = abs(correlate(baseband_IQ_signal_conj[offset:offset+N], baseband_IQ_signal[144:144+N])[0])
+    sframe, n_ID_cell, X, Y = -1, -1, -1, -1
+    for subframe,N_ID_cell in max_dict.keys():
+        x, y = max_dict[(subframe,N_ID_cell)]
+        if y&gt;Y:
+            sframe, n_ID_cell, X, Y = subframe, N_ID_cell, x, y
+    Y = float(Y)
+    for subframe,N_ID_cell in max_dict.keys():
+        corr_dict[(subframe,N_ID_cell)] = corr_dict[(subframe,N_ID_cell)]/abs(Y)
+    #print Y
+    Y = Y/abs(Y)
+                
+    if to_draw:
+        for subframe,N_ID_cell in max_dict.keys():
+            plt.plot(1000*local_t[:-1*(N-1)], corr_dict[(subframe,N_ID_cell)], marker='+', linestyle='-')
+            legend_list.append( 'subframe=%s, N_ID_cell=%s'%(subframe,N_ID_cell) )
+        plt.annotate('Highest peak with subframe=%s N_ID_cell=%s: %4.4s @start_index=%s'%(sframe,n_ID_cell,Y,X), xy=(1000*t[X], Y), arrowprops=dict(facecolor='black', shrink=0.15), textcoords='offset points', xytext=(-20, -30))
+        plt.title('SSS baseband detect')
+        plt.legend(legend_list)
+        plt.xlabel("t (ms)")
+        plt.ylabel("Correlation")
+        max_t = 1000*local_t[:-1*(N-1)][-1]
+        min_t = 1000*local_t[0]
+        plt.axis([min_t-max_t*0.01, min(1000*local_t[-1], max_t*1.3), -0.1*Y, 1.1*Y])
+        plt.show()
+    
+    return (sframe, n_ID_cell ,X, Y)
+
+def test_SSS_detect_in_baseband_IQ():
+    
+    for subframe in (0,):
+        for N_ID_cell in (0,):
+            sss_re_array = sss_symbol_array(subframe, N_ID_cell, N_DL_RB, N_RB_sc)
+            sss_baseband_IQ = ofdm_baseband_IQ_signal_generate(sss_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            sss_Uu_signal = downlink_modulate(sss_baseband_IQ, t, f_0)
+            sss_received_IQ = downlink_downconvert(sss_Uu_signal, t, f_0)
+
+        received_baseband_IQ = array( [0.0+0.0*1j] * len(sss_received_IQ) * 2 )
+        received_baseband_IQ[:len(sss_received_IQ)] = sss_received_IQ
+        long_t = arange(0, 2*(N_CP_l+N)*T_s, T_s)
+        
+        SSS_baseband_detect(received_baseband_IQ, long_t, to_draw=True)
+</t>
+<t tx="michael.20120315195140.1455">def ofdm_baseband_signal_generation():
+    
+    symbol_array = array( [0.0 + 0.0 * 1j]*(N_DL_RB*N_RB_sc) )
+    symbol_array[N_DL_RB*N_RB_sc/2-2] = 1
+    
+    ofdm_baseband_IQ_direct = ofdm_baseband_IQ_signal_generate(symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f=15000, gen_method='DIRECT')
+    ofdm_baseband_IQ_ifft = ofdm_baseband_IQ_signal_generate(symbol_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f=15000, gen_method='IFFT')
+    
+    #plt.plot(real(ofdm_baseband_IQ_ifft))
+    #print find_max(abs(fft.fft(ofdm_baseband_IQ_direct, N)))
+    #print find_max(abs(fft.fft(ofdm_baseband_IQ_ifft, N)))
+    #print find_max(abs
+    #plt.plot(abs(fft.ifft(ofdm_baseband_IQ_direct, N)))
+    #plt.plot(real(ofdm_baseband_IQ_direct))
+    #plt.plot(imag(ofdm_baseband_IQ_ifft)-imag(ofdm_baseband_IQ_direct))
+    plt.plot(real(ofdm_baseband_IQ_ifft)-real(ofdm_baseband_IQ_direct))
+    #plt.plot(real(ofdm_baseband_IQ_ifft))
+    #plt.plot(fft.fft(ofdm_baseband_IQ_ifft[-1*N:], N))
+    plt.show()
+</t>
+<t tx="michael.20120322193448.2179">project_version = '1.0.0'
+project_name = 'pyLTESimulator'
+project_owner = "Author: Ling Duo, Email: duo.ling.cn@gmail.com"
+project_weblink = "http://code.google.com/p/pyltesimulator/"</t>
+<t tx="michael.20120322193448.2259"></t>
+<t tx="michael.20120322193448.2264">from cx_Freeze import setup, Executable
+import sys
+
+@others
+
+EXCUTABLE_FILES = ( #"./Simulation/PCFICH/pcfich_gen_detect.py",
+                                #"./Simulation/CSRS/csrs_gen_channel_estimation.py",
+                                #"./Simulation/PBCH/pbch_gen_detect.py",
+                                #"./Simulation/PSS/PSS_gen_detect.py",
+                                #"./Simulation/SSS/sss_gen_detect.py"
+                                "pyLTESimulator.py",
+    )
+INCLUDES = ['matplotlib', 'matplotlib.backends', 'matplotlib.backends.backend_qt4agg']
+# Dependencies are automatically detected, but it might need fine tuning.
+build_exe_options = {"packages": ["os"], "excludes": ["tkinter"], "include_files": [], "optimize":2, "includes":INCLUDES}
+bdist_msi_options = {}
+# GUI applications require a different base on Windows (the default is for a
+# console application).
+base = None
+if sys.platform == "win32":
+    base = "Win32GUI"
+
+#include-files = ( "config.txt" ,)
+for script_name in EXCUTABLE_FILES:
+    setup(
+        name = "pyLTESimulator",
+        version = project_version,
+        description = "LTE PHY Simulator written in Python",
+        options = {"build_exe": build_exe_options},
+        executables = [Executable(script_name, base=base)]
+        )
+
+# setup(
+	# name = "pyLTEVisualizer",
+	# version = "1.0",
+	# description = "LTE PHY Uu Visualizer written in Python",
+	# options = {"bdist_msi": bdist_msi_options},
+	# executables = [Executable("pyLTEVisualizer.py", base=base)]
+	# )
+</t>
+<t tx="michael.20120322193448.2267">setup.py build
+
+</t>
+<t tx="michael.20120322193448.2338">project_version = '1.0.0'
+project_name = 'pyLTEVisualizer'
+project_owner = "Author: Ling Duo, Email: duo.ling.cn@gmail.com"
+project_weblink = "http://code.google.com/p/pyltevisualizer/"
+</t>
+<t tx="michael.20120322193448.2343">@others
+</t>
+<t tx="michael.20120323224953.1378">def PHICH_align(d, n_group_PHICH, DL_CP_type, AP_num):
+    '''
+    input:
+        d: modulated and orthogonized symbol sequence
+        n_group_PHICH: PHICH group index
+        DL_CP_type: downlink CP type, 0 for normal CP, 1 for extended CP
+        AP_num: number of antenna ports for CSRS
+    output:
+        resource group aligned symbol sequence
+    '''
+    lte_assert(DL_CP_type in (0,1), "DL CP type DL_CP_type=%s is out of range. It has to be either 0 (normal CP) or 1 (extended CP)"%DL_CP_type)
+    lte_assert(AP_num in (1,2,4), "Antenna port number AP_num=%s is not correct! It has to be 1, 2, or 4."%AP_num)
+    
+    # Resource group alignment
+    M_symb = len(d)
+    if DL_CP_type == 0:
+        c = 1
+        d_0 = d
+    else:
+        # extended CP
+        c = 2
+        d_0 = array( [0.0+0.0*1j] * (c*M_symb) )
+        if n_group_PHICH%2 == 0:
+            for i in range(M_symb/2):
+                d_0[4*i], d_0[4*i+1], d_0[4*i+2], d_0[4*i+3] = d[2*i], d[2*i+1], 0, 0
+        else:
+            # n_group_PHICH%2 == 1
+            for i in range(M_symb/2):
+                d_0[4*i], d_0[4*i+1], d_0[4*i+2], d_0[4*i+3] = 0, 0, d[2*i], d[2*i+1]
+    return d_0
+
+def PHICH_layer_map_and_precode(d_0, AP_num, n_group_PHICH, DL_CP_type):
+    '''
+    input:
+        d_0: aligned PHICH symbol sequence
+        AP_num: number of antenna ports used for CSRS
+        n_group_PHICH: PHICH group number
+        DL_CP_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        layer mapped matrix
+    '''
+    lte_assert(AP_num in (1,2,4), "Number of antenna ports for CSRS AP_num=%s is out of number!"%AP_num)
+    if AP_num == 1:
+        result = layer_map_single_antenna_port(d_0)
+        result = precode_single_antenna(result)
+    elif AP_num == 2:
+        result = layer_map_transmit_diversity( array([d_0]), 2 )
+        result = precode_transmit_diversity( result, AP_num )
+    else:
+        # AP_num == 4
+        M_0_symb = len(d_0)
+        y = array([ [0.0+0.0*1j]*M_0_symb, [0.0+0.0*1j]*M_0_symb, [0.0+0.0*1j]*M_0_symb, [0.0+0.0*1j]*M_0_symb ])
+        tmp_x = array([real(x[0][i]), real(x[1][i]), real(x[2][i]), real(x[3][i]), imag(x[0][i]), imag(x[1][i]), imag(x[2][i]), imag(x[3][i])])
+        for i in range(3):
+            if (DL_CP_type==0 and (i+n_group_PHICH)%2==0) or (DL_CP_type==1 and (i+n_group_PHICH/2)%2==0):
+                y[0][4*i] = 1/sqrt(2) * sum(array([1,0,0,0,1j,0,0,0])) * tmp_x
+                y[1][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[2][4*i] = 1/sqrt(2) * sum(array([0,-1,0,0,0,1j,0,0])) * tmp_x
+                y[3][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[0][4*i+1] = 1/sqrt(2) * sum(array([0,1,0,0,0,1j,0,0])) * tmp_x
+                y[1][4*i+1] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[2][4*i+1] = 1/sqrt(2) * sum(array([1,0,0,0,-1j,0,0,0])) * tmp_x
+                y[3][4*i+1] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[0][4*i+2] = 1/sqrt(2) * sum(array([0,0,1,0,0,0,1j,0])) * tmp_x
+                y[1][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[2][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,-1,0,0,0,1j])) * tmp_x
+                y[3][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[0][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,1,0,0,0,1j])) * tmp_x
+                y[1][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[2][4*i+3] = 1/sqrt(2) * sum(array([0,0,1,0,0,0,-1j,0])) * tmp_x
+                y[3][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+            else:
+                # (i+n_group_PHICH)%2 == 1
+                y[0][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[1][4*i] = 1/sqrt(2) * sum(array([1,0,0,0,1j,0,0,0])) * tmp_x
+                y[2][4*i] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[3][4*i] = 1/sqrt(2) * sum(array([0,-1,0,0,0,1j,0,0])) * tmp_x
+                y[0][4*i+1] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[1][4*i+1] = 1/sqrt(2) * sum(array([0,1,0,0,0,1j,0,0])) * tmp_x
+                y[2][4*i+1] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[3][4*i+1] = 1/sqrt(2) * sum(array([1,0,0,0,-1j,0,0,0])) * tmp_x
+                y[0][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[1][4*i+2] = 1/sqrt(2) * sum(array([0,0,1,0,0,0,1j,0])) * tmp_x
+                y[2][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[3][4*i+2] = 1/sqrt(2) * sum(array([0,0,0,-1,0,0,0,1j])) * tmp_x
+                y[0][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[1][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,1,0,0,0,1j])) * tmp_x
+                y[2][4*i+3] = 1/sqrt(2) * sum(array([0,0,0,0,0,0,0,0])) * tmp_x
+                y[3][4*i+3] = 1/sqrt(2) * sum(array([0,0,1,0,0,0,-1j,0])) * tmp_x
+        result = y
+    return result
+</t>
+<t tx="michael.20120323224953.1379">def get_PHICH_mapping_units(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, m_i, N_group_PHICH, DL_CP_type, is_MBSFN, PHICH_duration, subframe, n_s, N_cell_ID, N_DL_symb):
+    '''
+    input:
+        LTE_mode: 'FDD' or 'TDD'
+        N_maxDL_RB
+        N_DL_RB
+        N_RB_sc
+        CSRS_AP_num: number of antenna ports used for CSRS
+        m_i: times of PHICH group numbers in TDD mode
+        N_group_PHICH: number of PHICH groups
+        DL_CP_type: downlink CP type, 0 for normal, 1 for extended
+        is_MBSFN: boolean, whether this subframe is a MBSFN subframe
+        PHICH_duration: 0 for normal duration, 1 for extended duration
+        subframe: subframe index
+        n_s: slot index
+        N_cell_ID: cell ID
+        N_DL_symb: downlink symbol number in one slot.
+    output:
+        a list of resources for all PHICH mapping units, e.g. output[0] is a tuple of 3 REGs, which in turn is a tuple of 4 REs like (k,l), for PHICH mapping unit m_=0. E.g. output[0][0] will be the 1st REG for mapping unit 0.
+    '''
+    # get the total number of PHICH mapping units
+    # M_ is the total number of PHICH mapping units in this slot, i.e. for this PHICH PHY channel
+    if DL_CP_type == 0:
+        if LTE_mode == 'FDD':
+            M_ = N_group_PHICH
+        else:
+            # LTE_mode == 'TDD'
+            M_ = m_i * N_group_PHICH
+    else:
+        # DL_CP_type == 1: extended CP
+        if LTE_mode == 'FDD':
+            M_ = N_group_PHICH/2
+        else:
+            # LTE_mode == 'TDD'
+            M_ = (m_i * N_group_PHICH)/2
+    
+    result = [ [0,0,0] ] * M_
+    
+    # get total possible symbols to use
+    # L_ is the total number of symbols PHICH could use
+    if PHICH_duration == 0:
+        # normal duration
+        L_ = 1
+    else:
+        # PHICH_duration == 1 for extended duration
+        if is_MBSFN:
+            L_ = 2
+        else:
+            # non-MBSFN
+            if LTE_mode=='TDD' and subframe in (1,6):
+                L_ = 2
+            else:
+                L_ = 3
+    
+    # N_L_ is a list of number of REGs not assigned to PCFICH in symbol l_, e.g. N_L_[0] is the number of REGs in symbol 0 that are not assigned to PCFICH
+    N_L_ = [0] * L_
+    for l in range(L_):
+        N_L_[l] = get_REG_number_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type) - get_PCFICH_REG_num_in_symbol(l, True)
+        # Assumption here: when there's PHICH, there always is PDSCH in this subframe too.
+    
+    # a list of all CSRS REs in this slot
+    CSRS_REs = tuple()
+    for antenna_port in range(CSRS_AP_num):
+        CSRS_REs += get_CSRS_REs_in_slot(n_s, antenna_port, N_cell_ID, N_maxDL_RB, N_DL_RB, N_DL_symb)
+    # REG_list_in_symbol contains only REGs that are not used by PCFICH, e.g. REG_list_in_symbol[0][0] is the first REG not used by PCFICH in symbol 0.
+    REG_list_in_symbol = [0] * L_
+    for l in range(L_):
+        pcfich_REs = get_PCFICH_REs_in_symbol(l, True, N_cell_ID, N_DL_RB, N_RB_sc, CSRS_REs, CSRS_AP_num, CP_DL_type)
+        if len(pcfich_REs) == 0:
+            # there's no PCFICH in this symbol
+            REG_list_in_symbol[l] = get_REG_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, CSRS_REs)
+        else:
+            # there IS PCFICH in this symbol
+            available_reg_list = list()
+            for reg in get_REG_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, CSRS_REs):
+                if reg[0] not in pcfich_REs:
+                    available_reg_list.append(reg)
+            REG_list_in_symbol[l] = tuple(available_reg_list)
+    
+    # start of calculating mapping unit m_
+    m_ = 0
+    for i in range(3):
+        # decide symbol index
+        if PHICH_duration == 0:
+            l_ = 0
+        else:
+            # PHICH_duration == 1, extended duration
+            if is_MBSFN:
+                l_ = (m_/2+i+1)%2
+            elif LTE_mode=='TDD' and subframe in (1,6):
+                l_ = (m_/2+i+1)%2
+            else:
+                l_ = i
+        # decide subcarrier index
+        if (PHICH_duration==1 and is_MBSFN) or (LTE_mode=='TDD' and subframe in (1,6) and PHICH_duration==1):
+            n_ = ( N_cell_ID*N_L_[l_]/N_L_[1]+m_+(i*N_L_[l_]/3) )%N_L_[l_]
+        else:
+            n_ = ( N_cell_ID*N_L_[l_]/N_L_[0]+m_+(i*N_L_[l_]/3) )%N_L_[l_]
+        #print m_, i, l_, n_
+        #print result
+        #print result[m_][i]
+        result[m_][i] = REG_list_in_symbol[l_][n_]
+        
+    return result
+
+def get_PHICH_REs(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, m_i, N_group_PHICH, DL_CP_type, is_MBSFN, PHICH_duration, subframe, n_s, N_cell_ID, N_DL_symb):
+    '''
+    input:
+        LTE_mode: 'FDD' or 'TDD'
+        N_maxDL_RB
+        N_DL_RB
+        N_RB_sc
+        CSRS_AP_num: number of antenna ports used for CSRS
+        m_i: times of PHICH group numbers in TDD mode
+        N_group_PHICH: number of PHICH groups
+        DL_CP_type: downlink CP type, 0 for normal, 1 for extended
+        is_MBSFN: boolean, whether this subframe is a MBSFN subframe
+        PHICH_duration: 0 for normal duration, 1 for extended duration
+        subframe: subframe index
+        n_s: slot index
+        N_cell_ID: cell ID
+        N_DL_symb: downlink symbol number in one slot.
+    output:
+        a list of all REs for PHICH in this subframe, e.g. output[0] is the 1st RE.
+    '''
+    PHICH_mapping_units = get_PHICH_mapping_units(LTE_mode, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, m_i, N_group_PHICH, DL_CP_type, is_MBSFN, PHICH_duration, subframe, n_s, N_cell_ID, N_DL_symb)
+    result = list()
+    for mapping_unit in PHICH_mapping_units:
+        for reg in mapping_unit:
+            for re in reg:
+                result.append( re )
+    return tuple(result)
+</t>
+<t tx="michael.20120323224953.1793">def get_RE_number_in_REG(l, CSRS_AP_num, CP_DL_type):
+    '''
+    input:
+        l: symbol index
+        CSRS_AP_num: number of antenna ports used for CSRS.
+        CP_DL_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        number of REs that one REG contains, including those REs used for CSRS.
+    '''
+    result = 0
+    if l == 0:
+        result = 6
+    elif l == 1:
+        if CSRS_AP_num == 4:
+            result = 6
+        else:
+            # CSRS_AP_num in (1,2)
+            result = 4
+    elif l == 2:
+        result = 4
+    elif l == 3:
+        if CP_DL_type == 0:    # for nomal CP
+            result = 4
+        else:
+            result = 6
+    return result
+</t>
+<t tx="michael.20120323224953.1794">def get_REG_number_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type):
+    '''
+    input:
+        N_DL_RB: number of downlinke resource blocks
+        N_RB_sc: number of subcarriers in one RB
+        l: symbol index
+        CSRS_AP_num: number of antenna uesed for Cell Specific Reference Signal
+        CP_DL_type: downlink CP type, 0 for normal CP, 1 for extended CP
+    output:
+        number of total REG number in the given symbol across all RBs.
+    '''
+    return N_DL_RB * N_RB_sc / get_RE_number_in_REG(l, CSRS_AP_num, CP_DL_type)
+</t>
+<t tx="michael.20120323224953.1795">def get_REG_in_symbol(N_DL_RB, N_RB_sc, l, CSRS_AP_num, DL_CP_type, CSRS_REs):
+    '''
+    input:
+        N_DL_RB: downlink RB number
+        N_RB_sc: number of subcarriers in one RB
+        l: symbol index
+        CSRS_AP_num: number of antenna uesed for Cell Specific Reference Signal
+        DL_CP_type: 0 for normal CP, 1 for extended CP
+        optimize: boolean. whether to use optimized code for speed.
+        CSRS_REs: all REs used for CSRS in this symbol.
+    output:
+        a tuple of all REGs in the given symbol, from lowest frequency to the highest.
+    '''
+    result = list()
+    for n_PRB in range(N_DL_RB):
+        for reg in get_REG_in_RB_symbol(n_PRB, N_RB_sc, l, CSRS_AP_num, DL_CP_type):
+            if len(reg) == 4:
+                # there's no CSRS REs in here
+                result.append(reg)
+            else:
+                # get rid of those two CSRS REs
+                tmp_reg = list()
+                for re in reg:
+                    if re not in CSRS_REs:
+                        tmp_reg.append(re)
+                result.append( tuple(tmp_reg) )
+    return result
+    
+</t>
+<t tx="michael.20120323224953.1796">def channel_code_HI(HI):
+    '''
+    input:
+        HI: HARQ indicator, 1 bit, 0 for NACK, 1 for ACK
+    output:
+        b: 3-bit sequence
+    '''
+    lte_assert(HI in (0,1), "HI=%s is out of range, it has to be 0 for NACK or 1 for ACK!"%HI)
+    return ( (0,0,0), (1,1,1) )[HI]
+    
+</t>
+<t tx="michael.20120323224953.1797"></t>
+<t tx="michael.20120323224953.1798">@others
+
+from scipy.signal import *
+from numpy import *
+import matplotlib.pyplot as plt
+
+# time scale is in 1 s
+T_s = 1.0/30720/1000 # in s
+
+# configuration for SSS
+l = 0
+N_maxDL_RB = 110
+N_DL_RB = 110
+N_RB_sc = 12
+N_DL_CP = 0 # normal DL CP
+AP_num = 2
+CP_DL_type = 0
+N_DL_symb = 7
+delta_f = 15000
+subframe = 0
+N_cell_ID = 0
+f_0 = (2620+0.1*(2620-2750))*1000*1000  # in Hz
+
+if N_DL_CP==0 and delta_f==15000:
+    if l==0:
+        N_CP_l = 160
+    else:
+        N_CP_l = 144
+elif N_DL_CP==1:    # extended CP
+    if delta_f==15000:
+        N_CP_l = 512
+    else:   # delta_f == 7500
+        N_CP_l = 1024
+if delta_f==15000:
+    N = 2048
+else:   # delta_f == 7500
+    N = 4096
+
+t = arange(0, (N_CP_l+N)*T_s, T_s)
+
+def find_max( a_list ):
+    m = max(a_list)
+    for i in arange(len(a_list)):
+        if a_list[i] == m:
+            return (i, m)
+
+def find_min( a_array ):
+    x, y = 0, 0
+    for i in arange(len(a_array)):
+        if a_array[i] &lt; y:
+            x, y = i, a_array[i]
+    return (x,y)
+
+def find_abs_max( a_array ):
+    m = max(abs(a_array))
+    for i in arange(len(a_array)):
+        if abs(a_array[i]) == m:
+            return (i, m)
+            
+@others
+
+HI = 1
+subframe =1
+n_s = 2
+n_seq_PHICH = 0
+n_group_PHICH =0
+N_group_PHICH = 1
+PHICH_duration = 0
+N_cell_ID = 0
+DL_CP_type = 0
+AP_num = 2
+LTE_mode = 'TDD'
+UL_DL_config = 1
+N_maxDL_RB = 110
+N_DL_RB = 110
+N_RB_sc = 12
+CSRS_AP_num = 2
+is_MBSFN = False
+N_DL_symb = 7
+
+test_enabling_bits = 0b11
+
+# 01. PHICH symbol array in one OFDM symbol
+if test_enabling_bits &amp; (1&lt;&lt;0):
+    test_PHICH_symbol_array_in_one_OFDM_symbol()
+
+# 02. PHICH Uu signal
+if test_enabling_bits &amp; (1&lt;&lt;1):
+    test_PHICH_Uu_signal()
+</t>
+<t tx="michael.20120323224953.1800">def test_PHICH_symbol_array_in_one_OFDM_symbol():
+    PHICH_symbol_matrix = get_PHICH_symbol_array(HI, subframe, n_s, n_seq_PHICH, n_group_PHICH, N_group_PHICH, PHICH_duration, N_cell_ID, DL_CP_type, AP_num, LTE_mode, UL_DL_config, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, is_MBSFN, N_DL_symb)
+    
+    plt.title("PHICH symbol array in l=0 for AP=0")
+    plt.plot(abs(PHICH_symbol_matrix[0][0]))
+    plt.xlabel("k (subcarrier index)")
+    plt.ylabel("Magnitude")
+    plt.show()
+</t>
+<t tx="michael.20120323224953.1801">def test_PHICH_Uu_signal():
+    PHICH_symbol_matrix = get_PHICH_symbol_array(HI, subframe, n_s, n_seq_PHICH, n_group_PHICH, N_group_PHICH, PHICH_duration, N_cell_ID, DL_CP_type, AP_num, LTE_mode, UL_DL_config, N_maxDL_RB, N_DL_RB, N_RB_sc, CSRS_AP_num, is_MBSFN, N_DL_symb)
+    PHICH_symbol_matrix_ap0 = PHICH_symbol_matrix[0]
+    phich_Uu_signal = array( [0.0] * (160+144*2+2048*3) )
+    t0 = arange(0, (160+2048)*T_s, T_s)
+    t1 = arange(0, (144+2048)*T_s, T_s)
+
+    for l in range(3):
+        if l==0:
+            phich_re_array = PHICH_symbol_matrix_ap0[l]
+            phich_baseband_IQ = ofdm_baseband_IQ_signal_generate(phich_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            tmp_phich_Uu_signal = downlink_modulate(phich_baseband_IQ, t0, f_0)
+            phich_Uu_signal[:(160+2048)] = tmp_phich_Uu_signal
+        else:
+            phich_re_array = PHICH_symbol_matrix_ap0[l]
+            phich_baseband_IQ = ofdm_baseband_IQ_signal_generate(phich_re_array, l, N_DL_RB, N_RB_sc, N_DL_CP, delta_f)
+            tmp_phich_Uu_signal = downlink_modulate(phich_baseband_IQ, t1, f_0)
+            phich_Uu_signal[(160+2048)+(144+2048)*(l-1):(160+2048)+(144+2048)*l] = tmp_phich_Uu_signal
+    new_t = arange(0, (160+144*2+2048*3)*T_s, T_s)
+    plt.plot(new_t*1000, phich_Uu_signal)
+    plt.title('PHICH (only) Uu signal for ap=0')
+    plt.xlabel('Time (ms)')
+    plt.ylabel('Signal level')
+    #plt.legend(legend_list)
+    #plt.axis( [-0.01, 0.075, -0.1, 14] )
+    plt.show()
+</t>
+</tnodes>
+</leo_file>
